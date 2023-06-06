@@ -1,0 +1,67 @@
+{
+  "version": 2,
+  "location": "mbd:blackholecoil",
+  "traits": {},
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 10.0,
+    "harvestLevel": 1,
+    "stackSize": 64,
+    "tabGroup": "multiblocked"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "state": {
+          "id": "contenttweaker:coil",
+          "meta": 0
+        },
+        "type": "blockstate"
+      }
+    },
+    "idle": {
+      "renderer": {
+        "isBackLayer": true,
+        "isAddBlend": false,
+        "renderRange": -1,
+        "texture": "multiblocked:start",
+        "isShader": true,
+        "scale": 10.0,
+        "light": -1,
+        "type": "tparticle"
+      },
+      "parent": "unformed"
+    },
+    "working": {
+      "renderer": {
+        "isBackLayer": true,
+        "isAddBlend": false,
+        "renderRange": -1,
+        "texture": "multiblocked:start",
+        "isShader": true,
+        "scale": 24.0,
+        "light": -1,
+        "type": "tparticle"
+      },
+      "parent": "idle"
+    },
+    "suspend": {
+      "renderer": {
+        "isBackLayer": true,
+        "isAddBlend": false,
+        "renderRange": -1,
+        "texture": "multiblocked:start",
+        "isShader": true,
+        "scale": 10.0,
+        "light": -1,
+        "type": "tparticle"
+      },
+      "parent": "working"
+    }
+  },
+  "canShared": false
+}
