@@ -1,0 +1,18 @@
+{
+  "id": "Home Uga Gua_-4709,74,1789",
+  "name": "Home Uga Gua",
+  "icon": "waypoint-normal.png",
+  "x": -4709,
+  "y": 74,
+  "z": 1789,
+  "r": 51,
+  "g": 2,
+  "b": 143,
+  "enable": true,
+  "type": "Normal",
+  "origin": "journeymap",
+  "dimensions": [
+    0
+  ],
+  "persistent": true
+}

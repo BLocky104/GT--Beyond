@@ -1,0 +1,747 @@
+{
+  "pools": [
+    {
+      "name": "forestry_apiculture_bees",
+      "entries": [
+        {
+          "entryName": "bee_steadfast_drone",
+          "weight": 1,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "speciesUid": "forestry.speciesSteadfast",
+              "function": "minecraft:set_species_nbt"
+            }
+          ],
+          "name": "forestry:bee_drone_ge"
+        },
+        {
+          "entryName": "bee_tropical_drone",
+          "weight": 3,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "speciesUid": "forestry.speciesTropical",
+              "function": "minecraft:set_species_nbt"
+            },
+            {
+              "count": {
+                "min": 1.0,
+                "max": 3.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "forestry:bee_drone_ge"
+        },
+        {
+          "entryName": "empty",
+          "weight": 6,
+          "quality": 0,
+          "type": "empty"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "name": "jungle_elerium_pool",
+      "entries": [
+        {
+          "entryName": "jungle_elerium_entry",
+          "weight": 1,
+          "quality": 100,
+          "type": "loot_table",
+          "name": "reactor_stuff:jungle_elerium"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "name": "forestry_arboriculture_items",
+      "entries": [
+        {
+          "entryName": "forestry:sapling",
+          "weight": 1,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "speciesUid": "forestry.treeSipiri",
+              "function": "minecraft:set_species_nbt"
+            }
+          ],
+          "name": "forestry:sapling"
+        },
+        {
+          "entryName": "empty",
+          "weight": 9,
+          "quality": 0,
+          "type": "empty"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "name": "tombstone:chest_treasure",
+      "entries": [
+        {
+          "entryName": "tombstone:scroll_buff_loot1",
+          "weight": 10,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "tag": "{enchant:1b}",
+              "function": "minecraft:set_nbt"
+            },
+            {
+              "data": 2.0,
+              "function": "minecraft:set_data"
+            }
+          ],
+          "name": "tombstone:scroll_buff"
+        },
+        {
+          "entryName": "tombstone:scroll_buff_loot2",
+          "weight": 10,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "tag": "{enchant:1b}",
+              "function": "minecraft:set_nbt"
+            },
+            {
+              "data": 3.0,
+              "function": "minecraft:set_data"
+            }
+          ],
+          "name": "tombstone:scroll_buff"
+        },
+        {
+          "entryName": "tombstone:scroll_buff_loot0",
+          "weight": 10,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "tag": "{enchant:1b}",
+              "function": "minecraft:set_nbt"
+            },
+            {
+              "data": 1.0,
+              "function": "minecraft:set_data"
+            }
+          ],
+          "name": "tombstone:scroll_buff"
+        },
+        {
+          "entryName": "tombstone:scroll_buff_loot5",
+          "weight": 10,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "tag": "{enchant:1b}",
+              "function": "minecraft:set_nbt"
+            },
+            {
+              "data": 6.0,
+              "function": "minecraft:set_data"
+            }
+          ],
+          "name": "tombstone:scroll_buff"
+        },
+        {
+          "entryName": "tombstone:tablet_of_cupidity_loot",
+          "weight": 10,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "tag": "{enchant:1b}",
+              "function": "minecraft:set_nbt"
+            }
+          ],
+          "name": "tombstone:tablet_of_cupidity"
+        },
+        {
+          "entryName": "tombstone:voodoo_poppet_loot",
+          "weight": 10,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "function": "tombstone:delayed_nbt_loot"
+            }
+          ],
+          "name": "tombstone:voodoo_poppet"
+        },
+        {
+          "entryName": "tombstone:scroll_buff_loot6",
+          "weight": 10,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "tag": "{enchant:1b}",
+              "function": "minecraft:set_nbt"
+            },
+            {
+              "data": 7.0,
+              "function": "minecraft:set_data"
+            }
+          ],
+          "name": "tombstone:scroll_buff"
+        },
+        {
+          "entryName": "tombstone:scroll_buff_loot3",
+          "weight": 10,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "tag": "{enchant:1b}",
+              "function": "minecraft:set_nbt"
+            },
+            {
+              "data": 4.0,
+              "function": "minecraft:set_data"
+            }
+          ],
+          "name": "tombstone:scroll_buff"
+        },
+        {
+          "entryName": "tombstone:scroll_buff_loot4",
+          "weight": 10,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "tag": "{enchant:1b}",
+              "function": "minecraft:set_nbt"
+            },
+            {
+              "data": 5.0,
+              "function": "minecraft:set_data"
+            }
+          ],
+          "name": "tombstone:scroll_buff"
+        },
+        {
+          "entryName": "tombstone:scroll_of_knowledge_loot",
+          "weight": 10,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "function": "tombstone:delayed_nbt_loot"
+            }
+          ],
+          "name": "tombstone:scroll_of_knowledge"
+        },
+        {
+          "entryName": "tombstone:empty",
+          "weight": 844,
+          "quality": 0,
+          "type": "empty"
+        },
+        {
+          "entryName": "tombstone:crafting_ingredient_loot",
+          "weight": 3,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "data": 4.0,
+              "function": "minecraft:set_data"
+            }
+          ],
+          "name": "tombstone:crafting_ingredient"
+        },
+        {
+          "entryName": "tombstone:scroll_buff_loot",
+          "weight": 10,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "tag": "{enchant:1b}",
+              "function": "minecraft:set_nbt"
+            },
+            {
+              "data": 0.0,
+              "function": "minecraft:set_data"
+            }
+          ],
+          "name": "tombstone:scroll_buff"
+        },
+        {
+          "entryName": "tombstone:tablet_of_assistance_loot",
+          "weight": 10,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "tag": "{enchant:1b}",
+              "function": "minecraft:set_nbt"
+            }
+          ],
+          "name": "tombstone:tablet_of_assistance"
+        },
+        {
+          "entryName": "tombstone:fishing_rod_of_misadventure_loot",
+          "weight": 3,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "function": "tombstone:delayed_nbt_loot"
+            }
+          ],
+          "name": "tombstone:fishing_rod_of_misadventure"
+        },
+        {
+          "entryName": "tombstone:familiar_receptacle_loot",
+          "weight": 10,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "function": "tombstone:delayed_nbt_loot"
+            }
+          ],
+          "name": "tombstone:familiar_receptacle"
+        },
+        {
+          "entryName": "tombstone:tablet_of_home_loot",
+          "weight": 10,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "tag": "{enchant:1b}",
+              "function": "minecraft:set_nbt"
+            }
+          ],
+          "name": "tombstone:tablet_of_home"
+        },
+        {
+          "entryName": "tombstone:scroll_buff_loot7",
+          "weight": 10,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "tag": "{enchant:1b}",
+              "function": "minecraft:set_nbt"
+            },
+            {
+              "data": 8.0,
+              "function": "minecraft:set_data"
+            }
+          ],
+          "name": "tombstone:scroll_buff"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "name": "item.nuclearcraft.foursmore",
+      "entries": [
+        {
+          "entryName": "item.nuclearcraft.foursmore",
+          "weight": 1,
+          "quality": 2,
+          "type": "item",
+          "functions": [
+            {
+              "data": 0.0,
+              "function": "minecraft:set_data"
+            }
+          ],
+          "name": "nuclearcraft:foursmore"
+        }
+      ],
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "chance": 5.0,
+          "condition": "minecraft:random_chance"
+        }
+      ]
+    },
+    {
+      "name": "Ender IO",
+      "entries": [
+        {
+          "entryName": "enderio:chests/jungle_temple",
+          "weight": 1,
+          "quality": 1,
+          "type": "loot_table",
+          "name": "enderio:chests/jungle_temple"
+        }
+      ],
+      "rolls": {
+        "min": 1.0,
+        "max": 3.0
+      }
+    },
+    {
+      "name": "ic2",
+      "entries": [
+        {
+          "entryName": "ic2:bronze_leggings",
+          "weight": 3,
+          "quality": 0,
+          "type": "item",
+          "name": "ic2:bronze_leggings"
+        },
+        {
+          "entryName": "copper_ingot",
+          "weight": 9,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "count": {
+                "min": 2.0,
+                "max": 6.0
+              },
+              "function": "minecraft:set_count"
+            },
+            {
+              "data": 2.0,
+              "function": "minecraft:set_data"
+            }
+          ],
+          "name": "ic2:ingot"
+        },
+        {
+          "entryName": "tin_ingot",
+          "weight": 8,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "count": {
+                "min": 1.0,
+                "max": 5.0
+              },
+              "function": "minecraft:set_count"
+            },
+            {
+              "data": 6.0,
+              "function": "minecraft:set_data"
+            }
+          ],
+          "name": "ic2:ingot"
+        },
+        {
+          "entryName": "iridium_shard",
+          "weight": 8,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "count": {
+                "min": 1.0,
+                "max": 2.0
+              },
+              "function": "minecraft:set_count"
+            },
+            {
+              "data": 2.0,
+              "function": "minecraft:set_data"
+            }
+          ],
+          "name": "ic2:misc_resource"
+        },
+        {
+          "entryName": "ic2:bronze_chestplate",
+          "weight": 3,
+          "quality": 0,
+          "type": "item",
+          "name": "ic2:bronze_chestplate"
+        },
+        {
+          "entryName": "ic2:bronze_helmet",
+          "weight": 3,
+          "quality": 0,
+          "type": "item",
+          "name": "ic2:bronze_helmet"
+        },
+        {
+          "entryName": "ic2:bronze_pickaxe",
+          "weight": 3,
+          "quality": 0,
+          "type": "item",
+          "name": "ic2:bronze_pickaxe"
+        },
+        {
+          "entryName": "ic2:bronze_sword",
+          "weight": 3,
+          "quality": 0,
+          "type": "item",
+          "name": "ic2:bronze_sword"
+        },
+        {
+          "entryName": "ic2:bronze_boots",
+          "weight": 3,
+          "quality": 0,
+          "type": "item",
+          "name": "ic2:bronze_boots"
+        },
+        {
+          "entryName": "empty",
+          "weight": 43,
+          "quality": 0,
+          "type": "empty"
+        }
+      ],
+      "rolls": {
+        "min": 1.0,
+        "max": 3.0
+      }
+    },
+    {
+      "name": "main",
+      "entries": [
+        {
+          "entryName": "minecraft:diamond_horse_armor",
+          "weight": 1,
+          "quality": 0,
+          "type": "item",
+          "name": "minecraft:diamond_horse_armor"
+        },
+        {
+          "entryName": "#gregtech:loot_1xitem.meta_item@32599",
+          "weight": 1,
+          "quality": 1,
+          "type": "item",
+          "functions": [
+            null
+          ],
+          "name": "gregtech:meta_item_1"
+        },
+        {
+          "entryName": "#gregtech:loot_1xitem.meta_item@32008",
+          "weight": 5,
+          "quality": 1,
+          "type": "item",
+          "functions": [
+            null
+          ],
+          "name": "gregtech:meta_item_1"
+        },
+        {
+          "entryName": "#gregtech:loot_1xitem.meta_item@8244",
+          "weight": 4,
+          "quality": 1,
+          "type": "item",
+          "functions": [
+            null
+          ],
+          "name": "gregtech:meta_item_1"
+        },
+        {
+          "entryName": "#gregtech:loot_1xitem.meta_item@8157",
+          "weight": 2,
+          "quality": 1,
+          "type": "item",
+          "functions": [
+            null
+          ],
+          "name": "gregtech:meta_item_1"
+        },
+        {
+          "entryName": "#gregtech:loot_1xitem.meta_item@8212",
+          "weight": 2,
+          "quality": 1,
+          "type": "item",
+          "functions": [
+            null
+          ],
+          "name": "gregtech:meta_item_1"
+        },
+        {
+          "entryName": "#gregtech:loot_1xitem.meta_item@8154",
+          "weight": 2,
+          "quality": 1,
+          "type": "item",
+          "functions": [
+            null
+          ],
+          "name": "gregtech:meta_item_1"
+        },
+        {
+          "entryName": "#gregtech:loot_1xitem.meta_item@8243",
+          "weight": 4,
+          "quality": 1,
+          "type": "item",
+          "functions": [
+            null
+          ],
+          "name": "gregtech:meta_item_1"
+        },
+        {
+          "entryName": "minecraft:diamond",
+          "weight": 3,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "count": {
+                "min": 1.0,
+                "max": 3.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:diamond"
+        },
+        {
+          "entryName": "minecraft:bone",
+          "weight": 20,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "count": {
+                "min": 4.0,
+                "max": 6.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:bone"
+        },
+        {
+          "entryName": "minecraft:golden_horse_armor",
+          "weight": 1,
+          "quality": 0,
+          "type": "item",
+          "name": "minecraft:golden_horse_armor"
+        },
+        {
+          "entryName": "minecraft:book",
+          "weight": 1,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "levels": 30.0,
+              "treasure": true,
+              "function": "minecraft:enchant_with_levels"
+            }
+          ],
+          "name": "minecraft:book"
+        },
+        {
+          "entryName": "minecraft:gold_ingot",
+          "weight": 15,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "count": {
+                "min": 2.0,
+                "max": 7.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:gold_ingot"
+        },
+        {
+          "entryName": "minecraft:iron_horse_armor",
+          "weight": 1,
+          "quality": 0,
+          "type": "item",
+          "name": "minecraft:iron_horse_armor"
+        },
+        {
+          "entryName": "minecraft:iron_ingot",
+          "weight": 10,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "count": {
+                "min": 1.0,
+                "max": 5.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:iron_ingot"
+        },
+        {
+          "entryName": "minecraft:emerald",
+          "weight": 2,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "count": {
+                "min": 1.0,
+                "max": 3.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:emerald"
+        },
+        {
+          "entryName": "minecraft:rotten_flesh",
+          "weight": 16,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "count": {
+                "min": 3.0,
+                "max": 7.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:rotten_flesh"
+        },
+        {
+          "entryName": "#gregtech:loot_1xitem.meta_item@8117",
+          "weight": 2,
+          "quality": 1,
+          "type": "item",
+          "functions": [
+            null
+          ],
+          "name": "gregtech:meta_item_1"
+        },
+        {
+          "entryName": "minecraft:saddle",
+          "weight": 3,
+          "quality": 0,
+          "type": "item",
+          "name": "minecraft:saddle"
+        },
+        {
+          "entryName": "#gregtech:loot_1xitem.meta_item@10095",
+          "weight": 12,
+          "quality": 1,
+          "type": "item",
+          "functions": [
+            null
+          ],
+          "name": "gregtech:meta_item_1"
+        }
+      ],
+      "rolls": {
+        "min": 6.0,
+        "max": 14.0
+      }
+    }
+  ]
+}
