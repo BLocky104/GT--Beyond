@@ -1,0 +1,14 @@
+name = "Thaumic Potatoes 2"
+filename = "ThaumicPotatoes2-1.12.2-1.4.1.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "58cecc99d3bdf7d3f38f8b1cf352945e592f8626"
+
+[update]
+[update.curseforge]
+file-id = 2488941
+project-id = 270721

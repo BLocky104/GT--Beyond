@@ -1,0 +1,14 @@
+name = "Planar Artifice: Continuation"
+filename = "planarartifice-1.4.0-pre7.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "6306ad1f7a5d08a0a4f926f440ef16e6d789e428"
+
+[update]
+[update.curseforge]
+file-id = 3668551
+project-id = 409849
