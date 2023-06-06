@@ -1,0 +1,14 @@
+name = "Thaumic Wands"
+filename = "thaumicwands-1.2.6.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "a29f9c409fb3217e23ba9c177f60cb9b681ad063"
+
+[update]
+[update.curseforge]
+file-id = 3065762
+project-id = 393922

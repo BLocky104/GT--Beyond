@@ -1,0 +1,318 @@
+{
+  "name": "essentia_collider",
+  "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
+  "fuelTexture": "multiblocked:textures/gui/progress_bar_fuel.png",
+  "recipes": [
+    {
+      "uid": "6b13cdd6-3a6e-420e-a2cc-f44aab3db220",
+      "duration": 200,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"thaumicpotatoes:eldritchblood\",Count:1,Damage:0s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"thaumcraft:salis_mundus\",Count:1,Damage:0s}"
+              ]
+            }
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 2,
+              "matches": [
+                "{id:\"thaumicpotatoes:eldritchblood\",Count:1,Damage:0s}"
+              ]
+            }
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "type": "biome",
+          "condition": {
+            "biome": "thaumcraft:magical_forest"
+          }
+        }
+      ]
+    },
+    {
+      "uid": "ebc62c99-8a0f-4ccd-9b10-17e9d77609b1",
+      "duration": 2000,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 4,
+              "matches": [
+                "{id:\"thaumicpotatoes:potatoalloy\",Count:4,Damage:0s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"thaumcraft:salis_mundus\",Count:1,Damage:0s}"
+              ]
+            }
+          }
+        ],
+        "fluid": [
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"manasolution\",Amount:1000}"
+          }
+        ],
+        "entity": [
+          {
+            "chance": 1.0,
+            "content": {
+              "type": "minecraft:wither_skeleton"
+            }
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"thaumicpotatoes:taintedcore_perditio\",Count:1,Damage:0s}"
+              ]
+            }
+          }
+        ]
+      },
+      "tickInputs": {
+        "forge_energy": [
+          {
+            "chance": 1.0,
+            "content": 128
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "type": "biome",
+          "condition": {
+            "biome": "thaumcraft:magical_forest"
+          }
+        }
+      ]
+    },
+    {
+      "uid": "94a49977-7c70-4ac0-b78e-cb1e4cf4ccc7",
+      "duration": 2000,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 4,
+              "matches": [
+                "{id:\"thaumicpotatoes:potatoalloy\",Count:4,Damage:0s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"thaumcraft:salis_mundus\",Count:1,Damage:0s}"
+              ]
+            }
+          }
+        ],
+        "fluid": [
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"manasolution\",Amount:1000}"
+          }
+        ],
+        "entity": [
+          {
+            "chance": 1.0,
+            "content": {
+              "type": "minecraft:skeleton_horse"
+            }
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"thaumicpotatoes:taintedcore_ordo\",Count:1,Damage:0s}"
+              ]
+            }
+          }
+        ]
+      },
+      "tickInputs": {
+        "gtce_energy": [
+          {
+            "chance": 1.0,
+            "content": 128
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "type": "biome",
+          "condition": {
+            "biome": "thaumcraft:magical_forest"
+          }
+        }
+      ]
+    },
+    {
+      "uid": "bd9bfe50-362f-4d44-a038-5c2375cbb737",
+      "duration": 200,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"thaumicpotatoes:eldritchflesh\",Count:2,Damage:0s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"thaumcraft:salis_mundus\",Count:1,Damage:0s}"
+              ]
+            }
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 2,
+              "matches": [
+                "{id:\"thaumicpotatoes:eldritchflesh\",Count:2,Damage:0s}"
+              ]
+            }
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "type": "biome",
+          "condition": {
+            "biome": "thaumcraft:magical_forest"
+          }
+        }
+      ]
+    },
+    {
+      "uid": "8e508dd4-a92f-476e-9a05-26d0341e3526",
+      "duration": 2000,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"contenttweaker:nature\",Count:1,Damage:0s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"contenttweaker:civilization\",Count:1,Damage:0s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"contenttweaker:humankind\",Count:1,Damage:0s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"contenttweaker:mythical\",Count:1,Damage:0s}"
+              ]
+            }
+          }
+        ],
+        "fluid": [
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"manasolution\",Amount:1000}"
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 4,
+              "matches": [
+                "{id:\"thaumcraft:salis_mundus\",Count:4,Damage:0s}"
+              ]
+            }
+          }
+        ]
+      },
+      "tickInputs": {
+        "gtce_energy": [
+          {
+            "chance": 1.0,
+            "content": 128
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "type": "biome",
+          "condition": {
+            "biome": "thaumcraft:magical_forest"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+name = "Actually Advanced Info"
+filename = "AAInfo-1.0.1.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "b383cdd69eda60af313c2daa3052380945167464"
+
+[update]
+[update.curseforge]
+file-id = 3627065
+project-id = 573154

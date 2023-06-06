@@ -1,0 +1,300 @@
+{
+  "version": 2,
+  "location": "contenttweaker:essentia_collider",
+  "traits": {},
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 10.0,
+    "harvestLevel": 1,
+    "stackSize": 64,
+    "tabGroup": "multiblocked"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "baseTexture": "multiblocked:blocks/gregtech_base",
+        "frontTexture": "multiblocked:blocks/gregtech_front",
+        "type": "gregtech"
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+      "renderer": {
+        "baseTexture": "multiblocked:blocks/gregtech_base",
+        "frontTexture": "multiblocked:overlay_front_active",
+        "type": "gregtech"
+      },
+      "lightEmissive": 15,
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "essentia_collider",
+  "basePattern": {
+    "structureDir": [
+      "BACK",
+      "UP",
+      "RIGHT"
+    ],
+    "pattern": [
+      [
+        "ABBBA",
+        "ACCCA",
+        "ACCCA",
+        "ACCCA",
+        "AAAAA"
+      ],
+      [
+        "BBBBB",
+        "BDEDB",
+        "B   B",
+        "B   B",
+        "AFFFA"
+      ],
+      [
+        "ABBBA",
+        "AEGEA",
+        "A   A",
+        "A   A",
+        "AAAAA"
+      ],
+      [
+        " HIH ",
+        " IJI ",
+        " H H ",
+        " BBB ",
+        "     "
+      ],
+      [
+        " @IH ",
+        " IJI ",
+        " H H ",
+        " BBB ",
+        "     "
+      ],
+      [
+        " HIH ",
+        " IJI ",
+        " H H ",
+        " BBB ",
+        "     "
+      ],
+      [
+        "ABBBA",
+        "AEGEA",
+        "A   A",
+        "A   A",
+        "AAAAA"
+      ],
+      [
+        "BBBBB",
+        "BDEDB",
+        "B   B",
+        "B   B",
+        "AFFFA"
+      ],
+      [
+        "ABBBA",
+        "ACCCA",
+        "ACCCA",
+        "ACCCA",
+        "AAAAA"
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "states": [
+          {
+            "id": "gregtech:frame_red_steel",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "controller": {
+        "location": "contenttweaker:essentia_collider",
+        "type": "component"
+      },
+      "B": {
+        "states": [
+          {
+            "id": "gtadditions:ga_metal_casing_2",
+            "meta": 7
+          },
+          {
+            "id": "multiblocked:item_input",
+            "meta": 0
+          },
+          {
+            "id": "multiblocked:entity",
+            "meta": 0
+          },
+          {
+            "id": "multiblocked:fluid_input",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "C": {
+        "states": [
+          {
+            "id": "gregtech:metal_casing",
+            "meta": 2
+          }
+        ],
+        "type": "states"
+      },
+      "D": {
+        "states": [
+          {
+            "id": "contenttweaker:manasolution",
+            "meta": 3
+          }
+        ],
+        "type": "states"
+      },
+      "E": {
+        "states": [
+          {
+            "id": "contenttweaker:manasolution",
+            "meta": 2
+          }
+        ],
+        "type": "states"
+      },
+      "F": {
+        "states": [
+          {
+            "id": "gtadditions:ga_multiblock_casing",
+            "meta": 4
+          }
+        ],
+        "type": "states"
+      },
+      "G": {
+        "states": [
+          {
+            "id": "contenttweaker:manasolution",
+            "meta": 1
+          }
+        ],
+        "type": "states"
+      },
+      "H": {
+        "states": [
+          {
+            "id": "gregtech:boiler_firebox_casing",
+            "meta": 1
+          }
+        ],
+        "type": "states"
+      },
+      "I": {
+        "states": [
+          {
+            "id": "gregtech:boiler_casing",
+            "meta": 1
+          }
+        ],
+        "type": "states"
+      },
+      "J": {
+        "states": [
+          {
+            "id": "contenttweaker:manasolution",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "any": {
+        "type": "any"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C"
+      ],
+      "D": [
+        "D"
+      ],
+      "E": [
+        "E"
+      ],
+      "F": [
+        "F"
+      ],
+      "G": [
+        "G"
+      ],
+      "H": [
+        "H"
+      ],
+      "I": [
+        "I"
+      ],
+      "J": [
+        "J"
+      ]
+    }
+  }
+}

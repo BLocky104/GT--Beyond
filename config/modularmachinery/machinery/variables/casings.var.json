@@ -1,0 +1,188 @@
+{
+    "casings_all": [
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockenergyinputhatch",
+        "modularmachinery:blockfluidinputhatch",
+        "modularmachinery:blockoutputbus",
+        "modularmachinery:blockfluidoutputhatch"
+    ],
+    "casings_fluid": [
+        "modularmachinery:blockfluidinputhatch",
+        "modularmachinery:blockfluidoutputhatch"
+    ],
+    "casings_energy": [
+        "modularmachinery:blockenergyinputhatch",
+        "modularmachinery:blockenergyoutputhatch"
+    ],
+    "casings_item": [
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockoutputbus"
+    ],
+    "mattercasing": [
+        "contenttweaker:mattercasing",
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockenergyinputhatch",
+        "modularmachinery:blockfluidinputhatch",
+        "modularmachinery:blockoutputbus",
+        "modularmachinery:blockfluidoutputhatch"
+    ],
+    "electroniccasing": [
+        "contenttweaker:electroniccasing",
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockenergyinputhatch",
+        "modularmachinery:blockfluidinputhatch",
+        "modularmachinery:blockoutputbus",
+        "modularmachinery:blockfluidoutputhatch"
+    ],
+    "casings_hpc": [
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockenergyinputhatch",
+        "modularmachinery:blockfluidinputhatch",
+        "modularmachinery:blockoutputbus",
+        "modularmachinery:blockfluidoutputhatch",
+	"contenttweaker:highpowercasing"
+    ],
+    "casings_pneumatic": [
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockenergyinputhatch",
+        "modularmachinery:blockfluidinputhatch",
+        "modularmachinery:blockoutputbus",
+        "modularmachinery:blockfluidoutputhatch",
+	"pneumaticcraft:pressure_chamber_wall",
+	"modularmachinery:blockparallelcontroller"
+    ],
+    "casings_electronic": [
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockenergyinputhatch",
+        "modularmachinery:blockfluidinputhatch",
+        "modularmachinery:blockoutputbus",
+        "modularmachinery:blockfluidoutputhatch",
+	"contenttweaker:electroniccasing",
+	"modularmachinery:blockparallelcontroller"
+    ],
+    "casings_computer": [
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockenergyinputhatch",
+        "modularmachinery:blockfluidinputhatch",
+        "modularmachinery:blockoutputbus",
+        "modularmachinery:blockfluidoutputhatch",
+	"contenttweaker:computercasing",
+	"modularmachinery:blockparallelcontroller"
+    ],
+    "casings_naq": [
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockenergyinputhatch",
+        "modularmachinery:blockfluidinputhatch",
+        "modularmachinery:blockoutputbus",
+        "modularmachinery:blockfluidoutputhatch",
+	"contenttweaker:naquadahfuelrefinerycasing"
+    ],
+    "casings_precisemk1": [
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockenergyinputhatch",
+        "modularmachinery:blockfluidinputhatch",
+        "modularmachinery:blockoutputbus",
+        "modularmachinery:blockfluidoutputhatch",
+	"contenttweaker:perciseelectronicunitcasing"
+    ],
+    "casings_miner": [
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockenergyinputhatch",
+        "modularmachinery:blockfluidinputhatch",
+        "modularmachinery:blockoutputbus",
+        "modularmachinery:blockfluidoutputhatch",
+	"contenttweaker:transcendantminingcasings"
+    ],
+    "casings_molecular": [
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockenergyinputhatch",
+        "modularmachinery:blockfluidinputhatch",
+        "modularmachinery:blockoutputbus",
+        "modularmachinery:blockfluidoutputhatch",
+	"contenttweaker:particleprotectioncasing",
+	"modularmachinery:blockparallelcontroller"
+    ],
+    "casings_distillation": [
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockenergyinputhatch",
+        "modularmachinery:blockfluidinputhatch",
+        "modularmachinery:blockoutputbus",
+        "modularmachinery:blockfluidoutputhatch",
+	"gtadditions:ga_metal_casing_1@4",
+	"modularmachinery:blockparallelcontroller"
+    ],
+    "casings_sintering": [
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockenergyinputhatch",
+        "modularmachinery:blockfluidinputhatch",
+        "modularmachinery:blockoutputbus",
+        "modularmachinery:blockfluidoutputhatch",
+	"gregtech:machine_casing@0",
+	"modularmachinery:blockparallelcontroller"
+    ],
+    "casings_rock": [
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockenergyinputhatch",
+        "modularmachinery:blockfluidinputhatch",
+        "modularmachinery:blockoutputbus",
+        "modularmachinery:blockfluidoutputhatch",
+	"gregtech:boiler_casing@2",
+	"modularmachinery:blockparallelcontroller"
+    ],
+   "casings_particleacclerator": [
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockenergyinputhatch",
+        "modularmachinery:blockfluidinputhatch",
+        "modularmachinery:blockoutputbus",
+        "modularmachinery:blockfluidoutputhatch",
+	"contenttweaker:particleprotectioncasing",
+	"modularmachinery:blockparallelcontroller"
+    ],
+   "casings_fccu": [
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockenergyinputhatch",
+        "modularmachinery:blockfluidinputhatch",
+        "modularmachinery:blockoutputbus",
+        "modularmachinery:blockfluidoutputhatch",
+	"gregtech:metal_casing@5",
+	"modularmachinery:blockparallelcontroller"
+    ],
+   "casings_furnace": [
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockenergyinputhatch",
+        "modularmachinery:blockfluidinputhatch",
+        "modularmachinery:blockoutputbus",
+        "modularmachinery:blockfluidoutputhatch",
+	"gregtech:boiler_casing@1",
+	"modularmachinery:blockparallelcontroller"
+    ],
+   "casings_liquid": [
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockenergyinputhatch",
+        "modularmachinery:blockfluidinputhatch",
+        "modularmachinery:blockoutputbus",
+        "modularmachinery:blockfluidoutputhatch",
+	"galaxyspace:machineframes@2",
+	"modularmachinery:blockparallelcontroller"
+    ],
+   "casings_chem": [
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockenergyinputhatch",
+        "modularmachinery:blockfluidinputhatch",
+        "modularmachinery:blockoutputbus",
+        "modularmachinery:blockfluidoutputhatch",
+	"contenttweaker:pbistrengthenedtetrixcasing",
+	"modularmachinery:blockparallelcontroller"
+    ]
+
+
+
+
+
+
+
+
+
+
+
+}
