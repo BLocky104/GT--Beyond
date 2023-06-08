@@ -1,7 +1,110 @@
 {
   "version": 2,
   "location": "contenttweaker:essentia_collider",
-  "traits": {},
+  "traits": {
+    "item": [
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "mIO": 0,
+        "x": 62,
+        "y": 82,
+        "autoIO": false
+      },
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "mIO": 0,
+        "x": 44,
+        "y": 82,
+        "autoIO": false
+      },
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "mIO": 0,
+        "x": 62,
+        "y": 64,
+        "autoIO": false
+      },
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "mIO": 0,
+        "x": 44,
+        "y": 64,
+        "autoIO": false
+      },
+      {
+        "cIO": 1,
+        "gIO": 1,
+        "mIO": 1,
+        "x": 115,
+        "y": 73,
+        "autoIO": false
+      }
+    ],
+    "gtce_energy": {
+      "cIO": 2,
+      "gIO": 2,
+      "x": 5,
+      "y": 5,
+      "width": 60,
+      "height": 18,
+      "texture": "multiblocked:textures/gui/energy_bar.png",
+      "fillDirection": 0,
+      "capacity": 10000
+    },
+    "fluid": [
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "mIO": 0,
+        "x": 26,
+        "y": 82,
+        "autoIO": false,
+        "tC": 1000,
+        "w": 18,
+        "h": 18,
+        "fillDir": "ALWAYS_FULL"
+      },
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "mIO": 0,
+        "x": 26,
+        "y": 64,
+        "autoIO": false,
+        "tC": 1000,
+        "w": 18,
+        "h": 18,
+        "fillDir": "ALWAYS_FULL"
+      },
+      {
+        "cIO": 1,
+        "gIO": 1,
+        "mIO": 1,
+        "x": 133,
+        "y": 73,
+        "autoIO": false,
+        "tC": 1000,
+        "w": 18,
+        "h": 18,
+        "fillDir": "ALWAYS_FULL"
+      }
+    ],
+    "recipe_progress": {
+      "cIO": 2,
+      "gIO": 2,
+      "x": 81,
+      "y": 70,
+      "width": 32,
+      "height": 24,
+      "texture": "multiblocked:textures/gui/icons/icon_crossed_arrows.png",
+      "fillDirection": 0
+    },
+    "background": "multiblocked:textures/gui/2f4i_1f1i.png"
+  },
   "properties": {
     "rotationState": "ALL",
     "showInJei": true,
@@ -27,7 +130,7 @@
     "working": {
       "renderer": {
         "baseTexture": "multiblocked:blocks/gregtech_base",
-        "frontTexture": "multiblocked:overlay_front_active",
+        "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
         "type": "gregtech"
       },
       "lightEmissive": 15,

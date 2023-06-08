@@ -64,7 +64,7 @@
   "status": {
     "unformed": {
       "renderer": {
-        "baseTexture": "multiblocked:osmiridium",
+        "baseTexture": "multiblocked:blocks/casing/solid/osmiridium",
         "frontTexture": "multiblocked:blocks/gregtech_front",
         "type": "gregtech"
       }
@@ -73,6 +73,11 @@
       "parent": "unformed"
     },
     "working": {
+      "renderer": {
+        "baseTexture": "multiblocked:blocks/casing/solid/osmiridium",
+        "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
+        "type": "gregtech"
+      },
       "parent": "idle"
     },
     "suspend": {
