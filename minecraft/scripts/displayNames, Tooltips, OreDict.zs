@@ -331,6 +331,13 @@ furnace.addRecipe(<gregtech:meta_item_1:10071>*2,<thaumcraft:cluster:3>);
 <ore:ingotTungsten>.remove(<exoplanets:metalingot:7>);
 <ore:blockTungsten>.remove(<exoplanets:metalblock:7>);
 
+unpacker.findRecipe(8,[<exoplanets:metalblock:7>,<gtadditions:ga_meta_item:32133>],null).remove();
+compressor.findRecipe(2,[<exoplanets:metalingot:7>*9],null).remove();
+packer.findRecipe(2,[<exoplanets:metalingot:7>*9,<gtadditions:ga_meta_item:32133>],null).remove();
+
+
+
+
 #uranium
 <ore:ingotUranium>.remove(<advanced_solar_panels:crafting:11>);
 <ore:oreUranium>.remove(<ic2:resource:4>);
@@ -497,7 +504,7 @@ recipes.addShaped(<contenttweaker:enhancedenderiumdust>, [	[<contenttweaker:enha
 
 
 
-
+<ore:dustBarium>.remove(<trinity:barium>);
 <ore:ingotAluminum>.remove(<galacticraftcore:basic_item:5>);
 <ore:circuitElite>.remove(<gregtech:meta_item_2:32495>);
 <ore:dustBorax>.remove(<nuclearcraft:compound:7>);

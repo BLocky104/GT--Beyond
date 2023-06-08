@@ -849,9 +849,11 @@ item.contenttweaker.datadiskumvproc.name=Data-Disc UMV Processor
 fluid.purifiedradox=Purified Radox
 tile.contenttweaker.basecasing.name=Base Casing
 tile.contenttweaker.supportstructure.name=Support Structure
-
-
-
+fluid.rawradox=Raw Radox
+fluid.crackedheavyradox=Cracked Heavy Radox
+fluid.crackedlightradox=Cracked Light Radox
+fluid.heavyradox=Heavy Radox
+fluid.lightradox=Light Radox
 
 
 

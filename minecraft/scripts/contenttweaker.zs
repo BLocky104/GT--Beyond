@@ -2482,22 +2482,22 @@ spacetimebendingsmdresistor.register();
 var spacetimebendingsmdcapacitor = VanillaFactory.createItem("spacetimebendingsmdcapacitor");
 spacetimebendingsmdcapacitor.register();
 
-var rawradox = VanillaFactory.createFluid("rawradox", Color.fromHex("4D4C4C"));
+var rawradox = VanillaFactory.createFluid("rawradox", Color.fromHex("8E24AA"));
 rawradox.register();
 
-var lightradox = VanillaFactory.createFluid("lightradox", Color.fromHex("4D4C4C"));
+var lightradox = VanillaFactory.createFluid("lightradox", Color.fromHex("D0AADB"));
 lightradox.register();
 
-var heavyradox = VanillaFactory.createFluid("heavyradox", Color.fromHex("4D4C4C"));
+var heavyradox = VanillaFactory.createFluid("heavyradox", Color.fromHex("633C7A"));
 heavyradox.register();
 
-var crackedlightradox = VanillaFactory.createFluid("crackedlightradox", Color.fromHex("4D4C4C"));
+var crackedlightradox = VanillaFactory.createFluid("crackedlightradox", Color.fromHex("B9A1C7"));
 crackedlightradox.register();
 
-var purifiedradox = VanillaFactory.createFluid("purifiedradox", Color.fromHex("4D4C4C"));
+var purifiedradox = VanillaFactory.createFluid("purifiedradox", Color.fromHex("321245"));
 purifiedradox.register();
 
-var crackedheavyradox = VanillaFactory.createFluid("crackedheavyradox", Color.fromHex("4D4C4C"));
+var crackedheavyradox = VanillaFactory.createFluid("crackedheavyradox", Color.fromHex("6A1B9A"));
 crackedheavyradox.register();
 
 var supportstructure = VanillaFactory.createBlock("supportstructure", <blockmaterial:rock>);
@@ -2516,53 +2516,53 @@ basecasing.setToolLevel(2);
 basecasing.setBlockSoundType(<soundtype:metal>);
 basecasing.register();
 
-var MotorT5 = VanillaFactory.createBlock("MotorT5", <blockmaterial:rock>);
-MotorT5.setBlockHardness(12.0);
-MotorT5.setBlockResistance(10.0);
-MotorT5.setToolClass("pickaxe");
-MotorT5.setToolLevel(2);
-MotorT5.setBlockSoundType(<soundtype:metal>);
-MotorT5.register();
+var motorfive = VanillaFactory.createBlock("motorfive", <blockmaterial:rock>);
+motorfive.setBlockHardness(12.0);
+motorfive.setBlockResistance(10.0);
+motorfive.setToolClass("pickaxe");
+motorfive.setToolLevel(2);
+motorfive.setBlockSoundType(<soundtype:metal>);
+motorfive.register();
 
-var MotorT4 = VanillaFactory.createBlock("MotorT4", <blockmaterial:rock>);
-MotorT4.setBlockHardness(12.0);
-MotorT4.setBlockResistance(10.0);
-MotorT4.setToolClass("pickaxe");
-MotorT4.setToolLevel(2);
-MotorT4.setBlockSoundType(<soundtype:metal>);
-MotorT4.register();
+var motorfour = VanillaFactory.createBlock("motorfour", <blockmaterial:rock>);
+motorfour.setBlockHardness(12.0);
+motorfour.setBlockResistance(10.0);
+motorfour.setToolClass("pickaxe");
+motorfour.setToolLevel(2);
+motorfour.setBlockSoundType(<soundtype:metal>);
+motorfour.register();
 
-var MotorT3 = VanillaFactory.createBlock("MotorT3", <blockmaterial:rock>);
-MotorT3.setBlockHardness(12.0);
-MotorT3.setBlockResistance(10.0);
-MotorT3.setToolClass("pickaxe");
-MotorT3.setToolLevel(2);
-MotorT3.setBlockSoundType(<soundtype:metal>);
-MotorT3.register();
+var motorthree = VanillaFactory.createBlock("motorthree", <blockmaterial:rock>);
+motorthree.setBlockHardness(12.0);
+motorthree.setBlockResistance(10.0);
+motorthree.setToolClass("pickaxe");
+motorthree.setToolLevel(2);
+motorthree.setBlockSoundType(<soundtype:metal>);
+motorthree.register();
 
-var MotorT2 = VanillaFactory.createBlock("MotorT2", <blockmaterial:rock>);
-MotorT2.setBlockHardness(12.0);
-MotorT2.setBlockResistance(10.0);
-MotorT2.setToolClass("pickaxe");
-MotorT2.setToolLevel(2);
-MotorT2.setBlockSoundType(<soundtype:metal>);
-MotorT2.register();
+var motortwo = VanillaFactory.createBlock("motortwo", <blockmaterial:rock>);
+motortwo.setBlockHardness(12.0);
+motortwo.setBlockResistance(10.0);
+motortwo.setToolClass("pickaxe");
+motortwo.setToolLevel(2);
+motortwo.setBlockSoundType(<soundtype:metal>);
+motortwo.register();
 
-var MotorT1 = VanillaFactory.createBlock("MotorT1", <blockmaterial:rock>);
-MotorT1.setBlockHardness(12.0);
-MotorT1.setBlockResistance(10.0);
-MotorT1.setToolClass("pickaxe");
-MotorT1.setToolLevel(2);
-MotorT1.setBlockSoundType(<soundtype:metal>);
-MotorT1.register();
+var motorone = VanillaFactory.createBlock("motorone", <blockmaterial:rock>);
+motorone.setBlockHardness(12.0);
+motorone.setBlockResistance(10.0);
+motorone.setToolClass("pickaxe");
+motorone.setToolLevel(2);
+motorone.setBlockSoundType(<soundtype:metal>);
+motorone.register();
 
-var motor = VanillaFactory.createBlock("motor", <blockmaterial:rock>);
-motor.setBlockHardness(12.0);
-motor.setBlockResistance(10.0);
-motor.setToolClass("pickaxe");
-motor.setToolLevel(2);
-motor.setBlockSoundType(<soundtype:metal>);
-motor.register();
+var motorblock = VanillaFactory.createBlock("motorblock", <blockmaterial:rock>);
+motorblock.setBlockHardness(12.0);
+motorblock.setBlockResistance(10.0);
+motorblock.setToolClass("pickaxe");
+motorblock.setToolLevel(2);
+motorblock.setBlockSoundType(<soundtype:metal>);
+motorblock.register();
 
 var internalstructure = VanillaFactory.createBlock("internalstructure", <blockmaterial:rock>);
 internalstructure.setBlockHardness(12.0);

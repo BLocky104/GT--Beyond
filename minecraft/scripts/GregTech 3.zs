@@ -3234,7 +3234,7 @@ lcr.recipeBuilder()
     .duration(800)
     .EUt(999999)
     .buildAndRegister();
-    
+
 macerator.recipeBuilder()
     .inputs(<contenttweaker:reinfrocedkevlarcloth>)
     .outputs(<gregtech:meta_item_1:2581>)
@@ -3509,9 +3509,6 @@ mixer.recipeBuilder()
     .duration(400)
     .EUt(15670)
     .buildAndRegister();
-
-
-
 
 
 
