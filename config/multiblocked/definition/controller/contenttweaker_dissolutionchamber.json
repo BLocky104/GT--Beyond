@@ -1,0 +1,236 @@
+{
+  "version": 2,
+  "location": "contenttweaker:dissolutionchamber",
+  "traits": {
+    "recipe_progress": {
+      "cIO": 2,
+      "gIO": 2,
+      "x": 5,
+      "y": 5,
+      "width": 60,
+      "height": 18,
+      "texture": "multiblocked:textures/gui/energy_bar.png",
+      "fillDirection": 0
+    },
+    "item": [],
+    "gtce_energy": {
+      "cIO": 2,
+      "gIO": 2,
+      "x": 5,
+      "y": 5,
+      "width": 60,
+      "height": 18,
+      "texture": "multiblocked:textures/gui/energy_bar.png",
+      "fillDirection": 0,
+      "capacity": 10000
+    },
+    "fluid": []
+  },
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 10.0,
+    "harvestLevel": 1,
+    "stackSize": 64,
+    "tabGroup": "multiblocked"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "baseTexture": "multiblocked:blocks/casing/incoloy_ma956",
+        "frontTexture": "multiblocked:blocks/gregtech_front",
+        "type": "gregtech"
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+      "renderer": {
+        "baseTexture": "multiblocked:blocks/casing/incoloy_ma956",
+        "frontTexture": "multiblocked:blocks/overlay_front_active",
+        "type": "gregtech"
+      }
+	  "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "empty",
+  "basePattern": {
+    "structureDir": [
+      "LEFT",
+      "UP",
+      "BACK"
+    ],
+    "pattern": [
+      [
+        "A   A",
+        "AAAAA",
+        "ABBBA",
+        "CB@BC",
+        "CDDDC",
+        "CDDDC",
+        "CDDDC",
+        "CDDDC",
+        " CDC "
+      ],
+      [
+        "     ",
+        "A   A",
+        "BCCCB",
+        "BC CB",
+        "D   D",
+        "D   D",
+        "D   D",
+        "D C D",
+        "CCDCC"
+      ],
+      [
+        "     ",
+        "A   A",
+        "BCCCB",
+        "B   B",
+        "D   D",
+        "D   D",
+        "D   D",
+        "DCCCD",
+        "DDDDD"
+      ],
+      [
+        "     ",
+        "A   A",
+        "BCCCB",
+        "BC CB",
+        "D   D",
+        "D   D",
+        "D   D",
+        "D C D",
+        "CCDCC"
+      ],
+      [
+        "A   A",
+        "AAAAA",
+        "ABBBA",
+        "CBBBC",
+        "CDDDC",
+        "CDDDC",
+        "CDDDC",
+        "CDDDC",
+        " CDC "
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "states": [
+          {
+            "id": "gregtech:frame_rutheniumtritaniumcarbite",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "controller": {
+        "location": "mbd:dissolutionchamber",
+        "type": "component"
+      },
+      "B": {
+        "states": [
+          {
+            "id": "multiblocked:energy_input",
+            "meta": 0
+          },
+          {
+            "id": "multiblocked:item_input",
+            "meta": 0
+          },
+          {
+            "id": "multiblocked:fluid_input",
+            "meta": 0
+          },
+          {
+            "id": "multiblocked:item_output",
+            "meta": 0
+          },
+          {
+            "id": "multiblocked:fluid_output",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "C": {
+        "states": [
+          {
+            "id": "gtadditions:ga_metal_casing_1",
+            "meta": 4
+          }
+        ],
+        "type": "states"
+      },
+      "D": {
+        "states": [
+          {
+            "id": "ic2:glass",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "power": {
+        "capability": "gtce_energy",
+        "type": "capability"
+      },
+      "any": {
+        "type": "any"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "B",
+        "power"
+      ],
+      "C": [
+        "C"
+      ],
+      "D": [
+        "D"
+      ]
+    }
+  }
+}

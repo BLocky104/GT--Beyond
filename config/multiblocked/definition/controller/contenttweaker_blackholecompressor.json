@@ -1,0 +1,309 @@
+{
+  "version": 2,
+  "location": "contenttweaker:blackholecompressor",
+  "traits": {
+    "gtce_energy": {
+      "cIO": 2,
+      "gIO": 2,
+      "x": 28,
+      "y": 93,
+      "width": 54,
+      "height": 18,
+      "texture": "multiblocked:textures/gui/energy_bar.png",
+      "fillDirection": 0,
+      "capacity": 10000
+    },
+    "item": [
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "mIO": 0,
+        "x": 28,
+        "y": 35,
+        "autoIO": false
+      },
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "mIO": 0,
+        "x": 46,
+        "y": 35,
+        "autoIO": false
+      },
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "mIO": 0,
+        "x": 64,
+        "y": 35,
+        "autoIO": false
+      },
+      {
+        "cIO": 1,
+        "gIO": 1,
+        "mIO": 1,
+        "x": 125,
+        "y": 53,
+        "autoIO": false
+      },
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "mIO": 0,
+        "x": 28,
+        "y": 53,
+        "autoIO": false
+      },
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "mIO": 0,
+        "x": 46,
+        "y": 53,
+        "autoIO": false
+      },
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "mIO": 0,
+        "x": 64,
+        "y": 53,
+        "autoIO": false
+      },
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "mIO": 0,
+        "x": 28,
+        "y": 71,
+        "autoIO": false
+      },
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "mIO": 0,
+        "x": 46,
+        "y": 71,
+        "autoIO": false
+      },
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "mIO": 0,
+        "x": 64,
+        "y": 71,
+        "autoIO": false
+      }
+    ],
+    "recipe_progress": {
+      "cIO": 2,
+      "gIO": 2,
+      "x": 86,
+      "y": 53,
+      "width": 35,
+      "height": 18,
+      "texture": "multiblocked:textures/gui/energy_bar.png",
+      "fillDirection": 0
+    },
+    "background": "multiblocked:textures/gui/9 to 1.png"
+  },
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 10.0,
+    "harvestLevel": 1,
+    "stackSize": 64,
+    "tabGroup": "multiblocked"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "baseTexture": "multiblocked:blocks/casing/dimensionalcasing",
+        "frontTexture": "multiblocked:blocks/gregtech_front",
+        "type": "gregtech"
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+      "renderer": {
+        "baseTexture": "multiblocked:blocks/casing/dimensionalcasing",
+        "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
+        "type": "gregtech"
+      },
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "BlackholeCompressor",
+  "basePattern": {
+    "structureDir": [
+      "FRONT",
+      "UP",
+      "LEFT"
+    ],
+    "pattern": [
+      [
+        " ABA ",
+        " CCC ",
+        " CCC ",
+        " CCC ",
+        " ABA "
+      ],
+      [
+        "ADDDA",
+        "C   C",
+        "C   C",
+        "C   C",
+        "ADDDA"
+      ],
+      [
+        "BDED@",
+        "C F C",
+        "C F C",
+        "C F C",
+        "BDEDB"
+      ],
+      [
+        "ADDDA",
+        "C   C",
+        "C   C",
+        "C   C",
+        "ADDDA"
+      ],
+      [
+        " ABA ",
+        " CCC ",
+        " CCC ",
+        " CCC ",
+        " ABA "
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "states": [
+          {
+            "id": "contenttweaker:dimensionalcasing",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "controller": {
+        "location": "mbd:blackholecompressor",
+        "type": "component"
+      },
+      "B": {
+        "states": [
+          {
+            "id": "contenttweaker:fieldgeneratorcasing",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "IEnergy": {
+        "capability": "gtce_energy",
+        "type": "capability"
+      },
+      "C": {
+        "states": [
+          {
+            "id": "contenttweaker:quantumglass",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "D": {
+        "states": [
+          {
+            "id": "contenttweaker:quantumcasing",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "E": {
+        "states": [
+          {
+            "id": "modularmachinery:blockenergyinputhatch",
+            "meta": 1
+          }
+        ],
+        "type": "states"
+      },
+      "F": {
+        "states": [
+          {
+            "id": "contenttweaker:coil",
+            "meta": 0
+          },
+          {
+            "id": "mbd:blackholecoil",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "any": {
+        "type": "any"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C"
+      ],
+      "D": [
+        "D"
+      ],
+      "E": [
+        "IEnergy",
+        "E"
+      ],
+      "F": [
+        "F"
+      ]
+    }
+  }
+}

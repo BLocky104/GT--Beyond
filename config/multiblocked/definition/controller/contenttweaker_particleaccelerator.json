@@ -1,0 +1,464 @@
+{
+  "version": 2,
+  "location": "contenttweaker:particleaccelerator",
+  "traits": {
+    "recipe_progress": {
+      "cIO": 2,
+      "gIO": 2,
+      "x": 5,
+      "y": 5,
+      "width": 60,
+      "height": 18,
+      "texture": "multiblocked:textures/gui/energy_bar.png",
+      "fillDirection": 0
+    },
+    "item": [],
+    "gtce_energy": {
+      "cIO": 2,
+      "gIO": 2,
+      "x": 5,
+      "y": 5,
+      "width": 60,
+      "height": 18,
+      "texture": "multiblocked:textures/gui/energy_bar.png",
+      "fillDirection": 0,
+      "capacity": 10000
+    }
+  },
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 10.0,
+    "harvestLevel": 1,
+    "stackSize": 64,
+    "tabGroup": "multiblocked"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "baseTexture": "multiblocked:blocks/casing/particleprotectioncasing",
+        "frontTexture": "multiblocked:blocks/gregtech_front",
+        "type": "gregtech"
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+      "renderer": {
+        "baseTexture": "multiblocked:blocks/casing/particleprotectioncasing",
+        "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
+        "type": "gregtech"
+      },
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "empty",
+  "basePattern": {
+    "structureDir": [
+      "BACK",
+      "UP",
+      "RIGHT"
+    ],
+    "pattern": [
+      [
+        "   ",
+        "   ",
+        "   ",
+        "   ",
+        "   ",
+        "   ",
+        " A ",
+        " A ",
+        " A ",
+        "   ",
+        "   ",
+        "   ",
+        "   ",
+        "   ",
+        "   "
+      ],
+      [
+        "   ",
+        "   ",
+        "   ",
+        "   ",
+        " A ",
+        " A ",
+        "BCB",
+        "ACA",
+        "BCB",
+        " A ",
+        " A ",
+        "   ",
+        "   ",
+        "   ",
+        "   "
+      ],
+      [
+        "   ",
+        "   ",
+        "   ",
+        " A ",
+        "ACA",
+        "ACA",
+        " A ",
+        " A ",
+        " A ",
+        "ACA",
+        "ACA",
+        " A ",
+        "   ",
+        "   ",
+        "   "
+      ],
+      [
+        "   ",
+        "   ",
+        " A ",
+        "BCB",
+        " A ",
+        " A ",
+        "   ",
+        "   ",
+        "   ",
+        " A ",
+        " A ",
+        "BCB",
+        " A ",
+        "   ",
+        "   "
+      ],
+      [
+        "   ",
+        " A ",
+        "ACA",
+        " A ",
+        "   ",
+        "   ",
+        "   ",
+        "   ",
+        "   ",
+        "   ",
+        "   ",
+        " A ",
+        "ACA",
+        " A ",
+        "   "
+      ],
+      [
+        "   ",
+        " A ",
+        "ACA",
+        " A ",
+        "   ",
+        "   ",
+        "   ",
+        "   ",
+        "   ",
+        "   ",
+        "   ",
+        " A ",
+        "ACA",
+        " A ",
+        "   "
+      ],
+      [
+        " A ",
+        "BCB",
+        " A ",
+        "   ",
+        "   ",
+        "   ",
+        "   ",
+        "   ",
+        "   ",
+        "   ",
+        "   ",
+        "   ",
+        " A ",
+        "BCB",
+        " A "
+      ],
+      [
+        " A ",
+        "@CA",
+        " A ",
+        "   ",
+        "   ",
+        "   ",
+        "   ",
+        "   ",
+        "   ",
+        "   ",
+        "   ",
+        "   ",
+        " A ",
+        "ACA",
+        " A "
+      ],
+      [
+        " A ",
+        "BCB",
+        " A ",
+        "   ",
+        "   ",
+        "   ",
+        "   ",
+        "   ",
+        "   ",
+        "   ",
+        "   ",
+        "   ",
+        " A ",
+        "BCB",
+        " A "
+      ],
+      [
+        "   ",
+        " A ",
+        "ACA",
+        " A ",
+        "   ",
+        "   ",
+        "   ",
+        "   ",
+        "   ",
+        "   ",
+        "   ",
+        " A ",
+        "ACA",
+        " A ",
+        "   "
+      ],
+      [
+        "   ",
+        " A ",
+        "ACA",
+        " A ",
+        "   ",
+        "   ",
+        "   ",
+        "   ",
+        "   ",
+        "   ",
+        "   ",
+        " A ",
+        "ACA",
+        " A ",
+        "   "
+      ],
+      [
+        "   ",
+        "   ",
+        " A ",
+        "BCB",
+        " A ",
+        " A ",
+        "   ",
+        "   ",
+        "   ",
+        " A ",
+        " A ",
+        "BCB",
+        " A ",
+        "   ",
+        "   "
+      ],
+      [
+        "   ",
+        "   ",
+        "   ",
+        " A ",
+        "ACA",
+        "ACA",
+        " A ",
+        " A ",
+        " A ",
+        "ACA",
+        "ACA",
+        " A ",
+        "   ",
+        "   ",
+        "   "
+      ],
+      [
+        "   ",
+        "   ",
+        "   ",
+        "   ",
+        " A ",
+        " A ",
+        "ACA",
+        "ACA",
+        "ACA",
+        " A ",
+        " A ",
+        "   ",
+        "   ",
+        "   ",
+        "   "
+      ],
+      [
+        "   ",
+        "   ",
+        "   ",
+        "   ",
+        "   ",
+        "   ",
+        " A ",
+        " A ",
+        " A ",
+        "   ",
+        "   ",
+        "   ",
+        "   ",
+        "   ",
+        "   "
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "states": [
+          {
+            "id": "contenttweaker:particleprotectioncasing",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "controller": {
+        "location": "mbd:particleaccelerator",
+        "type": "component"
+      },
+      "B": {
+        "states": [
+          {
+            "id": "multiblocked:energy_input",
+            "meta": 0
+          },
+		  {
+            "id": "multiblocked:item_input",
+            "meta": 0
+          },
+          {
+            "id": "multiblocked:fluid_input",
+            "meta": 0
+          },
+          {
+            "id": "multiblocked:item_output",
+            "meta": 0
+          },
+          {
+            "id": "multiblocked:fluid_output",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "C": {
+        "states": [
+          {
+            "id": "gregtech:wire_coil",
+            "meta": 7
+          }
+        ],
+        "type": "states"
+      },
+      "air": {
+        "type": "air"
+      },
+      "any": {
+        "type": "any"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C"
+      ],
+      "-": [
+        "air"
+      ]
+    }
+  }
+}

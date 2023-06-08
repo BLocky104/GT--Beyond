@@ -1,0 +1,581 @@
+{
+  "version": 2,
+  "location": "contenttweaker:coker",
+  "traits": {
+    "gtce_energy": {
+      "cIO": 2,
+      "gIO": 2,
+      "x": 5,
+      "y": 5,
+      "width": 60,
+      "height": 18,
+      "texture": "multiblocked:textures/gui/energy_bar.png",
+      "fillDirection": 0,
+      "capacity": 10000
+    },
+    "item": [],
+    "recipe_progress": {
+      "cIO": 2,
+      "gIO": 2,
+      "x": 5,
+      "y": 5,
+      "width": 60,
+      "height": 18,
+      "texture": "multiblocked:textures/gui/energy_bar.png",
+      "fillDirection": 0
+    }
+  },
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 10.0,
+    "harvestLevel": 1,
+    "stackSize": 64,
+    "tabGroup": "multiblocked"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "baseTexture": "multiblocked:blocks/casing/solid/machine_casing_solid_steel",
+        "frontTexture": "multiblocked:blocks/gregtech_front",
+        "type": "gregtech"
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+	  "renderer": {
+        "baseTexture": "multiblocked:blocks/casing/solid/machine_casing_solid_steel",
+        "frontTexture": "multiblocked:blocks/overlay_front_active",
+        "type": "gregtech"
+      },
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "empty",
+  "basePattern": {
+    "structureDir": [
+      "LEFT",
+      "UP",
+      "BACK"
+    ],
+    "pattern": [
+      [
+        " A@BA",
+        " ACCA",
+        " ACCA",
+        " ACCA",
+        " ACCA",
+        " ACCA",
+        " ACCA",
+        " ACCA",
+        " ACCA",
+        " ACCA",
+        " ACCA",
+        " ACCA",
+        " ACCA",
+        " AAAA",
+        "     ",
+        "     ",
+        "     ",
+        "     ",
+        "     ",
+        "     ",
+        "     ",
+        "     ",
+        "     ",
+        "     "
+      ],
+      [
+        "DCCCC",
+        " C  C",
+        " C  C",
+        " C  C",
+        " C  C",
+        " C  C",
+        " C  C",
+        " C  C",
+        " C  C",
+        " C  C",
+        " C  C",
+        " C  C",
+        " C  C",
+        " AAAA",
+        "     ",
+        "     ",
+        "     ",
+        "     ",
+        "     ",
+        "     ",
+        "     ",
+        "     ",
+        "     ",
+        "     "
+      ],
+      [
+        "DCCCC",
+        "DC  C",
+        "DC  C",
+        "DC  C",
+        "DC  C",
+        "DC  C",
+        "DC  C",
+        " C  C",
+        " C  C",
+        " C  C",
+        " C  C",
+        " C  C",
+        " C  C",
+        " AAAA",
+        "     ",
+        "     ",
+        "     ",
+        "     ",
+        "     ",
+        "     ",
+        "     ",
+        "     ",
+        "     ",
+        "     "
+      ],
+      [
+        " ACCA",
+        "DACCA",
+        " ACCA",
+        " ACCA",
+        " ACCA",
+        "DACCA",
+        " ACCA",
+        " ACCA",
+        " ACCA",
+        " ACCA",
+        " ACCA",
+        " ACCA",
+        " ACCA",
+        " AAAA",
+        "  AA ",
+        "  AA ",
+        "  AA ",
+        "  AA ",
+        "  AA ",
+        "  AA ",
+        "  AA ",
+        "  AA ",
+        "  AA ",
+        "  AA "
+      ],
+      [
+        " CCCC",
+        "DC  C",
+        " C  C",
+        " C  C",
+        " C  C",
+        "DC  C",
+        " C  C",
+        " C  C",
+        " C  C",
+        " C  C",
+        " C  C",
+        " C  C",
+        " C  C",
+        " AAAA",
+        "  AA ",
+        "  AA ",
+        "  AA ",
+        "  AA ",
+        "  AA ",
+        "  AA ",
+        "  AA ",
+        "  AA ",
+        "  AA ",
+        "  AA "
+      ],
+      [
+        "DCCCC",
+        "DC  C",
+        "DC  C",
+        "DC  C",
+        "DC  C",
+        "DC  C",
+        "DC  C",
+        "DC  C",
+        "DC  C",
+        "DC  C",
+        "DC  C",
+        "DC  C",
+        "DC  C",
+        "DAAAA",
+        "D    ",
+        "D    ",
+        "D AA ",
+        "D    ",
+        "D    ",
+        "     ",
+        "     ",
+        "  AA ",
+        "     ",
+        "     "
+      ],
+      [
+        "  CC ",
+        "  CC ",
+        "  CC ",
+        "  CC ",
+        "  CC ",
+        "  CC ",
+        "  CC ",
+        "  CC ",
+        "  CC ",
+        "  CC ",
+        "  CC ",
+        "  CC ",
+        "  CC ",
+        " AAAA",
+        "     ",
+        "     ",
+        "  AA ",
+        "     ",
+        "     ",
+        "     ",
+        "     ",
+        "  AA ",
+        "     ",
+        "     "
+      ],
+      [
+        "  CC ",
+        "  CC ",
+        "  CC ",
+        "  CC ",
+        "  CC ",
+        "  CC ",
+        "  CC ",
+        "  CC ",
+        "  CC ",
+        "  CC ",
+        "  CC ",
+        "  CC ",
+        "  CC ",
+        " AAAA",
+        "     ",
+        "     ",
+        "  AA ",
+        "     ",
+        "     ",
+        "     ",
+        "     ",
+        "  AA ",
+        "     ",
+        "     "
+      ],
+      [
+        "DCCCC",
+        " C  C",
+        " C  C",
+        " C  C",
+        " C  C",
+        " C  C",
+        " C  C",
+        " C  C",
+        " C  C",
+        " C  C",
+        " C  C",
+        " C  C",
+        " C  C",
+        " AAAA",
+        "     ",
+        "     ",
+        "  AA ",
+        "     ",
+        "     ",
+        "     ",
+        "     ",
+        "  AA ",
+        "     ",
+        "     "
+      ],
+      [
+        "DCCCC",
+        "DC  C",
+        "DC  C",
+        "DC  C",
+        "DC  C",
+        "DC  C",
+        "DC  C",
+        " C  C",
+        " C  C",
+        " C  C",
+        " C  C",
+        " C  C",
+        " C  C",
+        " AAAA",
+        "     ",
+        "     ",
+        "  AA ",
+        "     ",
+        "     ",
+        "     ",
+        "     ",
+        "  AA ",
+        "     ",
+        "     "
+      ],
+      [
+        " ACCA",
+        "DACCA",
+        " ACCA",
+        " ACCA",
+        " ACCA",
+        "DACCA",
+        " ACCA",
+        " ACCA",
+        " ACCA",
+        " ACCA",
+        " ACCA",
+        " ACCA",
+        " ACCA",
+        " AAAA",
+        "  AA ",
+        "  AA ",
+        "  AA ",
+        "  AA ",
+        "  AA ",
+        "  AA ",
+        "  AA ",
+        "  AA ",
+        "  AA ",
+        "  AA "
+      ],
+      [
+        " CCCC",
+        "DC  C",
+        " C  C",
+        " C  C",
+        " C  C",
+        "DC  C",
+        " C  C",
+        " C  C",
+        " C  C",
+        " C  C",
+        " C  C",
+        " C  C",
+        " C  C",
+        " AAAA",
+        "  AA ",
+        "  AA ",
+        "  AA ",
+        "  AA ",
+        "  AA ",
+        "  AA ",
+        "  AA ",
+        "  AA ",
+        "  AA ",
+        "  AA "
+      ],
+      [
+        "DCCCC",
+        "DC  C",
+        "DC  C",
+        "DC  C",
+        "DC  C",
+        "DC  C",
+        "DC  C",
+        "DC  C",
+        "DC  C",
+        "DC  C",
+        "DC  C",
+        "DC  C",
+        "DC  C",
+        "DAAAA",
+        "D    ",
+        "D    ",
+        "D    ",
+        "D    ",
+        "D    ",
+        "     ",
+        "     ",
+        "     ",
+        "     ",
+        "     "
+      ],
+      [
+        " ABBA",
+        " ACCA",
+        " ACCA",
+        " ACCA",
+        " ACCA",
+        " ACCA",
+        " ACCA",
+        " ACCA",
+        " ACCA",
+        " ACCA",
+        " ACCA",
+        " ACCA",
+        " ACCA",
+        " AAAA",
+        "     ",
+        "     ",
+        "     ",
+        "     ",
+        "     ",
+        "     ",
+        "     ",
+        "     ",
+        "     ",
+        "     "
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "states": [
+          {
+            "id": "gregtech:frame_steel",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "controller": {
+        "location": "mbd:coker",
+        "type": "component"
+      },
+      "B": {
+        "states": [
+          {
+            "id": "multiblocked:energy_input",
+            "meta": 0
+          },
+		  {
+            "id": "multiblocked:item_input",
+            "meta": 0
+          },
+          {
+            "id": "multiblocked:fluid_input",
+            "meta": 0
+          },
+          {
+            "id": "multiblocked:item_output",
+            "meta": 0
+          },
+          {
+            "id": "multiblocked:fluid_output",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "C": {
+        "states": [
+          {
+            "id": "gregtech:metal_casing",
+            "meta": 4
+          }
+        ],
+        "type": "states"
+      },
+      "D": {
+        "states": [
+          {
+            "id": "gregtech:boiler_casing",
+            "meta": 1
+          }
+        ],
+        "type": "states"
+      },
+      "air": {
+        "type": "air"
+      },
+      "any": {
+        "type": "any"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C"
+      ],
+      "D": [
+        "D"
+      ],
+      "-": [
+        "air"
+      ]
+    }
+  }
+}

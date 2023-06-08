@@ -1,0 +1,329 @@
+{
+  "version": 2,
+  "location": "contenttweaker:multiblocked_missioncenter",
+  "traits": {},
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 10.0,
+    "harvestLevel": 1,
+    "stackSize": 64,
+    "tabGroup": "multiblocked"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "state": {
+          "id": "multiblocked:missioncenter",
+          "meta": 0
+        },
+        "type": "blockstate"
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "empty",
+  "basePattern": {
+    "structureDir": [
+      "RIGHT",
+      "UP",
+      "FRONT"
+    ],
+    "pattern": [
+      [
+        "BBBBBBBBBBBBBBB",
+        "BBBBBBBBBBBBBBB",
+        "BFFFFFFBFFFFFFB",
+        "BFFFFFFBFFFFFFB",
+        "               ",
+        "               ",
+        "               "
+      ],
+      [
+        "BBBBBBBBBBBBBBB",
+        "B      @      B",
+        "B            MB",
+        "B             B",
+        "BFFFFFFBFFFFFFB",
+        "               ",
+        "               "
+      ],
+      [
+        "BBBBBBBBBBBBBBB",
+        "C             N",
+        "D             O",
+        "B             B",
+        "B             B",
+        "BFFFFFFBFFFFFFB",
+        "               "
+      ],
+      [
+        "BBBBBBBBBBBBBBB",
+        "BBBBBBBBBBBBBBB",
+        "BFFFFFFBFFFFFFB",
+        "BFFFFFFBFFFFFFB",
+        "BBBBBBBBBBBBBBB",
+        "BFFFFFFBFFFFFFB",
+        "               "
+      ],
+      [
+        " AAAAA   AAAAA ",
+        "   A       A   ",
+        "               ",
+        "               ",
+        "               ",
+        "               ",
+        " AAAAA   AAAAA "
+      ],
+      [
+        "AAAAAAA AAAAAAA",
+        " E   E   E   E ",
+        " E   E   E   E ",
+        " EGGGE   EGGGE ",
+        " EEEEE   EEEEE ",
+        " EGGGE   EGGGE ",
+        "AAAAAAA AAAAAAA"
+      ],
+      [
+        "AAAAAAA AAAAAAA",
+        "  GGG     GGG  ",
+        "  EEE     EEE  ",
+        " GGHGG   GGHGG ",
+        " EHHHE   EHHHE ",
+        " GGIGG   GGIGG ",
+        "AAILIAA AAILIAA"
+      ],
+      [
+        "AAAAAAAAAAAAAAA",
+        "A GHG AAA GHG A",
+        "  EHE     EHE  ",
+        " GHHHG   GHHHG ",
+        " EHHHE   EHHHE ",
+        " GIJIG   GIJIG ",
+        "AA K AA AA K AA"
+      ],
+      [
+        "AAAAAAA AAAAAAA",
+        "  GGG     GGG  ",
+        "  EEE     EEE  ",
+        " GGHGG   GGHGG ",
+        " EHHHE   EHHHE ",
+        " GGIGG   GGIGG ",
+        "AAI IAA AAI IAA"
+      ],
+      [
+        "AAAAAAA AAAAAAA",
+        " E   E   E   E ",
+        " E   E   E   E ",
+        " EGGGE   EGGGE ",
+        " EEEEE   EEEEE ",
+        " EGGGE   EGGGE ",
+        "AAAAAAA AAAAAAA"
+      ],
+      [
+        " AAAAA   AAAAA ",
+        "   A       A   ",
+        "               ",
+        "               ",
+        "               ",
+        "               ",
+        " AAAAA   AAAAA "
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "states": [
+          {
+            "id": "gregtech:metal_casing_osmiridium",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "controller": {
+        "location": "minecraft:multiblocked_missioncenter",
+        "type": "component"
+      },
+      "B": {
+        "states": [
+          {
+            "id": "gtadditions:ga_metal_casing_2",
+            "meta": 6
+          }
+        ],
+        "type": "states"
+      },
+      "E": {
+        "states": [
+          {
+            "id": "gregtech:frame_enriched_naquadah_alloy",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "F": {
+        "states": [
+          {
+            "id": "thermalfoundation:glass",
+            "meta": 2
+          }
+        ],
+        "type": "states"
+      },
+      "G": {
+        "states": [
+          {
+            "id": "gregtech:wire_coil",
+            "meta": 7
+          }
+        ],
+        "type": "states"
+      },
+      "H": {
+        "states": [
+          {
+            "id": "nuclearcraft:solid_fission_sink2",
+            "meta": 15
+          }
+        ],
+        "type": "states"
+      },
+      "I": {
+        "states": [
+          {
+            "id": "gregtech:meta_block_compressed_12",
+            "meta": 13
+          }
+        ],
+        "type": "states"
+      },
+      "J": {
+        "states": [
+          {
+            "id": "galacticraftcore:dishbase",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "K": {
+        "states": [
+          {
+            "id": "galacticraftcore:block_multi",
+            "meta": 8
+          }
+        ],
+        "type": "states"
+      },
+      "L": {
+        "states": [
+          {
+            "id": "multiblocked:item_input",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [],
+      "D": [],
+      "E": [
+        "E"
+      ],
+      "F": [
+        "F"
+      ],
+      "G": [
+        "G"
+      ],
+      "H": [
+        "H"
+      ],
+      "I": [
+        "I"
+      ],
+      "J": [
+        "J"
+      ],
+      "K": [
+        "K"
+      ],
+      "L": [
+        "L"
+      ],
+      "M": [],
+      "N": [],
+      "O": [],
+      "P": []
+    }
+  }
+}

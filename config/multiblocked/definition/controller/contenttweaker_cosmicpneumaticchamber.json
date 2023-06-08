@@ -1,0 +1,219 @@
+{
+  "version": 2,
+  "location": "contenttweaker:cosmicpneumaticchamber",
+  "traits": {
+    "pneumatic_pressure": {
+      "cIO": 2,
+      "gIO": 2,
+      "x": 5,
+      "y": 5,
+      "dangerPressure": 5.0,
+      "criticalPressure": 7.0,
+      "volume": 10000
+    },
+    "gtce_energy": {
+      "cIO": 2,
+      "gIO": 2,
+      "x": 5,
+      "y": 5,
+      "width": 60,
+      "height": 18,
+      "texture": "multiblocked:textures/gui/energy_bar.png",
+      "fillDirection": 0,
+      "capacity": 10000
+    },
+    "item": [],
+    "recipe_progress": {
+      "cIO": 2,
+      "gIO": 2,
+      "x": 5,
+      "y": 5,
+      "width": 60,
+      "height": 18,
+      "texture": "multiblocked:textures/gui/energy_bar.png",
+      "fillDirection": 0
+    },
+    "fluid": []
+  },
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 10.0,
+    "harvestLevel": 1,
+    "stackSize": 64,
+    "tabGroup": "multiblocked"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "baseTexture": "multiblocked:blocks/casing/pressure_chamber_wall",
+        "frontTexture": "multiblocked:blocks/gregtech_front",
+        "type": "gregtech"
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+		"renderer": {
+        "baseTexture": "multiblocked:blocks/casing/pressure_chamber_wall",
+        "frontTexture": "multiblocked:blocks/overlay_front_active",
+        "type": "gregtech"
+      }
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "empty",
+  "basePattern": {
+    "structureDir": [
+      "LEFT",
+      "UP",
+      "BACK"
+    ],
+    "pattern": [
+      [
+        "AB@BA",
+        "CCCCC",
+        "CCCCC",
+        "CCCCC",
+        "CCCCC",
+        "AAAAA"
+      ],
+      [
+        "BAAAB",
+        "C   C",
+        "C   C",
+        "C   C",
+        "C   C",
+        "AAAAA"
+      ],
+      [
+        "BAAAB",
+        "C   C",
+        "C   C",
+        "C   C",
+        "C   C",
+        "AAAAA"
+      ],
+      [
+        "BAAAB",
+        "C   C",
+        "C   C",
+        "C   C",
+        "C   C",
+        "AAAAA"
+      ],
+      [
+        "ABBBA",
+        "CCCCC",
+        "CCCCC",
+        "CCCCC",
+        "CCCCC",
+        "AAAAA"
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "states": [
+          {
+            "id": "pneumaticcraft:pressure_chamber_wall",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "controller": {
+        "location": "mbd:cosmicpneumaticchamber",
+        "type": "component"
+      },
+      "B": {
+        "states": [
+          {
+            "id": "multiblocked:energy_input",
+            "meta": 0
+          },
+		  {
+            "id": "multiblocked:item_input",
+            "meta": 0
+          },
+          {
+            "id": "multiblocked:fluid_input",
+            "meta": 0
+          },
+          {
+            "id": "multiblocked:item_output",
+            "meta": 0
+          },
+          {
+            "id": "multiblocked:fluid_output",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "C": {
+        "states": [
+          {
+            "id": "gtadditions:ga_heating_coil",
+            "meta": 4
+          }
+        ],
+        "type": "states"
+      },
+      "air": {
+        "type": "air"
+      },
+      "any": {
+        "type": "any"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C"
+      ],
+      "-": [
+        "air"
+      ]
+    }
+  }
+}

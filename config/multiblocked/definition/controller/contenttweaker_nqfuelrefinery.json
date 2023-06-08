@@ -1,0 +1,218 @@
+{
+  "version": 2,
+  "location": "contenttweaker:nqfuelrefinery",
+  "traits": {
+    "recipe_progress": {
+      "cIO": 2,
+      "gIO": 2,
+      "x": 5,
+      "y": 5,
+      "width": 60,
+      "height": 18,
+      "texture": "multiblocked:textures/gui/energy_bar.png",
+      "fillDirection": 0
+    },
+    "item": [],
+    "gtce_energy": {
+      "cIO": 2,
+      "gIO": 2,
+      "x": 5,
+      "y": 5,
+      "width": 60,
+      "height": 18,
+      "texture": "multiblocked:textures/gui/energy_bar.png",
+      "fillDirection": 0,
+      "capacity": 10000
+    }
+  },
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 10.0,
+    "harvestLevel": 1,
+    "stackSize": 64,
+    "tabGroup": "multiblocked"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "baseTexture": "multiblocked:blocks/casing/naquadahfuelrefinerycasing",
+        "frontTexture": "multiblocked:blocks/gregtech_front",
+        "type": "gregtech"
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+      "renderer": {
+        "baseTexture": "multiblocked:blocks/casing/naquadahfuelrefinerycasing",
+        "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
+        "type": "gregtech"
+      },
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "empty",
+  "basePattern": {
+    "structureDir": [
+      "RIGHT",
+      "UP",
+      "FRONT"
+    ],
+    "pattern": [
+      [
+        "               ",
+        "      BCB      ",
+        "    AA   AA    ",
+        "   A       A   ",
+        "  A         A  ",
+        "  A         A  ",
+        " B           B ",
+        " C           C ",
+        " B           B ",
+        "  A         A  ",
+        "  A         A  ",
+        "   A       A   ",
+        "    AA   AA    ",
+        "      BCB      ",
+        "               "
+      ],
+	  [
+        "      AAA      ",
+        "    AA D AA    ",
+        "   A  A@A  A   ",
+        "  A AA   AA A  ",
+        " A A       A A ",
+        " A A       A A ",
+        "A A         A A",
+        "ADA         ADA",
+        "A A         A A",
+        " A A       A A ",
+        " A A       A A ",
+        "  A AA   AA A  ",
+        "   A  AAA  A   ",
+        "    AA D AA    ",
+        "      AAA      "
+      ],
+      [
+        "               ",
+        "      BCB      ",
+        "    AA   AA    ",
+        "   A       A   ",
+        "  A         A  ",
+        "  A         A  ",
+        " B           B ",
+        " C           C ",
+        " B           B ",
+        "  A         A  ",
+        "  A         A  ",
+        "   A       A   ",
+        "    AA   AA    ",
+        "      BCB      ",
+        "               "
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+	  [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "states": [
+          {
+            "id": "contenttweaker:naquadahfuelrefinerycasing",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "controller": {
+        "location": "mbd:nqfuelrefinery",
+        "type": "component"
+      },
+      "B": {
+        "states": [
+          {
+            "id": "multiblocked:energy_input",
+            "meta": 0
+          },
+          {
+            "id": "multiblocked:item_input",
+            "meta": 0
+          },
+          {
+            "id": "multiblocked:fluid_input",
+            "meta": 0
+          },
+          {
+            "id": "multiblocked:item_output",
+            "meta": 0
+          },
+          {
+            "id": "multiblocked:fluid_output",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "C": {
+        "states": [
+          {
+            "id": "contenttweaker:fieldrestrictionglass",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "D": {
+        "states": [
+          {
+            "id": "contenttweaker:fieldrestrictioncoil",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "any": {
+        "type": "any"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C"
+      ],
+      "D": [
+        "D"
+      ]
+    }
+  }
+}
