@@ -1,7 +1,8 @@
 {
   "version": 2,
-  "location": "contenttweaker:matterdissolver",
+  "location": "mbd:preciseassembler",
   "traits": {
+    "item": [],
     "recipe_progress": {
       "cIO": 2,
       "gIO": 2,
@@ -12,7 +13,6 @@
       "texture": "multiblocked:textures/gui/energy_bar.png",
       "fillDirection": 0
     },
-    "item": [],
     "gtce_energy": {
       "cIO": 2,
       "gIO": 2,
@@ -39,7 +39,7 @@
   "status": {
     "unformed": {
       "renderer": {
-        "baseTexture": "multiblocked:blocks/casing/mattercasing",
+        "baseTexture": "multiblocked:blocks/casing/perciseelectronicunitcasing",
         "frontTexture": "multiblocked:blocks/gregtech_front",
         "type": "gregtech"
       }
@@ -49,11 +49,11 @@
     },
     "working": {
       "renderer": {
-        "baseTexture": "multiblocked:blocks/casing/mattercasing",
-        "frontTexture": "multiblocked:blocks/overlay_front_active",
+        "baseTexture": "multiblocked:blocks/casing/perciseelectronicunitcasing",
+        "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
         "type": "gregtech"
       },
-	  "parent": "idle"
+      "parent": "idle"
     },
     "suspend": {
       "parent": "working"
@@ -62,38 +62,92 @@
   "recipeMap": "empty",
   "basePattern": {
     "structureDir": [
-      "LEFT",
+      "BACK",
       "UP",
-      "BACK"
+      "RIGHT"
     ],
     "pattern": [
       [
-        "ABA",
-        "B@B",
-        "ABA"
+        "AAAAA",
+        "BAAAB",
+        "BAAAB",
+        "BAAAB",
+        "AAAAA"
       ],
       [
-        "ACA",
-        "CDC",
-        "ACA"
+        "OCCCO",
+        " D D ",
+        " D D ",
+        " D D ",
+        "AAAAA"
       ],
       [
-        "ACA",
-        "CDC",
-        "ACA"
+        "OCCCO",
+        " D D ",
+        " D D ",
+        " D D ",
+        "AAAAA"
       ],
       [
-        "ACA",
-        "CDC",
-        "ACA"
+        "OCCCO",
+        " D D ",
+        " D D ",
+        " D D ",
+        "AAAAA"
       ],
       [
-        "ABA",
-        "BDB",
-        "ABA"
+        "@CCCO",
+        " D D ",
+        " D D ",
+        " D D ",
+        "AAAAA"
+      ],
+      [
+        "OCCCO",
+        " D D ",
+        " D D ",
+        " D D ",
+        "AAAAA"
+      ],
+      [
+        "OCCCO",
+        " D D ",
+        " D D ",
+        " D D ",
+        "AAAAA"
+      ],
+      [
+        "OCCCO",
+        " D D ",
+        " D D ",
+        " D D ",
+        "AAAAA"
+      ],
+      [
+        "AAAAA",
+        "BAAAB",
+        "BAAAB",
+        "BAAAB",
+        "AAAAA"
       ]
     ],
     "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
       [
         1,
         1
@@ -119,17 +173,50 @@
       "A": {
         "states": [
           {
-            "id": "contenttweaker:mattercasing",
+            "id": "contenttweaker:perciseelectronicunitcasing",
             "meta": 0
           }
         ],
         "type": "states"
       },
       "controller": {
-        "location": "mbd:matterdissolver",
+        "location": "mbd:preciseassembler",
         "type": "component"
       },
       "B": {
+        "states": [
+          {
+            "id": "gregtech:frame_tungsten_steel",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "C": {
+        "states": [
+          {
+            "id": "gregtech:machine_casing",
+            "meta": 6
+          }
+        ],
+        "type": "states"
+      },
+      "D": {
+        "states": [
+          {
+            "id": "ic2:glass",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "air": {
+        "type": "air"
+      },
+      "any": {
+        "type": "any"
+      },
+	  "IO": {
         "states": [
           {
             "id": "multiblocked:energy_input",
@@ -153,30 +240,6 @@
           }
         ],
         "type": "states"
-      },
-      "C": {
-        "states": [
-          {
-            "id": "contenttweaker:electroniccasing",
-            "meta": 0
-          }
-        ],
-        "type": "states"
-      },
-      "D": {
-        "states": [
-          {
-            "id": "contenttweaker:highpowercasing",
-            "meta": 0
-          }
-        ],
-        "type": "states"
-      },
-      "air": {
-        "type": "air"
-      },
-      "any": {
-        "type": "any"
       }
     },
     "symbolMap": {
@@ -200,7 +263,10 @@
       ],
       "-": [
         "air"
-      ]
+      ],
+	  "O": [
+		"IO"
+	  ]
     }
   }
 }

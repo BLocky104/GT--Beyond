@@ -1,16 +1,18 @@
 {
   "version": 2,
-  "location": "contenttweaker:cosmicpneumaticchamber",
+  "location": "mbd:combustiongenerator",
   "traits": {
-    "pneumatic_pressure": {
+    "fuel_progress": {
       "cIO": 2,
       "gIO": 2,
       "x": 5,
       "y": 5,
-      "dangerPressure": 5.0,
-      "criticalPressure": 7.0,
-      "volume": 10000
+      "width": 60,
+      "height": 18,
+      "texture": "multiblocked:textures/gui/energy_bar.png",
+      "fillDirection": 0
     },
+    "item": [],
     "gtce_energy": {
       "cIO": 2,
       "gIO": 2,
@@ -21,17 +23,6 @@
       "texture": "multiblocked:textures/gui/energy_bar.png",
       "fillDirection": 0,
       "capacity": 10000
-    },
-    "item": [],
-    "recipe_progress": {
-      "cIO": 2,
-      "gIO": 2,
-      "x": 5,
-      "y": 5,
-      "width": 60,
-      "height": 18,
-      "texture": "multiblocked:textures/gui/energy_bar.png",
-      "fillDirection": 0
     },
     "fluid": []
   },
@@ -49,7 +40,7 @@
   "status": {
     "unformed": {
       "renderer": {
-        "baseTexture": "multiblocked:blocks/casing/pressure_chamber_wall",
+        "baseTexture": "multiblocked:blocks/casing/solid/machine_casing_solid_steel",
         "frontTexture": "multiblocked:blocks/gregtech_front",
         "type": "gregtech"
       }
@@ -58,12 +49,12 @@
       "parent": "unformed"
     },
     "working": {
-		"renderer": {
-        "baseTexture": "multiblocked:blocks/casing/pressure_chamber_wall",
+      "renderer": {
+        "baseTexture": "multiblocked:blocks/casing/solid/machine_casing_solid_steel",
         "frontTexture": "multiblocked:blocks/overlay_front_active",
         "type": "gregtech"
-      }
-      "parent": "idle"
+      },
+	  "parent": "idle"
     },
     "suspend": {
       "parent": "working"
@@ -78,44 +69,39 @@
     ],
     "pattern": [
       [
+        "     ",
         "AB@BA",
-        "CCCCC",
-        "CCCCC",
-        "CCCCC",
-        "CCCCC",
+        "ACCCA",
+        "AAAAA",
+        "     "
+      ],
+      [
+        "AAAAA",
+        "A   A",
+        " D D ",
+        "A   A",
         "AAAAA"
       ],
       [
-        "BAAAB",
-        "C   C",
-        "C   C",
-        "C   C",
-        "C   C",
+        "AAAAA",
+        " D D ",
+        " D D ",
+        " D D ",
         "AAAAA"
       ],
       [
-        "BAAAB",
-        "C   C",
-        "C   C",
-        "C   C",
-        "C   C",
+        "AAAAA",
+        "A   A",
+        " D D ",
+        "A   A",
         "AAAAA"
       ],
       [
-        "BAAAB",
-        "C   C",
-        "C   C",
-        "C   C",
-        "C   C",
-        "AAAAA"
-      ],
-      [
+        "     ",
         "ABBBA",
-        "CCCCC",
-        "CCCCC",
-        "CCCCC",
-        "CCCCC",
-        "AAAAA"
+        "ACCCA",
+        "AAAAA",
+        "     "
       ]
     ],
     "aisleRepetitions": [
@@ -144,14 +130,14 @@
       "A": {
         "states": [
           {
-            "id": "pneumaticcraft:pressure_chamber_wall",
-            "meta": 0
+            "id": "gregtech:metal_casing",
+            "meta": 4
           }
         ],
         "type": "states"
       },
       "controller": {
-        "location": "mbd:cosmicpneumaticchamber",
+        "location": "mbd:combustiongenerator",
         "type": "component"
       },
       "B": {
@@ -182,8 +168,17 @@
       "C": {
         "states": [
           {
-            "id": "gtadditions:ga_heating_coil",
-            "meta": 4
+            "id": "gregtech:boiler_casing",
+            "meta": 1
+          }
+        ],
+        "type": "states"
+      },
+      "D": {
+        "states": [
+          {
+            "id": "gregtech:metal_casing",
+            "meta": 2
           }
         ],
         "type": "states"
@@ -210,6 +205,9 @@
       ],
       "C": [
         "C"
+      ],
+      "D": [
+        "D"
       ],
       "-": [
         "air"

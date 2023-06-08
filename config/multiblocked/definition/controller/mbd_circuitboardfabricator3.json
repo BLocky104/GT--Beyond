@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "location": "contenttweaker:circuitboardfabricator3",
+  "location": "mbd:circuitboardfabricator3",
   "traits": {
     "item": [],
     "gtce_energy": {

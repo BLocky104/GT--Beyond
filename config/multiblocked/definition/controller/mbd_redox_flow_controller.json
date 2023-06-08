@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "location": "contenttweaker:redoxflow",
+  "location": "mbd:redox_flow_controller",
   "traits": {},
   "properties": {
     "rotationState": "ALL",

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "location": "contenttweaker:nqfuelrefinery",
+  "location": "mbd:digester",
   "traits": {
     "recipe_progress": {
       "cIO": 2,
@@ -23,7 +23,8 @@
       "texture": "multiblocked:textures/gui/energy_bar.png",
       "fillDirection": 0,
       "capacity": 10000
-    }
+    },
+    "fluid": []
   },
   "properties": {
     "rotationState": "ALL",
@@ -39,7 +40,7 @@
   "status": {
     "unformed": {
       "renderer": {
-        "baseTexture": "multiblocked:blocks/casing/naquadahfuelrefinerycasing",
+        "baseTexture": "multiblocked:blocks/casing/machine_casing_pipe_tungstensteel",
         "frontTexture": "multiblocked:blocks/gregtech_front",
         "type": "gregtech"
       }
@@ -49,11 +50,11 @@
     },
     "working": {
       "renderer": {
-        "baseTexture": "multiblocked:blocks/casing/naquadahfuelrefinerycasing",
-        "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
+        "baseTexture": "multiblocked:blocks/casing/machine_casing_pipe_tungstensteel",
+        "frontTexture": "multiblocked:blocks/overlay_front_active",
         "type": "gregtech"
-      },
-      "parent": "idle"
+      }
+	  "parent": "idle"
     },
     "suspend": {
       "parent": "working"
@@ -62,61 +63,59 @@
   "recipeMap": "empty",
   "basePattern": {
     "structureDir": [
-      "RIGHT",
+      "LEFT",
       "UP",
-      "FRONT"
+      "BACK"
     ],
     "pattern": [
       [
-        "               ",
-        "      BCB      ",
-        "    AA   AA    ",
-        "   A       A   ",
-        "  A         A  ",
-        "  A         A  ",
-        " B           B ",
-        " C           C ",
-        " B           B ",
-        "  A         A  ",
-        "  A         A  ",
-        "   A       A   ",
-        "    AA   AA    ",
-        "      BCB      ",
-        "               "
-      ],
-	  [
-        "      AAA      ",
-        "    AA D AA    ",
-        "   A  A@A  A   ",
-        "  A AA   AA A  ",
-        " A A       A A ",
-        " A A       A A ",
-        "A A         A A",
-        "ADA         ADA",
-        "A A         A A",
-        " A A       A A ",
-        " A A       A A ",
-        "  A AA   AA A  ",
-        "   A  AAA  A   ",
-        "    AA D AA    ",
-        "      AAA      "
+        " AB@BA ",
+        " A   A ",
+        " A   A ",
+        "       ",
+        "       "
       ],
       [
-        "               ",
-        "      BCB      ",
-        "    AA   AA    ",
-        "   A       A   ",
-        "  A         A  ",
-        "  A         A  ",
-        " B           B ",
-        " C           C ",
-        " B           B ",
-        "  A         A  ",
-        "  A         A  ",
-        "   A       A   ",
-        "    AA   AA    ",
-        "      BCB      ",
-        "               "
+        "ACCCCCA",
+        "ACDDDCA",
+        "ACDDDCA",
+        "  CCC  ",
+        "       "
+      ],
+      [
+        "BCCCCCB",
+        " DEEED ",
+        " DEEED ",
+        " CEEEC ",
+        "  CCC  "
+      ],
+      [
+        "FCCCCCF",
+        " DE ED ",
+        " DE ED ",
+        " CE EC ",
+        "  CCC  "
+      ],
+      [
+        "BCCCCCB",
+        " DEEED ",
+        " DEEED ",
+        " CEEEC ",
+        "  CCC  "
+      ],
+      [
+        "ACCCCCA",
+        "ACDDDCA",
+        "ACDDDCA",
+        "  CCC  ",
+        "       "
+      ],
+      [
+        " ABFBA ",
+        " A   A ",
+        " A   A ",
+        "       ",
+        "       "
       ]
     ],
     "aisleRepetitions": [
@@ -124,7 +123,23 @@
         1,
         1
       ],
-	  [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
         1,
         1
       ],
@@ -137,23 +152,59 @@
       "A": {
         "states": [
           {
-            "id": "contenttweaker:naquadahfuelrefinerycasing",
-            "meta": 0
+            "id": "gregtech:metal_casing",
+            "meta": 7
           }
         ],
         "type": "states"
       },
       "controller": {
-        "location": "mbd:nqfuelrefinery",
+        "location": "mbd:digester",
         "type": "component"
       },
       "B": {
         "states": [
           {
+            "id": "gregtech:boiler_casing",
+            "meta": 3
+          }
+        ],
+        "type": "states"
+      },
+      "C": {
+        "states": [
+          {
+            "id": "gregtech:metal_casing",
+            "meta": 2
+          }
+        ],
+        "type": "states"
+      },
+      "D": {
+        "states": [
+          {
+            "id": "gtadditions:ga_transparent_casing",
+            "meta": 4
+          }
+        ],
+        "type": "states"
+      },
+      "E": {
+        "states": [
+          {
+            "id": "gregtech:wire_coil",
+            "meta": 3
+          }
+        ],
+        "type": "states"
+      },
+      "F": {
+        "states": [
+          {
             "id": "multiblocked:energy_input",
             "meta": 0
           },
-          {
+		  {
             "id": "multiblocked:item_input",
             "meta": 0
           },
@@ -172,23 +223,8 @@
         ],
         "type": "states"
       },
-      "C": {
-        "states": [
-          {
-            "id": "contenttweaker:fieldrestrictionglass",
-            "meta": 0
-          }
-        ],
-        "type": "states"
-      },
-      "D": {
-        "states": [
-          {
-            "id": "contenttweaker:fieldrestrictioncoil",
-            "meta": 0
-          }
-        ],
-        "type": "states"
+      "air": {
+        "type": "air"
       },
       "any": {
         "type": "any"
@@ -212,6 +248,15 @@
       ],
       "D": [
         "D"
+      ],
+      "E": [
+        "E"
+      ],
+      "F": [
+        "F"
+      ],
+      "-": [
+        "air"
       ]
     }
   }

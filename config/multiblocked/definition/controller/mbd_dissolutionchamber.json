@@ -1,8 +1,7 @@
 {
   "version": 2,
-  "location": "contenttweaker:preciseassembler",
+  "location": "mbd:dissolutionchamber",
   "traits": {
-    "item": [],
     "recipe_progress": {
       "cIO": 2,
       "gIO": 2,
@@ -13,6 +12,7 @@
       "texture": "multiblocked:textures/gui/energy_bar.png",
       "fillDirection": 0
     },
+    "item": [],
     "gtce_energy": {
       "cIO": 2,
       "gIO": 2,
@@ -23,7 +23,8 @@
       "texture": "multiblocked:textures/gui/energy_bar.png",
       "fillDirection": 0,
       "capacity": 10000
-    }
+    },
+    "fluid": []
   },
   "properties": {
     "rotationState": "ALL",
@@ -39,7 +40,7 @@
   "status": {
     "unformed": {
       "renderer": {
-        "baseTexture": "multiblocked:blocks/casing/perciseelectronicunitcasing",
+        "baseTexture": "multiblocked:blocks/casing/incoloy_ma956",
         "frontTexture": "multiblocked:blocks/gregtech_front",
         "type": "gregtech"
       }
@@ -49,11 +50,11 @@
     },
     "working": {
       "renderer": {
-        "baseTexture": "multiblocked:blocks/casing/perciseelectronicunitcasing",
-        "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
+        "baseTexture": "multiblocked:blocks/casing/incoloy_ma956",
+        "frontTexture": "multiblocked:blocks/overlay_front_active",
         "type": "gregtech"
-      },
-      "parent": "idle"
+      }
+	  "parent": "idle"
     },
     "suspend": {
       "parent": "working"
@@ -62,92 +63,68 @@
   "recipeMap": "empty",
   "basePattern": {
     "structureDir": [
-      "BACK",
+      "LEFT",
       "UP",
-      "RIGHT"
+      "BACK"
     ],
     "pattern": [
       [
+        "A   A",
         "AAAAA",
-        "BAAAB",
-        "BAAAB",
-        "BAAAB",
-        "AAAAA"
+        "ABBBA",
+        "CB@BC",
+        "CDDDC",
+        "CDDDC",
+        "CDDDC",
+        "CDDDC",
+        " CDC "
       ],
       [
-        "OCCCO",
-        " D D ",
-        " D D ",
-        " D D ",
-        "AAAAA"
+        "     ",
+        "A   A",
+        "BCCCB",
+        "BC CB",
+        "D   D",
+        "D   D",
+        "D   D",
+        "D C D",
+        "CCDCC"
       ],
       [
-        "OCCCO",
-        " D D ",
-        " D D ",
-        " D D ",
-        "AAAAA"
+        "     ",
+        "A   A",
+        "BCCCB",
+        "B   B",
+        "D   D",
+        "D   D",
+        "D   D",
+        "DCCCD",
+        "DDDDD"
       ],
       [
-        "OCCCO",
-        " D D ",
-        " D D ",
-        " D D ",
-        "AAAAA"
+        "     ",
+        "A   A",
+        "BCCCB",
+        "BC CB",
+        "D   D",
+        "D   D",
+        "D   D",
+        "D C D",
+        "CCDCC"
       ],
       [
-        "@CCCO",
-        " D D ",
-        " D D ",
-        " D D ",
-        "AAAAA"
-      ],
-      [
-        "OCCCO",
-        " D D ",
-        " D D ",
-        " D D ",
-        "AAAAA"
-      ],
-      [
-        "OCCCO",
-        " D D ",
-        " D D ",
-        " D D ",
-        "AAAAA"
-      ],
-      [
-        "OCCCO",
-        " D D ",
-        " D D ",
-        " D D ",
-        "AAAAA"
-      ],
-      [
+        "A   A",
         "AAAAA",
-        "BAAAB",
-        "BAAAB",
-        "BAAAB",
-        "AAAAA"
+        "ABBBA",
+        "CBBBC",
+        "CDDDC",
+        "CDDDC",
+        "CDDDC",
+        "CDDDC",
+        " CDC "
       ]
     ],
     "aisleRepetitions": [
-      [
-        1,
-        1
-      ],
-      [
-        1,
-        1
-      ],
-      [
-        1,
-        1
-      ],
-      [
-        1,
-        1
-      ],
       [
         1,
         1
@@ -173,56 +150,23 @@
       "A": {
         "states": [
           {
-            "id": "contenttweaker:perciseelectronicunitcasing",
+            "id": "gregtech:frame_rutheniumtritaniumcarbite",
             "meta": 0
           }
         ],
         "type": "states"
       },
       "controller": {
-        "location": "mbd:preciseassembler",
+        "location": "mbd:dissolutionchamber",
         "type": "component"
       },
       "B": {
         "states": [
           {
-            "id": "gregtech:frame_tungsten_steel",
-            "meta": 0
-          }
-        ],
-        "type": "states"
-      },
-      "C": {
-        "states": [
-          {
-            "id": "gregtech:machine_casing",
-            "meta": 6
-          }
-        ],
-        "type": "states"
-      },
-      "D": {
-        "states": [
-          {
-            "id": "ic2:glass",
-            "meta": 0
-          }
-        ],
-        "type": "states"
-      },
-      "air": {
-        "type": "air"
-      },
-      "any": {
-        "type": "any"
-      },
-	  "IO": {
-        "states": [
-          {
             "id": "multiblocked:energy_input",
             "meta": 0
           },
-		  {
+          {
             "id": "multiblocked:item_input",
             "meta": 0
           },
@@ -240,6 +184,31 @@
           }
         ],
         "type": "states"
+      },
+      "C": {
+        "states": [
+          {
+            "id": "gtadditions:ga_metal_casing_1",
+            "meta": 4
+          }
+        ],
+        "type": "states"
+      },
+      "D": {
+        "states": [
+          {
+            "id": "ic2:glass",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "power": {
+        "capability": "gtce_energy",
+        "type": "capability"
+      },
+      "any": {
+        "type": "any"
       }
     },
     "symbolMap": {
@@ -253,20 +222,15 @@
         "A"
       ],
       "B": [
-        "B"
+        "B",
+        "power"
       ],
       "C": [
         "C"
       ],
       "D": [
         "D"
-      ],
-      "-": [
-        "air"
-      ],
-	  "O": [
-		"IO"
-	  ]
+      ]
     }
   }
 }

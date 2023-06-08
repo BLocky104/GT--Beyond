@@ -1,40 +1,29 @@
 {
   "version": 2,
-  "location": "contenttweaker:advqtmcompcont",
+  "location": "mbd:matterforge",
   "traits": {
-    "gtce_energy": {
-      "cIO": 0,
-      "gIO": 2,
-      "x": 29,
-      "y": 49,
-      "width": 10,
-      "height": 100,
-      "texture": "multiblocked:textures/gui/energy_bar.png",
-      "fillDirection": 3,
-      "capacity": 10000
-    },
     "recipe_progress": {
       "cIO": 2,
       "gIO": 2,
-      "x": 11,
-      "y": 49,
-      "width": 10,
-      "height": 100,
+      "x": 5,
+      "y": 5,
+      "width": 60,
+      "height": 18,
       "texture": "multiblocked:textures/gui/energy_bar.png",
-      "fillDirection": 3
+      "fillDirection": 0
     },
-    "item": [
-      {
-        "cIO": 1,
-        "gIO": 1,
-        "mIO": 1,
-        "slotName": "Out1",
-        "x": 79,
-        "y": 71,
-        "autoIO": false
-      }
-    ],
-    "background": "multiblocked:textures/gui/fluid_hatch_gui.png"
+    "item": [],
+    "gtce_energy": {
+      "cIO": 2,
+      "gIO": 2,
+      "x": 5,
+      "y": 5,
+      "width": 60,
+      "height": 18,
+      "texture": "multiblocked:textures/gui/energy_bar.png",
+      "fillDirection": 0,
+      "capacity": 10000
+    }
   },
   "properties": {
     "rotationState": "ALL",
@@ -50,7 +39,7 @@
   "status": {
     "unformed": {
       "renderer": {
-        "baseTexture": "multiblocked:blocks/casing/highpowercasing",
+        "baseTexture": "multiblocked:blocks/casing/computercasing",
         "frontTexture": "multiblocked:blocks/gregtech_front",
         "type": "gregtech"
       }
@@ -59,77 +48,98 @@
       "parent": "unformed"
     },
     "working": {
-      "renderer": {
-        "baseTexture": "multiblocked:blocks/casing/highpowercasing",
-        "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
+	  "renderer": {
+        "baseTexture": "multiblocked:blocks/casing/computercasing",
+        "frontTexture": "multiblocked:blocks/overlay_front_active",
         "type": "gregtech"
       },
-      "parent": "idle"
+	  "parent": "idle"
     },
     "suspend": {
       "parent": "working"
     }
   },
-  "recipeMap": "AdvQtmComp",
+  "recipeMap": "empty",
   "basePattern": {
     "structureDir": [
-      "FRONT",
+      "LEFT",
       "UP",
-      "LEFT"
+      "BACK"
     ],
     "pattern": [
       [
-        "AABAA",
-        "BCCCB",
-        "BDDDB",
-        "BDDDB",
-        "BDDDB",
-        "BDDDB",
-        "BBBBB",
-        "AABAA"
+        "AAB@BAA",
+        "ACCCCCA",
+        "ACCCCCA",
+        "ACCCCCA",
+        "ACCCCCA",
+        "ACCCCCA",
+        "AAAAAAA"
       ],
       [
-        "ABBBA",
-        "C   C",
-        "D   E",
-        "D   E",
-        "D   E",
-        "D   E",
-        "B   B",
-        "AAAAA"
+        "AAAAAAA",
+        "C     C",
+        "C     C",
+        "C     C",
+        "C      ",
+        "C     C",
+        "AAAAAAA"
       ],
       [
-        "BBBBB",
-        "C F @",
-        "D F E",
-        "D F E",
-        "D F E",
-        "D F E",
-        "B F B",
-        "BAAAB"
+        "BAAAAAB",
+        "C DED C",
+        "C FFF C",
+        "C FFF C",
+        "C FFF C",
+        "C DED C",
+        "AAAAAAA"
       ],
       [
-        "ABBBA",
-        "C   C",
-        "D   E",
-        "D   E",
-        "D   E",
-        "D   E",
-        "B   B",
-        "AAAAA"
+        "BAAAAAB",
+        "C E E C",
+        "C F F C",
+        "C F F C",
+        "C F F C",
+        "C E E C",
+        "AAAAAAA"
       ],
       [
-        "AABAA",
-        "BCCCB",
-        "BDDDB",
-        "BDDDB",
-        "BDDDB",
-        "BDDDB",
-        "BBBBB",
-        "AABAA"
+        "BAAAAAB",
+        "C DED C",
+        "C FFF C",
+        "C FFF C",
+        "C FFF C",
+        "C DED C",
+        "AAAAAAA"
+      ],
+      [
+        "AAAAAAA",
+        "C     C",
+        "C     C",
+        "C     C",
+        "C     C",
+        "C     C",
+        "AAAAAAA"
+      ],
+      [
+        "AABBBAA",
+        "ACCCCCA",
+        "ACCCCCA",
+        "ACCCCCA",
+        "ACCCCCA",
+        "ACCCCCA",
+        "AAAAAAA"
       ]
     ],
     "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
       [
         1,
         1
@@ -155,20 +165,36 @@
       "A": {
         "states": [
           {
-            "id": "gregtech:metal_casing",
-            "meta": 7
+            "id": "contenttweaker:computercasing",
+            "meta": 0
           }
         ],
         "type": "states"
       },
       "controller": {
-        "location": "mbd:advqtmcompcont",
+        "location": "mbd:matterforge",
         "type": "component"
       },
       "B": {
         "states": [
           {
-            "id": "contenttweaker:highpowercasing",
+            "id": "multiblocked:energy_input",
+            "meta": 0
+          },
+		  {
+            "id": "multiblocked:item_input",
+            "meta": 0
+          },
+          {
+            "id": "multiblocked:fluid_input",
+            "meta": 0
+          },
+          {
+            "id": "multiblocked:item_output",
+            "meta": 0
+          },
+          {
+            "id": "multiblocked:fluid_output",
             "meta": 0
           }
         ],
@@ -177,19 +203,7 @@
       "C": {
         "states": [
           {
-            "id": "multiblocked:item_input",
-            "meta": 0
-          },
-          {
-            "id": "contenttweaker:highpowercasing",
-            "meta": 0
-          },
-          {
-            "id": "multiblocked:item_output",
-            "meta": 0
-          },
-          {
-            "id": "multiblocked:energy_input",
+            "id": "contenttweaker:highresistanceglass",
             "meta": 0
           }
         ],
@@ -198,8 +212,8 @@
       "D": {
         "states": [
           {
-            "id": "gtadditions:ga_nuclear_casing",
-            "meta": 11
+            "id": "gtadditions:ga_vacuum_casing",
+            "meta": 1
           }
         ],
         "type": "states"
@@ -207,8 +221,8 @@
       "E": {
         "states": [
           {
-            "id": "gtadditions:ga_transparent_casing",
-            "meta": 6
+            "id": "gtadditions:ga_cryostat_casing",
+            "meta": 1
           }
         ],
         "type": "states"
@@ -216,11 +230,14 @@
       "F": {
         "states": [
           {
-            "id": "gregtech:multiblock_casing",
+            "id": "gtadditions:ga_fusion_casing",
             "meta": 5
           }
         ],
         "type": "states"
+      },
+      "air": {
+        "type": "air"
       },
       "any": {
         "type": "any"
@@ -250,6 +267,9 @@
       ],
       "F": [
         "F"
+      ],
+      "-": [
+        "air"
       ]
     }
   }

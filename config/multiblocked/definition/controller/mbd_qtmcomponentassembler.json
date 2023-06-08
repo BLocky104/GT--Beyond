@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "location": "contenttweaker:qtmcomponentassembler",
+  "location": "mbd:qtmcomponentassembler",
   "traits": {
     "recipe_progress": {
       "cIO": 2,

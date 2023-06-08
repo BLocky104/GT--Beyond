@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "location": "contenttweaker:coker",
+  "location": "mbd:coker",
   "traits": {
     "gtce_energy": {
       "cIO": 2,

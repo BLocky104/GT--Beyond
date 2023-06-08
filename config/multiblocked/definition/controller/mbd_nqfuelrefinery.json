@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "location": "contenttweaker:matterquantizer",
+  "location": "mbd:nqfuelrefinery",
   "traits": {
     "recipe_progress": {
       "cIO": 2,
@@ -39,7 +39,7 @@
   "status": {
     "unformed": {
       "renderer": {
-        "baseTexture": "multiblocked:blocks/casing/quantumcasing",
+        "baseTexture": "multiblocked:blocks/casing/naquadahfuelrefinerycasing",
         "frontTexture": "multiblocked:blocks/gregtech_front",
         "type": "gregtech"
       }
@@ -49,11 +49,11 @@
     },
     "working": {
       "renderer": {
-        "baseTexture": "multiblocked:blocks/casing/quantumcasing",
-        "frontTexture": "multiblocked:blocks/overlay_front_active",
+        "baseTexture": "multiblocked:blocks/casing/naquadahfuelrefinerycasing",
+        "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
         "type": "gregtech"
       },
-	  "parent": "idle"
+      "parent": "idle"
     },
     "suspend": {
       "parent": "working"
@@ -62,30 +62,61 @@
   "recipeMap": "empty",
   "basePattern": {
     "structureDir": [
-      "LEFT",
+      "RIGHT",
       "UP",
-      "BACK"
+      "FRONT"
     ],
     "pattern": [
       [
-        "AAA",
-        "B@B",
-        "AAA"
+        "               ",
+        "      BCB      ",
+        "    AA   AA    ",
+        "   A       A   ",
+        "  A         A  ",
+        "  A         A  ",
+        " B           B ",
+        " C           C ",
+        " B           B ",
+        "  A         A  ",
+        "  A         A  ",
+        "   A       A   ",
+        "    AA   AA    ",
+        "      BCB      ",
+        "               "
+      ],
+	  [
+        "      AAA      ",
+        "    AA D AA    ",
+        "   A  A@A  A   ",
+        "  A AA   AA A  ",
+        " A A       A A ",
+        " A A       A A ",
+        "A A         A A",
+        "ADA         ADA",
+        "A A         A A",
+        " A A       A A ",
+        " A A       A A ",
+        "  A AA   AA A  ",
+        "   A  AAA  A   ",
+        "    AA D AA    ",
+        "      AAA      "
       ],
       [
-        "ACA",
-        "C C",
-        "ACA"
-      ],
-      [
-        "CCC",
-        "C C",
-        "CCC"
-      ],
-      [
-        "CDC",
-        "DDD",
-        "CDC"
+        "               ",
+        "      BCB      ",
+        "    AA   AA    ",
+        "   A       A   ",
+        "  A         A  ",
+        "  A         A  ",
+        " B           B ",
+        " C           C ",
+        " B           B ",
+        "  A         A  ",
+        "  A         A  ",
+        "   A       A   ",
+        "    AA   AA    ",
+        "      BCB      ",
+        "               "
       ]
     ],
     "aisleRepetitions": [
@@ -93,11 +124,7 @@
         1,
         1
       ],
-      [
-        1,
-        1
-      ],
-      [
+	  [
         1,
         1
       ],
@@ -110,14 +137,14 @@
       "A": {
         "states": [
           {
-            "id": "contenttweaker:highpowercasing",
+            "id": "contenttweaker:naquadahfuelrefinerycasing",
             "meta": 0
           }
         ],
         "type": "states"
       },
       "controller": {
-        "location": "mbd:matterquantizer",
+        "location": "mbd:nqfuelrefinery",
         "type": "component"
       },
       "B": {
@@ -126,7 +153,7 @@
             "id": "multiblocked:energy_input",
             "meta": 0
           },
-		  {
+          {
             "id": "multiblocked:item_input",
             "meta": 0
           },
@@ -148,7 +175,7 @@
       "C": {
         "states": [
           {
-            "id": "contenttweaker:quantumcasing",
+            "id": "contenttweaker:fieldrestrictionglass",
             "meta": 0
           }
         ],
@@ -157,7 +184,7 @@
       "D": {
         "states": [
           {
-            "id": "contenttweaker:lasercasing",
+            "id": "contenttweaker:fieldrestrictioncoil",
             "meta": 0
           }
         ],

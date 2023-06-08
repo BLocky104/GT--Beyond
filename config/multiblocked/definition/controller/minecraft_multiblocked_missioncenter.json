@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "location": "contenttweaker:multiblocked_missioncenter",
+  "location": "minecraft:multiblocked_missioncenter",
   "traits": {},
   "properties": {
     "rotationState": "ALL",

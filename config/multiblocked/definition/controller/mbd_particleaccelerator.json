@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "location": "contenttweaker:particleaccelerator",
+  "location": "mbd:particleaccelerator",
   "traits": {
     "recipe_progress": {
       "cIO": 2,

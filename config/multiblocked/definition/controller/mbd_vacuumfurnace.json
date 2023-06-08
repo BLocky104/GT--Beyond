@@ -1,19 +1,7 @@
 {
   "version": 2,
-  "location": "contenttweaker:continuousstirringreactor",
+  "location": "mbd:vacuumfurnace",
   "traits": {
-    "gtce_energy": {
-      "cIO": 2,
-      "gIO": 2,
-      "x": 5,
-      "y": 5,
-      "width": 60,
-      "height": 18,
-      "texture": "multiblocked:textures/gui/energy_bar.png",
-      "fillDirection": 0,
-      "capacity": 10000
-    },
-    "item": [],
     "recipe_progress": {
       "cIO": 2,
       "gIO": 2,
@@ -24,7 +12,18 @@
       "texture": "multiblocked:textures/gui/energy_bar.png",
       "fillDirection": 0
     },
-    "fluid": []
+    "item": [],
+    "gtce_energy": {
+      "cIO": 2,
+      "gIO": 2,
+      "x": 5,
+      "y": 5,
+      "width": 60,
+      "height": 18,
+      "texture": "multiblocked:textures/gui/energy_bar.png",
+      "fillDirection": 0,
+      "capacity": 10000
+    }
   },
   "properties": {
     "rotationState": "ALL",
@@ -40,7 +39,7 @@
   "status": {
     "unformed": {
       "renderer": {
-        "baseTexture": "multiblocked:blocks/casing/machine_casing_clean_stainless_steel",
+        "baseTexture": "multiblocked:blocks/casing/solid/machine_casing_solid_steel",
         "frontTexture": "multiblocked:blocks/gregtech_front",
         "type": "gregtech"
       }
@@ -50,7 +49,7 @@
     },
     "working": {
       "renderer": {
-        "baseTexture": "multiblocked:blocks/casing/machine_casing_clean_stainless_steel",
+        "baseTexture": "multiblocked:blocks/gregtech_base",
         "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
         "type": "gregtech"
       },
@@ -63,61 +62,28 @@
   "recipeMap": "empty",
   "basePattern": {
     "structureDir": [
-      "LEFT",
+      "BACK",
       "UP",
-      "BACK"
+      "RIGHT"
     ],
     "pattern": [
       [
-        "     ",
-        " A@A ",
-        " BBB ",
-        " CCC ",
-        " CCC ",
-        "     "
+        "AA  BC",
+        "DCEECD",
+        "AA  BC"
       ],
       [
-        " DDD ",
-        "A   A",
-        "B   B",
-        "C   C",
-        "C   C",
-        " DDD "
+        "DFFFFG",
+        "@    G",
+        "DFFFFG"
       ],
       [
-        " DDD ",
-        "A   A",
-        "B   B",
-        "C   C",
-        "C   C",
-        " DDD "
-      ],
-      [
-        " DDD ",
-        "A   A",
-        "B   B",
-        "C   C",
-        "C   C",
-        " DDD "
-      ],
-      [
-        "     ",
-        " AAA ",
-        " BBB ",
-        " CCC ",
-        " CCC ",
-        "     "
+        "AA  BC",
+        "DCEECD",
+        "AA  BC"
       ]
     ],
     "aisleRepetitions": [
-      [
-        1,
-        1
-      ],
-      [
-        1,
-        1
-      ],
       [
         1,
         1
@@ -135,10 +101,41 @@
       "A": {
         "states": [
           {
+            "id": "gregtech:machine_casing",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "controller": {
+        "location": "mbd:vacuumfurnace",
+        "type": "component"
+      },
+      "B": {
+        "states": [
+          {
+            "id": "gregtech:frame_steel",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "C": {
+        "states": [
+          {
+            "id": "gregtech:boiler_casing",
+            "meta": 1
+          }
+        ],
+        "type": "states"
+      },
+      "D": {
+        "states": [
+          {
             "id": "multiblocked:energy_input",
             "meta": 0
           },
-          {
+		  {
             "id": "multiblocked:item_input",
             "meta": 0
           },
@@ -157,36 +154,35 @@
         ],
         "type": "states"
       },
-      "controller": {
-        "location": "mod_id:component_id",
-        "type": "component"
-      },
-      "B": {
+      "E": {
         "states": [
           {
-            "id": "thermalfoundation:glass",
-            "meta": 2
+            "id": "gtadditions:ga_transparent_casing",
+            "meta": 0
           }
         ],
         "type": "states"
       },
-      "C": {
+      "F": {
         "states": [
           {
-            "id": "gregtech:metal_casing",
-            "meta": 5
+            "id": "contenttweaker:vacuumfurnacecasing",
+            "meta": 0
           }
         ],
         "type": "states"
       },
-      "D": {
+      "G": {
         "states": [
           {
-            "id": "gregtech:boiler_casing",
+            "id": "gregtech:boiler_firebox_casing",
             "meta": 1
           }
         ],
         "type": "states"
+      },
+      "air": {
+        "type": "air"
       },
       "any": {
         "type": "any"
@@ -210,6 +206,18 @@
       ],
       "D": [
         "D"
+      ],
+      "E": [
+        "E"
+      ],
+      "F": [
+        "F"
+      ],
+      "G": [
+        "G"
+      ],
+      "-": [
+        "air"
       ]
     }
   }

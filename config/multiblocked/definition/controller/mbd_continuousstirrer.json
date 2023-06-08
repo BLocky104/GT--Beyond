@@ -1,18 +1,7 @@
 {
   "version": 2,
-  "location": "contenttweaker:dissolutionchamber",
+  "location": "mbd:continuousstirringreactor",
   "traits": {
-    "recipe_progress": {
-      "cIO": 2,
-      "gIO": 2,
-      "x": 5,
-      "y": 5,
-      "width": 60,
-      "height": 18,
-      "texture": "multiblocked:textures/gui/energy_bar.png",
-      "fillDirection": 0
-    },
-    "item": [],
     "gtce_energy": {
       "cIO": 2,
       "gIO": 2,
@@ -23,6 +12,17 @@
       "texture": "multiblocked:textures/gui/energy_bar.png",
       "fillDirection": 0,
       "capacity": 10000
+    },
+    "item": [],
+    "recipe_progress": {
+      "cIO": 2,
+      "gIO": 2,
+      "x": 5,
+      "y": 5,
+      "width": 60,
+      "height": 18,
+      "texture": "multiblocked:textures/gui/energy_bar.png",
+      "fillDirection": 0
     },
     "fluid": []
   },
@@ -40,7 +40,7 @@
   "status": {
     "unformed": {
       "renderer": {
-        "baseTexture": "multiblocked:blocks/casing/incoloy_ma956",
+        "baseTexture": "multiblocked:blocks/casing/machine_casing_clean_stainless_steel",
         "frontTexture": "multiblocked:blocks/gregtech_front",
         "type": "gregtech"
       }
@@ -50,11 +50,11 @@
     },
     "working": {
       "renderer": {
-        "baseTexture": "multiblocked:blocks/casing/incoloy_ma956",
-        "frontTexture": "multiblocked:blocks/overlay_front_active",
+        "baseTexture": "multiblocked:blocks/casing/machine_casing_clean_stainless_steel",
+        "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
         "type": "gregtech"
-      }
-	  "parent": "idle"
+      },
+      "parent": "idle"
     },
     "suspend": {
       "parent": "working"
@@ -69,59 +69,44 @@
     ],
     "pattern": [
       [
-        "A   A",
-        "AAAAA",
-        "ABBBA",
-        "CB@BC",
-        "CDDDC",
-        "CDDDC",
-        "CDDDC",
-        "CDDDC",
-        " CDC "
+        "     ",
+        " A@A ",
+        " BBB ",
+        " CCC ",
+        " CCC ",
+        "     "
       ],
       [
-        "     ",
+        " DDD ",
         "A   A",
-        "BCCCB",
-        "BC CB",
-        "D   D",
-        "D   D",
-        "D   D",
-        "D C D",
-        "CCDCC"
-      ],
-      [
-        "     ",
-        "A   A",
-        "BCCCB",
         "B   B",
-        "D   D",
-        "D   D",
-        "D   D",
-        "DCCCD",
-        "DDDDD"
+        "C   C",
+        "C   C",
+        " DDD "
+      ],
+      [
+        " DDD ",
+        "A   A",
+        "B   B",
+        "C   C",
+        "C   C",
+        " DDD "
+      ],
+      [
+        " DDD ",
+        "A   A",
+        "B   B",
+        "C   C",
+        "C   C",
+        " DDD "
       ],
       [
         "     ",
-        "A   A",
-        "BCCCB",
-        "BC CB",
-        "D   D",
-        "D   D",
-        "D   D",
-        "D C D",
-        "CCDCC"
-      ],
-      [
-        "A   A",
-        "AAAAA",
-        "ABBBA",
-        "CBBBC",
-        "CDDDC",
-        "CDDDC",
-        "CDDDC",
-        "CDDDC",
-        " CDC "
+        " AAA ",
+        " BBB ",
+        " CCC ",
+        " CCC ",
+        "     "
       ]
     ],
     "aisleRepetitions": [
@@ -150,19 +135,6 @@
       "A": {
         "states": [
           {
-            "id": "gregtech:frame_rutheniumtritaniumcarbite",
-            "meta": 0
-          }
-        ],
-        "type": "states"
-      },
-      "controller": {
-        "location": "mbd:dissolutionchamber",
-        "type": "component"
-      },
-      "B": {
-        "states": [
-          {
             "id": "multiblocked:energy_input",
             "meta": 0
           },
@@ -185,11 +157,24 @@
         ],
         "type": "states"
       },
+      "controller": {
+        "location": "mod_id:component_id",
+        "type": "component"
+      },
+      "B": {
+        "states": [
+          {
+            "id": "thermalfoundation:glass",
+            "meta": 2
+          }
+        ],
+        "type": "states"
+      },
       "C": {
         "states": [
           {
-            "id": "gtadditions:ga_metal_casing_1",
-            "meta": 4
+            "id": "gregtech:metal_casing",
+            "meta": 5
           }
         ],
         "type": "states"
@@ -197,15 +182,11 @@
       "D": {
         "states": [
           {
-            "id": "ic2:glass",
-            "meta": 0
+            "id": "gregtech:boiler_casing",
+            "meta": 1
           }
         ],
         "type": "states"
-      },
-      "power": {
-        "capability": "gtce_energy",
-        "type": "capability"
       },
       "any": {
         "type": "any"
@@ -222,8 +203,7 @@
         "A"
       ],
       "B": [
-        "B",
-        "power"
+        "B"
       ],
       "C": [
         "C"

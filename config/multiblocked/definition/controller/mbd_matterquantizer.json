@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "location": "contenttweaker:vacuumfurnace",
+  "location": "mbd:matterquantizer",
   "traits": {
     "recipe_progress": {
       "cIO": 2,
@@ -39,7 +39,7 @@
   "status": {
     "unformed": {
       "renderer": {
-        "baseTexture": "multiblocked:blocks/casing/solid/machine_casing_solid_steel",
+        "baseTexture": "multiblocked:blocks/casing/quantumcasing",
         "frontTexture": "multiblocked:blocks/gregtech_front",
         "type": "gregtech"
       }
@@ -49,11 +49,11 @@
     },
     "working": {
       "renderer": {
-        "baseTexture": "multiblocked:blocks/gregtech_base",
-        "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
+        "baseTexture": "multiblocked:blocks/casing/quantumcasing",
+        "frontTexture": "multiblocked:blocks/overlay_front_active",
         "type": "gregtech"
       },
-      "parent": "idle"
+	  "parent": "idle"
     },
     "suspend": {
       "parent": "working"
@@ -62,28 +62,37 @@
   "recipeMap": "empty",
   "basePattern": {
     "structureDir": [
-      "BACK",
+      "LEFT",
       "UP",
-      "RIGHT"
+      "BACK"
     ],
     "pattern": [
       [
-        "AA  BC",
-        "DCEECD",
-        "AA  BC"
+        "AAA",
+        "B@B",
+        "AAA"
       ],
       [
-        "DFFFFG",
-        "@    G",
-        "DFFFFG"
+        "ACA",
+        "C C",
+        "ACA"
       ],
       [
-        "AA  BC",
-        "DCEECD",
-        "AA  BC"
+        "CCC",
+        "C C",
+        "CCC"
+      ],
+      [
+        "CDC",
+        "DDD",
+        "CDC"
       ]
     ],
     "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
       [
         1,
         1
@@ -101,35 +110,17 @@
       "A": {
         "states": [
           {
-            "id": "gregtech:machine_casing",
+            "id": "contenttweaker:highpowercasing",
             "meta": 0
           }
         ],
         "type": "states"
       },
       "controller": {
-        "location": "mbd:vacuumfurnace",
+        "location": "mbd:matterquantizer",
         "type": "component"
       },
       "B": {
-        "states": [
-          {
-            "id": "gregtech:frame_steel",
-            "meta": 0
-          }
-        ],
-        "type": "states"
-      },
-      "C": {
-        "states": [
-          {
-            "id": "gregtech:boiler_casing",
-            "meta": 1
-          }
-        ],
-        "type": "states"
-      },
-      "D": {
         "states": [
           {
             "id": "multiblocked:energy_input",
@@ -154,35 +145,23 @@
         ],
         "type": "states"
       },
-      "E": {
+      "C": {
         "states": [
           {
-            "id": "gtadditions:ga_transparent_casing",
+            "id": "contenttweaker:quantumcasing",
             "meta": 0
           }
         ],
         "type": "states"
       },
-      "F": {
+      "D": {
         "states": [
           {
-            "id": "contenttweaker:vacuumfurnacecasing",
+            "id": "contenttweaker:lasercasing",
             "meta": 0
           }
         ],
         "type": "states"
-      },
-      "G": {
-        "states": [
-          {
-            "id": "gregtech:boiler_firebox_casing",
-            "meta": 1
-          }
-        ],
-        "type": "states"
-      },
-      "air": {
-        "type": "air"
       },
       "any": {
         "type": "any"
@@ -206,18 +185,6 @@
       ],
       "D": [
         "D"
-      ],
-      "E": [
-        "E"
-      ],
-      "F": [
-        "F"
-      ],
-      "G": [
-        "G"
-      ],
-      "-": [
-        "air"
       ]
     }
   }

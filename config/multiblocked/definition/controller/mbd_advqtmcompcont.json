@@ -1,30 +1,40 @@
 {
   "version": 2,
-  "location": "contenttweaker:digester",
+  "location": "mbd:advqtmcompcont",
   "traits": {
+    "gtce_energy": {
+      "cIO": 0,
+      "gIO": 2,
+      "x": 29,
+      "y": 49,
+      "width": 10,
+      "height": 100,
+      "texture": "multiblocked:textures/gui/energy_bar.png",
+      "fillDirection": 3,
+      "capacity": 10000
+    },
     "recipe_progress": {
       "cIO": 2,
       "gIO": 2,
-      "x": 5,
-      "y": 5,
-      "width": 60,
-      "height": 18,
+      "x": 11,
+      "y": 49,
+      "width": 10,
+      "height": 100,
       "texture": "multiblocked:textures/gui/energy_bar.png",
-      "fillDirection": 0
+      "fillDirection": 3
     },
-    "item": [],
-    "gtce_energy": {
-      "cIO": 2,
-      "gIO": 2,
-      "x": 5,
-      "y": 5,
-      "width": 60,
-      "height": 18,
-      "texture": "multiblocked:textures/gui/energy_bar.png",
-      "fillDirection": 0,
-      "capacity": 10000
-    },
-    "fluid": []
+    "item": [
+      {
+        "cIO": 1,
+        "gIO": 1,
+        "mIO": 1,
+        "slotName": "Out1",
+        "x": 79,
+        "y": 71,
+        "autoIO": false
+      }
+    ],
+    "background": "multiblocked:textures/gui/fluid_hatch_gui.png"
   },
   "properties": {
     "rotationState": "ALL",
@@ -40,7 +50,7 @@
   "status": {
     "unformed": {
       "renderer": {
-        "baseTexture": "multiblocked:blocks/casing/machine_casing_pipe_tungstensteel",
+        "baseTexture": "multiblocked:blocks/casing/highpowercasing",
         "frontTexture": "multiblocked:blocks/gregtech_front",
         "type": "gregtech"
       }
@@ -50,83 +60,76 @@
     },
     "working": {
       "renderer": {
-        "baseTexture": "multiblocked:blocks/casing/machine_casing_pipe_tungstensteel",
-        "frontTexture": "multiblocked:blocks/overlay_front_active",
+        "baseTexture": "multiblocked:blocks/casing/highpowercasing",
+        "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
         "type": "gregtech"
-      }
-	  "parent": "idle"
+      },
+      "parent": "idle"
     },
     "suspend": {
       "parent": "working"
     }
   },
-  "recipeMap": "empty",
+  "recipeMap": "AdvQtmComp",
   "basePattern": {
     "structureDir": [
-      "LEFT",
+      "FRONT",
       "UP",
-      "BACK"
+      "LEFT"
     ],
     "pattern": [
       [
-        " AB@BA ",
-        " A   A ",
-        " A   A ",
-        "       ",
-        "       "
+        "AABAA",
+        "BCCCB",
+        "BDDDB",
+        "BDDDB",
+        "BDDDB",
+        "BDDDB",
+        "BBBBB",
+        "AABAA"
       ],
       [
-        "ACCCCCA",
-        "ACDDDCA",
-        "ACDDDCA",
-        "  CCC  ",
-        "       "
+        "ABBBA",
+        "C   C",
+        "D   E",
+        "D   E",
+        "D   E",
+        "D   E",
+        "B   B",
+        "AAAAA"
       ],
       [
-        "BCCCCCB",
-        " DEEED ",
-        " DEEED ",
-        " CEEEC ",
-        "  CCC  "
+        "BBBBB",
+        "C F @",
+        "D F E",
+        "D F E",
+        "D F E",
+        "D F E",
+        "B F B",
+        "BAAAB"
       ],
       [
-        "FCCCCCF",
-        " DE ED ",
-        " DE ED ",
-        " CE EC ",
-        "  CCC  "
+        "ABBBA",
+        "C   C",
+        "D   E",
+        "D   E",
+        "D   E",
+        "D   E",
+        "B   B",
+        "AAAAA"
       ],
       [
-        "BCCCCCB",
-        " DEEED ",
-        " DEEED ",
-        " CEEEC ",
-        "  CCC  "
-      ],
-      [
-        "ACCCCCA",
-        "ACDDDCA",
-        "ACDDDCA",
-        "  CCC  ",
-        "       "
-      ],
-      [
-        " ABFBA ",
-        " A   A ",
-        " A   A ",
-        "       ",
-        "       "
+        "AABAA",
+        "BCCCB",
+        "BDDDB",
+        "BDDDB",
+        "BDDDB",
+        "BDDDB",
+        "BBBBB",
+        "AABAA"
       ]
     ],
     "aisleRepetitions": [
-      [
-        1,
-        1
-      ],
-      [
-        1,
-        1
-      ],
       [
         1,
         1
@@ -159,14 +162,14 @@
         "type": "states"
       },
       "controller": {
-        "location": "mbd:digester",
+        "location": "mbd:advqtmcompcont",
         "type": "component"
       },
       "B": {
         "states": [
           {
-            "id": "gregtech:boiler_casing",
-            "meta": 3
+            "id": "contenttweaker:highpowercasing",
+            "meta": 0
           }
         ],
         "type": "states"
@@ -174,42 +177,11 @@
       "C": {
         "states": [
           {
-            "id": "gregtech:metal_casing",
-            "meta": 2
-          }
-        ],
-        "type": "states"
-      },
-      "D": {
-        "states": [
-          {
-            "id": "gtadditions:ga_transparent_casing",
-            "meta": 4
-          }
-        ],
-        "type": "states"
-      },
-      "E": {
-        "states": [
-          {
-            "id": "gregtech:wire_coil",
-            "meta": 3
-          }
-        ],
-        "type": "states"
-      },
-      "F": {
-        "states": [
-          {
-            "id": "multiblocked:energy_input",
-            "meta": 0
-          },
-		  {
             "id": "multiblocked:item_input",
             "meta": 0
           },
           {
-            "id": "multiblocked:fluid_input",
+            "id": "contenttweaker:highpowercasing",
             "meta": 0
           },
           {
@@ -217,14 +189,38 @@
             "meta": 0
           },
           {
-            "id": "multiblocked:fluid_output",
+            "id": "multiblocked:energy_input",
             "meta": 0
           }
         ],
         "type": "states"
       },
-      "air": {
-        "type": "air"
+      "D": {
+        "states": [
+          {
+            "id": "gtadditions:ga_nuclear_casing",
+            "meta": 11
+          }
+        ],
+        "type": "states"
+      },
+      "E": {
+        "states": [
+          {
+            "id": "gtadditions:ga_transparent_casing",
+            "meta": 6
+          }
+        ],
+        "type": "states"
+      },
+      "F": {
+        "states": [
+          {
+            "id": "gregtech:multiblock_casing",
+            "meta": 5
+          }
+        ],
+        "type": "states"
       },
       "any": {
         "type": "any"
@@ -254,9 +250,6 @@
       ],
       "F": [
         "F"
-      ],
-      "-": [
-        "air"
       ]
     }
   }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "location": "contenttweaker:blackholecompressor",
+  "location": "mbd:blackholecompressor",
   "traits": {
     "gtce_energy": {
       "cIO": 2,

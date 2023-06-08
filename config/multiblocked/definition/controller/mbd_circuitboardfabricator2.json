@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "location": "contenttweaker:circuitboardfabricator2",
+  "location": "mbd:circuitboardfabricator2",
   "traits": {
     "gtce_energy": {
       "cIO": 2,

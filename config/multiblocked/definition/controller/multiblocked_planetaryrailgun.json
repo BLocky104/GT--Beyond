@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "location": "contenttweaker:planetaryrailgun",
+  "location": "multiblocked:planetaryrailgun",
   "traits": {
     "gtce_energy": {
       "cIO": 2,

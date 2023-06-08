@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "location": "contenttweaker:matterdequantizer",
+  "location": "mbd:matterdissolver",
   "traits": {
     "recipe_progress": {
       "cIO": 2,
@@ -39,7 +39,7 @@
   "status": {
     "unformed": {
       "renderer": {
-        "baseTexture": "multiblocked:blocks/casing/quantumcasing",
+        "baseTexture": "multiblocked:blocks/casing/mattercasing",
         "frontTexture": "multiblocked:blocks/gregtech_front",
         "type": "gregtech"
       }
@@ -49,7 +49,7 @@
     },
     "working": {
       "renderer": {
-        "baseTexture": "multiblocked:blocks/casing/quantumcasing",
+        "baseTexture": "multiblocked:blocks/casing/mattercasing",
         "frontTexture": "multiblocked:blocks/overlay_front_active",
         "type": "gregtech"
       },
@@ -68,27 +68,36 @@
     ],
     "pattern": [
       [
-        "AAA",
+        "ABA",
         "B@B",
-        "AAA"
+        "ABA"
       ],
       [
-        "CAC",
-        "A A",
-        "CAC"
+        "ACA",
+        "CDC",
+        "ACA"
       ],
       [
-        "CCC",
-        "C C",
-        "CCC"
+        "ACA",
+        "CDC",
+        "ACA"
       ],
       [
-        "DCD",
-        "CCC",
-        "DCD"
+        "ACA",
+        "CDC",
+        "ACA"
+      ],
+      [
+        "ABA",
+        "BDB",
+        "ABA"
       ]
     ],
     "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
       [
         1,
         1
@@ -110,14 +119,14 @@
       "A": {
         "states": [
           {
-            "id": "contenttweaker:highpowercasing",
+            "id": "contenttweaker:mattercasing",
             "meta": 0
           }
         ],
         "type": "states"
       },
       "controller": {
-        "location": "mbd:matterdequantizer",
+        "location": "mbd:matterdissolver",
         "type": "component"
       },
       "B": {
@@ -148,7 +157,7 @@
       "C": {
         "states": [
           {
-            "id": "contenttweaker:quantumcasing",
+            "id": "contenttweaker:electroniccasing",
             "meta": 0
           }
         ],
@@ -157,7 +166,7 @@
       "D": {
         "states": [
           {
-            "id": "contenttweaker:lasercasing",
+            "id": "contenttweaker:highpowercasing",
             "meta": 0
           }
         ],
