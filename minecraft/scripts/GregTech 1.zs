@@ -451,15 +451,6 @@ chemical_bath.recipeBuilder()
 	.EUt(100)
 	.buildAndRegister();
 
-metal_bender.recipeBuilder()
-	.inputs(<gregtech:meta_item_1:10550>)
-	.outputs(<contenttweaker:vibrantalloyplate>)
-	.duration(380)
-	.EUt(80)
-	.property("circuit", 0)
-	.buildAndRegister();
-
-
 mixer.recipeBuilder()
 	.inputs(<gregtech:meta_item_1:2044> * 4,<gregtech:meta_item_1:2016>,<gregtech:meta_item_1:2018>)  
 	.outputs(<contenttweaker:nichromerichblend>)

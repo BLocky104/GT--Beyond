@@ -174,9 +174,6 @@ var tetraethylene = VanillaFactory.createFluid("tetraethylene", Color.fromHex("4
 tetraethylene.temperature=(300);
 tetraethylene.register();
 
-var vibrantalloyplate = VanillaFactory.createItem("vibrantalloyplate");
-vibrantalloyplate.register();
-
 var hotvibrantalloyingot = VanillaFactory.createItem("hotvibrantalloyingot");
 hotvibrantalloyingot.register();
 
@@ -2384,7 +2381,7 @@ impureferrocenemixture.register();
 var ether = VanillaFactory.createFluid("ether", Color.fromHex("E65100"));
 ether.register();
 
-var ferrocenesolution = VanillaFactory.createFluid("ferrocenesolution", Color.fromHex("2E4D7F"));
+var ferrocenesolution = VanillaFactory.createFluid("ferrocenesolution", Color.fromHex("B0BEC5"));
 ferrocenesolution.register();
 
 var dirtdust = VanillaFactory.createItem("dirtdust");
@@ -2396,13 +2393,13 @@ datadiskassemblyline.register();
 var datadiskdigester = VanillaFactory.createItem("datadiskdigester");
 datadiskdigester.register();
 
-var acidicbastnasiteconcentrate = VanillaFactory.createFluid("acidicbastnasiteconcentrate", Color.fromHex("2E4D7F"));
+var acidicbastnasiteconcentrate = VanillaFactory.createFluid("acidicbastnasiteconcentrate", Color.fromHex("BF360C"));
 acidicbastnasiteconcentrate.register();
 
-var ceriumcontainingbastnasiteconcentrate = VanillaFactory.createFluid("ceriumcontainingbastnasiteconcentrate", Color.fromHex("2E4D7F"));
+var ceriumcontainingbastnasiteconcentrate = VanillaFactory.createFluid("ceriumcontainingbastnasiteconcentrate", Color.fromHex("BF5D40"));
 ceriumcontainingbastnasiteconcentrate.register();
 
-var bastnasiterarerearthoxidemixture = VanillaFactory.createFluid("bastnasiterarerearthoxidemixture", Color.fromHex("2E4D7F"));
+var bastnasiterarerearthoxidemixture = VanillaFactory.createFluid("bastnasiterarerearthoxidemixture", Color.fromHex("D28770"));
 bastnasiterarerearthoxidemixture.register();
 
 var bastnasiterarerearthoxidemixturedust = VanillaFactory.createItem("bastnasiterarerearthoxidemixturedust");
@@ -2422,6 +2419,9 @@ bastnasiterarerearthoxidessolution.register();
 
 var neodymiumrareearthconcentrate = VanillaFactory.createItem("neodymiumrareearthconcentrate");
 neodymiumrareearthconcentrate.register();
+
+var datadiskumvproc = VanillaFactory.createItem("datadiskumvproc");
+datadiskumvproc.register();
 
 var samaricrareearthconcentrate = VanillaFactory.createItem("samaricrareearthconcentrate");
 samaricrareearthconcentrate.register();
@@ -2455,15 +2455,119 @@ asphaltblock.setToolLevel(2);
 asphaltblock.setBlockSoundType(<soundtype:metal>);
 asphaltblock.register();
 
+var bastnasiteoxidecompositeliquid = VanillaFactory.createFluid("bastnasiteoxidecompositeliquid", Color.fromHex("827717"));
+bastnasiteoxidecompositeliquid.register();
 
+var cosmic_circuit_board = VanillaFactory.createItem("cosmic_circuit_board");
+cosmic_circuit_board.register();
 
+var waterplasma = VanillaFactory.createFluid("waterplasma", Color.fromHex("827717"));
+waterplasma.register();
 
+var geneticmutagen = VanillaFactory.createFluid("geneticmutagen", Color.fromHex("448247"));
+geneticmutagen.register();
 
+var xenoxene = VanillaFactory.createFluid("xenoxene", Color.fromHex("4D4C4C"));
+xenoxene.register();
 
+var spacetimebendingsmdtransistor = VanillaFactory.createItem("spacetimebendingsmdtransistor");
+spacetimebendingsmdtransistor.register();
 
+var spacetimebendingsmddiode = VanillaFactory.createItem("spacetimebendingsmddiode");
+spacetimebendingsmddiode.register();
 
+var spacetimebendingsmdresistor = VanillaFactory.createItem("spacetimebendingsmdresistor");
+spacetimebendingsmdresistor.register();
 
+var spacetimebendingsmdcapacitor = VanillaFactory.createItem("spacetimebendingsmdcapacitor");
+spacetimebendingsmdcapacitor.register();
 
+var rawradox = VanillaFactory.createFluid("rawradox", Color.fromHex("4D4C4C"));
+rawradox.register();
 
+var lightradox = VanillaFactory.createFluid("lightradox", Color.fromHex("4D4C4C"));
+lightradox.register();
 
+var heavyradox = VanillaFactory.createFluid("heavyradox", Color.fromHex("4D4C4C"));
+heavyradox.register();
 
+var crackedlightradox = VanillaFactory.createFluid("crackedlightradox", Color.fromHex("4D4C4C"));
+crackedlightradox.register();
+
+var purifiedradox = VanillaFactory.createFluid("purifiedradox", Color.fromHex("4D4C4C"));
+purifiedradox.register();
+
+var crackedheavyradox = VanillaFactory.createFluid("crackedheavyradox", Color.fromHex("4D4C4C"));
+crackedheavyradox.register();
+
+var supportstructure = VanillaFactory.createBlock("supportstructure", <blockmaterial:rock>);
+supportstructure.setBlockHardness(12.0);
+supportstructure.setBlockResistance(10.0);
+supportstructure.setToolClass("pickaxe");
+supportstructure.setToolLevel(2);
+supportstructure.setBlockSoundType(<soundtype:metal>);
+supportstructure.register();
+
+var basecasing = VanillaFactory.createBlock("basecasing", <blockmaterial:rock>);
+basecasing.setBlockHardness(12.0);
+basecasing.setBlockResistance(10.0);
+basecasing.setToolClass("pickaxe");
+basecasing.setToolLevel(2);
+basecasing.setBlockSoundType(<soundtype:metal>);
+basecasing.register();
+
+var MotorT5 = VanillaFactory.createBlock("MotorT5", <blockmaterial:rock>);
+MotorT5.setBlockHardness(12.0);
+MotorT5.setBlockResistance(10.0);
+MotorT5.setToolClass("pickaxe");
+MotorT5.setToolLevel(2);
+MotorT5.setBlockSoundType(<soundtype:metal>);
+MotorT5.register();
+
+var MotorT4 = VanillaFactory.createBlock("MotorT4", <blockmaterial:rock>);
+MotorT4.setBlockHardness(12.0);
+MotorT4.setBlockResistance(10.0);
+MotorT4.setToolClass("pickaxe");
+MotorT4.setToolLevel(2);
+MotorT4.setBlockSoundType(<soundtype:metal>);
+MotorT4.register();
+
+var MotorT3 = VanillaFactory.createBlock("MotorT3", <blockmaterial:rock>);
+MotorT3.setBlockHardness(12.0);
+MotorT3.setBlockResistance(10.0);
+MotorT3.setToolClass("pickaxe");
+MotorT3.setToolLevel(2);
+MotorT3.setBlockSoundType(<soundtype:metal>);
+MotorT3.register();
+
+var MotorT2 = VanillaFactory.createBlock("MotorT2", <blockmaterial:rock>);
+MotorT2.setBlockHardness(12.0);
+MotorT2.setBlockResistance(10.0);
+MotorT2.setToolClass("pickaxe");
+MotorT2.setToolLevel(2);
+MotorT2.setBlockSoundType(<soundtype:metal>);
+MotorT2.register();
+
+var MotorT1 = VanillaFactory.createBlock("MotorT1", <blockmaterial:rock>);
+MotorT1.setBlockHardness(12.0);
+MotorT1.setBlockResistance(10.0);
+MotorT1.setToolClass("pickaxe");
+MotorT1.setToolLevel(2);
+MotorT1.setBlockSoundType(<soundtype:metal>);
+MotorT1.register();
+
+var motor = VanillaFactory.createBlock("motor", <blockmaterial:rock>);
+motor.setBlockHardness(12.0);
+motor.setBlockResistance(10.0);
+motor.setToolClass("pickaxe");
+motor.setToolLevel(2);
+motor.setBlockSoundType(<soundtype:metal>);
+motor.register();
+
+var internalstructure = VanillaFactory.createBlock("internalstructure", <blockmaterial:rock>);
+internalstructure.setBlockHardness(12.0);
+internalstructure.setBlockResistance(10.0);
+internalstructure.setToolClass("pickaxe");
+internalstructure.setToolLevel(2);
+internalstructure.setBlockSoundType(<soundtype:metal>);
+internalstructure.register();

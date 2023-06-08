@@ -520,7 +520,7 @@ alloy_smelter.recipeBuilder()
     .buildAndRegister();
 
 alloy_smelter.recipeBuilder()
-    .inputs(<appliedenergistics2:quartz_glass>*4,<contenttweaker:vibrantalloyplate>)
+    .inputs(<appliedenergistics2:quartz_glass>*4,<gregtech:meta_item_1:12550>)
     .outputs(<appliedenergistics2:quartz_vibrant_glass>*4)
     .duration(80)
     .EUt(512)

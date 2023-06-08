@@ -1688,6 +1688,126 @@ cutting_saw.recipeBuilder()
     .EUt(1500000)
     .buildAndRegister();
 
+#superconductor
+
+furnace.remove(<gregtech:meta_item_1:10559>);
+furnace.remove(<gregtech:meta_item_1:10560>);
+furnace.remove(<gregtech:meta_item_1:10724>);
+furnace.remove(<gregtech:meta_item_1:10722>);
+furnace.remove(<gregtech:meta_item_1:10726>);
+furnace.remove(<gregtech:meta_item_1:10737>);
+furnace.remove(<gregtech:meta_item_1:10739>);
+furnace.remove(<gregtech:meta_item_1:10744>);
+furnace.remove(<gregtech:meta_item_1:10964>);
+furnace.remove(<gregtech:meta_item_1:10966>);
+furnace.remove(<gregtech:meta_item_1:10967>);
+furnace.remove(<gregtech:meta_item_1:10968>);
+furnace.remove(<gregtech:meta_item_1:10969>);
+furnace.remove(<gregtech:meta_item_1:10970>);
+
+ebf.recipeBuilder()
+    .inputs(<gregtech:meta_item_1:2970>)
+    .outputs(<gregtech:meta_item_1:10970>)
+    .property("temperature", 2700)
+    .duration(500)
+    .EUt(120)
+    .buildAndRegister();
+
+ebf.recipeBuilder()
+    .inputs(<gregtech:meta_item_1:2969>)
+    .outputs(<gregtech:meta_item_1:10969>)
+    .property("temperature", 3000)
+    .duration(500)
+    .EUt(480)
+    .buildAndRegister();
+
+ebf.recipeBuilder()
+    .inputs(<gregtech:meta_item_1:2967>)
+    .outputs(<gregtech:meta_item_1:10967>)
+    .property("temperature", 4500)
+    .duration(500)
+    .EUt(6000)
+    .buildAndRegister();
+
+ebf.recipeBuilder()
+    .inputs(<gregtech:meta_item_1:2968>)
+    .outputs(<gregtech:meta_item_1:10968>)
+    .property("temperature", 4000)
+    .duration(500)
+    .EUt(1800)
+    .buildAndRegister();
+
+ebf.recipeBuilder()
+    .inputs(<gregtech:meta_item_1:2966>)
+    .outputs(<gregtech:meta_item_1:10966>)
+    .property("temperature", 5600)
+    .duration(1000)
+    .EUt(28000)
+    .buildAndRegister();
+
+ebf.recipeBuilder()
+    .inputs(<gregtech:meta_item_1:2964>)
+    .outputs(<gregtech:meta_item_1:10964>)
+    .property("temperature", 6200)
+    .duration(1000)
+    .EUt(120000)
+    .buildAndRegister();
+
+ebf.recipeBuilder()
+    .inputs(<gregtech:meta_item_1:2739>)
+    .outputs(<gregtech:meta_item_1:10739>)
+    .property("temperature", 7100)
+    .duration(1400)
+    .EUt(1800000)
+    .buildAndRegister();
+
+ebf.recipeBuilder()
+    .inputs(<gregtech:meta_item_1:2744>)
+    .outputs(<gregtech:meta_item_1:10744>)
+    .property("temperature", 6800)
+    .duration(1200)
+    .EUt(480000)
+    .buildAndRegister();
+
+ebf.recipeBuilder()
+    .inputs(<gregtech:meta_item_1:2726>)
+    .outputs(<gregtech:meta_item_1:10726>)
+    .property("temperature", 7300)
+    .duration(2000)
+    .EUt(32000000)
+    .buildAndRegister();
+
+ebf.recipeBuilder()
+    .inputs(<gregtech:meta_item_1:2724>)
+    .outputs(<gregtech:meta_item_1:10724>)
+    .property("temperature", 7500)
+    .duration(2000)
+    .EUt(100000000)
+    .buildAndRegister();
+
+ebf.recipeBuilder()
+    .inputs(<gregtech:meta_item_1:2722>)
+    .outputs(<gregtech:meta_item_1:10722>)
+    .property("temperature", 7800)
+    .duration(2200)
+    .EUt(500000000)
+    .buildAndRegister();
+
+ebf.recipeBuilder()
+    .inputs(<gregtech:meta_item_1:10559>)
+    .outputs(<gregtech:meta_item_1:10559>)
+    .property("temperature", 22200)
+    .duration(4000)
+    .EUt(200000000)
+    .buildAndRegister();
+
+ebf.recipeBuilder()
+    .inputs(<gregtech:meta_item_1:10560>)
+    .outputs(<gregtech:meta_item_1:10560>)
+    .property("temperature", 22200)
+    .duration(4000)
+    .EUt(200000000)
+    .buildAndRegister();
 
 
 

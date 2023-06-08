@@ -89,7 +89,7 @@ centrifuge.recipeBuilder()
 
 ebf.recipeBuilder()
     .fluidInputs(<liquid:filteredbsatnasitemud>*200)
-    .fluidOutputs(<liquid:bastnasiteoxidecomposite>*200)
+    .fluidOutputs(<liquid:bastnasiteoxidecompositeliquid>*200)
     .property("temperature", 3400)
     .EUt(6000)
     .duration(920)
@@ -105,6 +105,7 @@ centrifuge.recipeBuilder()
 
 chemical_bath.recipeBuilder()
     .inputs(<contenttweaker:bastnasiterarerearthoxidemixturedust>)
+    .outputs(<gregtech:meta_item_1:2012>)
     .fluidInputs(<liquid:hydrochloric_acid>*1000)
     .fluidOutputs(<liquid:bastnasiterarerearthconcentrate>*500)
     .duration(800)
@@ -230,7 +231,12 @@ ebf.recipeBuilder()
     .property("temperature", 6200)
     .buildAndRegister();
 
-
+fluidExtractor.recipeBuilder()
+    .inputs(<contenttweaker:bastnasiteoxidecomposite>)
+    .fluidOutputs(<liquid:bastnasiteoxidecompositeliquid>*144)
+    .duration(40)
+    .EUt(500)
+    .buildAndRegister();
 
 
 

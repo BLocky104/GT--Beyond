@@ -19,7 +19,7 @@ import crafttweaker.item.IItemCondition;
 
 
 
-RecipeBuilder.newBuilder("cstr1", "cstr", 500)  .addEnergyPerTickInput(4500)   .addFluidInput(<liquid:bastnasiteoxidecomposite>*1000) .addFluidInput(<liquid:sulfuric_acid>*250) .addFluidOutput(<liquid:acidicbastnasiteconcentrate>*1250) .build();
+RecipeBuilder.newBuilder("cstr1", "cstr", 500)  .addEnergyPerTickInput(4500)   .addFluidInput(<liquid:bastnasiteconcentrate>*1000) .addFluidInput(<liquid:sulfuric_acid>*250) .addFluidOutput(<liquid:acidicbastnasiteconcentrate>*1250) .build();
 RecipeBuilder.newBuilder("cstr2", "cstr", 500)  .addEnergyPerTickInput(4500)   .addFluidInput(<liquid:acidicbastnasiteconcentrate>*1000) .addFluidInput(<liquid:fluorine>*1000) .addFluidOutput(<liquid:ceriumcontainingbastnasiteconcentrate>*1000) .addFluidOutput(<liquid:hydrofluoric_acid>*1000) .build();
 RecipeBuilder.newBuilder("cstr3", "cstr", 500)  .addEnergyPerTickInput(4500)   .addFluidInput(<liquid:bastnasiterarerearthconcentrate>*1000) .addFluidInput(<liquid:water>*4000) .addFluidOutput(<liquid:wetbastnasiterareearthconcentrate>*5000) .build();
 RecipeBuilder.newBuilder("cstr4", "cstr", 500)  .addEnergyPerTickInput(4500)   .addItemInput(<contenttweaker:roastedbastnasite>) .addFluidInput(<liquid:nitric_acid>*750) .addFluidOutput(<liquid:nitrogenatedbastnasiterarerearthoxides>*1000) .build();

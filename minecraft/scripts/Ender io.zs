@@ -106,7 +106,7 @@ recipes.addShapeless(<enderio:item_redstone_or_filter>, [<minecraft:redstone_tor
 recipes.addShapeless(<enderio:item_redstone_and_filter>, [<minecraft:redstone_torch>, <enderio:item_redstone_nand_filter>]);
 recipes.addShapeless(<enderio:item_redstone_xor_filter>, [<minecraft:redstone_torch>, <enderio:item_redstone_xnor_filter>]);
 recipes.addShaped(<enderio:item_material:3>, [	[null, null, null], 	[<galacticraftcore:basic_item:1>, <galacticraftcore:basic_item:1>, <galacticraftcore:basic_item:1>], 	[<ore:plateBlackSteel>, <ore:plateBlackSteel>, <ore:plateBlackSteel>]]);
-recipes.addShaped(<enderio:item_material:13>, [	[<ore:nuggetSteel>, <ore:plateVibrantalloy>, <ore:nuggetSteel>], 	[<ore:plateVibrantalloy>, null, <ore:plateVibrantalloy>], 	[<ore:nuggetSteel>, <ore:plateVibrantalloy>, <ore:nuggetSteel>]]);
+recipes.addShaped(<enderio:item_material:13>, [	[<ore:nuggetSteel>, <gregtech:meta_item_1:12550>, <ore:nuggetSteel>], 	[<gregtech:meta_item_1:12550>, null, <gregtech:meta_item_1:12550>], 	[<ore:nuggetSteel>, <gregtech:meta_item_1:12550>, <ore:nuggetSteel>]]);
 recipes.addShaped(<enderio:block_simple_wired_charger>, [	[<ore:compressed1xCobblestone>, <ore:compressed1xCobblestone>, <ore:compressed1xCobblestone>], 	[<ore:compressed1xCobblestone>, <ore:cableGtSingleTin>, <ore:compressed1xCobblestone>], 	[<ore:plateSteel>, <gregtech:machine:501>, <ore:plateSteel>]]);
 recipes.addShaped(<enderio:block_wired_charger>, [	[<ore:boltAluminium>, <gregtech:meta_item_1:32510>, <ore:boltAluminium>], 	[<ore:plateLead>, <enderio:block_simple_wired_charger>, <ore:plateLead>], 	[<ore:boltAluminium>, <ore:cableGtSingleIron>, <ore:boltAluminium>]]);
 

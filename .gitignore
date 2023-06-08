@@ -1,0 +1,11 @@
+backups/
+crash-reports/
+journeymap/
+local/
+saves/
+user**.json
+**.log
+dumps/
+logs/
+mingw64/
+usr/

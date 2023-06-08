@@ -2938,7 +2938,7 @@ bio.recipeBuilder()
     .fluidOutputs(<liquid:livingsolder>*144)
     .notConsumable(<gtadditions:ga_meta_item:32463>)
     .inputs(<contenttweaker:mutationbasedpetridish>,<gtadditions:ga_meta_item:32018>*2)
-    .fluidInputs(<liquid:mutagen>*1000)
+    .fluidInputs(<liquid:geneticmutagen>*1000)
     .duration(400)
     .EUt(5200)
     .buildAndRegister();
@@ -2954,7 +2954,7 @@ assembler.recipeBuilder()
 lcr.recipeBuilder()
     .fluidInputs(<liquid:bacterial_growth_medium>*8)
     .inputs(<gregtech:meta_item_1:2564>)
-    .fluidOutputs(<liquid:mutagen>*2)
+    .fluidOutputs(<liquid:geneticmutagen>*2)
     .duration(12000)
     .EUt(7000)
     .buildAndRegister();
@@ -2963,7 +2963,7 @@ bio.recipeBuilder()
     .fluidInputs(<liquid:bacterial_growth_medium>*16)
     .notConsumable(<contenttweaker:biobasedpetridish>)
     .inputs(<gregtech:meta_item_1:2558>)
-    .fluidOutputs(<liquid:mutagen>*6)
+    .fluidOutputs(<liquid:geneticmutagen>*6)
     .duration(800)
     .EUt(7000)
     .buildAndRegister();
@@ -2972,7 +2972,7 @@ bio.recipeBuilder()
     .fluidInputs(<liquid:bacterial_growth_medium>*16)
     .notConsumable(<contenttweaker:biobasedpetridish>)
     .inputs(<gregtech:meta_item_1:2564>)
-    .fluidOutputs(<liquid:mutagen>*4)
+    .fluidOutputs(<liquid:geneticmutagen>*4)
     .duration(12000)
     .EUt(500000)
     .buildAndRegister();
@@ -2981,7 +2981,7 @@ bio.recipeBuilder()
     .fluidInputs(<liquid:bacterial_growth_medium>*16)
     .notConsumable(<contenttweaker:biobasedpetridish>)
     .inputs(<gtadditions:ga_meta_item:32344>)
-    .fluidOutputs(<liquid:mutagen>*8)
+    .fluidOutputs(<liquid:geneticmutagen>*8)
     .duration(12000)
     .EUt(500000)
     .buildAndRegister();
@@ -2990,7 +2990,7 @@ bio.recipeBuilder()
     .fluidInputs(<liquid:bacterial_growth_medium>*32)
     .notConsumable(<contenttweaker:biobasedpetridish>)
     .inputs(<gtadditions:ga_meta_item:32345>)
-    .fluidOutputs(<liquid:mutagen>*32)
+    .fluidOutputs(<liquid:geneticmutagen>*32)
     .duration(12000)
     .EUt(500000)
     .buildAndRegister();
@@ -3005,7 +3005,7 @@ lcr.recipeBuilder()
     .buildAndRegister();
 
 lcr.recipeBuilder()
-    .fluidInputs(<liquid:biomass>*2000,<liquid:mutagen>*250)
+    .fluidInputs(<liquid:biomass>*2000,<liquid:geneticmutagen>*250)
     .outputs(<contenttweaker:biobasedpetridish>)
     .inputs(<contenttweaker:purepetridish>)
     .duration(250)
@@ -3234,7 +3234,7 @@ lcr.recipeBuilder()
     .duration(800)
     .EUt(999999)
     .buildAndRegister();
-
+    
 macerator.recipeBuilder()
     .inputs(<contenttweaker:reinfrocedkevlarcloth>)
     .outputs(<gregtech:meta_item_1:2581>)
@@ -3477,13 +3477,38 @@ macerator.recipeBuilder()
     .EUt(12)
     .buildAndRegister(); 
 
+chemical_bath.recipeBuilder()
+    .inputs(<gregtech:meta_item_1:2326>)
+    .fluidInputs(<liquid:sulfuric_acid>*500)
+    .chancedOutput(<contenttweaker:rareearthone>, 3333, 100)
+    .chancedOutput(<contenttweaker:rareearthtwo>, 3333, 100)
+    .chancedOutput(<contenttweaker:rareearththree>, 3333, 100)
+    .duration(600)
+    .EUt(2200)
+    .buildAndRegister();
 
+lcr.recipeBuilder()
+    .fluidInputs(<liquid:teflon>*576,<liquid:enrichedholmium>*1024,<liquid:radoxpolymer>*1440)
+    .outputs(<contenttweaker:cosmic_circuit_board>)
+    .inputs(<gregtech:meta_item_1:12584>*4,<gregtech:meta_item_1:12913>*4,<contenttweaker:ultrabiomutatedcircuitboard>)
+    .duration(4000)
+    .EUt(8000000)
+    .buildAndRegister();
 
+cas.recipeBuilder()
+    .inputs(<ore:circuitSuperconductor>*16,<contenttweaker:yoctopic>*64,<contenttweaker:xontopic>*64,<contenttweaker:cosmic_circuit_board>*16,<contenttweaker:spacetimebendingsmdtransistor>*64,<contenttweaker:spacetimebendingsmdcapacitor>*64)
+    .fluidInputs(<liquid:radoxpolymer>*50000)
+    .outputs(<contenttweaker:spacetimebendingprocessor>)
+    .duration(4000)
+    .EUt(60000000)
+    .buildAndRegister();
 
-
-
-
-
+mixer.recipeBuilder()
+    .inputs(<gregtech:meta_item_1:2027>,<gregtech:meta_item_1:2309>*3)
+    .outputs(<gregtech:meta_item_1:2585>*4)
+    .duration(400)
+    .EUt(15670)
+    .buildAndRegister();
 
 
 

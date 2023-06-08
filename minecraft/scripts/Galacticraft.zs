@@ -60,7 +60,7 @@ val engraver = mods.gregtech.recipe.RecipeMap.getByName("laser_engraver");
 
 CircuitFabricator.remove(<galacticraftcore:basic_item:13> * 3);
 
-mods.GalacticraftTweaker.addCircuitFabricatorRecipe(<galacticraftcore:basic_item:13> * 2, <gregtech:meta_item_1:2364>, <gregtech:meta_item_2:32440>, <gregtech:meta_item_2:32440>, <contenttweaker:vibrantalloyplate>, <galacticraftcore:aluminum_wire>);
+mods.GalacticraftTweaker.addCircuitFabricatorRecipe(<galacticraftcore:basic_item:13> * 2, <gregtech:meta_item_1:2364>, <gregtech:meta_item_2:32440>, <gregtech:meta_item_2:32440>, <gregtech:meta_item_1:12550>, <galacticraftcore:aluminum_wire>);
 
 mods.GalacticraftTweaker.removeCompressorRecipe(<galacticraftcore:basic_item:6>);
 mods.GalacticraftTweaker.removeCompressorRecipe(<galacticraftcore:basic_item:7>);
