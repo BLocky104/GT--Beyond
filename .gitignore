@@ -1,7 +1,14 @@
 *
 !.gitignore
 !*/
+<<<<<<< HEAD
 !mods/**
 !config/**
 !scripts/**
 !resources/**
+=======
+!mods/
+!config/
+!scripts/
+!resources/
+>>>>>>> 262ec93 (Update .gitignore)
