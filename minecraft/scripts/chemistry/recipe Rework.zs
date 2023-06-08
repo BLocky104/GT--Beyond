@@ -1892,17 +1892,25 @@ vacfreezer.recipeBuilder()
     .EUt(520000000)
     .buildAndRegister();
 
+vacfreezer.findRecipe(120,[<gregtech:meta_item_1:11235>],null).remove();
+vacfreezer.findRecipe(120,[<gregtech:meta_item_1:11300>],null).remove();
+vacfreezer.findRecipe(120,[<gregtech:meta_item_1:11300>],null).remove();
+ebf.findRecipe(120,[<gregtech:meta_item_1:2300>],null).remove();
 
+ebf.recipeBuilder()
+    .inputs(<gregtech:meta_item_1:2300>)
+    .outputs(<gregtech:meta_item_1:11300>)
+    .duration(450)
+    .EUt(2000)
+    .property("temperature", 4500)
+    .buildAndRegister();
 
-
-
-
-
-
-
-
-
-
+vacfreezer.recipeBuilder()
+    .inputs(<gregtech:meta_item_1:11300>)
+    .outputs(<gregtech:meta_item_1:10300>)
+    .duration(400)
+    .EUt(2200)
+    .buildAndRegister();
 
 
 
