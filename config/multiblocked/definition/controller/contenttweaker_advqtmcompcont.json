@@ -50,7 +50,7 @@
   "status": {
     "unformed": {
       "renderer": {
-        "baseTexture": "multiblocked:highpowercasing",
+        "baseTexture": "multiblocked:blocks/casing/highpowercasing",
         "frontTexture": "multiblocked:blocks/gregtech_front",
         "type": "gregtech"
       }
@@ -60,7 +60,7 @@
     },
     "working": {
       "renderer": {
-        "baseTexture": "multiblocked:highpowercasing",
+        "baseTexture": "multiblocked:blocks/casing/highpowercasing",
         "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
         "type": "gregtech"
       },

@@ -48,9 +48,9 @@
       "parent": "unformed"
     },
     "working": {
-	  "renderer": {
+      "renderer": {
         "baseTexture": "multiblocked:blocks/casing/solid/machine_casing_solid_steel",
-        "frontTexture": "multiblocked:blocks/overlay_front_active",
+        "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
         "type": "gregtech"
       },
       "parent": "idle"
@@ -510,7 +510,7 @@
             "id": "multiblocked:energy_input",
             "meta": 0
           },
-		  {
+          {
             "id": "multiblocked:item_input",
             "meta": 0
           },
