@@ -5,10 +5,10 @@
 !config/
 !scripts/
 !resources/
-**.errored
-**.cfg
-**.txt
-**.csv
-**.xml
-**.ini
+*.errored
+*.cfg
+*.txt
+*.csv
+*.xml
+*.ini
 config/splash.properties
