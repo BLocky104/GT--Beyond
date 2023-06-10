@@ -2571,3 +2571,27 @@ internalstructure.setToolClass("pickaxe");
 internalstructure.setToolLevel(2);
 internalstructure.setBlockSoundType(<soundtype:metal>);
 internalstructure.register();
+
+var startiumdust = VanillaFactory.createItem("startiumdust");
+startiumdust.register();
+
+var tungstalloytwoingot = VanillaFactory.createItem("tungstalloytwoingot");
+tungstalloytwoingot.register();
+
+var tungstalloytwodust = VanillaFactory.createItem("tungstalloytwodust");
+tungstalloytwodust.register();
+
+var tungstalloyonedust = VanillaFactory.createItem("tungstalloyonedust");
+tungstalloyonedust.register();
+
+var zircalloydust = VanillaFactory.createItem("zircalloydust");
+zircalloydust.register();
+
+var blackpearl = VanillaFactory.createItem("blackpearl");
+blackpearl.register();
+
+var platinumpearlcatalyst = VanillaFactory.createItem("platinumpearlcatalyst");
+platinumpearlcatalyst.register();
+
+var tungstalloytwohotingot = VanillaFactory.createItem("tungstalloytwohotingot");
+tungstalloytwohotingot.register();

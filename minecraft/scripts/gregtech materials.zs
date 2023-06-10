@@ -256,7 +256,7 @@ val transcendantmatter = MaterialRegistry.createIngotMaterial(592,"transcendantm
 transcendantmatter.addFlags(["GENERATE_PLATE","GENERATE_ROD","GENERATE_GEAR","GENERATE_DENSE","GENERATE_PLASMA","GENERATE_FLUID_BLOCK"]);
 
 
-
+<material:cosmic_neutronium>.addFlags(["GENERATE_PLASMA"]);
 <material:neutronium>.addFlags(["GENERATE_PLASMA"]);
 <material:periodicium>.addFlags(["GENERATE_PLASMA"]);
 <material:qcd_confined_matter>.addFlags(["GENERATE_GEAR"]);

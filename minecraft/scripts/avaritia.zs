@@ -11,7 +11,7 @@ mods.extendedcrafting.EnderCrafting.remove(<extendedcrafting:material:40>);
 mods.extendedcrafting.EnderCrafting.addShaped(<avaritia:extreme_crafting_table>, [	[<avaritia:double_compressed_crafting_table>, <avaritia:double_compressed_crafting_table>, <avaritia:double_compressed_crafting_table>], 	[<ore:blockCrystalMatrix>, <extendedcrafting:table_ultimate>, <ore:blockCrystalMatrix>], 	[<ore:blockCrystalMatrix>, <ore:blockCrystalMatrix>, <ore:blockCrystalMatrix>]]);
 mods.avaritia.ExtremeCrafting.remove(<avaritia:resource:5>);
 mods.avaritia.ExtremeCrafting.remove(<avaritia:resource:6>);
-
+recipes.remove(<avaritia:resource:4>);
 mods.avaritia.Compressor.remove(<avaritia:singularity>);
 mods.avaritia.Compressor.remove(<avaritia:singularity:1>);
 mods.avaritia.Compressor.remove(<avaritia:singularity:2>);
