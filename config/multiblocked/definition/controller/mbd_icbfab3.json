@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "location": "mbd:circuitboardfabricator3",
+  "location": "mbd:icbfab3",
   "traits": {
     "item": [],
     "gtce_energy": {
@@ -439,7 +439,7 @@
         "type": "states"
       },
       "controller": {
-        "location": "mbd:circuitboardfabricator3",
+        "location": "mbd:icbfab3",
         "type": "component"
       },
       "B": {

@@ -1,0 +1,79 @@
+{
+  "name": "BlackholeCompressor",
+  "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
+  "fuelTexture": "multiblocked:textures/gui/progress_bar_fuel.png",
+  "recipes": [
+    {
+      "uid": "37f019d1-936b-4a48-adba-31b89b7db106",
+      "duration": 12000,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 576,
+              "matches": [
+                "{id:\"minecraft:lapis_block\",Count:576,Damage:0s}"
+              ]
+            }
+          }
+        ],
+        "gtce_energy": [
+          {
+            "chance": 1.0,
+            "content": 20000000
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"extendedcrafting:singularity\",Count:1,Damage:2s}"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uid": "40c2244d-d23e-4c56-b922-1c67026014a8",
+      "duration": 12000,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 576,
+              "matches": [
+                "{id:\"minecraft:iron_block\",Count:576,Damage:0s}"
+              ]
+            }
+          }
+        ],
+        "gtce_energy": [
+          {
+            "chance": 1.0,
+            "content": 20000000
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"extendedcrafting:singularity\",Count:1,Damage:1s}"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

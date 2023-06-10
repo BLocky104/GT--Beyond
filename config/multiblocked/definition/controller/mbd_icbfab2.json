@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "location": "mbd:circuitboardfabricator2",
+  "location": "mbd:icbfab2",
   "traits": {
     "gtce_energy": {
       "cIO": 2,
@@ -439,7 +439,7 @@
         "type": "states"
       },
       "controller": {
-        "location": "mbd:circuitboardfabricator2",
+        "location": "mbd:icbfab2",
         "type": "component"
       },
       "B": {
