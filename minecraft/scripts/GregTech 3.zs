@@ -3510,6 +3510,119 @@ mixer.recipeBuilder()
     .EUt(15670)
     .buildAndRegister();
 
+centrifuge.recipeBuilder()
+    .inputs(<gregtech:meta_item_1:2993>)
+    .chancedOutput(<contenttweaker:trueneutroniumparticle>, 3333, 0)
+    .chancedOutput(<contenttweaker:trueneutroniumparticle>, 3333, 0)
+    .chancedOutput(<contenttweaker:trueneutroniumparticle>, 3333, 0)
+    .chancedOutput(<contenttweaker:trueneutroniumparticle>, 3333, 0)
+    .chancedOutput(<contenttweaker:trueneutroniumparticle>, 3333, 0)
+    .chancedOutput(<contenttweaker:trueneutroniumparticle>, 3333, 0)
+    .duration(240)
+    .EUt(20000)
+    .buildAndRegister();
+
+ebf.recipeBuilder()
+    .inputs(<avaritia:resource:2>)
+    .fluidInputs(<liquid:plasma.cosmic_neutronium>)
+    .outputs(<avaritia:resource:3>)
+    .property("temperature", 7000)
+    .duration(40000)
+    .EUt(222222)
+    .buildAndRegister();
+
+fluidExtractor.recipeBuilder()
+    .inputs(<contenttweaker:tungstalloytwoingot>)
+    .fluidOutputs(<liquid:tungstalloytwo>*144)
+    .duration(400)
+    .EUt(1200)
+    .buildAndRegister();
+
+ebf.recipeBuilder()
+    .inputs(<contenttweaker:tungstalloytwodust>)
+    .outputs(<contenttweaker:tungstalloytwohotingot>)
+    .property("temperature", 4500)
+    .duration(400)
+    .EUt(2000)
+    .buildAndRegister();
+
+vacfreezer.recipeBuilder()
+    .inputs(<contenttweaker:tungstalloytwohotingot>)
+    .outputs(<contenttweaker:tungstalloytwoingot>)
+    .duration(400)
+    .EUt(6000)
+    .buildAndRegister();
+
+assembler.recipeBuilder()   
+    .inputs(<gregtech:machine:2534>,<ore:circuitExtreme>*2,<gregtech:meta_item_2:26300>*2,<gregtech:meta_item_1:13905>*4,<ore:circuitMaster>*2,<gregtech:meta_item_2:19051>*4,<ore:circuitElite>*2,<gregtech:meta_item_1:13983>*2)
+    .outputs(<gregtech:machine:2559>)
+    .duration(800)
+    .EUt(1222)
+    .buildAndRegister();
+
+mixer.recipeBuilder()
+    .inputs(<gregtech:meta_item_1:2912>*36,<gregtech:meta_item_1:2033>,<gregtech:meta_item_1:2016>*2)
+    .notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 3}))
+    .outputs(<contenttweaker:zircalloydust>*40)
+    .duration(200)
+    .EUt(1200)
+    .buildAndRegister();
+
+ebf.recipeBuilder()
+    .inputs(<contenttweaker:zircalloydust>)
+    .outputs(<nuclearcraft:alloy:12>)
+    .property("temperature", 1400)
+    .duration(500)
+    .EUt(630)
+    .buildAndRegister();
+
+mixer.recipeBuilder()
+    .inputs(<gregtech:meta_item_1:2074>*22,<gregtech:meta_item_1:2044>*5,<gregtech:meta_item_1:2016>*6)
+    .notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 3}))
+    .outputs(<contenttweaker:tungstalloyonedust>*33)
+    .duration(200)
+    .EUt(200)
+    .buildAndRegister();
+
+centrifuge.recipeBuilder()
+    .inputs(<contenttweaker:tungstalloyonedust>*33)
+    .outputs(<gregtech:meta_item_1:2074>*22,<gregtech:meta_item_1:2044>*5,<gregtech:meta_item_1:2016>*6)
+    .duration(200)
+    .EUt(200)
+    .buildAndRegister();
+
+mixer.recipeBuilder()
+    .inputs(<contenttweaker:tungstalloyonedust>*12,<gregtech:meta_item_1:2012>*2,<gregtech:meta_item_1:2232>*4)
+    .notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 3}))
+    .outputs(<contenttweaker:tungstalloytwodust>*18)
+    .duration(40)
+    .EUt(600)
+    .buildAndRegister();
+
+lcr.recipeBuilder()
+    .inputs(<gregtech:meta_item_1:2074>*3,<gregtech:meta_item_1:2373>*6)
+    .fluidInputs(<liquid:sulfuric_acid>*2000)
+    .fluidOutputs(<liquid:water>*2000,<liquid:diluted_sulfuric_acid>*3000)
+    .outputs(<qmd:chemical_dust>*3)
+    .duration(400)
+    .EUt(1200)
+    .buildAndRegister();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #--------MV Components-------------------------#

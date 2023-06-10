@@ -854,9 +854,14 @@ fluid.crackedheavyradox=Cracked Heavy Radox
 fluid.crackedlightradox=Cracked Light Radox
 fluid.heavyradox=Heavy Radox
 fluid.lightradox=Light Radox
-
-
-
+item.contenttweaker.startiumdust.name=Startium Dust
+item.contenttweaker.tungstalloyonedust.name=Tungstalloy-1 Dust
+item.contenttweaker.zircalloydust.name=Zircalloy Dust
+item.contenttweaker.tungstalloytwodust.name=Tungstalloy-2 Dust
+item.contenttweaker.tungstalloytwohotingot.name=Hot Tungstalloy-2 Ingot
+item.contenttweaker.tungstalloytwoingot.name=Tungstalloy-2 Ingot
+item.contenttweaker.blackpearl.name=Black Pearl
+item.contenttweaker.platinumpearlcatalyst.name=Platinum Pearl Catalyst
 
 
 

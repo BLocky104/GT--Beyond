@@ -36,7 +36,7 @@ RecipeBuilder.newBuilder("furnace17", "furnace", 120) .addEnergyPerTickInput(12)
 RecipeBuilder.newBuilder("furnace18", "furnace", 120) .addEnergyPerTickInput(4000) .addItemInput(<gregtech:meta_item_1:2992>) .addItemOutput(<gregtech:meta_item_1:10992>) .build();
 RecipeBuilder.newBuilder("furnace19", "furnace", 120) .addEnergyPerTickInput(4000) .addItemInput(<gregtech:meta_item_1:2581>) .addItemOutput(<gregtech:meta_item_1:10581>) .build();
 RecipeBuilder.newBuilder("furnace20", "furnace", 40) .addEnergyPerTickInput(120) .addItemInput(<gregtech:meta_item_1:2981>) .addItemOutput(<gregtech:meta_item_1:10981>) .build();
-
+RecipeBuilder.newBuilder("furnace21", "furnace", 40) .addEnergyPerTickInput(120) .addItemInput(<gregtech:meta_item_1:2729>) .addItemOutput(<gregtech:meta_item_1:10729>) .build();
 
 
 

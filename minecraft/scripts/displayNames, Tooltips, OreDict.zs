@@ -333,7 +333,7 @@ furnace.addRecipe(<gregtech:meta_item_1:10071>*2,<thaumcraft:cluster:3>);
 
 unpacker.findRecipe(8,[<exoplanets:metalblock:7>,<gtadditions:ga_meta_item:32133>],null).remove();
 compressor.findRecipe(2,[<exoplanets:metalingot:7>*9],null).remove();
-packer.findRecipe(2,[<exoplanets:metalingot:7>*9,<gtadditions:ga_meta_item:32133>],null).remove();
+packer.findRecipe(4,[<exoplanets:metalingot:7>*9,<gtadditions:ga_meta_item:32133>],null).remove();
 
 
 
