@@ -10,7 +10,7 @@
         "item": [
           {
             "chance": 1.0,
-            "slotName": "module_io",
+            "slotName": "item_in",
             "content": {
               "amount": 1,
               "matches": [
@@ -20,7 +20,7 @@
           },
           {
             "chance": 1.0,
-            "slotName": "module_io",
+            "slotName": "item_in",
             "content": {
               "amount": 1,
               "matches": [
@@ -30,7 +30,7 @@
           },
           {
             "chance": 1.0,
-            "slotName": "module_io",
+            "slotName": "item_in",
             "content": {
               "amount": 64,
               "matches": [
@@ -76,7 +76,7 @@
         "item": [
           {
             "chance": 1.0,
-            "slotName": "module_io",
+            "slotName": "item_out",
             "content": {
               "amount": 256,
               "matches": [

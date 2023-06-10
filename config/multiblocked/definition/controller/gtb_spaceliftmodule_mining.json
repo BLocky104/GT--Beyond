@@ -70,41 +70,50 @@
       ]
     ],
     "predicates": {
-      "A": {
-        "states": [
+      "casing": {
+        "blocks": [
           {
-            "id": "minecraft:lapis_block",
-            "meta": 0
-          },
+            "id": "minecraft:lapis_block"
+          }
+        ],
+        "type": "blocks",
+        "io": "null"
+      },
+      "controller": {
+        "location": "gtb:spaceliftmodule_mining",
+        "type": "component"
+      },
+      "item_in": {
+        "states": [
           {
             "id": "multiblocked:item_input",
             "meta": 0
-          },
-          {
-            "id": "multiblocked:energy_input",
-            "meta": 0
-          },
+          }
+        ],
+        "type": "states",
+        "minCount": 1,
+        "maxCount": 2,
+        "previewCount": 1,
+        "io": "IN",
+        "slotName": "item_in"
+      },
+      "item_out": {
+        "states": [
           {
             "id": "multiblocked:item_output",
             "meta": 0
           }
         ],
         "type": "states",
-        "slotName": "module_io"
+        "minCount": 1,
+        "maxCount": 1,
+        "previewCount": 1,
+        "io": "OUT",
+        "slotName": "item_out"
       },
-      "controller": {
-        "location": "gtb:spaceliftmodule_mining",
-        "type": "component"
-      },
-      "H": {
-        "states": [
-          {
-            "id": "mbd:spacelifthatch",
-            "meta": 0
-          }
-        ],
-        "type": "states",
-        "minCount": 0,
+      "hatch": {
+        "location": "multiblocked:item_input",
+        "type": "component",
         "slotName": "module_interface"
       },
       "any": {
@@ -119,10 +128,12 @@
         "any"
       ],
       "A": [
-        "A"
+        "casing",
+        "item_in",
+        "item_out"
       ],
       "H": [
-        "H"
+        "hatch"
       ]
     }
   }
