@@ -1,0 +1,39 @@
+{
+  "name": "spacelift_hub",
+  "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
+  "fuelTexture": "multiblocked:textures/gui/progress_bar_fuel.png",
+  "recipes": [
+    {
+      "uid": "spacelift_hub_test",
+      "duration": 20,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "slotName": "hub_io",
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"moreplanets:red_candy_cane_stick\",Count:1,Damage:0s}"
+              ]
+            }
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "slotName": "hub_io",
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"moreplanets:green_candy_cane_stick\",Count:1,Damage:0s}"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

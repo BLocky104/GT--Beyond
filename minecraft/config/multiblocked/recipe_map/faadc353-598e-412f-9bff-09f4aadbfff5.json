@@ -1,0 +1,127 @@
+{
+  "name": "faadc353-598e-412f-9bff-09f4aadbfff5",
+  "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
+  "fuelTexture": "multiblocked:textures/gui/progress_bar_fuel.png",
+  "recipes": [
+    {
+      "uid": "fcb989e2-e5de-4b65-8606-c8bf2dac2559",
+      "duration": 1,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"minecraft:netherrack\",Count:1,Damage:0s}"
+              ]
+            }
+          }
+        ]
+      },
+      "outputs": {
+        "tc6_aspect": [
+          {
+            "chance": 1.0,
+            "content": {
+              "aspect": "infernum",
+              "amount": 1
+            }
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "type": "block",
+          "condition": {
+            "block": {
+              "id": "gregtech:wire_coil",
+              "meta": 8
+            },
+            "count": 16
+          }
+        },
+        {
+          "type": "block",
+          "condition": {
+            "block": {
+              "id": "gtadditions:ga_fusion_casing",
+              "meta": 2
+            },
+            "count": 16
+          }
+        }
+      ]
+    },
+    {
+      "uid": "b9c2cd77-33de-4861-b956-d4532b84f2e2",
+      "duration": 1000,
+      "inputs": {
+        "qmd_particle": [
+          {
+            "chance": 1.0,
+            "content": {
+              "particle": "down_quark",
+              "amount": 1,
+              "focus": 0.0,
+              "energy": 0
+            }
+          }
+        ],
+        "gtce_energy": [
+          {
+            "chance": 1.0,
+            "content": 256
+          }
+        ]
+      },
+      "outputs": {
+        "qmd_particle": [
+          {
+            "chance": 1.0,
+            "content": {
+              "particle": "up_quark",
+              "amount": 1,
+              "focus": 0.0,
+              "energy": 0
+            }
+          }
+        ]
+      },
+      "tickInputs": {
+        "gtce_energy": [
+          {
+            "chance": 1.0,
+            "content": 2147483647
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "type": "block",
+          "condition": {
+            "block": {
+              "id": "gtadditions:ga_fusion_casing",
+              "meta": 2
+            },
+            "count": 16
+          }
+        }
+      ]
+    }
+  ],
+  "fuelRecipes": [
+    {
+      "uid": "81d10899-cf44-497d-bc73-759b15bea0d1",
+      "duration": 10,
+      "inputs": {
+        "pneumatic_pressure": [
+          {
+            "chance": 1.0,
+            "content": 2.0
+          }
+        ]
+      }
+    }
+  ]
+}

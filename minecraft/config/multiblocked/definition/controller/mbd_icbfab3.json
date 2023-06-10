@@ -1,0 +1,621 @@
+{
+  "version": 2,
+  "location": "mbd:icbfab3",
+  "traits": {
+    "item": [],
+    "gtce_energy": {
+      "cIO": 2,
+      "gIO": 2,
+      "x": 5,
+      "y": 5,
+      "width": 60,
+      "height": 18,
+      "texture": "multiblocked:textures/gui/energy_bar.png",
+      "fillDirection": 0,
+      "capacity": 10000
+    }
+  },
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 10.0,
+    "harvestLevel": 1,
+    "stackSize": 64,
+    "tabGroup": "multiblocked"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "baseTexture": "multiblocked:blocks/casing/optimizedrestrictedpcbcasing",
+        "frontTexture": "multiblocked:blocks/gregtech_front",
+        "type": "gregtech"
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+      "renderer": {
+        "baseTexture": "multiblocked:blocks/casing/optimizedrestrictedpcbcasing",
+        "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
+        "type": "gregtech"
+      },
+	  "parent": "idle"
+	},
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "empty",
+  "basePattern": {
+    "structureDir": [
+      "BACK",
+      "UP",
+      "RIGHT"
+    ],
+    "pattern": [
+      [
+        " A A   BBCBB   A A     ",
+        "       BDDDB           ",
+        "       BEEEB           ",
+        "       BEEEB           ",
+        "       BEEEB           ",
+        "       BEEEB           ",
+        "       BEEEB           ",
+        "       BDDDB           ",
+        "       BBBBB           ",
+        "         B             "
+      ],
+      [
+        "A F A  BBBBB  A F A    ",
+        " AFA   D   D   AFA     ",
+        " AFA   E   E   AFA     ",
+        " AGA   E   E   AGA     ",
+        "  G    E   E    G      ",
+        "   G   E   E   G       ",
+        "    G AE   EA G        ",
+        "     GGD   DGG         ",
+        "      AB   BA          ",
+        "        BBB            "
+      ],
+      [
+        " FAF   CBBBC   FAF     ",
+        " F F   D H D   F F     ",
+        " F F   E H E   F F     ",
+        " A A   E H E   A A     ",
+        " A A   E H E   A A     ",
+        "  A A  E H E  A A      ",
+        "   A AAE H EAA A       ",
+        "    A  D H D  A        ",
+        "     AAB H BAA         ",
+        "       BBBBB           "
+      ],
+      [
+        "A F A  BBBBB  A F A    ",
+        " AFA   D   D   AFA     ",
+        " AFA   E   E   AFA     ",
+        " AGA   E   E   AGA     ",
+        "  G    E   E    G      ",
+        "   G   E   E   G       ",
+        "    G AE   EA G        ",
+        "     GGD   DGG         ",
+        "      AB   BA          ",
+        "        BBB            "
+      ],
+      [
+        " A A   BBBBB   A A     ",
+        "       BDDDB           ",
+        "       BEEEB           ",
+        "       BEEEB           ",
+        "       BEEEB           ",
+        "       BDDDB           ",
+        "       BBBBB           ",
+        "       BDDDB           ",
+        "       BBBBB           ",
+        "         B             "
+      ],
+      [
+        "        BBB            ",
+        "        D D            ",
+        "                       ",
+        "                       ",
+        "                       ",
+        "        D D            ",
+        "        BBB            ",
+        "                       ",
+        "                       ",
+        "                       "
+      ],
+      [
+        "        BBB      I     ",
+        "        D D      I     ",
+        "                 I     ",
+        "                 I     ",
+        "                       ",
+        "        D D            ",
+        "        B B            ",
+        "         B             ",
+        "                       ",
+        "                       "
+      ],
+      [
+        "       BBBBB           ",
+        "       DD DD           ",
+        "       D   D    III    ",
+        "       D   D    III    ",
+        "       D   D    III    ",
+        "       D   D           ",
+        "       B   B           ",
+        "        BBB            ",
+        "                       ",
+        "                       "
+      ],
+      [
+        "       BBBBB    JJJ    ",
+        "       D K D    JJJ    ",
+        "         K      JJJ    ",
+        "         L      JJJ    ",
+        "         K      JJJ    ",
+        "       D K D    JJJ    ",
+        "       B K B           ",
+        "        BBB            ",
+        "                       ",
+        "                       "
+      ],
+      [
+        "       BBBBB   JJJJJ   ",
+        "       D   D   J   J   ",
+        "         L     J   J   ",
+        "        LML    J   J   ",
+        "         L     J   J   ",
+        "       D   D   JJJJJ   ",
+        "       B   B           ",
+        "        BBB            ",
+        "                       ",
+        "                       "
+      ],
+      [
+        "       CBBBCJJJJJJJJJ  ",
+        "       D   D  J     J  ",
+        "         L   IJ     JI ",
+        "        LML  IJ     JI ",
+        "         L   IJ     JI ",
+        "       D   D  JJJJJJJ  ",
+        "       C   C           ",
+        "       BBBBB           ",
+        "                       ",
+        "                       "
+      ],
+      [
+        "       @BBBC  JJJJJJJ I",
+        "       D   DJJJ     J I",
+        "         L  IIJ     JII",
+        "        LLL  IJ     JII",
+        "         L   IJ     JI ",
+        "       D   D  JJJJJJJ  ",
+        "       C   C           ",
+        "       BBBBB           ",
+        "                       ",
+        "                       "
+      ],
+      [
+        "       CBBBCJJJJJJJJJ  ",
+        "       D   D  J     J  ",
+        "         L   IJ     JI ",
+        "        LML  IJ     JI ",
+        "         L   IJ     JI ",
+        "       D   D  JJJJJJJ  ",
+        "       C   C           ",
+        "       BBBBB           ",
+        "                       ",
+        "                       "
+      ],
+      [
+        "       BBBBB   JJJJJ   ",
+        "       D   D   J   J   ",
+        "         L     J   J   ",
+        "        LML    J   J   ",
+        "         L     J   J   ",
+        "       D   D   JJJJJ   ",
+        "       B   B           ",
+        "        BBB            ",
+        "                       ",
+        "                       "
+      ],
+      [
+        "       BBBBB    JJJ    ",
+        "       D K D    JJJ    ",
+        "         K      JJJ    ",
+        "         L      JJJ    ",
+        "         K      JJJ    ",
+        "       D K D    JJJ    ",
+        "       B K B           ",
+        "        BBB            ",
+        "                       ",
+        "                       "
+      ],
+      [
+        "       BBBBB           ",
+        "       DD DD           ",
+        "       D   D    III    ",
+        "       D   D    III    ",
+        "       D   D    III    ",
+        "       D   D           ",
+        "       B   B           ",
+        "        BBB            ",
+        "                       ",
+        "                       "
+      ],
+      [
+        "        BBB      I     ",
+        "        D D      I     ",
+        "                 I     ",
+        "                 I     ",
+        "                       ",
+        "        D D            ",
+        "        B B            ",
+        "         B             ",
+        "                       ",
+        "                       "
+      ],
+      [
+        "        BBB            ",
+        "        D D            ",
+        "                       ",
+        "                       ",
+        "                       ",
+        "        D D            ",
+        "        BBB            ",
+        "                       ",
+        "                       ",
+        "                       "
+      ],
+      [
+        " A A   BBBBB   A A     ",
+        "       BDDDB           ",
+        "       BEEEB           ",
+        "       BEEEB           ",
+        "       BEEEB           ",
+        "       BDDDB           ",
+        "       BBBBB           ",
+        "       BDDDB           ",
+        "       BBBBB           ",
+        "         B             "
+      ],
+      [
+        "A F A  BBBBB  A F A    ",
+        " AFA   D   D   AFA     ",
+        " AFA   E   E   AFA     ",
+        " AGA   E   E   AGA     ",
+        "  G    E   E    G      ",
+        "   G   E   E   G       ",
+        "    G AE   EA G        ",
+        "     GGD   DGG         ",
+        "      AB   BA          ",
+        "        BBB            "
+      ],
+      [
+        " FAF   CBBBC   FAF     ",
+        " F F   D H D   F F     ",
+        " F F   E H E   F F     ",
+        " A A   E H E   A A     ",
+        " A A   E H E   A A     ",
+        "  A A  E H E  A A      ",
+        "   A AAE H EAA A       ",
+        "    A  D H D  A        ",
+        "     AAB H BAA         ",
+        "       BBBBB           "
+      ],
+      [
+        "A F A  BBBBB  A F A    ",
+        " AFA   D   D   AFA     ",
+        " AFA   E   E   AFA     ",
+        " AGA   E   E   AGA     ",
+        "  G    E   E    G      ",
+        "   G   E   E   G       ",
+        "    G AE   EA G        ",
+        "     GGD   DGG         ",
+        "      AB   BA          ",
+        "        BBB            "
+      ],
+      [
+        " A A   BBCBB   A A     ",
+        "       BDDDB           ",
+        "       BEEEB           ",
+        "       BEEEB           ",
+        "       BEEEB           ",
+        "       BEEEB           ",
+        "       BEEEB           ",
+        "       BDDDB           ",
+        "                       ",
+        "         B             "
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "states": [
+          {
+            "id": "gregtech:metal_casing",
+            "meta": 7
+          }
+        ],
+        "type": "states"
+      },
+      "controller": {
+        "location": "mbd:icbfab3",
+        "type": "component"
+      },
+      "B": {
+        "states": [
+          {
+            "id": "contenttweaker:optimizedrestrictedpcbcasing",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "C": {
+        "states": [
+          {
+            "id": "multiblocked:energy_input",
+            "meta": 0
+          },
+		  {
+            "id": "multiblocked:item_input",
+            "meta": 0
+          },
+          {
+            "id": "multiblocked:fluid_input",
+            "meta": 0
+          },
+          {
+            "id": "multiblocked:item_output",
+            "meta": 0
+          },
+          {
+            "id": "multiblocked:fluid_output",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "D": {
+        "states": [
+          {
+            "id": "gregtech:metal_casing",
+            "meta": 5
+          }
+        ],
+        "type": "states"
+      },
+      "E": {
+        "states": [
+          {
+            "id": "qmd:containment_glass",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "F": {
+        "states": [
+          {
+            "id": "gregtech:multiblock_casing",
+            "meta": 5
+          }
+        ],
+        "type": "states"
+      },
+      "G": {
+        "states": [
+          {
+            "id": "gregtech:boiler_casing",
+            "meta": 3
+          }
+        ],
+        "type": "states"
+      },
+      "H": {
+        "states": [
+          {
+            "id": "contenttweaker:opticalspeedingpipecasing",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "I": {
+        "states": [
+          {
+            "id": "gregtech:metal_casing",
+            "meta": 4
+          }
+        ],
+        "type": "states"
+      },
+      "J": {
+        "states": [
+          {
+            "id": "contenttweaker:perfectlysealedvacuumcasing",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "K": {
+        "states": [
+          {
+            "id": "gregtech:frame_steel",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "L": {
+        "states": [
+          {
+            "id": "gregtech:metal_casing",
+            "meta": 3
+          }
+        ],
+        "type": "states"
+      },
+      "any": {
+        "type": "any"
+      },
+      "M": {
+        "states": [
+          {
+            "id": "gregtech:metal_casing",
+            "meta": 2
+          }
+        ],
+        "type": "states"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C"
+      ],
+      "D": [
+        "D"
+      ],
+      "E": [
+        "E"
+      ],
+      "F": [
+        "F"
+      ],
+      "G": [
+        "G"
+      ],
+      "H": [
+        "H"
+      ],
+      "I": [
+        "I"
+      ],
+      "J": [
+        "J"
+      ],
+      "K": [
+        "K"
+      ],
+      "L": [
+        "L"
+      ],
+      "M": [
+        "M"
+      ]
+    }
+  }
+}

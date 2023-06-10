@@ -1,0 +1,91 @@
+{
+  "name": "spacelift_mining",
+  "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
+  "fuelTexture": "multiblocked:textures/gui/progress_bar_fuel.png",
+  "recipes": [
+    {
+      "uid": "spacelift_mining_test",
+      "duration": 20,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "slotName": "module_io",
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"pneumaticcraft:drone\",Count:1,Damage:0s,tag:{volume:12000.0f,currentAir:0.0f}}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "slotName": "module_io",
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_item_2\",Count:1,Damage:8859s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "slotName": "module_io",
+            "content": {
+              "amount": 64,
+              "matches": [
+                "{id:\"ic2:mining_pipe\",Count:64,Damage:0s}"
+              ]
+            }
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "slotName": "module_interface",
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"moreplanets:red_candy_cane_stick\",Count:1,Damage:0s}"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uid": "7b585f45-14cd-4558-a26a-e69abd3772de",
+      "duration": 1,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "slotName": "module_interface",
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"moreplanets:green_candy_cane_stick\",Count:1,Damage:0s}"
+              ]
+            }
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "slotName": "module_io",
+            "content": {
+              "amount": 256,
+              "matches": [
+                "{id:\"minecraft:iron_ingot\",Count:256,Damage:0s}"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

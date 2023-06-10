@@ -1,0 +1,1043 @@
+{
+  "version": 2,
+  "location": "multiblocked:planetaryrailgun",
+  "traits": {
+    "gtce_energy": {
+      "cIO": 2,
+      "gIO": 2,
+      "x": 9,
+      "y": 148,
+      "width": 60,
+      "height": 18,
+      "texture": "multiblocked:textures/gui/energy_bar.png",
+      "fillDirection": 0,
+      "capacity": 10000
+    },
+    "item": [
+      {
+        "cIO": 2,
+        "gIO": 2,
+        "mIO": 2,
+        "x": 20,
+        "y": 73,
+        "autoIO": false
+      },
+      {
+        "cIO": 2,
+        "gIO": 2,
+        "mIO": 2,
+        "x": 20,
+        "y": 93,
+        "autoIO": false
+      },
+      {
+        "cIO": 2,
+        "gIO": 2,
+        "mIO": 2,
+        "x": 20,
+        "y": 113,
+        "autoIO": false
+      }
+    ],
+    "fuel_progress": {
+      "cIO": 0,
+      "gIO": 2,
+      "x": 16,
+      "y": 120,
+      "width": 60,
+      "height": 18,
+      "texture": "multiblocked:textures/gui/energy_bar.png",
+      "fillDirection": 0
+    }
+  },
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 10.0,
+    "harvestLevel": 1,
+    "stackSize": 64,
+    "tabGroup": "multiblocked"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "baseTexture": "multiblocked:blocks/casing/solid/osmiridium",
+        "frontTexture": "multiblocked:blocks/gregtech_front",
+        "type": "gregtech"
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+      "renderer": {
+        "baseTexture": "multiblocked:blocks/casing/solid/osmiridium",
+        "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
+        "type": "gregtech"
+      },
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    },
+    "new_status_1": {}
+  },
+  "recipeMap": "empty",
+  "basePattern": {
+    "structureDir": [
+      "RIGHT",
+      "UP",
+      "FRONT"
+    ],
+    "pattern": [
+      [
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "     A    A     ",
+        "    BB    BB    ",
+        "    BB    BB    ",
+        "     A    A     ",
+        "                "
+      ],
+      [
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "     AC  CA     ",
+        "    BB    BB    ",
+        "    DE    ED    ",
+        "    DE    ED    ",
+        "    BB    BB    ",
+        "     AC  CA     "
+      ],
+      [
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "     AC  CA     ",
+        "    BB    BB    ",
+        "    DE    ED    ",
+        "    DE    ED    ",
+        "    BB    BB    ",
+        "     AC  CA     "
+      ],
+      [
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "     AC  CA     ",
+        "    BB    BB    ",
+        "    DE    ED    ",
+        "    DE    ED    ",
+        "    BB    BB    ",
+        "     AC  CA     ",
+        "                "
+      ],
+      [
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "     AC  CA     ",
+        "    BB    BB    ",
+        "    DE    ED    ",
+        "    DE    ED    ",
+        "    BB    BB    ",
+        "     AC  CA     ",
+        "                "
+      ],
+      [
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "     AC  CA     ",
+        "    BB    BB    ",
+        "    DE    ED    ",
+        "    DE    ED    ",
+        "    BB    BB    ",
+        "     AC  CA     ",
+        "                ",
+        "                "
+      ],
+      [
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "     AC  CA     ",
+        "    BB    BB    ",
+        "    DE    ED    ",
+        "    DE    ED    ",
+        "    BB    BB    ",
+        "     AC  CA     ",
+        "                ",
+        "                "
+      ],
+      [
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "     AC  CA     ",
+        "    BB    BB    ",
+        "    DE    ED    ",
+        "    DE    ED    ",
+        "    BB    BB    ",
+        "     AC  CA     ",
+        "                ",
+        "                ",
+        "                "
+      ],
+      [
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "     AC  CA     ",
+        "    BB    BB    ",
+        "    DE    ED    ",
+        "    DE    ED    ",
+        "    BB    BB    ",
+        "     AC  CA     ",
+        "                ",
+        "                ",
+        "                "
+      ],
+      [
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "     AC  CA     ",
+        "    BB    BB    ",
+        "    DE    ED    ",
+        "    DE    ED    ",
+        "    BB    BB    ",
+        "     AC  CA     ",
+        "                ",
+        "                ",
+        "                ",
+        "                "
+      ],
+      [
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "     AC  CA     ",
+        "    BB    BB    ",
+        "    DE    ED    ",
+        "    DE    ED    ",
+        "    BB    BB    ",
+        "     AC  CA     ",
+        "                ",
+        "                ",
+        "                ",
+        "                "
+      ],
+      [
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "     AC  CA     ",
+        "    BB    BB    ",
+        "    DE    ED    ",
+        "    DE    ED    ",
+        "    BB    BB    ",
+        "     AC  CA     ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                "
+      ],
+      [
+        "FFF          FFF",
+        " FF          FF ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "     AC  CA     ",
+        "    BB    BB    ",
+        "    DE    ED    ",
+        "    DE    ED    ",
+        "    BB    BB    ",
+        "     AC  CA     ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                "
+      ],
+      [
+        "FFF          FFF",
+        " FF          FF ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "     AC  CA     ",
+        "    BB    BB    ",
+        "    DE    ED    ",
+        "    DE    ED    ",
+        "    BB    BB    ",
+        "     AC  CA     ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                "
+      ],
+      [
+        "FFFF  GGGG  FFFF",
+        " FFF        FFF ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "     AC  CA     ",
+        "    BB    BB    ",
+        "    DE    ED    ",
+        "    DE    ED    ",
+        "    BB    BB    ",
+        "     AC  CA     ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                "
+      ],
+      [
+        " FFFGGGGGGGGFFF ",
+        " FFF        FFF ",
+        "  FFF      FFF  ",
+        "  FFF      FFF  ",
+        "   FFF    FFF   ",
+        "   FFFAAAAFFF   ",
+        "    FA    AF    ",
+        "    AAC  CAA    ",
+        "    BB    BB    ",
+        "    DE    ED    ",
+        "    DE    ED    ",
+        "    BB    BB    ",
+        "     AC  CA     ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                "
+      ],
+      [
+        " FFFGGGGGGGGFFF ",
+        " FFF        FFF ",
+        "  FFF      FFF  ",
+        "  FFF      FFF  ",
+        "   FFF    FFF   ",
+        "   FFF    FFF   ",
+        "    F      F    ",
+        "    AAC  CAA    ",
+        "   ABB    BBA   ",
+        "   ADE    EDA   ",
+        "   ADE    EDA   ",
+        "   ABB    BBA   ",
+        "     AC  CA     ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                "
+      ],
+      [
+        " FFFFGGGGGGFFFF ",
+        "  FFF      FFF  ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "     AC  CA     ",
+        "    BB    BB    ",
+        "    DE    ED    ",
+        "    DE    ED    ",
+        "    BB    BB    ",
+        "    AAC  CAA    ",
+        "     A    A     ",
+        "      AAAA      ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                "
+      ],
+      [
+        "  FFFFGGGGFFFF  ",
+        "   FFF    FFF   ",
+        "                ",
+        "      AAAA      ",
+        "     A    A     ",
+        "    A      A    ",
+        "     AC  CA     ",
+        "    BB    BB    ",
+        "    DE    ED    ",
+        "    DE    ED    ",
+        "    BB    BB    ",
+        "     AC  CA     ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                "
+      ],
+      [
+        " GFFFFGGGGFFFFG ",
+        "   FFF    FFF   ",
+        "                ",
+        "                ",
+        "                ",
+        "     AC  CA     ",
+        "   ABB    BBA   ",
+        "   ADE    EDA   ",
+        "   ADE    EDA   ",
+        "   ABB    BBA   ",
+        "     AC  CA     ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                "
+      ],
+      [
+        " GFFFFFGGFFFFFG ",
+        "   FFFF  FFFF   ",
+        "     FF  FF     ",
+        "                ",
+        "                ",
+        "     AC  CA     ",
+        "    BB    BB    ",
+        "    DE    ED    ",
+        "    DE    ED    ",
+        "    BB    BB    ",
+        "    AAC  CAA    ",
+        "     A    A     ",
+        "      AAAA      ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                "
+      ],
+      [
+        " GGFFFFGGFFFFGG ",
+        "    FFF  FFF    ",
+        "     FAAAAF     ",
+        "     A    A     ",
+        "    AAC  CAA    ",
+        "    BB    BB    ",
+        "    DE    ED    ",
+        "    DE    ED    ",
+        "    BB    BB    ",
+        "     AC  CA     ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                "
+      ],
+      [
+        " GGFFFFFFFFFFGG ",
+        "    FFFFFFFF    ",
+        "     FFFFFF     ",
+        "                ",
+        "     AC  CA     ",
+        "   ABB    BBA   ",
+        "   ADE    EDA   ",
+        "   ADE    EDA   ",
+        "   ABB    BBA   ",
+        "     AC  CA     ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                "
+      ],
+      [
+        "  GFFFFFFFFFFG  ",
+        "    FFFFFFFF    ",
+        "                ",
+        "     AC  CA     ",
+        "    BB    BB    ",
+        "    DE    ED    ",
+        "    DE    ED    ",
+        "    BB    BB    ",
+        "     AC  CA     ",
+        "    A      A    ",
+        "     A    A     ",
+        "      AAAA      ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                "
+      ],
+      [
+        "  GGFFFFFFFFGG  ",
+        "                ",
+        "                ",
+        "     AC  CA     ",
+        "    BB    BB    ",
+        "    DE    ED    ",
+        "    DE    ED    ",
+        "    BB    BB    ",
+        "     AC  CA     ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                "
+      ],
+      [
+        "   GGGAAAAGGG   ",
+        "     A    A     ",
+        "    AAC  CAA    ",
+        "   ABB    BBA   ",
+        "   ADE    EDA   ",
+        "   ADE    EDA   ",
+        "   ABB    BBA   ",
+        "    AAC  CAA    ",
+        "     A    A     ",
+        "      AAAA      ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                "
+      ],
+      [
+        " HHHGGGGGGGGHHH ",
+        " III        III ",
+        " III AC  CA III ",
+        " IIIBB    BBIII ",
+        " IIIDE    EDIII ",
+        " IIIDE    EDIII ",
+        " IIIBB    BBIII ",
+        " III AC  CA III ",
+        " III        III ",
+        " HHH        HHH ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                "
+      ],
+      [
+        "HHHHH GGGG HHHHH",
+        "IIIII C  C IIIII",
+        "IIIIIA    AIIIII",
+        "IIIIIA    AIIIII",
+        "IIIIIA    AIIIII",
+        "IIIIIA    AIIIII",
+        "IIIII C  C IIIII",
+        "IIIII      IIIII",
+        "IIIII      IIIII",
+        "HHHHH      HHHHH",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                "
+      ],
+      [
+        "HHHHH      HHHHH",
+        "IIIII CCCC IIIII",
+        "IIIIIC    CIIIII",
+        "IIIIIC    CIIIII",
+        "IIIIIC    CIIIII",
+        "IIIIIC    CIIIII",
+        "IIIII CCCC IIIII",
+        "IIIII      IIIII",
+        "IIIII      IIIII",
+        "HHHHH      HHHHH",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                "
+      ],
+      [
+        "HHHHH      HHHHH",
+        "IIIII      IIIII",
+        "IIIII AJJA IIIII",
+        "IIIII J  J IIIII",
+        "IIIII J  J IIIII",
+        "IIIII AJJA IIIII",
+        "IIIII      IIIII",
+        "IIIII      IIIII",
+        "IIIII      IIIII",
+        "HHHHH      HHHHH",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                "
+      ],
+      [
+        " HHH        HHH ",
+        " III        III ",
+        " III        III ",
+        " III   @A   III ",
+        " III   AA   III ",
+        " III        III ",
+        " III        III ",
+        " III        III ",
+        " III        III ",
+        " HHH        HHH ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                ",
+        "                "
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "states": [
+          {
+            "id": "gregtech:metal_casing_osmiridium",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "controller": {
+        "location": "multiblocked:planetaryrailgun",
+        "type": "component"
+      },
+      "B": {
+        "states": [
+          {
+            "id": "gregtech:wire_coil",
+            "meta": 7
+          }
+        ],
+        "type": "states"
+      },
+      "C": {
+        "states": [
+          {
+            "id": "gtadditions:ga_metal_casing_1",
+            "meta": 13
+          }
+        ],
+        "type": "states"
+      },
+      "D": {
+        "states": [
+          {
+            "id": "nuclearcraft:solid_fission_sink2",
+            "meta": 15
+          }
+        ],
+        "type": "states"
+      },
+      "E": {
+        "states": [
+          {
+            "id": "gregtech:meta_block_compressed_18",
+            "meta": 11
+          }
+        ],
+        "type": "states"
+      },
+      "F": {
+        "states": [
+          {
+            "id": "gtadditions:ga_metal_casing_1",
+            "meta": 9
+          }
+        ],
+        "type": "states"
+      },
+      "G": {
+        "states": [
+          {
+            "id": "gregtech:meta_block_compressed_2",
+            "meta": 3
+          }
+        ],
+        "type": "states"
+      },
+      "H": {
+        "states": [
+          {
+            "id": "enderio:block_alloy",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "I": {
+        "states": [
+          {
+            "id": "gregtech:meta_block_compressed_12",
+            "meta": 13
+          }
+        ],
+        "type": "states"
+      },
+      "J": {
+        "states": [
+          {
+            "id": "gtadditions:ga_robot_arm_casing",
+            "meta": 8
+          }
+        ],
+        "type": "states"
+      },
+      "any": {
+        "type": "any"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C"
+      ],
+      "D": [
+        "D"
+      ],
+      "E": [
+        "E"
+      ],
+      "F": [
+        "F"
+      ],
+      "G": [
+        "G"
+      ],
+      "H": [
+        "H"
+      ],
+      "I": [
+        "I"
+      ],
+      "J": [
+        "J"
+      ]
+    }
+  }
+}

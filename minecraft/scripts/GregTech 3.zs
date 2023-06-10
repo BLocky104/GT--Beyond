@@ -3608,6 +3608,7 @@ lcr.recipeBuilder()
     .EUt(1200)
     .buildAndRegister();
 
+recipes.remove(<gregtech:machine:2559>);
 
 
 
