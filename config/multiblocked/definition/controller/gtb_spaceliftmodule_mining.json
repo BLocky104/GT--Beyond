@@ -1,19 +1,7 @@
 {
   "version": 2,
   "location": "gtb:spaceliftmodule_mining",
-  "traits": {
-    "recipe_progress": {
-      "cIO": 2,
-      "gIO": 2,
-      "x": 5,
-      "y": 5,
-      "width": 60,
-      "height": 18,
-      "texture": "multiblocked:textures/gui/energy_bar.png",
-      "fillDirection": 0
-    },
-    "item": []
-  },
+  "traits": {},
   "properties": {
     "rotationState": "ALL",
     "showInJei": true,
@@ -84,37 +72,24 @@
         "type": "component"
       },
       "item_in": {
-        "states": [
-          {
-            "id": "multiblocked:item_input",
-            "meta": 0
-          }
-        ],
-        "type": "states",
+        "location": "multiblocked:item_input",
+        "type": "component",
         "minCount": 1,
-        "maxCount": 2,
         "previewCount": 1,
-        "io": "IN",
-        "slotName": "item_in"
+        "io": "IN"
       },
       "item_out": {
-        "states": [
-          {
-            "id": "multiblocked:item_output",
-            "meta": 0
-          }
-        ],
-        "type": "states",
+        "location": "multiblocked:item_output",
+        "type": "component",
         "minCount": 1,
         "maxCount": 1,
         "previewCount": 1,
-        "io": "OUT",
-        "slotName": "item_out"
+        "io": "OUT"
       },
       "hatch": {
-        "location": "multiblocked:item_input",
+        "location": "mbd:spacelifthatch",
         "type": "component",
-        "slotName": "module_interface"
+        "slotName": "miner_io"
       },
       "any": {
         "type": "any"

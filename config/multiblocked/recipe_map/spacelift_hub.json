@@ -9,7 +9,6 @@
         "item": [
           {
             "chance": 1.0,
-            "slotName": "hub_io",
             "content": {
               "amount": 1,
               "matches": [
@@ -23,7 +22,6 @@
         "item": [
           {
             "chance": 1.0,
-            "slotName": "hub_io",
             "content": {
               "amount": 1,
               "matches": [

@@ -6,11 +6,11 @@
     "item": [
       {
         "cIO": 2,
-        "gIO": 0,
+        "gIO": 2,
         "mIO": 2,
         "x": 79,
         "y": 71,
-        "autoIO": true
+        "autoIO": false
       }
     ]
   },

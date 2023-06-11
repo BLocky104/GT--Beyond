@@ -11,4 +11,4 @@
 *.csv
 *.xml
 *.ini
-config/splash.properties
+*.properties

@@ -174,9 +174,6 @@ var tetraethylene = VanillaFactory.createFluid("tetraethylene", Color.fromHex("4
 tetraethylene.temperature=(300);
 tetraethylene.register();
 
-var vibrantalloyplate = VanillaFactory.createItem("vibrantalloyplate");
-vibrantalloyplate.register();
-
 var hotvibrantalloyingot = VanillaFactory.createItem("hotvibrantalloyingot");
 hotvibrantalloyingot.register();
 
@@ -486,14 +483,6 @@ advancedcraftingunit.register();
 
 var hotplatinumtitaniumingot = VanillaFactory.createItem("hotplatinumtitaniumingot");
 hotplatinumtitaniumingot.register();
-
-var dimensional = VanillaFactory.createBlock("dimensional", <blockmaterial:rock>);
-dimensional.setBlockHardness(10.0);
-dimensional.setBlockResistance(10.0);
-dimensional.setToolClass("pickaxe");
-dimensional.setToolLevel(5);
-dimensional.setBlockSoundType(<soundtype:metal>);
-dimensional.register();
 
 var hotsoulariumingot = VanillaFactory.createItem("hotsoulariumingot");
 hotsoulariumingot.register();
@@ -1298,38 +1287,14 @@ dissolutedmana.register();
 var highmana = VanillaFactory.createFluid("highmana", Color.fromHex("B1CADD"));
 highmana.register();
 
-var lowthoriumsolution = VanillaFactory.createFluid("lowthoriumsolution", Color.fromHex("B1CADD"));
-lowthoriumsolution.register();
-
-var lowthoriumemulution = VanillaFactory.createFluid("lowthoriumemulution", Color.fromHex("B1CADD"));
-lowthoriumemulution.register();
-
-var thoriumenrichedmixture = VanillaFactory.createFluid("thoriumenrichedmixture", Color.fromHex("B1CADD"));
-thoriumenrichedmixture.register();
-
 var thoriumleach = VanillaFactory.createFluid("thoriumleach", Color.fromHex("B1CADD"));
 thoriumleach.register();
-
-var lightlyhydrocrackedthoriumleach = VanillaFactory.createFluid("lightlyhydrocrackedthoriumleach", Color.fromHex("B1CADD"));
-lightlyhydrocrackedthoriumleach.register();
 
 var thoriumleachdust = VanillaFactory.createItem("thoriumleachdust");
 thoriumleachdust.register();
 
-var intermediatequalitythoriumsolution = VanillaFactory.createFluid("intermediatequalitythoriumsolution", Color.fromHex("B1CADD"));
-intermediatequalitythoriumsolution.register();
-
-var distilledthoriumsolution = VanillaFactory.createFluid("distilledthoriumsolution", Color.fromHex("B1CADD"));
-distilledthoriumsolution.register();
-
-var activatedthoriumsolution = VanillaFactory.createFluid("activatedthoriumsolution", Color.fromHex("B1CADD"));
+var activatedthoriumsolution = VanillaFactory.createFluid("activatedthoriumsolution", Color.fromHex("004D40"));
 activatedthoriumsolution.register();
-
-var highqualitythoriumsolution = VanillaFactory.createFluid("highqualitythoriumsolution", Color.fromHex("B1CADD"));
-highqualitythoriumsolution.register();
-
-var uraninitethoriumleach = VanillaFactory.createFluid("uraninitethoriumleach", Color.fromHex("B1CADD"));
-uraninitethoriumleach.register();
 
 var trueneutroniumparticle = VanillaFactory.createItem("trueneutroniumparticle");
 trueneutroniumparticle.register();
@@ -1544,13 +1509,13 @@ moltenceriumdopedlanthanum.register();
 var ceriumdopedlanthanumdust = VanillaFactory.createItem("ceriumdopedlanthanumdust");
 ceriumdopedlanthanumdust.register();
 
-var unprocessedcelasolution = VanillaFactory.createFluid("unprocessedcelasolution", Color.fromHex("FFF9C4"));
+var unprocessedcelasolution = VanillaFactory.createFluid("unprocessedcelasolution", Color.fromHex("D9DF95"));
 unprocessedcelasolution.register();
 
 var celananoparticle = VanillaFactory.createItem("celananoparticle");
 celananoparticle.register();
 
-var moltencelananoparticles = VanillaFactory.createFluid("moltencelananoparticles", Color.fromHex("DED9AD"));
+var moltencelananoparticles = VanillaFactory.createFluid("moltencelananoparticles", Color.fromHex("D9DF95"));
 moltencelananoparticles.register();
 
 var lanthanumseedcrystal = VanillaFactory.createItem("lanthanumseedcrystal");
@@ -1738,17 +1703,895 @@ radium_202_dust.register();
 var radium_sodium_emulsion = VanillaFactory.createFluid("radium_sodium_emulsion", Color.fromHex("666B66"));
 radium_sodium_emulsion.register();
 
-var civilization = VanillaFactory.createItem("civilization");
-civilization.register();
+var woodeneglinsteelcasing = VanillaFactory.createBlock("woodeneglinsteelcasing", <blockmaterial:rock>);
+woodeneglinsteelcasing.setBlockHardness(20.0);
+woodeneglinsteelcasing.setBlockResistance(10.0);
+woodeneglinsteelcasing.setToolClass("pickaxe");
+woodeneglinsteelcasing.setToolLevel(5);
+woodeneglinsteelcasing.setBlockSoundType(<soundtype:metal>);
+woodeneglinsteelcasing.register();
 
-var nature = VanillaFactory.createItem("nature");
-nature.register();
+var logcasing = VanillaFactory.createBlock("logcasing", <blockmaterial:rock>);
+logcasing.setBlockHardness(20.0);
+logcasing.setBlockResistance(10.0);
+logcasing.setToolClass("pickaxe");
+logcasing.setToolLevel(5);
+logcasing.setBlockSoundType(<soundtype:metal>);
+logcasing.register();
 
-var humankind = VanillaFactory.createItem("humankind");
-humankind.register();
+var steelborderedwoodencasing = VanillaFactory.createBlock("steelborderedwoodencasing", <blockmaterial:wood>);
+steelborderedwoodencasing.setBlockHardness(20.0);
+steelborderedwoodencasing.setBlockResistance(10.0);
+steelborderedwoodencasing.setToolClass("pickaxe");
+steelborderedwoodencasing.setToolLevel(5);
+steelborderedwoodencasing.setBlockSoundType(<soundtype:metal>);
+steelborderedwoodencasing.register();
 
-var mythical = VanillaFactory.createItem("mythical");
-mythical.register();
+var solardistilledwater = VanillaFactory.createFluid("solardistilledwater", Color.fromHex("40b0ed"));
+solardistilledwater.register();
 
-var potato_alloy_dust = VanillaFactory.createItem("potato_alloy_dust");
-potato_alloy_dust.register();
+var dirtywater = VanillaFactory.createFluid("dirtywater", Color.fromHex("6e3415"));
+dirtywater.register();
+
+var lightlytreatedwoodplanks = VanillaFactory.createBlock("lightlytreatedwoodplanks", <blockmaterial:wood>);
+lightlytreatedwoodplanks.setBlockHardness(12.0);
+lightlytreatedwoodplanks.setBlockResistance(10.0);
+lightlytreatedwoodplanks.setToolClass("axe");
+lightlytreatedwoodplanks.setToolLevel(2);
+lightlytreatedwoodplanks.setBlockSoundType(<soundtype:metal>);
+lightlytreatedwoodplanks.register();
+
+var thermalcasing = VanillaFactory.createBlock("thermalcasing", <blockmaterial:rock>);
+thermalcasing.setBlockHardness(12.0);
+thermalcasing.setBlockResistance(10.0);
+thermalcasing.setToolClass("axe");
+thermalcasing.setToolLevel(2);
+thermalcasing.setBlockSoundType(<soundtype:metal>);
+thermalcasing.register();
+
+var forcefieldgenerator = VanillaFactory.createItem("forcefieldgenerator");
+forcefieldgenerator.register();
+
+var ionthruster = VanillaFactory.createItem("ionthruster");
+ionthruster.register();
+
+var articficialmuscle = VanillaFactory.createItem("articficialmuscle");
+articficialmuscle.register();
+
+var detectiondevice = VanillaFactory.createBlock("detectiondevice", <blockmaterial:rock>);
+detectiondevice.setBlockHardness(12.0);
+detectiondevice.setBlockResistance(10.0);
+detectiondevice.setToolClass("axe");
+detectiondevice.setToolLevel(2);
+detectiondevice.setBlockSoundType(<soundtype:metal>);
+detectiondevice.register();
+
+var wiring = VanillaFactory.createItem("wiring");
+wiring.register();
+
+var solenoid = VanillaFactory.createItem("solenoid");
+solenoid.register();
+
+var motor = VanillaFactory.createItem("motor");
+motor.register();
+
+var carbonmyogel = VanillaFactory.createItem("carbonmyogel");
+carbonmyogel.register();
+
+var spectreplate = VanillaFactory.createItem("spectreplate");
+spectreplate.register();
+
+var superlubricenttincture = VanillaFactory.createFluid("superlubricenttincture", Color.fromHex("5a5c00"));
+superlubricenttincture.register();
+
+var optimizedrestrictedpcbcasing = VanillaFactory.createBlock("optimizedrestrictedpcbcasing", <blockmaterial:rock>);
+optimizedrestrictedpcbcasing.setBlockHardness(80.0);
+optimizedrestrictedpcbcasing.setBlockResistance(10.0);
+optimizedrestrictedpcbcasing.setToolClass("axe");
+optimizedrestrictedpcbcasing.setToolLevel(2);
+optimizedrestrictedpcbcasing.setBlockSoundType(<soundtype:metal>);
+optimizedrestrictedpcbcasing.register();
+
+var opticalspeedingpipecasing = VanillaFactory.createBlock("opticalspeedingpipecasing", <blockmaterial:rock>);
+opticalspeedingpipecasing.setBlockHardness(80.0);
+opticalspeedingpipecasing.setBlockResistance(10.0);
+opticalspeedingpipecasing.setToolClass("axe");
+opticalspeedingpipecasing.setToolLevel(2);
+opticalspeedingpipecasing.setBlockSoundType(<soundtype:metal>);
+opticalspeedingpipecasing.register();
+
+var perfectlysealedvacuumcasing = VanillaFactory.createBlock("perfectlysealedvacuumcasing", <blockmaterial:rock>);
+perfectlysealedvacuumcasing.setBlockHardness(80.0);
+perfectlysealedvacuumcasing.setBlockResistance(10.0);
+perfectlysealedvacuumcasing.setToolClass("axe");
+perfectlysealedvacuumcasing.setToolLevel(2);
+perfectlysealedvacuumcasing.setBlockSoundType(<soundtype:metal>);
+perfectlysealedvacuumcasing.register();
+
+var paraphenylenediaminesolution = VanillaFactory.createFluid("paraphenylenediaminesolution", Color.fromHex("BA68C8"));
+paraphenylenediaminesolution.register();
+
+var terephthaloylchloride = VanillaFactory.createItem("terephthaloylchloride");
+terephthaloylchloride.register();
+
+var paraphenylenediamine = VanillaFactory.createItem("paraphenylenediamine");
+paraphenylenediamine.register();
+
+var nmethyl2pyrrolidone = VanillaFactory.createFluid("nmethyl2pyrrolidone", Color.fromHex("81D4FA"));
+nmethyl2pyrrolidone.register();
+
+var bbutyrolactone = VanillaFactory.createFluid("bbutyrolactone", Color.fromHex("C8E6C9"));
+bbutyrolactone.register();
+
+var twonaphthol = VanillaFactory.createFluid("twonaphthol", Color.fromHex("FFAB91"));
+twonaphthol.register();
+
+var binol = VanillaFactory.createFluid("binol", Color.fromHex("37474F"));
+binol.register();
+
+var diketene = VanillaFactory.createFluid("diketene", Color.fromHex("B0BEC5"));
+diketene.register();
+
+var chlorodiphenylphosphine = VanillaFactory.createFluid("chlorodiphenylphosphine", Color.fromHex("BA68C8"));
+chlorodiphenylphosphine.register();
+
+var binap = VanillaFactory.createItem("binap");
+binap.register();
+
+var unrefinedkevlar = VanillaFactory.createFluid("unrefinedkevlar", Color.fromHex("FFEB3B"));
+unrefinedkevlar.register();
+
+var kevlarmix = VanillaFactory.createItem("kevlarmix");
+kevlarmix.register();
+
+var rotarryspinningwhisker = VanillaFactory.createItem("rotarryspinningwhisker");
+rotarryspinningwhisker.register();
+
+var terephtaladehyde = VanillaFactory.createFluid("terephtaladehyde", Color.fromHex("CFD8DC"));
+terephtaladehyde.register();
+
+var carbondisulfide = VanillaFactory.createFluid("carbondisulfide", Color.fromHex("4DB6AC"));
+carbondisulfide.register();
+
+var naphtalene = VanillaFactory.createFluid("naphtalene", Color.fromHex("FF8F00"));
+naphtalene.register();
+
+var butylithium = VanillaFactory.createFluid("butylithium", Color.fromHex("C2185B"));
+butylithium.register();
+
+var liquidbinap = VanillaFactory.createFluid("liquidbinap", Color.fromHex("263238"));
+liquidbinap.register();
+
+var crystalkevlar = VanillaFactory.createFluid("crystalkevlar", Color.fromHex("FFEE58"));
+crystalkevlar.register();
+
+var supraplasma = VanillaFactory.createFluid("supraplasma", Color.fromHex("cba3cc"));
+supraplasma.register();
+
+var metastableenergeticalalloy = VanillaFactory.createFluid("metastableenergeticalalloy", Color.fromHex("db4234"));
+metastableenergeticalalloy.register();
+
+var leadmetallicpowder = VanillaFactory.createItem("leadmetallicpowder");
+leadmetallicpowder.register();
+
+var muddustresidues = VanillaFactory.createItem("muddustresidues");
+muddustresidues.register();
+
+var purifiedthoriumemulsion = VanillaFactory.createFluid("purifiedthoriumemulsion", Color.fromHex("388E3C"));
+purifiedthoriumemulsion.register();
+
+var driedthoriumemulsion = VanillaFactory.createFluid("driedthoriumemulsion", Color.fromHex("305731"));
+driedthoriumemulsion.register();
+
+var sulfuricthoriumsolution = VanillaFactory.createFluid("sulfuricthoriumsolution", Color.fromHex("FF7043"));
+sulfuricthoriumsolution.register();
+
+var hydrocrackedthoriumsolution = VanillaFactory.createFluid("hydrocrackedthoriumsolution", Color.fromHex("A5D6A7"));
+hydrocrackedthoriumsolution.register();
+
+var thoriumsolution = VanillaFactory.createFluid("thoriumsolution", Color.fromHex("2E7D32"));
+thoriumsolution.register();
+
+var heatedthoriumsolution = VanillaFactory.createFluid("heatedthoriumsolution", Color.fromHex("DCE775"));
+heatedthoriumsolution.register();
+
+var supercooledthoriumsolution = VanillaFactory.createFluid("supercooledthoriumsolution", Color.fromHex("B3E5FC"));
+supercooledthoriumsolution.register();
+
+var seperationfilter = VanillaFactory.createItem("seperationfilter");
+seperationfilter.register();
+
+var seperationcatalyst = VanillaFactory.createItem("seperationcatalyst");
+seperationcatalyst.register();
+
+var thoriumleachsolution = VanillaFactory.createFluid("thoriumleachsolution", Color.fromHex("06521c"));
+thoriumleachsolution.register();
+
+var fusioncoil = VanillaFactory.createItem("fusioncoil");
+fusioncoil.register();
+
+var superconductingwire = VanillaFactory.createItem("superconductingwire");
+superconductingwire.register();
+
+var computercasingvent = VanillaFactory.createBlock("computercasingvent", <blockmaterial:rock>);
+computercasingvent.setBlockHardness(80.0);
+computercasingvent.setBlockResistance(10.0);
+computercasingvent.setToolClass("pickaxe");
+computercasingvent.setToolLevel(2);
+computercasingvent.setBlockSoundType(<soundtype:metal>);
+computercasingvent.register();
+
+var annihilationcasing = VanillaFactory.createBlock("annihilationcasing", <blockmaterial:rock>);
+annihilationcasing.setBlockHardness(80.0);
+annihilationcasing.setBlockResistance(10.0);
+annihilationcasing.setToolClass("pickaxe");
+annihilationcasing.setToolLevel(2);
+annihilationcasing.setBlockSoundType(<soundtype:metal>);
+annihilationcasing.register();
+
+var fieldgeneratorcasing = VanillaFactory.createBlock("fieldgeneratorcasing", <blockmaterial:rock>);
+fieldgeneratorcasing.setBlockHardness(80.0);
+fieldgeneratorcasing.setBlockResistance(10.0);
+fieldgeneratorcasing.setToolClass("pickaxe");
+fieldgeneratorcasing.setToolLevel(2);
+fieldgeneratorcasing.setBlockSoundType(<soundtype:metal>);
+fieldgeneratorcasing.register();
+
+var coil = VanillaFactory.createBlock("coil", <blockmaterial:rock>);
+coil.setBlockHardness(80.0);
+coil.setBlockResistance(10.0);
+coil.setToolClass("pickaxe");
+coil.setToolLevel(2);
+coil.setBlockSoundType(<soundtype:metal>);
+coil.register();
+
+var quantumcomputercasing = VanillaFactory.createBlock("quantumcomputercasing", <blockmaterial:rock>);
+quantumcomputercasing.setBlockHardness(80.0);
+quantumcomputercasing.setBlockResistance(10.0);
+quantumcomputercasing.setToolClass("pickaxe");
+quantumcomputercasing.setToolLevel(2);
+quantumcomputercasing.setBlockSoundType(<soundtype:metal>);
+quantumcomputercasing.register();
+
+var lasercasing = VanillaFactory.createBlock("lasercasing", <blockmaterial:rock>);
+lasercasing.setBlockHardness(80.0);
+lasercasing.setBlockResistance(10.0);
+lasercasing.setToolClass("pickaxe");
+lasercasing.setToolLevel(2);
+lasercasing.setBlockSoundType(<soundtype:metal>);
+lasercasing.register();
+
+var quantumcasing = VanillaFactory.createBlock("quantumcasing", <blockmaterial:rock>);
+quantumcasing.setBlockHardness(80.0);
+quantumcasing.setBlockResistance(10.0);
+quantumcasing.setToolClass("pickaxe");
+quantumcasing.setToolLevel(2);
+quantumcasing.setBlockSoundType(<soundtype:metal>);
+quantumcasing.register();
+
+var reactorsimulator = VanillaFactory.createBlock("reactorsimulator", <blockmaterial:rock>);
+reactorsimulator.setBlockHardness(80.0);
+reactorsimulator.setBlockResistance(10.0);
+reactorsimulator.setToolClass("pickaxe");
+reactorsimulator.setToolLevel(2);
+reactorsimulator.setBlockSoundType(<soundtype:metal>);
+reactorsimulator.register();
+
+var quantumglass = VanillaFactory.createBlock("quantumglass", <blockmaterial:glass>);
+quantumglass.setBlockHardness(1.5);
+quantumglass.setBlockResistance(3.0);
+quantumglass.setBlockLayer("TRANSLUCENT");
+quantumglass.setLightOpacity(12);
+quantumglass.setTranslucent(true);
+quantumglass.setFullBlock(false);
+quantumglass.setToolClass("pickaxe");
+quantumglass.setToolLevel(2);
+quantumglass.setBlockSoundType(<soundtype:stone>);
+quantumglass.register();
+
+var tungstalloytwo = VanillaFactory.createFluid("tungstalloytwo", Color.fromHex("06521c"));
+tungstalloytwo.register();
+
+var automationframe = VanillaFactory.createBlock("automationframe", <blockmaterial:glass>);
+automationframe.setBlockHardness(1.5);
+automationframe.setBlockResistance(3.0);
+automationframe.setBlockLayer("TRANSLUCENT");
+automationframe.setLightOpacity(15);
+automationframe.setTranslucent(true);
+automationframe.setFullBlock(false);
+automationframe.setToolClass("pickaxe");
+automationframe.setToolLevel(2);
+automationframe.setBlockSoundType(<soundtype:stone>);
+automationframe.register();
+
+var livingsolder = VanillaFactory.createFluid("livingsolder", Color.fromHex("886C62"));
+livingsolder.register();
+
+var mutatedlivingsolder = VanillaFactory.createFluid("mutatedlivingsolder", Color.fromHex("694653"));
+mutatedlivingsolder.register();
+
+var fuelrod = VanillaFactory.createBlock("fuelrod", <blockmaterial:glass>);
+fuelrod.setBlockHardness(1.5);
+fuelrod.setBlockResistance(3.0);
+fuelrod.setBlockLayer("TRANSLUCENT");
+fuelrod.setLightOpacity(15);
+fuelrod.setTranslucent(true);
+fuelrod.setFullBlock(false);
+fuelrod.setToolClass("pickaxe");
+fuelrod.setToolLevel(2);
+fuelrod.setBlockSoundType(<soundtype:stone>);
+fuelrod.register();
+
+var dimensionalcasing = VanillaFactory.createBlock("dimensionalcasing", <blockmaterial:rock>);
+dimensionalcasing.setBlockHardness(80.0);
+dimensionalcasing.setBlockResistance(10.0);
+dimensionalcasing.setToolClass("pickaxe");
+dimensionalcasing.setToolLevel(2);
+dimensionalcasing.setBlockSoundType(<soundtype:metal>);
+dimensionalcasing.register();
+
+var explosivehydrazine = VanillaFactory.createFluid("explosivehydrazine", Color.fromHex("827722"));
+explosivehydrazine.register();
+
+var hmx = VanillaFactory.createItem("hmx");
+hmx.register();
+
+var spacetimebendingprocessor = VanillaFactory.createItem("spacetimebendingprocessor");
+spacetimebendingprocessor.register();
+
+var spacetimebendingmainframe = VanillaFactory.createItem("spacetimebendingmainframe");
+spacetimebendingmainframe.register();
+
+var spacetimebendingcomputer = VanillaFactory.createItem("spacetimebendingcomputer");
+spacetimebendingcomputer.register();
+
+var spacetimebendingassembly = VanillaFactory.createItem("spacetimebendingassembly");
+spacetimebendingassembly.register();
+
+var sulfurousacid = VanillaFactory.createFluid("sulfurousacid", Color.fromHex("827722"));
+sulfurousacid.register();
+
+var blockgraphite = VanillaFactory.createBlock("blockgraphite", <blockmaterial:rock>);
+blockgraphite.setBlockHardness(12.0);
+blockgraphite.setBlockResistance(10.0);
+blockgraphite.setToolClass("pickaxe");
+blockgraphite.setToolLevel(2);
+blockgraphite.setBlockSoundType(<soundtype:metal>);
+blockgraphite.register();
+
+var millcasing = VanillaFactory.createBlock("millcasing", <blockmaterial:rock>);
+millcasing.setBlockHardness(12.0);
+millcasing.setBlockResistance(10.0);
+millcasing.setToolClass("pickaxe");
+millcasing.setToolLevel(2);
+millcasing.setBlockSoundType(<soundtype:metal>);
+millcasing.register();
+
+var purepetridish = VanillaFactory.createItem("purepetridish");
+purepetridish.register();
+
+var hundretmethanol = VanillaFactory.createFluid("hundretmethanol", Color.fromHex("827722"));
+hundretmethanol.register();
+
+var hundretbutanol = VanillaFactory.createFluid("hundretbutanol", Color.fromHex("827722"));
+hundretbutanol.register();
+
+var datadisc = VanillaFactory.createItem("datadisc");
+datadisc.register();
+
+var datadiskblackholecompressor = VanillaFactory.createItem("datadiskblackholecompressor");
+datadiskblackholecompressor.register();
+
+var polyurethanecatalystadust = VanillaFactory.createItem("polyurethanecatalystadust");
+polyurethanecatalystadust.register();
+
+var polyurethanecatalystbdust = VanillaFactory.createItem("polyurethanecatalystbdust");
+polyurethanecatalystbdust.register();
+
+var propionicacid = VanillaFactory.createFluid("propionicacid", Color.fromHex("E0E0E0"));
+propionicacid.register();
+
+var nickeltetracarbonyl = VanillaFactory.createFluid("nickeltetracarbonyl", Color.fromHex("B7D7F0"));
+nickeltetracarbonyl.register();
+
+var oranorhodiumcatalystdust = VanillaFactory.createItem("oranorhodiumcatalystdust");
+oranorhodiumcatalystdust.register();
+
+var trimethylborate = VanillaFactory.createFluid("trimethylborate", Color.fromHex("D7CCC8"));
+trimethylborate.register();
+
+var hexanol = VanillaFactory.createFluid("hexanol", Color.fromHex("B71C1C"));
+hexanol.register();
+
+var wovenkevlar = VanillaFactory.createItem("wovenkevlar");
+wovenkevlar.register();
+
+var polyurethaneresin = VanillaFactory.createFluid("polyurethaneresin", Color.fromHex("C3B640"));
+polyurethaneresin.register();
+
+var fourdiphenylmethanediiscocyanatedust = VanillaFactory.createItem("fourdiphenylmethanediiscocyanatedust");
+fourdiphenylmethanediiscocyanatedust.register();
+
+var diaminodiphenylmethanemixture = VanillaFactory.createFluid("diaminodiphenylmethanemixture", Color.fromHex("E1BEE7"));
+diaminodiphenylmethanemixture.register();
+
+var diphenylmethanediiscocyanatemixture = VanillaFactory.createFluid("diphenylmethanediiscocyanatemixture", Color.fromHex("DFC9E2"));
+diphenylmethanediiscocyanatemixture.register();
+
+var pentaerythritoldust = VanillaFactory.createItem("pentaerythritoldust");
+pentaerythritoldust.register();
+
+var siliconoil = VanillaFactory.createFluid("siliconoil", Color.fromHex("D4D4D4"));
+siliconoil.register();
+
+var pentanol = VanillaFactory.createFluid("pentanol", Color.fromHex("EF9A9A"));
+pentanol.register();
+
+var reinfrocedkevlarcloth = VanillaFactory.createItem("reinfrocedkevlarcloth");
+reinfrocedkevlarcloth.register();
+
+var pentoldehyde = VanillaFactory.createFluid("pentoldehyde", Color.fromHex("EF9A9A"));
+pentoldehyde.register();
+
+var isopentoldehyde = VanillaFactory.createFluid("isopentoldehyde", Color.fromHex("EF9A9A"));
+isopentoldehyde.register();
+
+var tinyoranorhodiumcatalystdust = VanillaFactory.createItem("tinyoranorhodiumcatalystdust");
+tinyoranorhodiumcatalystdust.register();
+
+var enrichedenderium = VanillaFactory.createItem("enrichedenderium");
+enrichedenderium.register();
+
+var petridishmold = VanillaFactory.createItem("petridishmold");
+petridishmold.register();
+
+var mutationbasedpetridish = VanillaFactory.createItem("mutationbasedpetridish");
+mutationbasedpetridish.register();
+
+var algaebreedingbase = VanillaFactory.createItem("algaebreedingbase");
+algaebreedingbase.register();
+
+var taucetialgaemixture = VanillaFactory.createItem("taucetialgaemixture");
+taucetialgaemixture.register();
+
+var evolvedalaemixture = VanillaFactory.createItem("evolvedalaemixture");
+evolvedalaemixture.register();
+
+var biocircuitboard = VanillaFactory.createItem("biocircuitboard");
+biocircuitboard.register();
+
+var ultrabiomutatedcircuitboard = VanillaFactory.createItem("ultrabiomutatedcircuitboard");
+ultrabiomutatedcircuitboard.register();
+
+var nanopic = VanillaFactory.createItem("nanopic");
+nanopic.register();
+
+var nanopicw = VanillaFactory.createItem("nanopicw");
+nanopicw.register();
+
+var pikopic = VanillaFactory.createItem("pikopic");
+pikopic.register();
+
+var pikopicw = VanillaFactory.createItem("pikopicw");
+pikopicw.register();
+
+var femtopic = VanillaFactory.createItem("femtopic");
+femtopic.register();
+
+var femtopicw = VanillaFactory.createItem("femtopicw");
+femtopicw.register();
+
+var attopicw = VanillaFactory.createItem("attopicw");
+attopicw.register();
+
+var attopic = VanillaFactory.createItem("attopic");
+attopic.register();
+
+var zeptopic = VanillaFactory.createItem("zeptopic");
+zeptopic.register();
+
+var zeptopicw = VanillaFactory.createItem("zeptopicw");
+zeptopicw.register();
+
+var yoctopic = VanillaFactory.createItem("yoctopic");
+yoctopic.register();
+
+var yoctopicw = VanillaFactory.createItem("yoctopicw");
+yoctopicw.register();
+
+var xontopic = VanillaFactory.createItem("xontopic");
+xontopic.register();
+
+var xontopicw = VanillaFactory.createItem("xontopicw");
+xontopicw.register();
+
+var seaborgiumdopedboule = VanillaFactory.createItem("seaborgiumdopedboule");
+seaborgiumdopedboule.register();
+
+var biobasedpetridish = VanillaFactory.createItem("biobasedpetridish");
+biobasedpetridish.register();
+ 
+var seaborgiumdopedwafer = VanillaFactory.createItem("seaborgiumdopedwafer");
+seaborgiumdopedwafer.register();
+
+var biobasedpetridiswithculture = VanillaFactory.createItem("biobasedpetridiswithculture");
+biobasedpetridiswithculture.register();
+
+var sterilebiomedium = VanillaFactory.createFluid("sterilebiomedium", Color.fromHex("1B5E20"));
+sterilebiomedium.register();
+
+var titaniumiodine = VanillaFactory.createItem("titaniumiodine");
+titaniumiodine.register();
+
+var moltenredstonealloy = VanillaFactory.createFluid("moltenredstonealloy", Color.fromHex("822020"));
+moltenredstonealloy.register();
+
+var isohexanoldehyde = VanillaFactory.createFluid("isohexanoldehyde", Color.fromHex("B71C1C"));
+isohexanoldehyde.register();
+
+var hexanoldehyde = VanillaFactory.createFluid("hexanoldehyde", Color.fromHex("B71C1C"));
+hexanoldehyde.register();
+
+var scsteamturbinecasing = VanillaFactory.createBlock("scsteamturbinecasing", <blockmaterial:rock>);
+scsteamturbinecasing.setBlockHardness(12.0);
+scsteamturbinecasing.setBlockResistance(10.0);
+scsteamturbinecasing.setToolClass("pickaxe");
+scsteamturbinecasing.setToolLevel(2);
+scsteamturbinecasing.setBlockSoundType(<soundtype:metal>);
+scsteamturbinecasing.register();
+
+var dilutedoil = VanillaFactory.createFluid("dilutedoil", Color.fromHex("141414"));
+dilutedoil.register();
+
+var desaltedoil = VanillaFactory.createFluid("desaltedoil", Color.fromHex("2C2C2C"));
+desaltedoil.register();
+
+var sulfuricoilresidues = VanillaFactory.createFluid("sulfuricoilresidues", Color.fromHex("FFEE58"));
+sulfuricoilresidues.register();
+
+var sulfuricbyproducts = VanillaFactory.createFluid("sulfuricbyproducts", Color.fromHex("2C2C2C"));
+sulfuricbyproducts.register();
+
+var heavyoilresidues = VanillaFactory.createFluid("heavyoilresidues", Color.fromHex("181816"));
+heavyoilresidues.register();
+
+var paraffinwax = VanillaFactory.createItem("paraffinwax");
+paraffinwax.register();
+
+var stackwax = VanillaFactory.createItem("stackwax");
+stackwax.register();
+
+var bitominousresidue = VanillaFactory.createItem("bitominousresidue");
+bitominousresidue.register();
+
+var fractionatedoil = VanillaFactory.createFluid("fractionatedoil", Color.fromHex("181816"));
+fractionatedoil.register();
+
+var tar = VanillaFactory.createFluid("tar", Color.fromHex("222121"));
+tar.register();
+
+var oilgas = VanillaFactory.createFluid("oilgas", Color.fromHex("121010"));
+oilgas.register();
+
+var vacuumflashedtar = VanillaFactory.createFluid("vacuumflashedtar", Color.fromHex("121010"));
+vacuumflashedtar.register();
+
+var petreulumcoke = VanillaFactory.createItem("petreulumcoke");
+petreulumcoke.register();
+
+var asphalt = VanillaFactory.createItem("asphalt");
+asphalt.register();
+
+var richamine = VanillaFactory.createFluid("richamine", Color.fromHex("121010"));
+richamine.register();
+
+var sourgas = VanillaFactory.createFluid("sourgas", Color.fromHex("121010"));
+sourgas.register();
+
+var oilfractions = VanillaFactory.createFluid("oilfractions", Color.fromHex("121010"));
+oilfractions.register();
+
+var treatedsulfuricfractions = VanillaFactory.createFluid("treatedsulfuricfractions", Color.fromHex("121010"));
+treatedsulfuricfractions.register();
+
+var boiledleather = VanillaFactory.createItem("boiledleather");
+boiledleather.register();
+
+var rareearthone = VanillaFactory.createItem("rareearthone");
+rareearthone.register();
+
+var rareearthtwo = VanillaFactory.createItem("rareearthtwo");
+rareearthtwo.register();
+
+var rareearththree = VanillaFactory.createItem("rareearththree");
+rareearththree.register();
+
+var crackingcatalystpreparation = VanillaFactory.createItem("crackingcatalystpreparation");
+crackingcatalystpreparation.register();
+
+var crackingcatalyst = VanillaFactory.createItem("crackingcatalyst");
+crackingcatalyst.register();
+
+var usedcrackingcatalyst = VanillaFactory.createItem("usedcrackingcatalyst");
+usedcrackingcatalyst.register();
+
+var uncatalyzedsulfuricgas = VanillaFactory.createFluid("uncatalyzedsulfuricgas", Color.fromHex("D4E157"));
+uncatalyzedsulfuricgas.register();
+
+var aluminacatalyst = VanillaFactory.createItem("aluminacatalyst");
+aluminacatalyst.register();
+
+var fluegas = VanillaFactory.createFluid("fluegas", Color.fromHex("B1B1B0"));
+fluegas.register();
+
+var cathode = VanillaFactory.createItem("cathode");
+cathode.register();
+
+var anode = VanillaFactory.createItem("anode");
+anode.register();
+
+var wastewater = VanillaFactory.createFluid("wastewater", Color.fromHex("2E4D7F"));
+wastewater.register();
+
+var hydrogeniodide = VanillaFactory.createItem("hydrogeniodide");
+hydrogeniodide.register();
+
+var calcinatedbastnasite = VanillaFactory.createItem("calcinatedbastnasite");
+calcinatedbastnasite.register();
+
+var muddybastnasitesolution = VanillaFactory.createFluid("muddybastnasitesolution", Color.fromHex("842508"));
+muddybastnasitesolution.register();
+
+var conditionedbastnasitemud = VanillaFactory.createFluid("conditionedbastnasitemud", Color.fromHex("544340"));
+conditionedbastnasitemud.register();
+
+var dilutedbastnasitemud = VanillaFactory.createFluid("dilutedbastnasitemud", Color.fromHex("2E4D7F"));
+dilutedbastnasitemud.register();
+
+var filteredbsatnasitemud = VanillaFactory.createFluid("filteredbsatnasitemud", Color.fromHex("2E4D7F"));
+filteredbsatnasitemud.register();
+
+var wetbastnasiterareearthconcentrate = VanillaFactory.createFluid("wetbastnasiterareearthconcentrate", Color.fromHex("2E4D7F"));
+wetbastnasiterareearthconcentrate.register();
+
+var bastnasiteconcentrate = VanillaFactory.createFluid("bastnasiteconcentrate", Color.fromHex("2E4D7F"));
+bastnasiteconcentrate.register();
+
+var roastedbastnasite = VanillaFactory.createItem("roastedbastnasite");
+roastedbastnasite.register();
+
+var roastedbastnasiteconcentrate = VanillaFactory.createFluid("roastedbastnasiteconcentrate", Color.fromHex("2E4D7F"));
+roastedbastnasiteconcentrate.register();
+
+var jetfuel = VanillaFactory.createFluid("jetfuel", Color.fromHex("429D46"));
+jetfuel.register();
+
+var combustionpromoter = VanillaFactory.createFluid("combustionpromoter", Color.fromHex("2E4D7F"));
+combustionpromoter.register();
+
+var ferrocene = VanillaFactory.createItem("ferrocene");
+ferrocene.register();
+
+var ethanolgasoline = VanillaFactory.createFluid("ethanolgasoline", Color.fromHex("2E4D7F"));
+ethanolgasoline.register();
+
+var impureferrocenemixture = VanillaFactory.createFluid("impureferrocenemixture", Color.fromHex("8E24AA"));
+impureferrocenemixture.register();
+
+var ether = VanillaFactory.createFluid("ether", Color.fromHex("E65100"));
+ether.register();
+
+var ferrocenesolution = VanillaFactory.createFluid("ferrocenesolution", Color.fromHex("B0BEC5"));
+ferrocenesolution.register();
+
+var dirtdust = VanillaFactory.createItem("dirtdust");
+dirtdust.register();
+
+var datadiskassemblyline = VanillaFactory.createItem("datadiskassemblyline");
+datadiskassemblyline.register();
+
+var datadiskdigester = VanillaFactory.createItem("datadiskdigester");
+datadiskdigester.register();
+
+var acidicbastnasiteconcentrate = VanillaFactory.createFluid("acidicbastnasiteconcentrate", Color.fromHex("BF360C"));
+acidicbastnasiteconcentrate.register();
+
+var ceriumcontainingbastnasiteconcentrate = VanillaFactory.createFluid("ceriumcontainingbastnasiteconcentrate", Color.fromHex("BF5D40"));
+ceriumcontainingbastnasiteconcentrate.register();
+
+var bastnasiterarerearthoxidemixture = VanillaFactory.createFluid("bastnasiterarerearthoxidemixture", Color.fromHex("D28770"));
+bastnasiterarerearthoxidemixture.register();
+
+var bastnasiterarerearthoxidemixturedust = VanillaFactory.createItem("bastnasiterarerearthoxidemixturedust");
+bastnasiterarerearthoxidemixturedust.register();
+
+var bastnasiterarerearthconcentrate = VanillaFactory.createFluid("bastnasiterarerearthconcentrate", Color.fromHex("2E4D7F"));
+bastnasiterarerearthconcentrate.register();
+
+var nitrogenatedbastnasiterarerearthoxides = VanillaFactory.createFluid("nitrogenatedbastnasiterarerearthoxides", Color.fromHex("2E4D7F"));
+nitrogenatedbastnasiterarerearthoxides.register();
+
+var bastnasiterarerearthoxidesemulsion = VanillaFactory.createFluid("bastnasiterarerearthoxidesemulsion", Color.fromHex("2E4D7F"));
+bastnasiterarerearthoxidesemulsion.register();
+
+var bastnasiterarerearthoxidessolution = VanillaFactory.createFluid("bastnasiterarerearthoxidessolution", Color.fromHex("2E4D7F"));
+bastnasiterarerearthoxidessolution.register();
+
+var neodymiumrareearthconcentrate = VanillaFactory.createItem("neodymiumrareearthconcentrate");
+neodymiumrareearthconcentrate.register();
+
+var datadiskumvproc = VanillaFactory.createItem("datadiskumvproc");
+datadiskumvproc.register();
+
+var samaricrareearthconcentrate = VanillaFactory.createItem("samaricrareearthconcentrate");
+samaricrareearthconcentrate.register();
+
+var fluorinatedsamariccompound = VanillaFactory.createItem("fluorinatedsamariccompound");
+fluorinatedsamariccompound.register();
+
+var calciumfluoride = VanillaFactory.createItem("calciumfluoride");
+calciumfluoride.register();
+
+var samariumterbiumconcentrate = VanillaFactory.createItem("samariumterbiumconcentrate");
+samariumterbiumconcentrate.register();
+
+var samaricresidues = VanillaFactory.createItem("samaricresidues");
+samaricresidues.register();
+
+var bastnasiteoxidecomposite = VanillaFactory.createItem("bastnasiteoxidecomposite");
+bastnasiteoxidecomposite.register();
+
+var diethylamine = VanillaFactory.createFluid("diethylamine", Color.fromHex("827717"));
+diethylamine.register();
+
+var ferrocenewaste = VanillaFactory.createFluid("ferrocenewaste", Color.fromHex("827717"));
+ferrocenewaste.register();
+
+var asphaltblock = VanillaFactory.createBlock("asphaltblock", <blockmaterial:rock>);
+asphaltblock.setBlockHardness(12.0);
+asphaltblock.setBlockResistance(10.0);
+asphaltblock.setToolClass("pickaxe");
+asphaltblock.setToolLevel(2);
+asphaltblock.setBlockSoundType(<soundtype:metal>);
+asphaltblock.register();
+
+var bastnasiteoxidecompositeliquid = VanillaFactory.createFluid("bastnasiteoxidecompositeliquid", Color.fromHex("827717"));
+bastnasiteoxidecompositeliquid.register();
+
+var cosmic_circuit_board = VanillaFactory.createItem("cosmic_circuit_board");
+cosmic_circuit_board.register();
+
+var waterplasma = VanillaFactory.createFluid("waterplasma", Color.fromHex("827717"));
+waterplasma.register();
+
+var geneticmutagen = VanillaFactory.createFluid("geneticmutagen", Color.fromHex("448247"));
+geneticmutagen.register();
+
+var xenoxene = VanillaFactory.createFluid("xenoxene", Color.fromHex("4D4C4C"));
+xenoxene.register();
+
+var spacetimebendingsmdtransistor = VanillaFactory.createItem("spacetimebendingsmdtransistor");
+spacetimebendingsmdtransistor.register();
+
+var spacetimebendingsmddiode = VanillaFactory.createItem("spacetimebendingsmddiode");
+spacetimebendingsmddiode.register();
+
+var spacetimebendingsmdresistor = VanillaFactory.createItem("spacetimebendingsmdresistor");
+spacetimebendingsmdresistor.register();
+
+var spacetimebendingsmdcapacitor = VanillaFactory.createItem("spacetimebendingsmdcapacitor");
+spacetimebendingsmdcapacitor.register();
+
+var rawradox = VanillaFactory.createFluid("rawradox", Color.fromHex("8E24AA"));
+rawradox.register();
+
+var lightradox = VanillaFactory.createFluid("lightradox", Color.fromHex("D0AADB"));
+lightradox.register();
+
+var heavyradox = VanillaFactory.createFluid("heavyradox", Color.fromHex("633C7A"));
+heavyradox.register();
+
+var crackedlightradox = VanillaFactory.createFluid("crackedlightradox", Color.fromHex("B9A1C7"));
+crackedlightradox.register();
+
+var purifiedradox = VanillaFactory.createFluid("purifiedradox", Color.fromHex("321245"));
+purifiedradox.register();
+
+var crackedheavyradox = VanillaFactory.createFluid("crackedheavyradox", Color.fromHex("6A1B9A"));
+crackedheavyradox.register();
+
+var supportstructure = VanillaFactory.createBlock("supportstructure", <blockmaterial:rock>);
+supportstructure.setBlockHardness(12.0);
+supportstructure.setBlockResistance(10.0);
+supportstructure.setToolClass("pickaxe");
+supportstructure.setToolLevel(2);
+supportstructure.setBlockSoundType(<soundtype:metal>);
+supportstructure.register();
+
+var basecasing = VanillaFactory.createBlock("basecasing", <blockmaterial:rock>);
+basecasing.setBlockHardness(12.0);
+basecasing.setBlockResistance(10.0);
+basecasing.setToolClass("pickaxe");
+basecasing.setToolLevel(2);
+basecasing.setBlockSoundType(<soundtype:metal>);
+basecasing.register();
+
+var motorfive = VanillaFactory.createBlock("motorfive", <blockmaterial:rock>);
+motorfive.setBlockHardness(12.0);
+motorfive.setBlockResistance(10.0);
+motorfive.setToolClass("pickaxe");
+motorfive.setToolLevel(2);
+motorfive.setBlockSoundType(<soundtype:metal>);
+motorfive.register();
+
+var motorfour = VanillaFactory.createBlock("motorfour", <blockmaterial:rock>);
+motorfour.setBlockHardness(12.0);
+motorfour.setBlockResistance(10.0);
+motorfour.setToolClass("pickaxe");
+motorfour.setToolLevel(2);
+motorfour.setBlockSoundType(<soundtype:metal>);
+motorfour.register();
+
+var motorthree = VanillaFactory.createBlock("motorthree", <blockmaterial:rock>);
+motorthree.setBlockHardness(12.0);
+motorthree.setBlockResistance(10.0);
+motorthree.setToolClass("pickaxe");
+motorthree.setToolLevel(2);
+motorthree.setBlockSoundType(<soundtype:metal>);
+motorthree.register();
+
+var motortwo = VanillaFactory.createBlock("motortwo", <blockmaterial:rock>);
+motortwo.setBlockHardness(12.0);
+motortwo.setBlockResistance(10.0);
+motortwo.setToolClass("pickaxe");
+motortwo.setToolLevel(2);
+motortwo.setBlockSoundType(<soundtype:metal>);
+motortwo.register();
+
+var motorone = VanillaFactory.createBlock("motorone", <blockmaterial:rock>);
+motorone.setBlockHardness(12.0);
+motorone.setBlockResistance(10.0);
+motorone.setToolClass("pickaxe");
+motorone.setToolLevel(2);
+motorone.setBlockSoundType(<soundtype:metal>);
+motorone.register();
+
+var motorblock = VanillaFactory.createBlock("motorblock", <blockmaterial:rock>);
+motorblock.setBlockHardness(12.0);
+motorblock.setBlockResistance(10.0);
+motorblock.setToolClass("pickaxe");
+motorblock.setToolLevel(2);
+motorblock.setBlockSoundType(<soundtype:metal>);
+motorblock.register();
+
+var internalstructure = VanillaFactory.createBlock("internalstructure", <blockmaterial:rock>);
+internalstructure.setBlockHardness(12.0);
+internalstructure.setBlockResistance(10.0);
+internalstructure.setToolClass("pickaxe");
+internalstructure.setToolLevel(2);
+internalstructure.setBlockSoundType(<soundtype:metal>);
+internalstructure.register();
+
+var startiumdust = VanillaFactory.createItem("startiumdust");
+startiumdust.register();
+
+var tungstalloytwoingot = VanillaFactory.createItem("tungstalloytwoingot");
+tungstalloytwoingot.register();
+
+var tungstalloytwodust = VanillaFactory.createItem("tungstalloytwodust");
+tungstalloytwodust.register();
+
+var tungstalloyonedust = VanillaFactory.createItem("tungstalloyonedust");
+tungstalloyonedust.register();
+
+var zircalloydust = VanillaFactory.createItem("zircalloydust");
+zircalloydust.register();
+
+var blackpearl = VanillaFactory.createItem("blackpearl");
+blackpearl.register();
+
+var platinumpearlcatalyst = VanillaFactory.createItem("platinumpearlcatalyst");
+platinumpearlcatalyst.register();
+
+var tungstalloytwohotingot = VanillaFactory.createItem("tungstalloytwohotingot");
+tungstalloytwohotingot.register();

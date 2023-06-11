@@ -4,33 +4,12 @@
   "fuelTexture": "multiblocked:textures/gui/progress_bar_fuel.png",
   "recipes": [
     {
-      "uid": "spacelift_mining_test",
+      "uid": "test",
       "duration": 20,
       "inputs": {
         "item": [
           {
             "chance": 1.0,
-            "slotName": "item_in",
-            "content": {
-              "amount": 1,
-              "matches": [
-                "{id:\"pneumaticcraft:drone\",Count:1,Damage:0s,tag:{volume:12000.0f,currentAir:0.0f}}"
-              ]
-            }
-          },
-          {
-            "chance": 1.0,
-            "slotName": "item_in",
-            "content": {
-              "amount": 1,
-              "matches": [
-                "{id:\"gregtech:meta_item_2\",Count:1,Damage:8859s}"
-              ]
-            }
-          },
-          {
-            "chance": 1.0,
-            "slotName": "item_in",
             "content": {
               "amount": 64,
               "matches": [
@@ -44,7 +23,6 @@
         "item": [
           {
             "chance": 1.0,
-            "slotName": "module_interface",
             "content": {
               "amount": 1,
               "matches": [
@@ -56,13 +34,13 @@
       }
     },
     {
-      "uid": "7b585f45-14cd-4558-a26a-e69abd3772de",
+      "uid": "test2",
       "duration": 1,
       "inputs": {
         "item": [
           {
             "chance": 1.0,
-            "slotName": "module_interface",
+            "slotName": "miner_io",
             "content": {
               "amount": 1,
               "matches": [
@@ -76,7 +54,6 @@
         "item": [
           {
             "chance": 1.0,
-            "slotName": "item_out",
             "content": {
               "amount": 256,
               "matches": [

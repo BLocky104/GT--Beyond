@@ -1390,14 +1390,8 @@
         "type": "states"
       },
       "H": {
-        "states": [
-          {
-            "id": "multiblocked:item_output",
-            "meta": 0
-          }
-        ],
-        "type": "states",
-        "slotName": "hub_io"
+        "location": "mbd:spacelifthatch",
+        "type": "component"
       },
       "any": {
         "type": "any"

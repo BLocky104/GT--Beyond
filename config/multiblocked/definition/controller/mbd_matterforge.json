@@ -1,30 +1,7 @@
 {
   "version": 2,
   "location": "mbd:matterforge",
-  "traits": {
-    "recipe_progress": {
-      "cIO": 2,
-      "gIO": 2,
-      "x": 5,
-      "y": 5,
-      "width": 60,
-      "height": 18,
-      "texture": "multiblocked:textures/gui/energy_bar.png",
-      "fillDirection": 0
-    },
-    "item": [],
-    "gtce_energy": {
-      "cIO": 2,
-      "gIO": 2,
-      "x": 5,
-      "y": 5,
-      "width": 60,
-      "height": 18,
-      "texture": "multiblocked:textures/gui/energy_bar.png",
-      "fillDirection": 0,
-      "capacity": 10000
-    }
-  },
+  "traits": {},
   "properties": {
     "rotationState": "ALL",
     "showInJei": true,
@@ -48,18 +25,18 @@
       "parent": "unformed"
     },
     "working": {
-	  "renderer": {
+      "renderer": {
         "baseTexture": "multiblocked:blocks/casing/computercasing",
         "frontTexture": "multiblocked:blocks/overlay_front_active",
         "type": "gregtech"
       },
-	  "parent": "idle"
+      "parent": "idle"
     },
     "suspend": {
       "parent": "working"
     }
   },
-  "recipeMap": "empty",
+  "recipeMap": "matter_forge",
   "basePattern": {
     "structureDir": [
       "LEFT",
@@ -162,43 +139,9 @@
       ]
     ],
     "predicates": {
-      "A": {
-        "states": [
-          {
-            "id": "contenttweaker:computercasing",
-            "meta": 0
-          }
-        ],
-        "type": "states"
-      },
       "controller": {
         "location": "mbd:matterforge",
         "type": "component"
-      },
-      "B": {
-        "states": [
-          {
-            "id": "multiblocked:energy_input",
-            "meta": 0
-          },
-		  {
-            "id": "multiblocked:item_input",
-            "meta": 0
-          },
-          {
-            "id": "multiblocked:fluid_input",
-            "meta": 0
-          },
-          {
-            "id": "multiblocked:item_output",
-            "meta": 0
-          },
-          {
-            "id": "multiblocked:fluid_output",
-            "meta": 0
-          }
-        ],
-        "type": "states"
       },
       "C": {
         "states": [
@@ -236,11 +179,41 @@
         ],
         "type": "states"
       },
-      "air": {
-        "type": "air"
+      "fluid_in": {
+        "location": "multiblocked:fluid_input",
+        "type": "component",
+        "io": "IN"
       },
       "any": {
         "type": "any"
+      },
+      "fluid_out": {
+        "location": "multiblocked:fluid_output",
+        "type": "component"
+      },
+      "casing": {
+        "blocks": [
+          {
+            "id": "contenttweaker:computercasing"
+          }
+        ],
+        "type": "blocks",
+        "io": "null"
+      },
+      "item_in": {
+        "location": "multiblocked:item_input",
+        "type": "component",
+        "io": "IN"
+      },
+      "item_out": {
+        "location": "multiblocked:item_output",
+        "type": "component",
+        "io": "OUT"
+      },
+      "energy_in": {
+        "capability": "gtce_energy",
+        "type": "capability",
+        "io": "IN"
       }
     },
     "symbolMap": {
@@ -251,10 +224,14 @@
         "any"
       ],
       "A": [
-        "A"
+        "casing"
       ],
       "B": [
-        "B"
+        "item_in",
+        "item_out",
+        "fluid_in",
+        "fluid_out",
+        "energy_in"
       ],
       "C": [
         "C"
@@ -267,9 +244,6 @@
       ],
       "F": [
         "F"
-      ],
-      "-": [
-        "air"
       ]
     }
   }

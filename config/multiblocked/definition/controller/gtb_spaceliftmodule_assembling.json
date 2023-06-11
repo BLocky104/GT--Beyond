@@ -81,23 +81,24 @@
       "A": {
         "states": [
           {
-            "id": "minecraft:lapis_block",
-            "meta": 0
-          },
-          {
             "id": "multiblocked:item_input",
             "meta": 0
           },
           {
             "id": "multiblocked:energy_input",
             "meta": 0
-          },
-          {
-            "id": "mbd:spacelifthatch",
-            "meta": 0
           }
         ],
         "type": "states"
+      },
+      "casing": {
+        "blocks": [
+          {
+            "id": "minecraft:lapis_block"
+          }
+        ],
+        "type": "blocks",
+        "io": "null"
       },
       "controller": {
         "location": "gtb:spaceliftmodule_assembling",
@@ -109,7 +110,8 @@
         "controller"
       ],
       "A": [
-        "A"
+        "A",
+        "casing"
       ]
     }
   }
