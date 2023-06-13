@@ -1,31 +1,7 @@
 {
   "version": 2,
   "location": "mbd:dissolutionchamber",
-  "traits": {
-    "recipe_progress": {
-      "cIO": 2,
-      "gIO": 2,
-      "x": 5,
-      "y": 5,
-      "width": 60,
-      "height": 18,
-      "texture": "multiblocked:textures/gui/energy_bar.png",
-      "fillDirection": 0
-    },
-    "item": [],
-    "gtce_energy": {
-      "cIO": 2,
-      "gIO": 2,
-      "x": 5,
-      "y": 5,
-      "width": 60,
-      "height": 18,
-      "texture": "multiblocked:textures/gui/energy_bar.png",
-      "fillDirection": 0,
-      "capacity": 10000
-    },
-    "fluid": []
-  },
+  "traits": {},
   "properties": {
     "rotationState": "ALL",
     "showInJei": true,
@@ -53,7 +29,7 @@
         "baseTexture": "multiblocked:blocks/casing/incoloy_ma956",
         "frontTexture": "multiblocked:blocks/overlay_front_active",
         "type": "gregtech"
-      }
+      },
 	  "parent": "idle"
     },
     "suspend": {

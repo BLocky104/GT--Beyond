@@ -1301,8 +1301,8 @@
       "A": {
         "states": [
           {
-            "id": "gregtech:metal_casing",
-            "meta": 4
+            "id": "contenttweaker:internalstructure",
+            "meta": 0
           }
         ],
         "type": "states"
@@ -1314,17 +1314,17 @@
       "B": {
         "states": [
           {
-            "id": "contenttweaker:transcendantminingcasings",
+            "id": "contenttweaker:supportstructure",
             "meta": 0
           }
         ],
         "type": "states"
       },
-      "C": {
+      "casing": {
         "states": [
           {
-            "id": "gregtech:metal_casing",
-            "meta": 7
+            "id": "contenttweaker:basecasing",
+            "meta": 0
           }
         ],
         "type": "states"
@@ -1343,27 +1343,6 @@
           {
             "id": "gtadditions:ga_multiblock_casing",
             "meta": 3
-          }
-        ],
-        "type": "states"
-      },
-      "F": {
-        "states": [
-          {
-            "id": "minecraft:lapis_block",
-            "meta": 0
-          },
-          {
-            "id": "multiblocked:item_input",
-            "meta": 0
-          },
-          {
-            "id": "multiblocked:energy_input",
-            "meta": 0
-          },
-          {
-            "id": "multiblocked:item_output",
-            "meta": 0
           }
         ],
         "type": "states"
@@ -1393,8 +1372,33 @@
         "location": "mbd:spacelifthatch",
         "type": "component"
       },
+      "item_out": {
+        "location": "multiblocked:item_output",
+        "type": "component",
+        "io": "OUT"
+      },
+      "fluid_in": {
+        "location": "multiblocked:fluid_input",
+        "type": "component",
+        "io": "IN"
+      },
       "any": {
         "type": "any"
+      },
+      "energy_in": {
+        "capability": "gtce_energy",
+        "type": "capability",
+        "io": "IN"
+      },
+      "fluid_out": {
+        "location": "multiblocked:fluid_output",
+        "type": "component",
+        "io": "OUT"
+      },
+      "item_in": {
+        "location": "multiblocked:item_input",
+        "type": "component",
+        "io": "IN"
       }
     },
     "symbolMap": {
@@ -1411,7 +1415,7 @@
         "B"
       ],
       "C": [
-        "C"
+        "casing"
       ],
       "D": [
         "D"
@@ -1420,7 +1424,12 @@
         "E"
       ],
       "F": [
-        "F"
+        "casing",
+		"item_in",
+		"item_out",
+		"fluid_in",
+		"fluid_out",
+		"energy_in"
       ],
       "G": [
         "G"

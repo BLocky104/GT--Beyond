@@ -27,7 +27,7 @@
     "working": {
       "renderer": {
         "baseTexture": "multiblocked:blocks/casing/computercasing",
-        "frontTexture": "multiblocked:blocks/overlay_front_active",
+        "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
         "type": "gregtech"
       },
       "parent": "idle"
@@ -40,71 +40,71 @@
   "basePattern": {
     "structureDir": [
       "LEFT",
-      "UP",
-      "BACK"
+      "BACK",
+      "UP"
     ],
     "pattern": [
       [
         "AAB@BAA",
-        "ACCCCCA",
-        "ACCCCCA",
-        "ACCCCCA",
-        "ACCCCCA",
-        "ACCCCCA",
-        "AAAAAAA"
+        "AAAAAAA",
+        "BAAAAAB",
+        "BAAAAAB",
+        "BAAAAAB",
+        "AAAAAAA",
+        "AABBBAA"
       ],
       [
-        "AAAAAAA",
+        "ACCCCCA",
         "C     C",
+        "C DED C",
+        "C E E C",
+        "C DED C",
         "C     C",
+        "ACCCCCA"
+      ],
+      [
+        "ACCCCCA",
         "C     C",
+        "C FFF C",
+        "C F F C",
+        "C FFF C",
+        "C     C",
+        "ACCCCCA"
+      ],
+      [
+        "ACCCCCA",
+        "C     C",
+        "C FFF C",
+        "C F F C",
+        "C FFF C",
+        "C     C",
+        "ACCCCCA"
+      ],
+      [
+        "ACCCCCA",
         "C      ",
+        "C FFF C",
+        "C F F C",
+        "C FFF C",
         "C     C",
-        "AAAAAAA"
+        "ACCCCCA"
       ],
       [
-        "BAAAAAB",
+        "ACCCCCA",
+        "C     C",
         "C DED C",
-        "C FFF C",
-        "C FFF C",
-        "C FFF C",
-        "C DED C",
-        "AAAAAAA"
-      ],
-      [
-        "BAAAAAB",
         "C E E C",
-        "C F F C",
-        "C F F C",
-        "C F F C",
-        "C E E C",
-        "AAAAAAA"
-      ],
-      [
-        "BAAAAAB",
         "C DED C",
-        "C FFF C",
-        "C FFF C",
-        "C FFF C",
-        "C DED C",
-        "AAAAAAA"
+        "C     C",
+        "ACCCCCA"
       ],
       [
         "AAAAAAA",
-        "C     C",
-        "C     C",
-        "C     C",
-        "C     C",
-        "C     C",
-        "AAAAAAA"
-      ],
-      [
-        "AABBBAA",
-        "ACCCCCA",
-        "ACCCCCA",
-        "ACCCCCA",
-        "ACCCCCA",
-        "ACCCCCA",
+        "AAAAAAA",
+        "AAAAAAA",
+        "AAAAAAA",
+        "AAAAAAA",
+        "AAAAAAA",
         "AAAAAAA"
       ]
     ],

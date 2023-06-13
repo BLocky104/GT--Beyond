@@ -1,40 +1,7 @@
 {
   "version": 2,
   "location": "mbd:cosmicpneumaticchamber",
-  "traits": {
-    "pneumatic_pressure": {
-      "cIO": 2,
-      "gIO": 2,
-      "x": 5,
-      "y": 5,
-      "dangerPressure": 5.0,
-      "criticalPressure": 7.0,
-      "volume": 10000
-    },
-    "gtce_energy": {
-      "cIO": 2,
-      "gIO": 2,
-      "x": 5,
-      "y": 5,
-      "width": 60,
-      "height": 18,
-      "texture": "multiblocked:textures/gui/energy_bar.png",
-      "fillDirection": 0,
-      "capacity": 10000
-    },
-    "item": [],
-    "recipe_progress": {
-      "cIO": 2,
-      "gIO": 2,
-      "x": 5,
-      "y": 5,
-      "width": 60,
-      "height": 18,
-      "texture": "multiblocked:textures/gui/energy_bar.png",
-      "fillDirection": 0
-    },
-    "fluid": []
-  },
+  "traits": {},
   "properties": {
     "rotationState": "ALL",
     "showInJei": true,
@@ -58,11 +25,11 @@
       "parent": "unformed"
     },
     "working": {
-		"renderer": {
+	  "renderer": {
         "baseTexture": "multiblocked:blocks/casing/pressure_chamber_wall",
         "frontTexture": "multiblocked:blocks/overlay_front_active",
         "type": "gregtech"
-      }
+      },
       "parent": "idle"
     },
     "suspend": {
