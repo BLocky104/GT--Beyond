@@ -1,0 +1,238 @@
+{
+  "version": 2,
+  "location": "gtb:largeheatexchanger",
+  "traits": {},
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 10.0,
+    "harvestLevel": 1,
+    "stackSize": 64,
+    "tabGroup": "multiblocked"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "baseTexture": "gregtech:blocks/casings/pipe/machine_casing_pipe_tungstensteel",
+        "frontTexture": "multiblocked:blocks/gregtech_front",
+        "type": "gregtech"
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+      "renderer": {
+        "baseTexture": "gregtech:blocks/casings/pipe/machine_casing_pipe_tungstensteel",
+        "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
+        "type": "gregtech"
+      },
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "empty",
+  "basePattern": {
+    "structureDir": [
+      "BACK",
+      "RIGHT",
+      "UP"
+    ],
+    "pattern": [
+      [
+        "ABBBBBBBBBBBA",
+        "BBBBBBBBBBBBB",
+        "BBBBBBBBBBBBB",
+        "BBBBBBBBBBBBB",
+        "ABBBBBBBBBBBA"
+      ],
+      [
+        "ADDDDDDDDDDDA",
+        "C           C",
+        "@EFEFEFEFEFEC",
+        "C           C",
+        "ADDDDDDDDDDDA"
+      ],
+      [
+        "ADDDDDDDDDDDA",
+        "B           B",
+        "BEFEFEFEFEFEB",
+        "B           B",
+        "ADDDDDDDDDDDA"
+      ],
+      [
+        "ADDDDDDDDDDDA",
+        "B           B",
+        "BEFEFEFEFEFEB",
+        "B           B",
+        "ADDDDDDDDDDDA"
+      ],
+      [
+        "ADDDDDDDDDDDA",
+        "B           B",
+        "B E E E E E B",
+        "B           B",
+        "ADDDDDDDDDDDA"
+      ],
+      [
+        " BBBBBBBBBBB ",
+        "ABBBBBBBBBBBA",
+        "GBBBBBBBBBBBG",
+        "ABBBBBBBBBBBA",
+        " BBBBBBBBBBB "
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "states": [
+          {
+            "id": "gregtech:boiler_casing",
+            "meta": 3
+          }
+        ],
+        "type": "states"
+      },
+      "controller": {
+        "location": "gtb:largeheatexchanger",
+        "type": "component"
+      },
+      "B": {
+        "states": [
+          {
+            "id": "gregtech:metal_casing",
+            "meta": 7
+          }
+        ],
+        "type": "states"
+      },
+      "D": {
+        "states": [
+          {
+            "id": "gtadditions:ga_transparent_casing",
+            "meta": 4
+          }
+        ],
+        "type": "states"
+      },
+      "E": {
+        "states": [
+          {
+            "id": "gregtech:metal_casing",
+            "meta": 2
+          }
+        ],
+        "type": "states"
+      },
+      "F": {
+        "states": [
+          {
+            "id": "gregtech:machine",
+            "meta": 1
+          }
+        ],
+        "type": "states"
+      },
+      "G": {
+        "states": [
+          {
+            "id": "gregtech:boiler_firebox_casing",
+            "meta": 3
+          }
+        ],
+        "type": "states"
+      },
+      "fluid_in": {
+        "location": "multiblocked:fluid_input",
+        "type": "component",
+        "io": "IN"
+      },
+      "any": {
+        "type": "any"
+      },
+      "fluid_out": {
+        "location": "multiblocked:fluid_output",
+        "type": "component"
+      },
+      "item_in": {
+        "location": "multiblocked:item_input",
+        "type": "component",
+        "io": "IN"
+      },
+      "item_out": {
+        "location": "multiblocked:item_output",
+        "type": "component",
+        "io": "OUT"
+      },
+      "energy_in": {
+        "capability": "gtce_energy",
+        "type": "capability",
+        "io": "IN"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "A",
+        "item_in",
+        "item_out",
+        "fluid_in",
+        "fluid_out",
+        "energy_in"
+      ],
+      "D": [
+        "D"
+      ],
+      "E": [
+        "E"
+      ],
+      "F": [
+        "F"
+      ],
+      "G": [
+        "G"
+      ]
+    }
+  }
+}

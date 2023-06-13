@@ -1,0 +1,203 @@
+{
+  "name": "roaster",
+  "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
+  "fuelTexture": "multiblocked:textures/gui/progress_bar_fuel.png",
+  "recipes": [
+    {
+      "uid": "roaster1",
+      "duration": 800,
+      "inputs": {
+        "fluid": [
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"carbondisulfide\",Amount:500}"
+          },
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"acetone\",Amount:2000}"
+          }
+        ]
+      },
+      "outputs": {
+        "fluid": [
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"diketene\",Amount:1000}"
+          },
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"methane\",Amount:2000}"
+          }
+        ]
+      },
+      "tickInputs": {
+        "gtce_energy": [
+          {
+            "chance": 1.0,
+            "content": 6000
+          }
+        ]
+      }
+    },
+    {
+      "uid": "roaster4",
+      "duration": 400,
+      "inputs": {
+        "fluid": [
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"bastnasiteconcentrate\",Amount:2000}"
+          },
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"air\",Amount:1000}"
+          }
+        ]
+      },
+      "outputs": {
+        "fluid": [
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"fluorine\",Amount:1000}"
+          },
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"roastedbastnasiteconcentrate\",Amount:2000}"
+          }
+        ]
+      },
+      "tickInputs": {
+        "gtce_energy": [
+          {
+            "chance": 1.0,
+            "content": 1500
+          }
+        ]
+      }
+    },
+    {
+      "uid": "roaster5",
+      "duration": 400,
+      "inputs": {
+        "fluid": [
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"wetbastnasiterareearthconcentrate\",Amount:1000}"
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"contenttweaker:roastedbastnasite\",Count:1,Damage:0s}"
+              ]
+            }
+          }
+        ],
+        "fluid": [
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"oxygen\",Amount:500}"
+          }
+        ]
+      },
+      "tickInputs": {
+        "gtce_energy": [
+          {
+            "chance": 1.0,
+            "content": 1500
+          }
+        ]
+      }
+    },
+    {
+      "uid": "roaster2",
+      "duration": 20,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"contenttweaker:crackingcatalystpreparation\",Count:1,Damage:0s}"
+              ]
+            }
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"contenttweaker:crackingcatalyst\",Count:1,Damage:0s}"
+              ]
+            }
+          }
+        ]
+      },
+      "tickInputs": {
+        "gtce_energy": [
+          {
+            "chance": 1.0,
+            "content": 36
+          }
+        ]
+      }
+    },
+    {
+      "uid": "roaster3",
+      "duration": 400,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_item_1\",Count:1,Damage:2097s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_item_1\",Count:1,Damage:5270s}"
+              ]
+            }
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"contenttweaker:calcinatedbastnasite\",Count:1,Damage:0s}"
+              ]
+            }
+          }
+        ]
+      },
+      "tickInputs": {
+        "gtce_energy": [
+          {
+            "chance": 1.0,
+            "content": 500
+          }
+        ]
+      }
+    }
+  ]
+}

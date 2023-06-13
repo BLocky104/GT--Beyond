@@ -1,0 +1,176 @@
+{
+  "version": 2,
+  "location": "gtb:largerockbreaker",
+  "traits": {},
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 10.0,
+    "harvestLevel": 1,
+    "stackSize": 64,
+    "tabGroup": "multiblocked"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "baseTexture": "multiblocked:blocks/casing/pipe/machine_casing_pipe_titanium",
+        "frontTexture": "multiblocked:blocks/gregtech_front",
+        "type": "gregtech"
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+      "renderer": {
+        "baseTexture": "multiblocked:blocks/casing/pipe/machine_casing_pipe_titanium",
+        "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
+        "type": "gregtech"
+      },
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "empty",
+  "basePattern": {
+    "structureDir": [
+      "BACK",
+      "RIGHT",
+      "UP"
+    ],
+    "pattern": [
+      [
+        "AAA",
+        "AAA",
+        "AAA"
+      ],
+      [
+        "BBB",
+        "B B",
+        "BBB"
+      ],
+      [
+        "CDC",
+        "@ D",
+        "CDC"
+      ],
+      [
+        "BBB",
+        "B B",
+        "BBB"
+      ],
+      [
+        "AAA",
+        "AAA",
+        "AAA"
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "states": [
+          {
+            "id": "gregtech:metal_casing",
+            "meta": 6
+          }
+        ],
+        "type": "states"
+      },
+      "controller": {
+        "location": "gtb:largerockbreaker",
+        "type": "component"
+      },
+      "B": {
+        "states": [
+          {
+            "id": "gregtech:metal_casing",
+            "meta": 2
+          }
+        ],
+        "type": "states"
+      },
+      "C": {
+        "states": [
+          {
+            "id": "gregtech:boiler_casing",
+            "meta": 2
+          }
+        ],
+        "type": "states"
+      },
+      "item_in": {
+        "location": "multiblocked:item_input",
+        "type": "component",
+        "minCount": 1,
+        "previewCount": 1,
+        "io": "IN"
+      },
+      "item_out": {
+        "location": "multiblocked:item_output",
+        "type": "component",
+        "minCount": 1,
+        "maxCount": 1,
+        "previewCount": 1,
+        "io": "OUT"
+      },
+      "any": {
+        "type": "any"
+      },
+      "energy_in": {
+        "capability": "gtce_energy",
+        "type": "capability",
+        "maxCount": 1,
+        "previewCount": 1,
+        "io": "IN"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C"
+      ],
+      "D": [
+        "item_in",
+        "item_out",
+        "energy_in"
+      ]
+    }
+  }
+}

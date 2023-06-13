@@ -2,9 +2,9 @@
 !.gitignore
 !*/
 !mods/
-!config/
-!scripts/
-!resources/
+!config/**
+!scripts/**
+!resources/**
 *.errored
 *.cfg
 *.txt

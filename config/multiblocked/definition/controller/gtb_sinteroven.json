@@ -1,0 +1,157 @@
+{
+  "version": 2,
+  "location": "gtb:sinteroven",
+  "traits": {},
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 10.0,
+    "harvestLevel": 1,
+    "stackSize": 64,
+    "tabGroup": "multiblocked"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "baseTexture": "gregtech:blocks/casings/voltage/ulv/bottom",
+        "frontTexture": "multiblocked:blocks/gregtech_front",
+        "type": "gregtech"
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+      "renderer": {
+        "baseTexture": "gregtech:blocks/casings/voltage/ulv/bottom",
+        "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
+        "type": "gregtech"
+      },
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "sinter_oven",
+  "basePattern": {
+    "structureDir": [
+      "BACK",
+      "RIGHT",
+      "DOWN"
+    ],
+    "pattern": [
+      [
+        "AB B BA",
+        "CB B BC",
+        "AB B BA"
+      ],
+      [
+        "CB B BC",
+        "@DDDDDC",
+        "CB B BC"
+      ],
+      [
+        "AB B BA",
+        "CB B BC",
+        "AB B BA"
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "states": [
+          {
+            "id": "gregtech:machine_casing",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "controller": {
+        "location": "gtb:sinteroven",
+        "type": "component"
+      },
+      "B": {
+        "states": [
+          {
+            "id": "gregtech:frame_steel",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "item_in": {
+        "location": "multiblocked:item_input",
+        "type": "component",
+        "minCount": 1,
+        "io": "IN"
+      },
+      "D": {
+        "states": [
+          {
+            "id": "contenttweaker:copperalloycoilblock",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "item_out": {
+        "location": "multiblocked:item_output",
+        "type": "component",
+        "minCount": 1,
+        "previewCount": 1,
+        "io": "OUT"
+      },
+      "any": {
+        "type": "any"
+      },
+      "energy_in": {
+        "capability": "gtce_energy",
+        "type": "capability",
+        "minCount": 1,
+        "previewCount": 1,
+        "io": "IN"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "A",
+        "item_in",
+        "item_out",
+        "energy_in"
+      ],
+      "D": [
+        "D"
+      ]
+    }
+  }
+}

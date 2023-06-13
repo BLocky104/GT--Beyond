@@ -1,0 +1,178 @@
+{
+  "name": "matter_forge",
+  "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
+  "recipes": [
+    {
+      "uid": "conductorbase-max",
+      "duration": 2000,
+      "inputs": {
+        "fluid": [
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"moltenlegendarium\",Amount:4000}"
+          },
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"cosmic_neutronium\",Amount:2000}"
+          },
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"moltenrheniumhassiumthalliumisophtaloylbisdiethylthiourea\",Amount:24000}"
+          },
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"periodicium\",Amount:12000}"
+          },
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"pikyonium\",Amount:3000}"
+          },
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"ultimate\",Amount:3500}"
+          }
+        ]
+      },
+      "outputs": {
+        "fluid": [
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"maxsuperconductorbase\",Amount:10000}"
+          }
+        ]
+      },
+      "tickInputs": {
+        "gtce_energy": [
+          {
+            "chance": 1.0,
+            "content": 250000
+          }
+        ]
+      }
+    },
+	{
+	  "uid": "conductorbase-uiv",
+	  "duration": 200,
+	  "inputs": {
+		"fluid": [
+		  {
+			"chance": 1.0,
+			"content": "{FluidName:\"moltenfullerenesuperconductor\",Amount:1000}"
+		  },
+		  {
+			"chance": 1.0,
+			"content": "{FluidName:\"proto_adamantium\",Amount:2000}"
+		  },
+		  {
+			"chance": 1.0,
+			"content": "{FluidName:\"metastable_oganesson\",Amount:2000}"
+		  },
+		  {
+			"chance": 1.0,
+			"content": "{FluidName:\"moltenborocarbide\",Amount:3000}"
+		  }
+		]
+	  },
+	  "outputs": {
+		"fluid": [
+		  {
+			"chance": 1.0,
+			"content": "{FluidName:\"uiv_superconductor_base\",Amount:3500}"
+		  }
+		]
+	  },
+	  "tickInputs": {
+		"gtce_energy": [
+		  {
+			"chance": 1.0,
+			"content": 250000
+		  }
+		]
+	  }
+	},
+	{
+	  "uid": "conductorbase-umv",
+	  "duration": 400,
+	  "inputs": {
+		"fluid": [
+		  {
+			"chance": 1.0,
+			"content": "{FluidName:\"superheavy_h_alloy\",Amount:2000}"
+		  },
+		  {
+			"chance": 1.0,
+			"content": "{FluidName:\"moltenchargedcesiumceriumcobaltindium\",Amount:3000}"
+		  },
+		  {
+			"chance": 1.0,
+			"content": "{FluidName:\"black_titanium\",Amount:3000}"
+		  },
+		  {
+			"chance": 1.0,
+			"content": "{FluidName:\"moltenrheniumhassiumthalliumisophtaloylbisdiethylthiourea\",Amount:6000}"
+		  }
+		]
+	  },
+	  "outputs": {
+		"fluid": [
+		  {
+			"chance": 1.0,
+			"content": "{FluidName:\"umv_superconductor_base\",Amount:7000}"
+		  }
+		]
+	  },
+	  "tickInputs": {
+		"gtce_energy": [
+		  {
+			"chance": 1.0,
+			"content": 250000
+		  }
+		]
+	  }
+	},
+	{
+	  "uid": "conductorbase-uxv",
+	  "duration": 800,
+	  "inputs": {
+		"fluid": [
+		  {
+			"chance": 1.0,
+			"content": "{FluidName:\"moltenlegendarium\",Amount:5000}"
+		  },
+		  {
+			"chance": 1.0,
+			"content": "{FluidName:\"moltenrheniumhassiumthalliumisophtaloylbisdiethylthiourea\",Amount:12000}"
+		  },
+		  {
+			"chance": 1.0,
+			"content": "{FluidName:\"moltenactiniumsuperhydride\",Amount:5000}"
+		  },
+		  {
+			"chance": 1.0,
+			"content": "{FluidName:\"moltenlanthanumfullerenenanotubes\",Amount:4000}"
+		  },
+		  {
+			"chance": 1.0,
+			"content": "{FluidName:\"neutronium\",Amount:4000}"
+		  }
+		]
+	  },
+	  "outputs": {
+		"fluid": [
+		  {
+			"chance": 1.0,
+			"content": "{FluidName:\"uxv_superconductor_base\",Amount:15000}"
+		  }
+		]
+	  },
+	  "tickInputs": {
+		"gtce_energy": [
+		  {
+			"chance": 1.0,
+			"content": 250000
+		  }
+		]
+	  }
+	}
+  ]
+}

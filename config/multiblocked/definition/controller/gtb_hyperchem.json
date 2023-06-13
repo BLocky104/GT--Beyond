@@ -1,0 +1,196 @@
+{
+  "version": 2,
+  "location": "gtb:hyperchem",
+  "traits": {},
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 10.0,
+    "harvestLevel": 1,
+    "stackSize": 64,
+    "tabGroup": "multiblocked"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "baseTexture": "multiblocked:blocks/casing/pbistrengthenedtetrixcasing",
+        "frontTexture": "multiblocked:blocks/gregtech_front",
+        "type": "gregtech"
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+      "renderer": {
+        "baseTexture": "multiblocked:blocks/casing/pbistrengthenedtetrixcasing",
+        "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
+        "type": "gregtech"
+      },
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "empty",
+  "basePattern": {
+    "structureDir": [
+      "BACK",
+      "RIGHT",
+      "UP"
+    ],
+    "pattern": [
+      [
+        "CAAAC",
+        "ACCCA",
+        "@CCCA",
+        "ACCCA",
+        "CAAAC"
+      ],
+      [
+        "B   B",
+        " DDD ",
+        " D D ",
+        " DDD ",
+        "B   B"
+      ],
+      [
+        "B   B",
+        " DDD ",
+        " D D ",
+        " DDD ",
+        "B   B"
+      ],
+      [
+        "B   B",
+        " DDD ",
+        " D D ",
+        " DDD ",
+        "B   B"
+      ],
+      [
+        "CAAAC",
+        "ACCCA",
+        "ACCCA",
+        "ACCCA",
+        "CAAAC"
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "controller": {
+        "location": "gtb:hyperchem",
+        "type": "component"
+      },
+      "B": {
+        "states": [
+          {
+            "id": "gregtech:frame_fullerenepolymertetrix",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "C": {
+        "states": [
+          {
+            "id": "contenttweaker:pbistrengthenedtetrixcasing",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "item_in": {
+        "location": "multiblocked:item_input",
+        "type": "component",
+        "io": "IN"
+      },
+      "D": {
+        "states": [
+          {
+            "id": "gtadditions:ga_multiblock_casing",
+            "meta": 14
+          }
+        ],
+        "type": "states"
+      },
+      "item_out": {
+        "location": "multiblocked:item_output",
+        "type": "component",
+        "maxCount": 1,
+        "previewCount": 1,
+        "io": "OUT"
+      },
+      "fluid_in": {
+        "location": "multiblocked:fluid_input",
+        "type": "component",
+        "io": "IN"
+      },
+      "any": {
+        "type": "any"
+      },
+      "energy_in": {
+        "capability": "gtce_energy",
+        "type": "capability",
+        "maxCount": 1,
+        "previewCount": 1,
+        "io": "IN"
+      },
+      "fluid_out": {
+        "location": "multiblocked:fluid_output",
+        "type": "component",
+        "io": "OUT"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "item_in",
+        "C",
+        "item_out",
+        "fluid_in",
+        "energy_in",
+        "fluid_out"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C"
+      ],
+      "D": [
+        "D"
+      ]
+    }
+  }
+}

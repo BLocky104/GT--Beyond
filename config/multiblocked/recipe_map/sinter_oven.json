@@ -1,0 +1,121 @@
+{
+  "name": "sinter_oven",
+  "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
+  "fuelTexture": "multiblocked:textures/gui/progress_bar_fuel.png",
+  "recipes": [
+    {
+      "uid": "cu-ni",
+      "duration": 40,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_item_1\",Count:1,Damage:2109s}"
+              ]
+            }
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_item_1\",Count:1,Damage:10109s}"
+              ]
+            }
+          }
+        ]
+      },
+      "tickInputs": {
+        "gtce_energy": [
+          {
+            "chance": 1.0,
+            "content": 3
+          }
+        ]
+      }
+    },
+	{
+      "uid": "2",
+      "duration": 40,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_item_1\",Count:1,Damage:2126s}"
+              ]
+            }
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_item_1\",Count:1,Damage:10126s}"
+              ]
+            }
+          }
+        ]
+      },
+      "tickInputs": {
+        "gtce_energy": [
+          {
+            "chance": 1.0,
+            "content": 3
+          }
+        ]
+      }
+    },
+	{
+      "uid": "3",
+      "duration": 40,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_item_1\",Count:1,Damage:2577s}"
+              ]
+            }
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_item_1\",Count:1,Damage:10577s}"
+              ]
+            }
+          }
+        ]
+      },
+      "tickInputs": {
+        "gtce_energy": [
+          {
+            "chance": 1.0,
+            "content": 3
+          }
+        ]
+      }
+    }
+  ]
+}

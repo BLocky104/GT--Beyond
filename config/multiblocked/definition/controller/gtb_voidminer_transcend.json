@@ -1,0 +1,164 @@
+{
+  "version": 2,
+  "location": "gtb:voidminer_transcend",
+  "traits": {},
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 10.0,
+    "harvestLevel": 1,
+    "stackSize": 64,
+    "tabGroup": "multiblocked"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "baseTexture": "multiblocked:blocks/casing/transcendantminingcasings",
+        "frontTexture": "multiblocked:blocks/gregtech_front",
+        "type": "gregtech"
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+      "renderer": {
+        "baseTexture": "multiblocked:blocks/gregtech_base",
+        "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
+        "type": "gregtech"
+      },
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "empty",
+  "basePattern": {
+    "structureDir": [
+      "BACK",
+      "UP",
+      "RIGHT"
+    ],
+    "pattern": [
+      [
+        "AAA",
+        " B ",
+        " B ",
+        " B ",
+        "   ",
+        "   ",
+        "   "
+      ],
+      [
+        "@ A",
+        "BCB",
+        "BCB",
+        "BCB",
+        " B ",
+        " B ",
+        " B "
+      ],
+      [
+        "AAA",
+        " B ",
+        " B ",
+        " B ",
+        "   ",
+        "   ",
+        "   "
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "controller": {
+        "location": "gtb:voidminer_transcend",
+        "type": "component"
+      },
+      "B": {
+        "states": [
+          {
+            "id": "gregtech:frame_pikyonium99ab",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "C": {
+        "states": [
+          {
+            "id": "contenttweaker:transcendantminingcasings",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "air": {
+        "type": "air"
+      },
+      "any": {
+        "type": "any"
+      },
+      "item_in": {
+        "location": "multiblocked:item_input",
+        "type": "component",
+        "minCount": 1,
+        "previewCount": 1,
+        "io": "IN"
+      },
+      "item_out": {
+        "location": "multiblocked:item_output",
+        "type": "component",
+        "minCount": 1,
+        "previewCount": 1,
+        "io": "OUT"
+      },
+      "energy_in": {
+        "capability": "gtce_energy",
+        "type": "capability",
+        "minCount": 1,
+        "previewCount": 1,
+        "io": "IN"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+	    "C",
+        "item_in",
+        "item_out",
+        "energy_in"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C"
+      ],
+      "-": [
+        "air"
+      ]
+    }
+  }
+}

@@ -1,0 +1,215 @@
+{
+  "version": 2,
+  "location": "gtb:neutronaccelerator",
+  "traits": {},
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 10.0,
+    "harvestLevel": 1,
+    "stackSize": 64,
+    "tabGroup": "multiblocked"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "baseTexture": "multiblocked:blocks/casing/solid/machine_casing_clean_stainless_steel",
+        "frontTexture": "multiblocked:blocks/gregtech_front",
+        "type": "gregtech"
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+      "renderer": {
+        "baseTexture": "multiblocked:blocks/gregtech_base",
+        "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
+        "type": "gregtech"
+      },
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "empty",
+  "basePattern": {
+    "structureDir": [
+      "BACK",
+      "UP",
+      "RIGHT"
+    ],
+    "pattern": [
+      [
+        "A   A",
+        "ABBBA",
+        "CDEDC",
+        "CFFFC",
+        "CFFFC",
+        "CCCCC"
+      ],
+      [
+        "     ",
+        "BCCCB",
+        "D   D",
+        "F   F",
+        "F   F",
+        "CCCCC"
+      ],
+      [
+        "     ",
+        "BCCCB",
+        "@   E",
+        "F   F",
+        "F   F",
+        "CCCCC"
+      ],
+      [
+        "     ",
+        "BCCCB",
+        "D   D",
+        "F   F",
+        "F   F",
+        "CCCCC"
+      ],
+      [
+        "A   A",
+        "ABBBA",
+        "CDEDC",
+        "CFFFC",
+        "CFFFC",
+        "CCCCC"
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "states": [
+          {
+            "id": "gregtech:frame_black_steel",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "controller": {
+        "location": "gtb:neutronaccelerator",
+        "type": "component"
+      },
+      "C": {
+        "states": [
+          {
+            "id": "gregtech:metal_casing",
+            "meta": 5
+          }
+        ],
+        "type": "states"
+      },
+      "item_in": {
+        "location": "multiblocked:item_input",
+        "type": "component",
+        "minCount": 1,
+        "previewCount": 1,
+        "io": "IN"
+      },
+      "D": {
+        "states": [
+          {
+            "id": "contenttweaker:neutronsensor",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "E": {
+        "states": [
+          {
+            "id": "contenttweaker:neutronaccelerator",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "F": {
+        "states": [
+          {
+            "id": "gtadditions:ga_transparent_casing",
+            "meta": 3
+          }
+        ],
+        "type": "states"
+      },
+      "item_out": {
+        "location": "multiblocked:item_output",
+        "type": "component",
+        "minCount": 1,
+        "previewCount": 1,
+        "io": "OUT"
+      },
+      "any": {
+        "type": "any"
+      },
+      "energy_in": {
+        "capability": "gtce_energy",
+        "type": "capability",
+        "minCount": 1,
+        "previewCount": 1,
+        "io": "IN"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "item_in",
+        "C",
+        "item_out",
+        "energy_in"
+      ],
+      "C": [
+        "C"
+      ],
+      "D": [
+        "D"
+      ],
+      "E": [
+        "E"
+      ],
+      "F": [
+        "F"
+      ]
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "name": "researchstation",
+  "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
+  "fuelTexture": "multiblocked:textures/gui/progress_bar_fuel.png",
+  "recipes": [{
+      "uid": "research-1",
+      "duration": 4000,
+      "inputs": {
+        "item": [{
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:machine\",Count:1,Damage:3310s}"
+              ]
+            }
+          },{
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"contenttweaker:datadisc\",Count:1,Damage:0}"
+              ]
+            }
+          }
+        ]
+      },
+      "outputs": {
+        "item": [{
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"contenttweaker:datadiskblackholecompressor\",Count:1,Damage:0}"
+              ]
+            }
+          }
+        ]
+      },
+      "tickInputs": {
+        "gtce_energy": [{
+            "chance": 1.0,
+            "content": 500000
+          }
+        ]
+      }
+    }
+  ]
+}

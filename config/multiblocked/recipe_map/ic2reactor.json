@@ -1,0 +1,722 @@
+{
+	"name": "ic2reactor",
+	"progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
+	"fuelTexture": "multiblocked:textures/gui/progress_bar_fuel.png",
+	"recipes": [{
+			"uid": "uraniumfuel-1",
+			"duration": 5000,
+			"inputs": {
+				"item": [{
+						"chance": 1.0,
+						"content": {
+							"amount": 1,
+							"matches": [
+								"{id:\"ic2:uranium_fuel_rod\",Count:1,Damage:0s}"
+							]
+						}
+					}
+				]
+			},
+			"outputs": {
+				"item": [{
+						"chance": 1.0,
+						"content": {
+							"amount": 1,
+							"matches": [
+								"{id:\"ic2:nuclear\",Count:1,Damage:11s}"
+							]
+						}
+					}
+				]
+			},
+			"tickInputs": {
+				"gtce_energy": [{
+						"chance": 1.0,
+						"content": 500000
+					}
+				]
+			}
+		}, {
+			"uid": "uraniumfuel-2",
+			"duration": 5000,
+			"inputs": {
+				"item": [{
+						"chance": 1.0,
+						"content": {
+							"amount": 1,
+							"matches": [
+								"{id:\"ic2:dual_uranium_fuel_rod\",Count:1,Damage:0s}"
+							]
+						}
+					}
+				]
+			},
+			"outputs": {
+				"item": [{
+						"chance": 1.0,
+						"content": {
+							"amount": 1,
+							"matches": [
+								"{id:\"ic2:nuclear\",Count:1,Damage:12s}"
+							]
+						}
+					}
+				]
+			},
+			"tickOutputs": {
+				"gtce_energy": [{
+						"chance": 1.0,
+						"content": 500
+					}
+				]
+			}
+		}, {
+			"uid": "uraniumfuel-4",
+			"duration": 5000,
+			"inputs": {
+				"item": [{
+						"chance": 1.0,
+						"content": {
+							"amount": 1,
+							"matches": [
+								"{id:\"ic2:quad_uranium_fuel_rod\",Count:1,Damage:0s}"
+							]
+						}
+					}
+				]
+			},
+			"outputs": {
+				"item": [{
+						"chance": 1.0,
+						"content": {
+							"amount": 1,
+							"matches": [
+								"{id:\"ic2:nuclear\",Count:1,Damage:13s}"
+							]
+						}
+					}
+				]
+			},
+			"tickOutputs": {
+				"gtce_energy": [{
+						"chance": 1.0,
+						"content": 1600
+					}
+				]
+			}
+		}, {
+			"uid": "moxfuel-1",
+			"duration": 5000,
+			"inputs": {
+				"item": [{
+						"chance": 1.0,
+						"content": {
+							"amount": 1,
+							"matches": [
+								"{id:\"ic2:mox_fuel_rod\",Count:1,Damage:0s}"
+							]
+						}
+					}
+				]
+			},
+			"outputs": {
+				"item": [{
+						"chance": 1.0,
+						"content": {
+							"amount": 1,
+							"matches": [
+								"{id:\"ic2:nuclear\",Count:1,Damage:14s}"
+							]
+						}
+					}
+				]
+			},
+			"tickOutputs": {
+				"gtce_energy": [{
+						"chance": 1.0,
+						"content": 200
+					}
+				]
+			}
+		}, {
+			"uid": "moxfuel-2",
+			"duration": 5000,
+			"inputs": {
+				"item": [{
+						"chance": 1.0,
+						"content": {
+							"amount": 1,
+							"matches": [
+								"{id:\"ic2:dual_mox_fuel_rod\",Count:1,Damage:0s}"
+							]
+						}
+					}
+				]
+			},
+			"outputs": {
+				"item": [{
+						"chance": 1.0,
+						"content": {
+							"amount": 1,
+							"matches": [
+								"{id:\"ic2:nuclear\",Count:1,Damage:15s}"
+							]
+						}
+					}
+				]
+			},
+			"tickOutputs": {
+				"gtce_energy": [{
+						"chance": 1.0,
+						"content": 200
+					}
+				]
+			}
+		}, {
+			"uid": "moxfuel-4",
+			"duration": 5000,
+			"inputs": {
+				"item": [{
+						"chance": 1.0,
+						"content": {
+							"amount": 1,
+							"matches": [
+								"{id:\"ic2:quad_mox_fuel_rod\",Count:1,Damage:0s}"
+							]
+						}
+					}
+				]
+			},
+			"outputs": {
+				"item": [{
+						"chance": 1.0,
+						"content": {
+							"amount": 1,
+							"matches": [
+								"{id:\"ic2:nuclear\",Count:1,Damage:16s}"
+							]
+						}
+					}
+				]
+			},
+			"tickOutputs": {
+				"gtce_energy": [{
+						"chance": 1.0,
+						"content": 200
+					}
+				]
+			}
+		}, {
+			"uid": "thorium-1",
+			"duration": 5000,
+			"inputs": {
+				"item": [{
+						"chance": 1.0,
+						"content": {
+							"amount": 1,
+							"matches": [
+								"{id:\"reactor_stuff:thorium_rod\",Count:1,Damage:0s}"
+							]
+						}
+					}
+				]
+			},
+			"outputs": {
+				"item": [{
+						"chance": 1.0,
+						"content": {
+							"amount": 1,
+							"matches": [
+								"{id:\"reactor_stuff:depleted_thorium_rod\",Count:1}"
+							]
+						}
+					}
+				]
+			},
+			"tickOutputs": {
+				"gtce_energy": [{
+						"chance": 1.0,
+						"content": 200
+					}
+				]
+			}
+		}, {
+			"uid": "thorium-2",
+			"duration": 5000,
+			"inputs": {
+				"item": [{
+						"chance": 1.0,
+						"content": {
+							"amount": 1,
+							"matches": [
+								"{id:\"reactor_stuff:thorium_rod_dual\",Count:1,Damage:0s}"
+							]
+						}
+					}
+				]
+			},
+			"outputs": {
+				"item": [{
+						"chance": 1.0,
+						"content": {
+							"amount": 1,
+							"matches": [
+								"{id:\"reactor_stuff:depleted_thorium_rod_dual\",Count:1}"
+							]
+						}
+					}
+				]
+			},
+			"tickOutputs": {
+				"gtce_energy": [{
+						"chance": 1.0,
+						"content": 200
+					}
+				]
+			}
+		}, {
+			"uid": "thorium-4",
+			"duration": 5000,
+			"inputs": {
+				"item": [{
+						"chance": 1.0,
+						"content": {
+							"amount": 1,
+							"matches": [
+								"{id:\"reactor_stuff:thorium_rod_quad\",Count:1,Damage:0s}"
+							]
+						}
+					}
+				]
+			},
+			"outputs": {
+				"item": [{
+						"chance": 1.0,
+						"content": {
+							"amount": 1,
+							"matches": [
+								"{id:\"reactor_stuff:depleted_thorium_rod_quad\",Count:1}"
+							]
+						}
+					}
+				]
+			},
+			"tickOutputs": {
+				"gtce_energy": [{
+						"chance": 1.0,
+						"content": 200
+					}
+				]
+			}
+		}, {
+			"uid": "isotope-1",
+			"duration": 5000,
+			"inputs": {
+				"item": [{
+						"chance": 1.0,
+						"content": {
+							"amount": 1,
+							"matches": [
+								"{id:\"reactor_stuff:isotope_rod\",Count:1,Damage:0s}"
+							]
+						}
+					}
+				]
+			},
+			"outputs": {
+				"item": [{
+						"chance": 1.0,
+						"content": {
+							"amount": 1,
+							"matches": [
+								"{id:\"reactor_stuff:bred_uranium_rod\",Count:1}"
+							]
+						}
+					}
+				]
+			},
+			"tickOutputs": {
+				"gtce_energy": [{
+						"chance": 1.0,
+						"content": 200
+					}
+				]
+			}
+		}, {
+			"uid": "isotope-2",
+			"duration": 5000,
+			"inputs": {
+				"item": [{
+						"chance": 1.0,
+						"content": {
+							"amount": 1,
+							"matches": [
+								"{id:\"reactor_stuff:isotope_rod_dual\",Count:1,Damage:0s}"
+							]
+						}
+					}
+				]
+			},
+			"outputs": {
+				"item": [{
+						"chance": 1.0,
+						"content": {
+							"amount": 1,
+							"matches": [
+								"{id:\"reactor_stuff:bred_uranium_rod_dual\",Count:1}"
+							]
+						}
+					}
+				]
+			},
+			"tickOutputs": {
+				"gtce_energy": [{
+						"chance": 1.0,
+						"content": 200
+					}
+				]
+			}
+		}, {
+			"uid": "isotope-4",
+			"duration": 5000,
+			"inputs": {
+				"item": [{
+						"chance": 1.0,
+						"content": {
+							"amount": 1,
+							"matches": [
+								"{id:\"reactor_stuff:isotope_rod_quad\",Count:1,Damage:0s}"
+							]
+						}
+					}
+				]
+			},
+			"outputs": {
+				"item": [{
+						"chance": 1.0,
+						"content": {
+							"amount": 1,
+							"matches": [
+								"{id:\"reactor_stuff:bred_uranium_rod_quad\",Count:1}"
+							]
+						}
+					}
+				]
+			},
+			"tickOutputs": {
+				"gtce_energy": [{
+						"chance": 1.0,
+						"content": 200
+					}
+				]
+			}
+		}, {
+			"uid": "triga-1",
+			"duration": 5000,
+			"inputs": {
+				"item": [{
+						"chance": 1.0,
+						"content": {
+							"amount": 1,
+							"matches": [
+								"{id:\"reactor_stuff:triga_rod\",Count:1,Damage:0s}"
+							]
+						}
+					}
+				]
+			},
+			"outputs": {
+				"item": [{
+						"chance": 1.0,
+						"content": {
+							"amount": 1,
+							"matches": [
+								"{id:\"reactor_stuff:depleted_triga_rod\",Count:1}"
+							]
+						}
+					}
+				]
+			},
+			"tickOutputs": {
+				"gtce_energy": [{
+						"chance": 1.0,
+						"content": 200
+					}
+				]
+			}
+		}, {
+			"uid": "triga-2",
+			"duration": 5000,
+			"inputs": {
+				"item": [{
+						"chance": 1.0,
+						"content": {
+							"amount": 1,
+							"matches": [
+								"{id:\"reactor_stuff:triga_rod_dual\",Count:1,Damage:0s}"
+							]
+						}
+					}
+				]
+			},
+			"outputs": {
+				"item": [{
+						"chance": 1.0,
+						"content": {
+							"amount": 1,
+							"matches": [
+								"{id:\"reactor_stuff:depleted_triga_rod_dual\",Count:1}"
+							]
+						}
+					}
+				]
+			},
+			"tickOutputs": {
+				"gtce_energy": [{
+						"chance": 1.0,
+						"content": 200
+					}
+				]
+			}
+		}, {
+			"uid": "triga-4",
+			"duration": 5000,
+			"inputs": {
+				"item": [{
+						"chance": 1.0,
+						"content": {
+							"amount": 1,
+							"matches": [
+								"{id:\"reactor_stuff:triga_rod_quad\",Count:1,Damage:0s}"
+							]
+						}
+					}
+				]
+			},
+			"outputs": {
+				"item": [{
+						"chance": 1.0,
+						"content": {
+							"amount": 1,
+							"matches": [
+								"{id:\"reactor_stuff:depleted_triga_rod_quad\",Count:1}"
+							]
+						}
+					}
+				]
+			},
+			"tickOutputs": {
+				"gtce_energy": [{
+						"chance": 1.0,
+						"content": 200
+					}
+				]
+			}
+		}, {
+			"uid": "elerium-1",
+			"duration": 5000,
+			"inputs": {
+				"item": [{
+						"chance": 1.0,
+						"content": {
+							"amount": 1,
+							"matches": [
+								"{id:\"reactor_stuff:elerium_rod\",Count:1,Damage:0s}"
+							]
+						}
+					}
+				]
+			},
+			"outputs": {
+				"item": [{
+						"chance": 1.0,
+						"content": {
+							"amount": 1,
+							"matches": [
+								"{id:\"reactor_stuff:depleted_elerium_rod\",Count:1}"
+							]
+						}
+					}
+				]
+			},
+			"tickOutputs": {
+				"gtce_energy": [{
+						"chance": 1.0,
+						"content": 200
+					}
+				]
+			}
+		}, {
+			"uid": "elerium-2",
+			"duration": 5000,
+			"inputs": {
+				"item": [{
+						"chance": 1.0,
+						"content": {
+							"amount": 1,
+							"matches": [
+								"{id:\"reactor_stuff:elerium_rod_dual\",Count:1,Damage:0s}"
+							]
+						}
+					}
+				]
+			},
+			"outputs": {
+				"item": [{
+						"chance": 1.0,
+						"content": {
+							"amount": 1,
+							"matches": [
+								"{id:\"reactor_stuff:depleted_elerium_rod_dual\",Count:1}"
+							]
+						}
+					}
+				]
+			},
+			"tickOutputs": {
+				"gtce_energy": [{
+						"chance": 1.0,
+						"content": 200
+					}
+				]
+			}
+		}, {
+			"uid": "elerium-4",
+			"duration": 5000,
+			"inputs": {
+				"item": [{
+						"chance": 1.0,
+						"content": {
+							"amount": 1,
+							"matches": [
+								"{id:\"reactor_stuff:elerium_rod_quad\",Count:1,Damage:0s}"
+							]
+						}
+					}
+				]
+			},
+			"outputs": {
+				"item": [{
+						"chance": 1.0,
+						"content": {
+							"amount": 1,
+							"matches": [
+								"{id:\"reactor_stuff:depleted_elerium_rod_quad\",Count:1}"
+							]
+						}
+					}
+				]
+			},
+			"tickOutputs": {
+				"gtce_energy": [{
+						"chance": 1.0,
+						"content": 200
+					}
+				]
+			}
+		}, {
+			"uid": "blazonium-1",
+			"duration": 5000,
+			"inputs": {
+				"item": [{
+						"chance": 1.0,
+						"content": {
+							"amount": 1,
+							"matches": [
+								"{id:\"reactor_stuff:blazonium_rod\",Count:1,Damage:0s}"
+							]
+						}
+					}
+				]
+			},
+			"outputs": {
+				"item": [{
+						"chance": 1.0,
+						"content": {
+							"amount": 1,
+							"matches": [
+								"{id:\"reactor_stuff:depleted_blazonium_rod\",Count:1}"
+							]
+						}
+					}
+				]
+			},
+			"tickOutputs": {
+				"gtce_energy": [{
+						"chance": 1.0,
+						"content": 200
+					}
+				]
+			}
+		}, {
+			"uid": "blazonium-2",
+			"duration": 5000,
+			"inputs": {
+				"item": [{
+						"chance": 1.0,
+						"content": {
+							"amount": 1,
+							"matches": [
+								"{id:\"reactor_stuff:blazonium_rod_dual\",Count:1,Damage:0s}"
+							]
+						}
+					}
+				]
+			},
+			"outputs": {
+				"item": [{
+						"chance": 1.0,
+						"content": {
+							"amount": 1,
+							"matches": [
+								"{id:\"reactor_stuff:depleted_blazonium_rod_dual\",Count:1}"
+							]
+						}
+					}
+				]
+			},
+			"tickOutputs": {
+				"gtce_energy": [{
+						"chance": 1.0,
+						"content": 200
+					}
+				]
+			}
+		}, {
+			"uid": "blazonium-4",
+			"duration": 5000,
+			"inputs": {
+				"item": [{
+						"chance": 1.0,
+						"content": {
+							"amount": 1,
+							"matches": [
+								"{id:\"reactor_stuff:blazonium_rod_quad\",Count:1,Damage:0s}"
+							]
+						}
+					}
+				]
+			},
+			"outputs": {
+				"item": [{
+						"chance": 1.0,
+						"content": {
+							"amount": 1,
+							"matches": [
+								"{id:\"reactor_stuff:depleted_blazonium_rod_quad\",Count:1}"
+							]
+						}
+					}
+				]
+			},
+			"tickOutputs": {
+				"gtce_energy": [{
+						"chance": 1.0,
+						"content": 200
+					}
+				]
+			}
+		}
+
+	]
+}

@@ -1,0 +1,195 @@
+{
+  "version": 2,
+  "location": "gtb:pressuredsteriletank",
+  "traits": {},
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 10.0,
+    "harvestLevel": 1,
+    "stackSize": 64,
+    "tabGroup": "multiblocked"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "baseTexture": "gtadditions:blocks/casings/tritanium",
+        "frontTexture": "multiblocked:blocks/gregtech_front",
+        "type": "gregtech"
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+      "renderer": {
+        "baseTexture": "gtadditions:blocks/casings/tritanium",
+        "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
+        "type": "gregtech"
+      },
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "empty",
+  "basePattern": {
+    "structureDir": [
+      "BACK",
+      "UP",
+      "RIGHT"
+    ],
+    "pattern": [
+      [
+        "  A  ",
+        " ABA ",
+        " AAA ",
+        " AAA ",
+        " AAA ",
+        " AAA ",
+        "  A  "
+      ],
+      [
+        " AAA ",
+        "ACCCA",
+        "ACCCA",
+        "ACCCA",
+        "ACCCA",
+        "ACCCA",
+        " AAA "
+      ],
+      [
+        "AAAAA",
+        "@CCCB",
+        "AC CA",
+        "AC CA",
+        "AC CA",
+        "ACCCA",
+        "AAAAA"
+      ],
+      [
+        " AAA ",
+        "ACCCA",
+        "ACCCA",
+        "ACCCA",
+        "ACCCA",
+        "ACCCA",
+        " AAA "
+      ],
+      [
+        "  A  ",
+        " ABA ",
+        " AAA ",
+        " AAA ",
+        " AAA ",
+        " AAA ",
+        "  A  "
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "states": [
+          {
+            "id": "gtadditions:ga_metal_casing_2",
+            "meta": 4
+          }
+        ],
+        "type": "states"
+      },
+      "controller": {
+        "location": "gtb:pressuredsteriletank",
+        "type": "component"
+      },
+      "C": {
+        "states": [
+          {
+            "id": "gtadditions:ga_metal_casing_1",
+            "meta": 7
+          }
+        ],
+        "type": "states"
+      },
+      "air": {
+        "type": "air"
+      },
+      "any": {
+        "type": "any"
+      },
+      "item_in": {
+        "location": "multiblocked:item_input",
+        "type": "component",
+        "io": "IN"
+      },
+      "item_out": {
+        "location": "multiblocked:item_output",
+        "type": "component",
+        "io": "OUT"
+      },
+      "energy_in": {
+        "capability": "gtce_energy",
+        "type": "capability",
+        "io": "IN"
+      },
+      "fluid_in": {
+        "location": "multiblocked:fluid_input",
+        "type": "component",
+        "io": "IN"
+      },
+      "fluid_out": {
+        "location": "multiblocked:fluid_output",
+        "type": "component"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+	    "A",
+        "item_in",
+        "item_out",
+        "fluid_in",
+        "fluid_out",
+        "energy_in"
+      ],
+      "C": [
+        "C"
+      ],
+      "-": [
+        "air"
+      ]
+    }
+  }
+}
