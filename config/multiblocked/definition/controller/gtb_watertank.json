@@ -1,0 +1,150 @@
+{
+  "version": 2,
+  "location": "gtb:watertank",
+  "traits": {},
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 10.0,
+    "harvestLevel": 1,
+    "stackSize": 64,
+    "tabGroup": "multiblocked"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "baseTexture": "contenttweaker:blocks/steelborderedwoodencasing",
+        "frontTexture": "multiblocked:blocks/gregtech_front",
+        "type": "gregtech"
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+      "renderer": {
+        "baseTexture": "contenttweaker:blocks/steelborderedwoodencasing",
+        "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
+        "type": "gregtech"
+      },
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "watercollector",
+  "basePattern": {
+    "structureDir": [
+      "FRONT",
+      "UP",
+      "LEFT"
+    ],
+    "pattern": [
+      [
+        "A A",
+        "BBB",
+        "BBB",
+        " B ",
+        "   "
+      ],
+      [
+        "   ",
+        "BC@",
+        "BDB",
+        "BDB",
+        " D "
+      ],
+      [
+        "A A",
+        "BBB",
+        "BBB",
+        " B ",
+        "   "
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "states": [
+          {
+            "id": "gregtech:frame_steel",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "controller": {
+        "location": "gtb:watertank",
+        "type": "component"
+      },
+      "B": {
+        "states": [
+          {
+            "id": "contenttweaker:steelborderedwoodencasing",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "D": {
+        "states": [
+          {
+            "id": "gregtech:frame_wood",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "air": {
+        "type": "air"
+      },
+      "any": {
+        "type": "any"
+      },
+      "C": {
+        "location": "gtb:watertankhatch",
+        "type": "component"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C"
+      ],
+      "D": [
+        "D"
+      ],
+      "-": [
+        "air"
+      ]
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "name": "watercollector",
+  "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
+  "fuelTexture": "multiblocked:textures/gui/progress_bar_fuel.png",
+  "recipes": [
+    {
+      "uid": "rain",
+      "duration": 200,
+      "outputs": {
+        "fluid": [
+          {
+            "chance": 0.5,
+            "content": "{FluidName:\"water\",Amount:100}"
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "type": "rain",
+          "condition": {
+            "level": 1.0
+          }
+        },
+        {
+          "type": "thunder",
+          "condition": {
+            "reverse": true,
+            "level": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "uid": "storm",
+      "duration": 200,
+      "outputs": {
+        "fluid": [
+          {
+            "chance": 0.8,
+            "content": "{FluidName:\"water\",Amount:150}"
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "type": "thunder",
+          "condition": {
+            "level": 1.0
+          }
+        }
+      ]
+    }
+  ]
+}
