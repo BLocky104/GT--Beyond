@@ -17,14 +17,15 @@ import mods.contenttweaker.Fluid;
 import mods.contenttweaker.Color;
 import mods.contenttweaker.SoundType;
 import crafttweaker.item.IItemStack;
+import crafttweaker.oredict.IOreDict;
+import crafttweaker.oredict.IOreDictEntry;
 import mods.contenttweaker.DropHandler;
 import mods.contenttweaker.ItemList;
 
-
-function BlockCasings(Casing as string[], ToolLevel as int, Type as string = "casing"){
-	for item in Casing{
-		var newblock = VanillaFactory.createBlock(item + Type, <blockmaterial:rock>);
-		newblock.setBlockHardness(10.0);
+function BlockCasings(Casing as string[], Hardness as float, ToolLevel as int){
+	for block in Casing{
+		var newblock = VanillaFactory.createBlock(block, <blockmaterial:rock>);
+		newblock.setBlockHardness(Hardness);
 		newblock.setBlockResistance(10.0);
 		newblock.setToolClass("pickaxe");
 		newblock.setToolLevel(ToolLevel);
@@ -33,35 +34,23 @@ function BlockCasings(Casing as string[], ToolLevel as int, Type as string = "ca
 	}
 }
 
-var casings_lv2 = [
-	"computer", 
-	"matter", 
-	"electronic", 
-	"advcomputer", 
-	"highpower"
+var blockHard10Tool2 = [
+	"computercasing", 
+	"mattercasing", 
+	"electroniccasing", 
+	"advcomputercasing", 
+	"highpowercasing"
 ] as string[];
 
-BlockCasings(casings_lv2, 2);
+BlockCasings(blockHard10Tool2, 10.0, 2);
 
-var casings_lv5 = [
-	"cryogenic", 
-	"perciseelectronicunit", 
-	"naquadahfuelrefinery", 
-	"advancedassemblyline", 
-	"vacuumfurnace", 
-	"pbistrengthenedtetrix"
-] as string[];
-
-BlockCasings(casings_lv5, 5);
-
-var casings_lv7 = [
-	"electricalrutherfordiumcuprite",
-	"particleprotection"
-] as string[];
-
-BlockCasings(casings_lv7, 7);
-
-var otherblocks_lv5 = [
+var blockHard10Tool5 = [
+	"cryogeniccasing", 
+	"perciseelectronicunitcasing", 
+	"naquadahfuelrefinerycasing", 
+	"advancedassemblylinecasing", 
+	"vacuumfurnacecasing", 
+	"pbistrengthenedtetrixcasing",
 	"advancedcraftingunit",
 	"neutronaccelerator",
 	"neutronsensor",
@@ -72,14 +61,104 @@ var otherblocks_lv5 = [
 	"copperalloycoilblock"
 ] as string[];
 
-BlockCasings(otherblocks_lv5, 5, "");
+BlockCasings(blockHard10Tool5, 10.0, 5);
 
-var otherblocks_lv7 = [
+var blockHard10Tool7 = [
+	"electricalrutherfordiumcupritecasing",
+	"particleprotectioncasing",
 	"blocklasermodule"
 ] as string[];
 
-BlockCasings(otherblocks_lv7, 7, "");
+BlockCasings(blockHard10Tool7, 10.0, 7);
 
+var blockHard12Tool2 = [
+	"supportstructure",
+	"basecasing",
+	"motorfive",
+	"motorfour",
+	"motorthree",
+	"motortwo",
+	"motorone",
+	"motorblock",
+	"internalstructure",
+	"detectiondevice",
+	"thermalcasing",
+	"blockgraphite",
+	"millcasing",
+	"asphaltblock",
+	"scsteamturbinecasing"
+] as string[];
+BlockCasings(blockHard12Tool2, 12.0, 2);
+
+var blockHard20Tool5 = [
+	"woodeneglinsteelcasing",
+	"logcasing",
+	"steelborderedwoodencasing"
+] as string[];
+BlockCasings(blockHard20Tool5, 20.0, 5);
+
+///80 hardness tool level 2?? why???
+var blockHard80Tool2 = [
+	"optimizedrestrictedpcbcasing",
+	"opticalspeedingpipecasing",
+	"perfectlysealedvacuumcasing",
+	"computercasingvent",
+	"annihilationcasing",
+	"fieldgeneratorcasing",
+	"coil",
+	"quantumcomputercasing",
+	"lasercasing",
+	"quantumcasing",
+	"reactorsimulator",
+	"dimensionalcasing"
+] as string[];
+BlockCasings(blockHard80Tool2, 80.0, 2);
+
+///outlier with wood material
+var treatedwoodplanks = VanillaFactory.createBlock("treatedwoodplanks", <blockmaterial:wood>);
+treatedwoodplanks.setBlockHardness(12.0);
+treatedwoodplanks.setBlockResistance(10.0);
+treatedwoodplanks.setToolClass("axe");
+treatedwoodplanks.setToolLevel(2);
+treatedwoodplanks.setBlockSoundType(<soundtype:metal>);
+treatedwoodplanks.register();
+
+var lightlytreatedwoodplanks = VanillaFactory.createBlock("lightlytreatedwoodplanks", <blockmaterial:wood>);
+lightlytreatedwoodplanks.setBlockHardness(12.0);
+lightlytreatedwoodplanks.setBlockResistance(10.0);
+lightlytreatedwoodplanks.setToolClass("axe");
+lightlytreatedwoodplanks.setToolLevel(2);
+lightlytreatedwoodplanks.setBlockSoundType(<soundtype:metal>);
+lightlytreatedwoodplanks.register();
+///fuck is this hardness 800
+var transcendantminingcasings = VanillaFactory.createBlock("transcendantminingcasings", <blockmaterial:rock>);
+transcendantminingcasings.setBlockHardness(800.0);
+transcendantminingcasings.setBlockResistance(10.0);
+transcendantminingcasings.setToolClass("pickaxe");
+transcendantminingcasings.setToolLevel(11);
+transcendantminingcasings.setBlockSoundType(<soundtype:metal>);
+transcendantminingcasings.register();
+
+print("Content Tweaker Casings Loaded");
+
+///Materials & Parts Handling
+
+function MaterialParts(Material as string, Parts as string[] = ["ingot"]){
+	for part in Parts{
+		VanillaFactory.createItem(Material + part).register();
+	}
+}
+
+var standardparts = ["ingot", "dust", "plate", "gear", "rod"] as string[];
+var simpleparts = ["ingot", "dust", "plate"] as string[];
+
+MaterialParts("bulatsteel", standardparts);
+MaterialParts("silversteel", standardparts);
+MaterialParts("silveralloy", simpleparts);
+MaterialParts("supercooled", simpleparts);
+MaterialParts("greensteel", ["ingot", "dust", "plate", "rod"] as string[]);
+MaterialParts("electricalsteel", ["dust", "plate", "gear", "rod"] as string[]);
+MaterialParts("enhancedenderium", ["ingot","plate","lense","dust","rod", "smalldust", "crystal", "unrefinedcrystal", "refinedmetalresidues"] as string[]);
 
 var bronzeblend = VanillaFactory.createItem("bronzeblend");
 bronzeblend.register();
@@ -92,12 +171,6 @@ hammer.maxStackSize = 1;
 hammer.maxDamage = 20;
 hammer.register();
 
-var bulatsteelingot = VanillaFactory.createItem("bulatsteelingot");
-bulatsteelingot.register();
-
-var bulatsteeldust = VanillaFactory.createItem("bulatsteeldust");
-bulatsteeldust.register();
-
 var stretchedwool = VanillaFactory.createItem("stretchedwool");
 stretchedwool.register();
 
@@ -108,39 +181,6 @@ var stoneknife = VanillaFactory.createItem("stoneknife");
 stoneknife.maxStackSize = 1;
 stoneknife.maxDamage = 10;
 stoneknife.register();
-
-var electricalsteelplate = VanillaFactory.createItem("electricalsteelplate");
-electricalsteelplate.register();
-
-var silversteel = VanillaFactory.createItem("silversteel");
-silversteel.register();
-
-var electricalsteelgear = VanillaFactory.createItem("electricalsteelgear");
-electricalsteelgear.register();
-
-var silversteelgear = VanillaFactory.createItem("silversteelgear");
-silversteelgear.register();
-
-var silversteelplate = VanillaFactory.createItem("silversteelplate");
-silversteelplate.register();
-
-var bulatsteelplate = VanillaFactory.createItem("bulatsteelplate");
-bulatsteelplate.register();
-
-var bulatsteelgear = VanillaFactory.createItem("bulatsteelgear");
-bulatsteelgear.register();
-
-var silversteeldust = VanillaFactory.createItem("silversteeldust");
-silversteeldust.register();
-
-var silversteelrod = VanillaFactory.createItem("silversteelrod");
-silversteelrod.register();
-
-var bulatsteelrod = VanillaFactory.createItem("bulatsteelrod");
-bulatsteelrod.register();
-
-var electricalsteelrod = VanillaFactory.createItem("electricalsteelrod");
-electricalsteelrod.register();
 
 var Wrench = VanillaFactory.createItem("Wrench");
 Wrench.maxDamage = 200;
@@ -178,15 +218,6 @@ var lumin = VanillaFactory.createFluid("lumin", Color.fromHex("bab709"));
 lumin.temperature=(700);
 lumin.register();
 
-var silveralloyplate = VanillaFactory.createItem("silveralloyplate");
-silveralloyplate.register();
-
-var silveralloydust = VanillaFactory.createItem("silveralloydust");
-silveralloydust.register();
-
-var silveralloyingot = VanillaFactory.createItem("silveralloyingot");
-silveralloyingot.register();
-
 var blazingrod = VanillaFactory.createItem("blazingrod");
 blazingrod.register();
 
@@ -197,20 +228,8 @@ var bisphenolb = VanillaFactory.createFluid("bisphenolb", Color.fromHex("6B5802"
 bisphenolb.temperature=(700);
 bisphenolb.register();
 
-var electricalsteeldust = VanillaFactory.createItem("electricalsteeldust");
-electricalsteeldust.register();
-
-var supercooleddust = VanillaFactory.createItem("supercooleddust");
-supercooleddust.register();
-
-var supercooledingot = VanillaFactory.createItem("supercooledingot");
-supercooledingot.register();
-
 var rubyingot = VanillaFactory.createItem("rubyingot");
 rubyingot.register();
-
-var supercooledplate = VanillaFactory.createItem("supercooledplate");
-supercooledplate.register();
 
 var darksteeldust = VanillaFactory.createItem("darksteeldust");
 darksteeldust.register();
@@ -280,18 +299,6 @@ tungstencircuit.register();
 
 var hssgcircuit = VanillaFactory.createItem("hssgcircuit");
 hssgcircuit.register();
-
-var greensteelingot = VanillaFactory.createItem("greensteelingot");
-greensteelingot.register();
-
-var greensteeldust = VanillaFactory.createItem("greensteeldust");
-greensteeldust.register();
-
-var greensteelrod = VanillaFactory.createItem("greensteelrod");
-greensteelrod.register();
-
-var greensteelplate = VanillaFactory.createItem("greensteelplate");
-greensteelplate.register();
 
 var titaniumcontainingice = VanillaFactory.createBlock("titaniumcontainingice", <blockmaterial:ice>);
 titaniumcontainingice.setBlockHardness(10.0);
@@ -865,59 +872,41 @@ computation.register();
 var computationcomponent = VanillaFactory.createItem("computationcomponent");
 computationcomponent.register();
 
-var ganymede = VanillaFactory.createItem("ganymede");
-ganymede.register();
+var galaticobjects = [
+	"ganymede",
+	"io",
+	"barnadac",
+	"callisto",
+	"ceres",
+	"diona",
+	"enceladus",
+	"europa",
+	"haumea",
+	"kupiterbelt",
+	"mercury",
+	"miranda",
+	"phobos",
+	"pluto",
+	"proximab",
+	"taucetif",
+	"titan",
+	"triton",
+	"yzcetib",
+	"yzcetic",
+	"yzcetid",
+	"trappist1c",
+	"trappist1e",
+	"overworld",
+	"venus",
+	"moon",
+	"asteroids",
+	"fronos",
+	"chalos",
+	"mars",
+	"nibiru",
+] as string[];
 
-var io = VanillaFactory.createItem("io");
-io.register();
-
-var barnadac = VanillaFactory.createItem("barnadac");
-barnadac.register();
-
-var callisto = VanillaFactory.createItem("callisto");
-callisto.register();
-
-var ceres = VanillaFactory.createItem("ceres");
-ceres.register();
-
-var diona = VanillaFactory.createItem("diona");
-diona.register();
-
-var enceladus = VanillaFactory.createItem("enceladus");
-enceladus.register();
-
-var europa = VanillaFactory.createItem("europa");
-europa.register();
-
-var haumea = VanillaFactory.createItem("haumea");
-haumea.register();
-
-var kupiterbelt = VanillaFactory.createItem("kupiterbelt");
-kupiterbelt.register();
-
-var mercury = VanillaFactory.createItem("mercury");
-mercury.register();
-
-var miranda = VanillaFactory.createItem("miranda");
-miranda.register();
-
-var phobos = VanillaFactory.createItem("phobos");
-phobos.register();
-
-var pluto = VanillaFactory.createItem("pluto");
-pluto.register();
-
-var proximab = VanillaFactory.createItem("proximab");
-proximab.register();
-
-var taucetif = VanillaFactory.createItem("taucetif");
-taucetif.register();
-
-var titan = VanillaFactory.createItem("titan");
-titan.register();
-
-var triton = VanillaFactory.createItem("triton");
-triton.register();
+for planet in galaticobjects{VanillaFactory.createItem(planet).register();}
 
 var circuitcompundmk1 = VanillaFactory.createItem("circuitcompundmk1");
 circuitcompundmk1.register();
@@ -974,48 +963,6 @@ silicongradedust.register();
 var iron4chloride = VanillaFactory.createFluid("iron4chloride", Color.fromHex("424242"));
 iron4chloride.register();
 
-var yzcetib = VanillaFactory.createItem("yzcetib");
-yzcetib.register();
-
-var yzcetic = VanillaFactory.createItem("yzcetic");
-yzcetic.register();
-
-var yzcetid = VanillaFactory.createItem("yzcetid");
-yzcetid.register();
-
-var trappist1c = VanillaFactory.createItem("trappist1c");
-trappist1c.register();
-
-var trappist1e = VanillaFactory.createItem("trappist1e");
-trappist1e.register();
-
-var overworld = VanillaFactory.createItem("overworld");
-overworld.register();
-
-var venus = VanillaFactory.createItem("venus");
-venus.register();
-
-var moon = VanillaFactory.createItem("moon");
-moon.register();
-
-var asteroids = VanillaFactory.createItem("asteroids");
-asteroids.register();
-
-var fronos = VanillaFactory.createItem("fronos");
-fronos.register();
-
-var chalos = VanillaFactory.createItem("chalos");
-chalos.register();
-
-var mars = VanillaFactory.createItem("mars");
-mars.register();
-
-var nibiru = VanillaFactory.createItem("nibiru");
-nibiru.register();
-
-var uhepic = VanillaFactory.createItem("uhepic");
-uhepic.register();
-
 var hotantoingot = VanillaFactory.createItem("hotantoingot");
 hotantoingot.register();
 
@@ -1063,6 +1010,9 @@ lpicwafer.register();
 
 var lpic = VanillaFactory.createItem("lpic");
 lpic.register();
+
+var uhepic = VanillaFactory.createItem("uhepic");
+uhepic.register();
 
 var flintstiffednet = VanillaFactory.createItem("flintstiffednet");
 flintstiffednet.register();
@@ -1238,18 +1188,6 @@ uvhasoc.register();
 var uvhasocw = VanillaFactory.createItem("uvhasocw");
 uvhasocw.register();
 
-var enhancedenderiumingot = VanillaFactory.createItem("enhancedenderiumingot");
-enhancedenderiumingot.register();
-
-var enhancedenderiumplate = VanillaFactory.createItem("enhancedenderiumplate");
-enhancedenderiumplate.register();
-
-var enhancedenderiumlense = VanillaFactory.createItem("enhancedenderiumlense");
-enhancedenderiumlense.register();
-
-var enhancedenderiumrod = VanillaFactory.createItem("enhancedenderiumrod");
-enhancedenderiumrod.register();
-
 var compressedmetaldust = VanillaFactory.createItem("compressedmetaldust");
 compressedmetaldust.register();
 
@@ -1258,21 +1196,6 @@ compressedmetalingot.register();
 
 var moltenenhancedenderium = VanillaFactory.createFluid("moltenenhancedenderium", Color.fromHex("113817"));
 moltenenhancedenderium.register();
-
-var enhancedenderiumdust = VanillaFactory.createItem("enhancedenderiumdust");
-enhancedenderiumdust.register();
-
-var enhancedenderiumsmalldust = VanillaFactory.createItem("enhancedenderiumsmalldust");
-enhancedenderiumsmalldust.register();
-
-var enhancedenderiumunrefinedcrystal = VanillaFactory.createItem("enhancedenderiumunrefinedcrystal");
-enhancedenderiumunrefinedcrystal.register();
-
-var enhancedenderiumcrystal = VanillaFactory.createItem("enhancedenderiumcrystal");
-enhancedenderiumcrystal.register();
-
-var enhancedenderiumrefinedmetalresidues = VanillaFactory.createItem("enhancedenderiumrefinedmetalresidues");
-enhancedenderiumrefinedmetalresidues.register();
 
 var awakenedcompressedmetalingot = VanillaFactory.createItem("awakenedcompressedmetalingot");
 awakenedcompressedmetalingot.register();
@@ -1345,15 +1268,6 @@ stablestar.register();
 
 var spacetimecontainingcomputationalunit = VanillaFactory.createItem("spacetimecontainingcomputationalunit");
 spacetimecontainingcomputationalunit.register();
-
-var transcendantminingcasings = VanillaFactory.createBlock("transcendantminingcasings", <blockmaterial:rock>);
-transcendantminingcasings.setBlockHardness(800.0);
-transcendantminingcasings.setBlockResistance(10.0);
-transcendantminingcasings.setToolClass("pickaxe");
-transcendantminingcasings.setToolLevel(11);
-transcendantminingcasings.setBlockSoundType(<soundtype:metal>);
-transcendantminingcasings.register();
-
 
 var opticallyenhancedcircuitboard = VanillaFactory.createItem("opticallyenhancedcircuitboard");
 opticallyenhancedcircuitboard.register();
@@ -1487,14 +1401,6 @@ boundleather.register();
 var reinforcedstring = VanillaFactory.createItem("reinforcedstring");
 reinforcedstring.register();
 
-var treatedwoodplanks = VanillaFactory.createBlock("treatedwoodplanks", <blockmaterial:wood>);
-treatedwoodplanks.setBlockHardness(12.0);
-treatedwoodplanks.setBlockResistance(10.0);
-treatedwoodplanks.setToolClass("axe");
-treatedwoodplanks.setToolLevel(2);
-treatedwoodplanks.setBlockSoundType(<soundtype:metal>);
-treatedwoodplanks.register();
-
 var quaternaryammonium = VanillaFactory.createFluid("quaternaryammonium", Color.fromHex("CFD8DC"));
 quaternaryammonium.register();
 
@@ -1585,51 +1491,12 @@ radium_202_dust.register();
 var radium_sodium_emulsion = VanillaFactory.createFluid("radium_sodium_emulsion", Color.fromHex("666B66"));
 radium_sodium_emulsion.register();
 
-var woodeneglinsteelcasing = VanillaFactory.createBlock("woodeneglinsteelcasing", <blockmaterial:rock>);
-woodeneglinsteelcasing.setBlockHardness(20.0);
-woodeneglinsteelcasing.setBlockResistance(10.0);
-woodeneglinsteelcasing.setToolClass("pickaxe");
-woodeneglinsteelcasing.setToolLevel(5);
-woodeneglinsteelcasing.setBlockSoundType(<soundtype:metal>);
-woodeneglinsteelcasing.register();
-
-var logcasing = VanillaFactory.createBlock("logcasing", <blockmaterial:rock>);
-logcasing.setBlockHardness(20.0);
-logcasing.setBlockResistance(10.0);
-logcasing.setToolClass("pickaxe");
-logcasing.setToolLevel(5);
-logcasing.setBlockSoundType(<soundtype:metal>);
-logcasing.register();
-
-var steelborderedwoodencasing = VanillaFactory.createBlock("steelborderedwoodencasing", <blockmaterial:wood>);
-steelborderedwoodencasing.setBlockHardness(20.0);
-steelborderedwoodencasing.setBlockResistance(10.0);
-steelborderedwoodencasing.setToolClass("pickaxe");
-steelborderedwoodencasing.setToolLevel(5);
-steelborderedwoodencasing.setBlockSoundType(<soundtype:metal>);
-steelborderedwoodencasing.register();
-
 var solardistilledwater = VanillaFactory.createFluid("solardistilledwater", Color.fromHex("40b0ed"));
 solardistilledwater.register();
 
 var dirtywater = VanillaFactory.createFluid("dirtywater", Color.fromHex("6e3415"));
 dirtywater.register();
 
-var lightlytreatedwoodplanks = VanillaFactory.createBlock("lightlytreatedwoodplanks", <blockmaterial:wood>);
-lightlytreatedwoodplanks.setBlockHardness(12.0);
-lightlytreatedwoodplanks.setBlockResistance(10.0);
-lightlytreatedwoodplanks.setToolClass("axe");
-lightlytreatedwoodplanks.setToolLevel(2);
-lightlytreatedwoodplanks.setBlockSoundType(<soundtype:metal>);
-lightlytreatedwoodplanks.register();
-
-var thermalcasing = VanillaFactory.createBlock("thermalcasing", <blockmaterial:rock>);
-thermalcasing.setBlockHardness(12.0);
-thermalcasing.setBlockResistance(10.0);
-thermalcasing.setToolClass("axe");
-thermalcasing.setToolLevel(2);
-thermalcasing.setBlockSoundType(<soundtype:metal>);
-thermalcasing.register();
 
 var forcefieldgenerator = VanillaFactory.createItem("forcefieldgenerator");
 forcefieldgenerator.register();
@@ -1639,14 +1506,6 @@ ionthruster.register();
 
 var articficialmuscle = VanillaFactory.createItem("articficialmuscle");
 articficialmuscle.register();
-
-var detectiondevice = VanillaFactory.createBlock("detectiondevice", <blockmaterial:rock>);
-detectiondevice.setBlockHardness(12.0);
-detectiondevice.setBlockResistance(10.0);
-detectiondevice.setToolClass("axe");
-detectiondevice.setToolLevel(2);
-detectiondevice.setBlockSoundType(<soundtype:metal>);
-detectiondevice.register();
 
 var wiring = VanillaFactory.createItem("wiring");
 wiring.register();
@@ -1665,30 +1524,6 @@ spectreplate.register();
 
 var superlubricenttincture = VanillaFactory.createFluid("superlubricenttincture", Color.fromHex("5a5c00"));
 superlubricenttincture.register();
-
-var optimizedrestrictedpcbcasing = VanillaFactory.createBlock("optimizedrestrictedpcbcasing", <blockmaterial:rock>);
-optimizedrestrictedpcbcasing.setBlockHardness(80.0);
-optimizedrestrictedpcbcasing.setBlockResistance(10.0);
-optimizedrestrictedpcbcasing.setToolClass("axe");
-optimizedrestrictedpcbcasing.setToolLevel(2);
-optimizedrestrictedpcbcasing.setBlockSoundType(<soundtype:metal>);
-optimizedrestrictedpcbcasing.register();
-
-var opticalspeedingpipecasing = VanillaFactory.createBlock("opticalspeedingpipecasing", <blockmaterial:rock>);
-opticalspeedingpipecasing.setBlockHardness(80.0);
-opticalspeedingpipecasing.setBlockResistance(10.0);
-opticalspeedingpipecasing.setToolClass("axe");
-opticalspeedingpipecasing.setToolLevel(2);
-opticalspeedingpipecasing.setBlockSoundType(<soundtype:metal>);
-opticalspeedingpipecasing.register();
-
-var perfectlysealedvacuumcasing = VanillaFactory.createBlock("perfectlysealedvacuumcasing", <blockmaterial:rock>);
-perfectlysealedvacuumcasing.setBlockHardness(80.0);
-perfectlysealedvacuumcasing.setBlockResistance(10.0);
-perfectlysealedvacuumcasing.setToolClass("axe");
-perfectlysealedvacuumcasing.setToolLevel(2);
-perfectlysealedvacuumcasing.setBlockSoundType(<soundtype:metal>);
-perfectlysealedvacuumcasing.register();
 
 var paraphenylenediaminesolution = VanillaFactory.createFluid("paraphenylenediaminesolution", Color.fromHex("BA68C8"));
 paraphenylenediaminesolution.register();
@@ -1795,70 +1630,6 @@ fusioncoil.register();
 var superconductingwire = VanillaFactory.createItem("superconductingwire");
 superconductingwire.register();
 
-var computercasingvent = VanillaFactory.createBlock("computercasingvent", <blockmaterial:rock>);
-computercasingvent.setBlockHardness(80.0);
-computercasingvent.setBlockResistance(10.0);
-computercasingvent.setToolClass("pickaxe");
-computercasingvent.setToolLevel(2);
-computercasingvent.setBlockSoundType(<soundtype:metal>);
-computercasingvent.register();
-
-var annihilationcasing = VanillaFactory.createBlock("annihilationcasing", <blockmaterial:rock>);
-annihilationcasing.setBlockHardness(80.0);
-annihilationcasing.setBlockResistance(10.0);
-annihilationcasing.setToolClass("pickaxe");
-annihilationcasing.setToolLevel(2);
-annihilationcasing.setBlockSoundType(<soundtype:metal>);
-annihilationcasing.register();
-
-var fieldgeneratorcasing = VanillaFactory.createBlock("fieldgeneratorcasing", <blockmaterial:rock>);
-fieldgeneratorcasing.setBlockHardness(80.0);
-fieldgeneratorcasing.setBlockResistance(10.0);
-fieldgeneratorcasing.setToolClass("pickaxe");
-fieldgeneratorcasing.setToolLevel(2);
-fieldgeneratorcasing.setBlockSoundType(<soundtype:metal>);
-fieldgeneratorcasing.register();
-
-var coil = VanillaFactory.createBlock("coil", <blockmaterial:rock>);
-coil.setBlockHardness(80.0);
-coil.setBlockResistance(10.0);
-coil.setToolClass("pickaxe");
-coil.setToolLevel(2);
-coil.setBlockSoundType(<soundtype:metal>);
-coil.register();
-
-var quantumcomputercasing = VanillaFactory.createBlock("quantumcomputercasing", <blockmaterial:rock>);
-quantumcomputercasing.setBlockHardness(80.0);
-quantumcomputercasing.setBlockResistance(10.0);
-quantumcomputercasing.setToolClass("pickaxe");
-quantumcomputercasing.setToolLevel(2);
-quantumcomputercasing.setBlockSoundType(<soundtype:metal>);
-quantumcomputercasing.register();
-
-var lasercasing = VanillaFactory.createBlock("lasercasing", <blockmaterial:rock>);
-lasercasing.setBlockHardness(80.0);
-lasercasing.setBlockResistance(10.0);
-lasercasing.setToolClass("pickaxe");
-lasercasing.setToolLevel(2);
-lasercasing.setBlockSoundType(<soundtype:metal>);
-lasercasing.register();
-
-var quantumcasing = VanillaFactory.createBlock("quantumcasing", <blockmaterial:rock>);
-quantumcasing.setBlockHardness(80.0);
-quantumcasing.setBlockResistance(10.0);
-quantumcasing.setToolClass("pickaxe");
-quantumcasing.setToolLevel(2);
-quantumcasing.setBlockSoundType(<soundtype:metal>);
-quantumcasing.register();
-
-var reactorsimulator = VanillaFactory.createBlock("reactorsimulator", <blockmaterial:rock>);
-reactorsimulator.setBlockHardness(80.0);
-reactorsimulator.setBlockResistance(10.0);
-reactorsimulator.setToolClass("pickaxe");
-reactorsimulator.setToolLevel(2);
-reactorsimulator.setBlockSoundType(<soundtype:metal>);
-reactorsimulator.register();
-
 var quantumglass = VanillaFactory.createBlock("quantumglass", <blockmaterial:glass>);
 quantumglass.setBlockHardness(1.5);
 quantumglass.setBlockResistance(3.0);
@@ -1904,13 +1675,6 @@ fuelrod.setToolLevel(2);
 fuelrod.setBlockSoundType(<soundtype:stone>);
 fuelrod.register();
 
-var dimensionalcasing = VanillaFactory.createBlock("dimensionalcasing", <blockmaterial:rock>);
-dimensionalcasing.setBlockHardness(80.0);
-dimensionalcasing.setBlockResistance(10.0);
-dimensionalcasing.setToolClass("pickaxe");
-dimensionalcasing.setToolLevel(2);
-dimensionalcasing.setBlockSoundType(<soundtype:metal>);
-dimensionalcasing.register();
 
 var explosivehydrazine = VanillaFactory.createFluid("explosivehydrazine", Color.fromHex("827722"));
 explosivehydrazine.register();
@@ -1932,22 +1696,6 @@ spacetimebendingassembly.register();
 
 var sulfurousacid = VanillaFactory.createFluid("sulfurousacid", Color.fromHex("827722"));
 sulfurousacid.register();
-
-var blockgraphite = VanillaFactory.createBlock("blockgraphite", <blockmaterial:rock>);
-blockgraphite.setBlockHardness(12.0);
-blockgraphite.setBlockResistance(10.0);
-blockgraphite.setToolClass("pickaxe");
-blockgraphite.setToolLevel(2);
-blockgraphite.setBlockSoundType(<soundtype:metal>);
-blockgraphite.register();
-
-var millcasing = VanillaFactory.createBlock("millcasing", <blockmaterial:rock>);
-millcasing.setBlockHardness(12.0);
-millcasing.setBlockResistance(10.0);
-millcasing.setToolClass("pickaxe");
-millcasing.setToolLevel(2);
-millcasing.setBlockSoundType(<soundtype:metal>);
-millcasing.register();
 
 var purepetridish = VanillaFactory.createItem("purepetridish");
 purepetridish.register();
@@ -2113,14 +1861,6 @@ isohexanoldehyde.register();
 
 var hexanoldehyde = VanillaFactory.createFluid("hexanoldehyde", Color.fromHex("B71C1C"));
 hexanoldehyde.register();
-
-var scsteamturbinecasing = VanillaFactory.createBlock("scsteamturbinecasing", <blockmaterial:rock>);
-scsteamturbinecasing.setBlockHardness(12.0);
-scsteamturbinecasing.setBlockResistance(10.0);
-scsteamturbinecasing.setToolClass("pickaxe");
-scsteamturbinecasing.setToolLevel(2);
-scsteamturbinecasing.setBlockSoundType(<soundtype:metal>);
-scsteamturbinecasing.register();
 
 var dilutedoil = VanillaFactory.createFluid("dilutedoil", Color.fromHex("141414"));
 dilutedoil.register();
@@ -2329,14 +2069,6 @@ diethylamine.register();
 var ferrocenewaste = VanillaFactory.createFluid("ferrocenewaste", Color.fromHex("827717"));
 ferrocenewaste.register();
 
-var asphaltblock = VanillaFactory.createBlock("asphaltblock", <blockmaterial:rock>);
-asphaltblock.setBlockHardness(12.0);
-asphaltblock.setBlockResistance(10.0);
-asphaltblock.setToolClass("pickaxe");
-asphaltblock.setToolLevel(2);
-asphaltblock.setBlockSoundType(<soundtype:metal>);
-asphaltblock.register();
-
 var bastnasiteoxidecompositeliquid = VanillaFactory.createFluid("bastnasiteoxidecompositeliquid", Color.fromHex("827717"));
 bastnasiteoxidecompositeliquid.register();
 
@@ -2381,78 +2113,6 @@ purifiedradox.register();
 
 var crackedheavyradox = VanillaFactory.createFluid("crackedheavyradox", Color.fromHex("6A1B9A"));
 crackedheavyradox.register();
-
-var supportstructure = VanillaFactory.createBlock("supportstructure", <blockmaterial:rock>);
-supportstructure.setBlockHardness(12.0);
-supportstructure.setBlockResistance(10.0);
-supportstructure.setToolClass("pickaxe");
-supportstructure.setToolLevel(2);
-supportstructure.setBlockSoundType(<soundtype:metal>);
-supportstructure.register();
-
-var basecasing = VanillaFactory.createBlock("basecasing", <blockmaterial:rock>);
-basecasing.setBlockHardness(12.0);
-basecasing.setBlockResistance(10.0);
-basecasing.setToolClass("pickaxe");
-basecasing.setToolLevel(2);
-basecasing.setBlockSoundType(<soundtype:metal>);
-basecasing.register();
-
-var motorfive = VanillaFactory.createBlock("motorfive", <blockmaterial:rock>);
-motorfive.setBlockHardness(12.0);
-motorfive.setBlockResistance(10.0);
-motorfive.setToolClass("pickaxe");
-motorfive.setToolLevel(2);
-motorfive.setBlockSoundType(<soundtype:metal>);
-motorfive.register();
-
-var motorfour = VanillaFactory.createBlock("motorfour", <blockmaterial:rock>);
-motorfour.setBlockHardness(12.0);
-motorfour.setBlockResistance(10.0);
-motorfour.setToolClass("pickaxe");
-motorfour.setToolLevel(2);
-motorfour.setBlockSoundType(<soundtype:metal>);
-motorfour.register();
-
-var motorthree = VanillaFactory.createBlock("motorthree", <blockmaterial:rock>);
-motorthree.setBlockHardness(12.0);
-motorthree.setBlockResistance(10.0);
-motorthree.setToolClass("pickaxe");
-motorthree.setToolLevel(2);
-motorthree.setBlockSoundType(<soundtype:metal>);
-motorthree.register();
-
-var motortwo = VanillaFactory.createBlock("motortwo", <blockmaterial:rock>);
-motortwo.setBlockHardness(12.0);
-motortwo.setBlockResistance(10.0);
-motortwo.setToolClass("pickaxe");
-motortwo.setToolLevel(2);
-motortwo.setBlockSoundType(<soundtype:metal>);
-motortwo.register();
-
-var motorone = VanillaFactory.createBlock("motorone", <blockmaterial:rock>);
-motorone.setBlockHardness(12.0);
-motorone.setBlockResistance(10.0);
-motorone.setToolClass("pickaxe");
-motorone.setToolLevel(2);
-motorone.setBlockSoundType(<soundtype:metal>);
-motorone.register();
-
-var motorblock = VanillaFactory.createBlock("motorblock", <blockmaterial:rock>);
-motorblock.setBlockHardness(12.0);
-motorblock.setBlockResistance(10.0);
-motorblock.setToolClass("pickaxe");
-motorblock.setToolLevel(2);
-motorblock.setBlockSoundType(<soundtype:metal>);
-motorblock.register();
-
-var internalstructure = VanillaFactory.createBlock("internalstructure", <blockmaterial:rock>);
-internalstructure.setBlockHardness(12.0);
-internalstructure.setBlockResistance(10.0);
-internalstructure.setToolClass("pickaxe");
-internalstructure.setToolLevel(2);
-internalstructure.setBlockSoundType(<soundtype:metal>);
-internalstructure.register();
 
 var startiumdust = VanillaFactory.createItem("startiumdust");
 startiumdust.register();

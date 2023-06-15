@@ -57,7 +57,7 @@ val bio = mods.gregtech.recipe.RecipeMap.getByName("bio_reactor");
 val fluidheater = mods.gregtech.recipe.RecipeMap.getByName("fluid_heater");
 val engraver = mods.gregtech.recipe.RecipeMap.getByName("laser_engraver");
 
-mods.enderio.AlloySmelter.addRecipe(<contenttweaker:silversteel>,[<contenttweaker:silversteeldust>]);
+mods.enderio.AlloySmelter.addRecipe(<contenttweaker:silversteelingot>,[<contenttweaker:silversteeldust>]);
 mods.enderio.AlloySmelter.addRecipe(<gregtech:meta_item_1:10095>,[<gregtech:meta_item_1:2095>]);
 
 recipes.removeByMod("enderio");

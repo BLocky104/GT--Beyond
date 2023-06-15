@@ -64,7 +64,7 @@ PBFRecipeBuilder.start()
     .buildAndRegister();
 	
 alloy_smelter.recipeBuilder()
-    .inputs(<contenttweaker:silversteel> * 2)
+    .inputs(<contenttweaker:silversteelingot> * 2)
 	.notConsumable(<gregtech:meta_item_1:32301>)
     .outputs(<contenttweaker:silversteelplate>)
     .duration(80)
@@ -219,7 +219,7 @@ metal_bender.recipeBuilder()
 	.buildAndRegister();
 	
 metal_bender.recipeBuilder()
-	.inputs(<contenttweaker:silversteel>)
+	.inputs(<contenttweaker:silversteelingot>)
 	.outputs(<contenttweaker:silversteelplate>)
 	.duration(80)
 	.EUt(20)
@@ -1777,7 +1777,7 @@ ebf.recipeBuilder()
 ebf.recipeBuilder()
 	.inputs(<contenttweaker:silversteeldust>)
 	.fluidInputs(<liquid:hydrogen>*200)
-	.outputs(<contenttweaker:silversteel>)
+	.outputs(<contenttweaker:silversteelingot>)
 	.EUt(28)
 	.duration(400)
 	.buildAndRegister();
@@ -2625,7 +2625,7 @@ alloy_smelter.recipeBuilder()
 	.buildAndRegister();
 
 alloy_smelter.recipeBuilder()
-	.inputs(<contenttweaker:silversteel>*8)
+	.inputs(<contenttweaker:silversteelingot>*8)
 	.notConsumable(<gregtech:meta_item_1:32303>)
 	.outputs(<contenttweaker:silversteelgear>)
 	.duration(20)
@@ -2657,7 +2657,7 @@ extruder.recipeBuilder()
 	.buildAndRegister();
 
 extruder.recipeBuilder()
-	.inputs(<contenttweaker:silversteel>*4)
+	.inputs(<contenttweaker:silversteelingot>*4)
 	.outputs(<contenttweaker:silversteelgear>)
 	.notConsumable(<gregtech:meta_item_1:32372>)
 	.duration(40)
