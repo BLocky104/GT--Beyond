@@ -1,0 +1,330 @@
+{
+  "version": 2,
+  "location": "gtb:vacuumdistiller",
+  "traits": {},
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 10.0,
+    "harvestLevel": 1,
+    "stackSize": 64,
+    "tabGroup": "multiblocked"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "baseTexture": "gregtech:blocks/casings/solid/machine_casing_clean_stainless_steel",
+        "frontTexture": "multiblocked:blocks/gregtech_front",
+        "type": "gregtech"
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+      "renderer": {
+        "baseTexture": "gregtech:blocks/casings/solid/machine_casing_clean_stainless_steel",
+        "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
+        "type": "gregtech"
+      },
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "vacuumdistiller",
+  "basePattern": {
+    "structureDir": [
+      "FRONT",
+      "LEFT",
+      "UP"
+    ],
+    "pattern": [
+      [
+        " ABCBA ",
+        "ABBCBBA",
+        "BBBCBBB",
+        "CCCCCC@",
+        "BBBCBBB",
+        "ABBCBBA",
+        " ABCBA "
+      ],
+      [
+        " AB BA ",
+        "ABD DBA",
+        "BD   DB",
+        "   C   ",
+        "BD   DB",
+        "ABD DBA",
+        " AB BA "
+      ],
+      [
+        "       ",
+        " DD DD ",
+        " D   D ",
+        "   H   ",
+        " D   D ",
+        " DD DD ",
+        "       "
+      ],
+      [
+        "       ",
+        " D   D ",
+        "  FFF  ",
+        "  FFF  ",
+        "  FFF  ",
+        " D   D ",
+        "       "
+      ],
+      [
+        "       ",
+        " DEEED ",
+        " EGGGE ",
+        " EGIGE ",
+        " EGGGE ",
+        " DEEED ",
+        "       "
+      ],
+      [
+        "  BBB  ",
+        " B   B ",
+        "B     B",
+        "B  I  B",
+        "B     B",
+        " B   B ",
+        "  BBB  "
+      ],
+      [
+        "  BJB  ",
+        " B   B ",
+        "B     B",
+        "J  I  J",
+        "B     B",
+        " B   B ",
+        "  BJB  "
+      ],
+      [
+        "  BBB  ",
+        " B   B ",
+        "B     B",
+        "B  I  B",
+        "B     B",
+        " B   B ",
+        "  BBB  "
+      ],
+      [
+        "       ",
+        "  EEE  ",
+        " E   E ",
+        " E I E ",
+        " E   E ",
+        "  EEE  ",
+        "       "
+      ],
+      [
+        "       ",
+        "       ",
+        "  FFF  ",
+        "  FFF  ",
+        "  FFF  ",
+        "       ",
+        "       "
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        1,
+        1
+      ],
+    ],
+    "predicates": {
+      "controller": {
+        "location": "gtb:vacuumdistiller",
+        "type": "component"
+      },
+      "B": {
+        "states": [
+          {
+            "id": "gregtech:metal_casing",
+            "meta": 5
+          }
+        ],
+        "type": "states"
+      },
+      "C": {
+        "states": [
+          {
+            "id": "gregtech:boiler_casing",
+            "meta": 1
+          }
+        ],
+        "type": "states"
+      },
+      "D": {
+        "states": [
+          {
+            "id": "gregtech:frame_blue_steel",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "E": {
+        "states": [
+          {
+            "id": "gregtech:metal_casing",
+            "meta": 2
+          }
+        ],
+        "type": "states"
+      },
+      "G": {
+        "states": [
+          {
+            "id": "gregtech:wire_coil",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "H": {
+        "states": [
+          {
+            "id": "gtadditions:ga_pump_casing",
+            "meta": 2
+          }
+        ],
+        "type": "states"
+      },
+      "I": {
+        "states": [
+          {
+            "id": "thermalfoundation:glass",
+            "meta": 2
+          }
+        ],
+        "type": "states"
+      },
+      "J": {
+        "states": [
+          {
+            "id": "gtadditions:ga_transparent_casing",
+            "meta": 3
+          }
+        ],
+        "type": "states"
+      },
+      "any": {
+        "type": "any"
+      },
+      "item_in": {
+        "location": "multiblocked:item_input",
+        "type": "component",
+        "io": "IN"
+      },
+      "item_out": {
+        "location": "multiblocked:item_output",
+        "type": "component",
+        "io": "OUT"
+      },
+      "energy_in": {
+        "capability": "gtce_energy",
+        "type": "capability",
+        "io": "IN"
+      },
+      "fluid_in": {
+        "location": "multiblocked:fluid_input",
+        "type": "component",
+        "io": "IN"
+      },
+      "fluid_out": {
+        "location": "multiblocked:fluid_output",
+        "type": "component"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "B",
+        "item_in",
+        "item_out",
+        "fluid_in",
+        "energy_in"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C"
+      ],
+      "D": [
+        "D"
+      ],
+      "E": [
+        "E"
+      ],
+      "F": [
+        "E",
+        "fluid_out"
+      ],
+      "G": [
+        "G"
+      ],
+      "H": [
+        "H"
+      ],
+      "I": [
+        "I"
+      ],
+      "J": [
+        "J",
+        "B"
+      ]
+    }
+  }
+}

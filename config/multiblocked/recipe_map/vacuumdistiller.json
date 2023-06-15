@@ -1,0 +1,93 @@
+{
+  "name": "vacuumdistiller",
+  "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
+  "fuelTexture": "multiblocked:textures/gui/progress_bar_fuel.png",
+  "recipes": [{
+    "uid": "VacDistiller1",
+    "duration": 220,
+    "inputs": {
+      "fluid": [
+        {
+          "chance": 1.0,
+          "content": "{FluidName:\"sulfuricoilresidues\",Amount:1000}"
+        }
+      ]
+    },
+    "outputs": {
+      "fluid": [
+        {
+          "chance": 1.0,
+          "content": "{FluidName:\"lubricant\",Amount:50}"
+        },
+        {
+          "chance": 1.0,
+          "content": "{FluidName:\"sulfuricbyproducts\",Amount:200}"
+        },
+        {
+          "chance": 1.0,
+          "content": "{FluidName:\"heavyoilresidues\",Amount:200}"
+        }
+      ],
+      "item": [
+        {
+          "chance": 1.0,
+          "content": {
+            "amount": 3,
+            "matches": [
+              "{id:\"contenttweaker:bitominousresidue\",Count:1,Damage:0s}"
+            ]
+          }
+        },
+        {
+          "chance": 1.0,
+          "content": {
+            "amount": 1,
+            "matches": [
+              "{id:\"contenttweaker:stackwax\",Count:1,Damage:0s}"
+            ]
+          }
+        }
+      ]
+    },
+    "tickInputs": {
+      "gtce_energy": [
+        {
+          "chance": 1.0,
+          "content": 240
+        }
+      ]
+    }
+  },
+  {
+    "uid": "VacDistiller2",
+    "duration": 400,
+    "inputs": {
+      "fluid": [
+        {
+          "chance": 1.0,
+          "content": "{FluidName:\"tar\",Amount:1000}"
+        }
+      ]
+    },
+    "outputs": {
+      "fluid": [
+        {
+          "chance": 1.0,
+          "content": "{FluidName:\"oilgas\",Amount:600}"
+        },
+        {
+          "chance": 1.0,
+          "content": "{FluidName:\"vacuumflashedtar\",Amount:400}"
+        }
+      ]
+    },
+    "tickInputs": {
+      "gtce_energy": [
+        {
+          "chance": 1.0,
+          "content": 320
+        }
+      ]
+    }
+  }]
+}
