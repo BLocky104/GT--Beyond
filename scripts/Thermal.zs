@@ -11,7 +11,7 @@ mods.thermalexpansion.CompressionDynamo.removeFuel(<liquid:fire_water>);
 mods.thermalexpansion.InductionSmelter.addRecipe(<enderio:item_material:1>,<enderio:item_material>,<enderio:item_material:51>, 10000);
 mods.thermalexpansion.InductionSmelter.addRecipe(<gregtech:meta_item_1:10095>,<gregtech:meta_item_1:2095>,<minecraft:sand>, 100);
 mods.thermalexpansion.InductionSmelter.addRecipe(<enderio:item_material:54>,<enderio:item_material:1>,<enderio:item_material:67>, 10000);
-mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:silversteel>,<contenttweaker:silversteeldust>, <minecraft:sand>, 200);
+mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:silversteelingot>,<contenttweaker:silversteeldust>, <minecraft:sand>, 200);
 mods.thermalexpansion.InductionSmelter.addRecipe(<enderio:item_alloy_ingot>,<gregtech:meta_item_1:10184>,<gregtech:meta_item_1:2061>, 200);
 mods.thermalexpansion.InductionSmelter.addRecipe(<enderio:item_alloy_ingot:4>, <minecraft:iron_ingot>, <minecraft:redstone> * 2, 400);
 mods.thermalexpansion.InductionSmelter.addRecipe(<enderio:item_alloy_ingot:4>, <gregtech:meta_item_1:2033>, <minecraft:redstone> * 2, 400);
