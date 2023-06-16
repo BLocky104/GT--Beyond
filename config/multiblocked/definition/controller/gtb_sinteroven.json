@@ -17,7 +17,7 @@
     "unformed": {
       "renderer": {
         "baseTexture": "gregtech:blocks/casings/voltage/ulv/bottom",
-        "frontTexture": "multiblocked:blocks/gregtech_front",
+        "frontTexture": "multiblocked:blocks/overlay/overlay_front",
         "type": "gregtech"
       }
     },
