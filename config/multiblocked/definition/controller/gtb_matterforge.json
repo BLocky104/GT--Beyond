@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "location": "mbd:matterforge",
+  "location": "gtb:matterforge",
   "traits": {},
   "properties": {
     "rotationState": "ALL",
@@ -140,7 +140,7 @@
     ],
     "predicates": {
       "controller": {
-        "location": "mbd:matterforge",
+        "location": "gtb:matterforge",
         "type": "component"
       },
       "C": {

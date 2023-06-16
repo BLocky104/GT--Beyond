@@ -17,7 +17,7 @@
     "unformed": {
       "renderer": {
         "baseTexture": "gregtech:blocks/casings/solid/machine_casing_clean_stainless_steel",
-        "frontTexture": "multiblocked:blocks/gregtech_front",
+        "frontTexture": "multiblocked:blocks/overlay/overlay_front",
         "type": "gregtech"
       }
     },
@@ -175,7 +175,7 @@
       [
         1,
         1
-      ],
+      ]
     ],
     "predicates": {
       "controller": {

@@ -1,40 +1,7 @@
 {
   "version": 2,
   "location": "mbd:fluidcatalystreactor",
-  "traits": {
-    "recipe_progress": {
-      "cIO": 2,
-      "gIO": 2,
-      "x": 5,
-      "y": 5,
-      "width": 60,
-      "height": 18,
-      "texture": "multiblocked:textures/gui/energy_bar.png",
-      "fillDirection": 0
-    },
-    "item": [],
-    "gtce_energy": {
-      "cIO": 2,
-      "gIO": 2,
-      "x": 5,
-      "y": 5,
-      "width": 60,
-      "height": 18,
-      "texture": "multiblocked:textures/gui/energy_bar.png",
-      "fillDirection": 0,
-      "capacity": 10000
-    },
-    "fluid": [],
-    "pneumatic_pressure": {
-      "cIO": 2,
-      "gIO": 2,
-      "x": 5,
-      "y": 5,
-      "dangerPressure": 5.0,
-      "criticalPressure": 7.0,
-      "volume": 10000
-    }
-  },
+  "traits": {},
   "properties": {
     "rotationState": "ALL",
     "showInJei": true,
@@ -49,8 +16,8 @@
   "status": {
     "unformed": {
       "renderer": {
-        "baseTexture": "multiblocked:blocks/casing/solid/machine_casing_clean_stainless_steel",
-        "frontTexture": "multiblocked:blocks/gregtech_front",
+        "baseTexture": "gregtech:blocks/casings/solid/machine_casing_clean_stainless_steel",
+        "frontTexture": "multiblocked:blocks/overlay/overlay_front",
         "type": "gregtech"
       }
     },
@@ -59,8 +26,8 @@
     },
     "working": {
       "renderer": {
-        "baseTexture": "multiblocked:blocks/casing/solid/machine_casing_clean_stainless_steel",
-        "frontTexture": "multiblocked:blocks/overlay_front_active",
+        "baseTexture": "gregtech:blocks/casings/solid/machine_casing_clean_stainless_steel",
+        "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
         "type": "gregtech"
       },
 	  "parent": "idle"
@@ -103,7 +70,7 @@
         "B   B    ",
         "B   B    ",
         "B   B    ",
-        " BBB     "
+        " BGB     "
       ],
       [
         "BBBBBBBBB",
@@ -117,7 +84,7 @@
         "B   BEE  ",
         "B   B    ",
         "B   B    ",
-        " BGB     "
+        " GGG     "
       ],
       [
         "ABBBBBBBA",
@@ -131,7 +98,7 @@
         "B   B    ",
         "B   B    ",
         "B   B    ",
-        " BBB     "
+        " BGB     "
       ],
       [
         "AABBBBBAA",
@@ -171,31 +138,6 @@
       ]
     ],
     "predicates": {
-      "A": {
-        "states": [
-          {
-            "id": "multiblocked:energy_input",
-            "meta": 0
-          },
-		  {
-            "id": "multiblocked:item_input",
-            "meta": 0
-          },
-          {
-            "id": "multiblocked:fluid_input",
-            "meta": 0
-          },
-          {
-            "id": "multiblocked:item_output",
-            "meta": 0
-          },
-          {
-            "id": "multiblocked:fluid_output",
-            "meta": 0
-          }
-        ],
-        "type": "states"
-      },
       "controller": {
         "location": "mbd:fluidcatalystreactor",
         "type": "component"
@@ -236,29 +178,35 @@
         ],
         "type": "states"
       },
-      "F": {
-        "states": [
-          {
-            "id": "multiblocked:fluid_input",
-            "meta": 0
-          }
-        ],
-        "type": "states"
-      },
-      "G": {
-        "states": [
-          {
-            "id": "multiblocked:fluid_output",
-            "meta": 0
-          }
-        ],
-        "type": "states"
-      },
       "air": {
         "type": "air"
       },
       "any": {
         "type": "any"
+      },
+      "item_in": {
+        "location": "multiblocked:item_input",
+        "type": "component",
+        "io": "IN"
+      },
+      "item_out": {
+        "location": "multiblocked:item_output",
+        "type": "component",
+        "io": "OUT"
+      },
+      "energy_in": {
+        "capability": "gtce_energy",
+        "type": "capability",
+        "io": "IN"
+      },
+      "fluid_in": {
+        "location": "multiblocked:fluid_input",
+        "type": "component",
+        "io": "IN"
+      },
+      "fluid_out": {
+        "location": "multiblocked:fluid_output",
+        "type": "component"
       }
     },
     "symbolMap": {
@@ -269,7 +217,11 @@
         "any"
       ],
       "A": [
-        "A"
+        "B",
+        "item_in",
+        "item_out",
+        "fluid_in",
+        "energy_in"
       ],
       "B": [
         "B"
@@ -284,10 +236,11 @@
         "E"
       ],
       "F": [
-        "F"
+        "fluid_in"
       ],
       "G": [
-        "G"
+        "B",
+        "fluid_out"
       ],
       "-": [
         "air"
