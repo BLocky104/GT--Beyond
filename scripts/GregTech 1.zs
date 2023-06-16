@@ -453,7 +453,7 @@ chemical_bath.recipeBuilder()
 
 metal_bender.recipeBuilder()
 	.inputs(<gregtech:meta_item_1:10550>)
-	.outputs(<contenttweaker:vibrantalloyplate>)
+	.outputs(<gregtech:meta_item_1:12550>)
 	.duration(380)
 	.EUt(80)
 	.property("circuit", 0)

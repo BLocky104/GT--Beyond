@@ -22,125 +22,6 @@ import crafttweaker.oredict.IOreDictEntry;
 import mods.contenttweaker.DropHandler;
 import mods.contenttweaker.ItemList;
 
-function BlockCasings(Casing as string[], Hardness as float, ToolLevel as int){
-	for block in Casing{
-		var newblock = VanillaFactory.createBlock(block, <blockmaterial:rock>);
-		newblock.setBlockHardness(Hardness);
-		newblock.setBlockResistance(10.0);
-		newblock.setToolClass("pickaxe");
-		newblock.setToolLevel(ToolLevel);
-		newblock.setBlockSoundType(<soundtype:metal>);
-		newblock.register();
-	}
-}
-
-var blockHard10Tool2 = [
-	"computercasing", 
-	"mattercasing", 
-	"electroniccasing", 
-	"advcomputercasing", 
-	"highpowercasing"
-] as string[];
-
-BlockCasings(blockHard10Tool2, 10.0, 2);
-
-var blockHard10Tool5 = [
-	"cryogeniccasing", 
-	"perciseelectronicunitcasing", 
-	"naquadahfuelrefinerycasing", 
-	"advancedassemblylinecasing", 
-	"vacuumfurnacecasing", 
-	"pbistrengthenedtetrixcasing",
-	"advancedcraftingunit",
-	"neutronaccelerator",
-	"neutronsensor",
-	"fieldrestrictioncoil",
-	"laserbindingmodule",
-	"berylliumdetector",
-	"electromagnet",
-	"copperalloycoilblock"
-] as string[];
-
-BlockCasings(blockHard10Tool5, 10.0, 5);
-
-var blockHard10Tool7 = [
-	"electricalrutherfordiumcupritecasing",
-	"particleprotectioncasing",
-	"blocklasermodule"
-] as string[];
-
-BlockCasings(blockHard10Tool7, 10.0, 7);
-
-var blockHard12Tool2 = [
-	"supportstructure",
-	"basecasing",
-	"motorfive",
-	"motorfour",
-	"motorthree",
-	"motortwo",
-	"motorone",
-	"motorblock",
-	"internalstructure",
-	"detectiondevice",
-	"thermalcasing",
-	"blockgraphite",
-	"millcasing",
-	"asphaltblock",
-	"scsteamturbinecasing"
-] as string[];
-BlockCasings(blockHard12Tool2, 12.0, 2);
-
-var blockHard20Tool5 = [
-	"woodeneglinsteelcasing",
-	"logcasing",
-	"steelborderedwoodencasing"
-] as string[];
-BlockCasings(blockHard20Tool5, 20.0, 5);
-
-///80 hardness tool level 2?? why???
-var blockHard80Tool2 = [
-	"optimizedrestrictedpcbcasing",
-	"opticalspeedingpipecasing",
-	"perfectlysealedvacuumcasing",
-	"computercasingvent",
-	"annihilationcasing",
-	"fieldgeneratorcasing",
-	"coil",
-	"quantumcomputercasing",
-	"lasercasing",
-	"quantumcasing",
-	"reactorsimulator",
-	"dimensionalcasing"
-] as string[];
-BlockCasings(blockHard80Tool2, 80.0, 2);
-
-///outlier with wood material
-var treatedwoodplanks = VanillaFactory.createBlock("treatedwoodplanks", <blockmaterial:wood>);
-treatedwoodplanks.setBlockHardness(12.0);
-treatedwoodplanks.setBlockResistance(10.0);
-treatedwoodplanks.setToolClass("axe");
-treatedwoodplanks.setToolLevel(2);
-treatedwoodplanks.setBlockSoundType(<soundtype:metal>);
-treatedwoodplanks.register();
-
-var lightlytreatedwoodplanks = VanillaFactory.createBlock("lightlytreatedwoodplanks", <blockmaterial:wood>);
-lightlytreatedwoodplanks.setBlockHardness(12.0);
-lightlytreatedwoodplanks.setBlockResistance(10.0);
-lightlytreatedwoodplanks.setToolClass("axe");
-lightlytreatedwoodplanks.setToolLevel(2);
-lightlytreatedwoodplanks.setBlockSoundType(<soundtype:metal>);
-lightlytreatedwoodplanks.register();
-///fuck is this hardness 800
-var transcendantminingcasings = VanillaFactory.createBlock("transcendantminingcasings", <blockmaterial:rock>);
-transcendantminingcasings.setBlockHardness(800.0);
-transcendantminingcasings.setBlockResistance(10.0);
-transcendantminingcasings.setToolClass("pickaxe");
-transcendantminingcasings.setToolLevel(11);
-transcendantminingcasings.setBlockSoundType(<soundtype:metal>);
-transcendantminingcasings.register();
-
-print("Content Tweaker Casings Loaded");
-
 ///Materials & Parts Handling
 
 function MaterialParts(Material as string, Parts as string[] = ["ingot"]){
@@ -204,29 +85,17 @@ lasercrystal.register();
 var lasermodule = VanillaFactory.createItem("lasermodule");
 lasermodule.register();
 
-var blackfluid = VanillaFactory.createFluid("blackfluid", Color.fromHex("090909"));
-blackfluid.temperature=(1350);
-blackfluid.register();
-
 var catalyst = VanillaFactory.createItem("catalyst");
 catalyst.register();
 
 var blackirondust = VanillaFactory.createItem("blackirondust");
 blackirondust.register();
 
-var lumin = VanillaFactory.createFluid("lumin", Color.fromHex("bab709"));
-lumin.temperature=(700);
-lumin.register();
-
 var blazingrod = VanillaFactory.createItem("blazingrod");
 blazingrod.register();
 
 var bronzeelectrontube = VanillaFactory.createItem("bronzeelectrontube");
 bronzeelectrontube.register();
-
-var bisphenolb = VanillaFactory.createFluid("bisphenolb", Color.fromHex("6B5802"));
-bisphenolb.temperature=(700);
-bisphenolb.register();
 
 var rubyingot = VanillaFactory.createItem("rubyingot");
 rubyingot.register();
@@ -237,10 +106,6 @@ darksteeldust.register();
 var bulatfiberreinforcedcircuitboard = VanillaFactory.createItem("bulatfiberreinforcedcircuitboard");
 bulatfiberreinforcedcircuitboard.register();
 
-var ic2coolant = VanillaFactory.createFluid("ic2coolant", Color.fromHex("185EAD"));
-ic2coolant.temperature=(700);
-ic2coolant.register();
-
 var bisphenolbsheet = VanillaFactory.createItem("bisphenolbsheet");
 bisphenolbsheet.register();
 
@@ -249,10 +114,6 @@ bisphenolbdust.register();
 
 var bisphenolbingot = VanillaFactory.createItem("bisphenolbingot");
 bisphenolbingot.register();
-
-var tetraethylene = VanillaFactory.createFluid("tetraethylene", Color.fromHex("4a4a4a"));
-tetraethylene.temperature=(300);
-tetraethylene.register();
 
 var hotvibrantalloyingot = VanillaFactory.createItem("hotvibrantalloyingot");
 hotvibrantalloyingot.register();
@@ -271,10 +132,6 @@ heavydutyalloyt2.register();
 
 var hotplatinumingot = VanillaFactory.createItem("hotplatinumingot");
 hotplatinumingot.register();
-
-var moltenpulsatingiron = VanillaFactory.createFluid("moltenpulsatingiron", Color.fromHex("33A61C"));
-moltenpulsatingiron.temperature=(1300);
-moltenpulsatingiron.register();
 
 var keyboard = VanillaFactory.createItem("keyboard");
 keyboard.register();
@@ -369,89 +226,9 @@ hotresonantseaborgiumingot.register();
 var resonantseaborgiumingot = VanillaFactory.createItem("resonantseaborgiumingot");
 resonantseaborgiumingot.register();
 
-var cryogeniccoolant = VanillaFactory.createFluid("cryogeniccoolant", Color.fromHex("BDECFC"));
-cryogeniccoolant.temperature=(0);
-cryogeniccoolant.register();
-
-var moltenresonantseaborgium = VanillaFactory.createFluid("moltenresonantseaborgium", Color.fromHex("54D66B"));
-moltenresonantseaborgium.temperature=(1800);
-moltenresonantseaborgium.register();
-
-var moltenmodularium = VanillaFactory.createFluid("moltenmodularium", Color.fromHex("FFFFFF"));
-moltenmodularium.temperature=(1400);
-moltenmodularium.register();
-
-var moltencompressediron = VanillaFactory.createFluid("moltencompressediron", Color.fromHex("363636"));
-moltencompressediron.temperature=(2300);
-moltencompressediron.register();
-
-var primalquarkdegeneratematterplasma = VanillaFactory.createFluid("primalquarkdegeneratematterplasma", Color.fromHex("A39090"));
-primalquarkdegeneratematterplasma.temperature=(230000);
-primalquarkdegeneratematterplasma.register();
-
-
-var moltenemerald = VanillaFactory.createFluid("moltenemerald", Color.fromHex("1AFF00"));
-moltenemerald.temperature=(800);
-moltenemerald.register();
-
-var highlycomplicatedcosmicrubber = VanillaFactory.createFluid("highlycomplicatedcosmicrubber", Color.fromHex("6C706E"));
-highlycomplicatedcosmicrubber.temperature=(80000);
-highlycomplicatedcosmicrubber.register();
 
 var crystaltinebaseingot = VanillaFactory.createItem("crystaltinebaseingot");
 crystaltinebaseingot.register();
-
-var draconiumenrichedamonia = VanillaFactory.createFluid("draconiumenrichedamonia", Color.fromHex("EA00FF"));
-draconiumenrichedamonia.temperature=(400);
-draconiumenrichedamonia.register();
-
-var steamcrackeddraconiumenrichedamonia = VanillaFactory.createFluid("steamcrackeddraconiumenrichedamonia", Color.fromHex("EA00FF"));
-steamcrackeddraconiumenrichedamonia.temperature=(400);
-steamcrackeddraconiumenrichedamonia.register();
-
-var draconiumcontainingmixture = VanillaFactory.createFluid("draconiumcontainingmixture", Color.fromHex("EA00FF"));
-draconiumcontainingmixture.temperature=(400);
-draconiumcontainingmixture.register();
-
-var enhanceddraconiummixture = VanillaFactory.createFluid("enhanceddraconiummixture", Color.fromHex("EA00FF"));
-enhanceddraconiummixture.temperature=(400);
-enhanceddraconiummixture.register();
-
-var draconiumsaltmixture = VanillaFactory.createFluid("draconiumsaltmixture", Color.fromHex("EA00FF"));
-draconiumsaltmixture.temperature=(400);
-draconiumsaltmixture.register();
-
-var aircompresseddsm = VanillaFactory.createFluid("aircompresseddsm", Color.fromHex("EA00FF"));
-aircompresseddsm.temperature=(400);
-aircompresseddsm.register();
-
-var draconiumdioxide = VanillaFactory.createFluid("draconiumdioxide", Color.fromHex("EA00FF"));
-draconiumdioxide.temperature=(400);
-draconiumdioxide.register();
-
-var draconiumhexachloride = VanillaFactory.createFluid("draconiumhexachloride", Color.fromHex("EA00FF"));
-draconiumhexachloride.temperature=(400);
-draconiumhexachloride.register();
-
-var draconiumhexafluoride = VanillaFactory.createFluid("draconiumhexafluoride", Color.fromHex("EA00FF"));
-draconiumhexafluoride.temperature=(400);
-draconiumhexafluoride.register();
-
-var draconiumnitradesolution = VanillaFactory.createFluid("draconiumnitradesolution", Color.fromHex("EA00FF"));
-draconiumnitradesolution.temperature=(400);
-draconiumnitradesolution.register();
-
-var depleteddraconiumnitradesolution = VanillaFactory.createFluid("depleteddraconiumnitradesolution", Color.fromHex("EA00FF"));
-depleteddraconiumnitradesolution.temperature=(400);
-depleteddraconiumnitradesolution.register();
-
-var draconiumrichsolution = VanillaFactory.createFluid("draconiumrichsolution", Color.fromHex("EA00FF"));
-draconiumrichsolution.temperature=(400);
-draconiumrichsolution.register();
-
-var obisdianinfuseddraconiummixture = VanillaFactory.createFluid("obisdianinfuseddraconiummixture", Color.fromHex("EA00FF"));
-obisdianinfuseddraconiummixture.temperature=(1400);
-obisdianinfuseddraconiummixture.register();
 
 var refabricateddraconiumore = VanillaFactory.createBlock("refabricateddraconiumore", <blockmaterial:rock>);
 refabricateddraconiumore.setBlockHardness(10.0);
@@ -470,10 +247,6 @@ instablematter.register();
 var stablematter = VanillaFactory.createItem("stablematter");
 stablematter.register();
 
-var pvtchs = VanillaFactory.createFluid("pvtchs", Color.fromHex("C1D111"));
-pvtchs.temperature=(1400);
-pvtchs.register();
-
 var draconiumfragment = VanillaFactory.createItem("draconiumfragment");
 draconiumfragment.register();
 
@@ -485,10 +258,6 @@ diamondaluminiumcasing.register();
 
 var compressedironnugget = VanillaFactory.createItem("compressedironnugget");
 compressedironnugget.register();
-
-var moltenvibrantalloy = VanillaFactory.createFluid("moltenvibrantalloy", Color.fromHex("38C20E"));
-moltenvibrantalloy.temperature=(1400);
-moltenvibrantalloy.register();
 
 var hotplatinumtitaniumingot = VanillaFactory.createItem("hotplatinumtitaniumingot");
 hotplatinumtitaniumingot.register();
@@ -574,25 +343,8 @@ highdensityplutoniumnugget.register();
 var wrappedplutonium = VanillaFactory.createItem("wrappedplutonium");
 wrappedplutonium.register();
 
-var plutoniumbasedliquidfuel = VanillaFactory.createFluid("plutoniumbasedliquidfuel", Color.fromHex("EB1010"));
-plutoniumbasedliquidfuel.temperature=(300);
-plutoniumbasedliquidfuel.register();
-
-var plutoniumbasedliquidfuele = VanillaFactory.createFluid("plutoniumbasedliquidfuele", Color.fromHex("C41010"));
-plutoniumbasedliquidfuele.temperature=(300);
-plutoniumbasedliquidfuele.register();
-
 var highdensityplutonium = VanillaFactory.createItem("highdensityplutonium");
 highdensityplutonium.register();
-
-var borontrioxide = VanillaFactory.createFluid("borontrioxide", Color.fromHex("64695D"));
-borontrioxide.register();
-
-var sodiumchloride = VanillaFactory.createFluid("sodiumchloride", Color.fromHex("5B6787"));
-sodiumchloride.register();
-
-var unprocessedboronsolution = VanillaFactory.createFluid("unprocessedboronsolution", Color.fromHex("739993"));
-unprocessedboronsolution.register();
 
 var unprocessedborondust = VanillaFactory.createItem("unprocessedborondust");
 unprocessedborondust.register();
@@ -600,8 +352,6 @@ unprocessedborondust.register();
 var boronnanoparticles = VanillaFactory.createItem("boronnanoparticles");
 boronnanoparticles.register();
 
-var liquidboronnanoparticles = VanillaFactory.createFluid("liquidboronnanoparticles", Color.fromHex("739993"));
-liquidboronnanoparticles.register();
 
 var hotmarcem200steelingot = VanillaFactory.createItem("hotmarcem200steelingot");
 hotmarcem200steelingot.register();
@@ -654,28 +404,8 @@ highdensityuraniumnugget.register();
 var highdensityuranium = VanillaFactory.createItem("highdensityuranium");
 highdensityuranium.register();
 
-var uraniumbasedliquidfuel = VanillaFactory.createFluid("uraniumbasedliquidfuel", Color.fromHex("034314"));
-uraniumbasedliquidfuel.temperature=(300);
-uraniumbasedliquidfuel.register();
-
-var uraniumbasedliquidfuele = VanillaFactory.createFluid("uraniumbasedliquidfuele", Color.fromHex("034b16"));
-uraniumbasedliquidfuele.temperature=(300);
-uraniumbasedliquidfuele.register();
-
 var tungsticnaquadah = VanillaFactory.createItem("tungsticnaquadah");
 tungsticnaquadah.register();
-
-var moltentungsticnaquadah = VanillaFactory.createFluid("moltentungsticnaquadah", Color.fromHex("1F1F1F"));
-moltentungsticnaquadah.temperature=(1600);
-moltentungsticnaquadah.register();
-
-var sterilizedbiocatalystmedium = VanillaFactory.createFluid("sterilizedbiocatalystmedium", Color.fromHex("237A10"));
-sterilizedbiocatalystmedium.temperature=(2600);
-sterilizedbiocatalystmedium.register();
-
-var rawsterilizedbiocatalystmedium = VanillaFactory.createFluid("rawsterilizedbiocatalystmedium", Color.fromHex("2E871A"));
-rawsterilizedbiocatalystmedium.temperature=(300);
-rawsterilizedbiocatalystmedium.register();
 
 var hotmanyullyningot = VanillaFactory.createItem("hotmanyullyningot");
 hotmanyullyningot.register();
@@ -692,10 +422,6 @@ fieldrestrictionglass.setToolLevel(2);
 fieldrestrictionglass.setBlockSoundType(<soundtype:stone>);
 fieldrestrictionglass.register();
 
-var naqudahasphalt = VanillaFactory.createFluid("naqudahasphalt", Color.fromHex("137009"));
-naqudahasphalt.temperature=(1300);
-naqudahasphalt.register();
-
 var hotadamantiumalloyingot = VanillaFactory.createItem("hotadamantiumalloyingot");
 hotadamantiumalloyingot.register();
 
@@ -705,24 +431,8 @@ hotblackplutoniumingot.register();
 var hotfluxedelectrumingot = VanillaFactory.createItem("hotfluxedelectrumingot");
 hotfluxedelectrumingot.register();
 
-var moderatelycrackednaquadahasphalt = VanillaFactory.createFluid("moderatelycrackednaquadahasphalt", Color.fromHex("227033"));
-moderatelycrackednaquadahasphalt.temperature=(1300);
-moderatelycrackednaquadahasphalt.register();
-
-var acidnaquadahemulsion = VanillaFactory.createFluid("acidnaquadahemulsion", Color.fromHex("444A45"));
-acidnaquadahemulsion.temperature=(2300);
-acidnaquadahemulsion.register();
-
-var naquadahemulsion = VanillaFactory.createFluid("naquadahemulsion", Color.fromHex("2C2E2C"));
-naquadahemulsion.temperature=(1800);
-naquadahemulsion.register();
-
 var radioactivesludge = VanillaFactory.createItem("radioactivesludge");
 radioactivesludge.register();
-
-var bisphenolc = VanillaFactory.createFluid("bisphenolc", Color.fromHex("5D6575"));
-bisphenolc.temperature=(2300);
-bisphenolc.register();
 
 var distilledmonazitedust = VanillaFactory.createItem("distilledmonazitedust");
 distilledmonazitedust.register();
@@ -748,20 +458,8 @@ monaziteoxide.register();
 var siftedmonazite = VanillaFactory.createItem("siftedmonazite");
 siftedmonazite.register();
 
-var monazitecakesolution = VanillaFactory.createFluid("monazitecakesolution", Color.fromHex("2A751B"));
-monazitecakesolution.temperature=(2300);
-monazitecakesolution.register();
-
-var monazitefilteredcakesolution = VanillaFactory.createFluid("monazitefilteredcakesolution", Color.fromHex("1B5710"));
-monazitefilteredcakesolution.temperature=(2300);
-monazitefilteredcakesolution.register();
-
 var osmiumsieve = VanillaFactory.createItem("osmiumsieve");
 osmiumsieve.register();
-
-var monazitefilteredsolution = VanillaFactory.createFluid("monazitefilteredsolution", Color.fromHex("294207"));
-monazitefilteredsolution.temperature=(2300);
-monazitefilteredsolution.register();
 
 var thoriadust = VanillaFactory.createItem("thoriadust");
 thoriadust.register();
@@ -802,14 +500,6 @@ infusedgoldtrioxide.register();
 var electrocitinerawalloyingot = VanillaFactory.createItem("electrocitinerawalloyingot");
 electrocitinerawalloyingot.register();
 
-var fentanyl = VanillaFactory.createFluid("fentanyl", Color.fromHex("F8FCCC"));
-fentanyl.temperature=(1200);
-fentanyl.register();
-
-var Desomorphine = VanillaFactory.createFluid("Desomorphine", Color.fromHex("DCFCCF"));
-Desomorphine.temperature=(1200);
-Desomorphine.register();
-
 var highdensitythoria = VanillaFactory.createItem("highdensitythoria");
 highdensitythoria.register();
 
@@ -828,17 +518,6 @@ protoadamantiumplatedalloyingot.register();
 var protoadamantiumalloycatalystdust = VanillaFactory.createItem("protoadamantiumalloycatalystdust");
 protoadamantiumalloycatalystdust.register();
 
-var moltenprotoadamantiumplatedalloy = VanillaFactory.createFluid("moltenprotoadamantiumplatedalloy", Color.fromHex("252b7a"));
-moltenprotoadamantiumplatedalloy.temperature=(1800);
-moltenprotoadamantiumplatedalloy.register();
-
-var protoadamantiumalloycatalyst = VanillaFactory.createFluid("protoadamantiumalloycatalyst", Color.fromHex("2c3393"));
-protoadamantiumalloycatalyst.temperature=(2200);
-protoadamantiumalloycatalyst.register();
-
-var refinedglue = VanillaFactory.createFluid("refinedglue", Color.fromHex("A9AD21"));
-refinedglue.register();
-
 var infinityplatedplate = VanillaFactory.createItem("infinityplatedplate");
 infinityplatedplate.register();
 
@@ -847,9 +526,6 @@ infinityplatedingot.register();
 
 var assemblingcomponent = VanillaFactory.createItem("assemblingcomponent");
 assemblingcomponent.register();
-
-var naquadahactivationliquid = VanillaFactory.createFluid("naquadahactivationliquid", Color.fromHex("2b1303"));
-naquadahactivationliquid.register();
 
 var unimprintedcrystalcpu = VanillaFactory.createItem("unimprintedcrystalcpu");
 unimprintedcrystalcpu.register();
@@ -923,10 +599,6 @@ advancedcircuitmold.register();
 var hotactivatednaquadahingot = VanillaFactory.createItem("hotactivatednaquadahingot");
 hotactivatednaquadahingot.register();
 
-var molteninfnite = VanillaFactory.createFluid("molteninfnite", Color.fromHex("6099C4"));
-molteninfnite.temperature=(9999);
-molteninfnite.register();
-
 var titansteelcoil = VanillaFactory.createItem("titansteelcoil");
 titansteelcoil.register();
 
@@ -960,9 +632,6 @@ hppicwafer.register();
 var silicongradedust = VanillaFactory.createItem("silicongradedust");
 silicongradedust.register();
 
-var iron4chloride = VanillaFactory.createFluid("iron4chloride", Color.fromHex("424242"));
-iron4chloride.register();
-
 var hotantoingot = VanillaFactory.createItem("hotantoingot");
 hotantoingot.register();
 
@@ -980,9 +649,6 @@ tiedhay.register();
 
 var hotincoloy945xingot = VanillaFactory.createItem("hotincoloy945xingot");
 hotincoloy945xingot.register();
-
-var moltenrawneutronium = VanillaFactory.createFluid("moltenrawneutronium", Color.fromHex("F5F2D6"));
-moltenrawneutronium.register();
 
 var rawneutroniumdust = VanillaFactory.createItem("rawneutroniumdust");
 rawneutroniumdust.register();
@@ -1026,9 +692,6 @@ europiumdopednet.register();
 var sterilizedeuropiumnet = VanillaFactory.createItem("sterilizedeuropiumnet");
 sterilizedeuropiumnet.register();
 
-var zeliusactivationfluid = VanillaFactory.createFluid("zeliusactivationfluid", Color.fromHex("734ca4"));
-zeliusactivationfluid.register();
-
 var net = VanillaFactory.createItem("net");
 net.register();
 
@@ -1065,9 +728,6 @@ twocryogeniccoolant.register();
 var tricryogeniccoolant = VanillaFactory.createItem("tricryogeniccoolant");
 tricryogeniccoolant.register();
 
-var hyperreactiveliquid = VanillaFactory.createFluid("hyperreactiveliquid", Color.fromHex("773693"));
-hyperreactiveliquid.register();
-
 var exoticingot = VanillaFactory.createItem("exoticingot");
 exoticingot.register();
 
@@ -1079,30 +739,6 @@ coolantcontainmentcell.register();
 
 var spectrekeyhandle = VanillaFactory.createItem("spectrekeyhandle");
 spectrekeyhandle.register();
-
-var moltenlegendarium = VanillaFactory.createFluid("moltenlegendarium", Color.fromHex("c3c3c3"));
-moltenlegendarium.register();
-
-var moltenlanthanumfullerenenanotubes = VanillaFactory.createFluid("moltenlanthanumfullerenenanotubes", Color.fromHex("59335c"));
-moltenlanthanumfullerenenanotubes.register();
-
-var moltenactiniumsuperhydride = VanillaFactory.createFluid("moltenactiniumsuperhydride", Color.fromHex("8c273f"));
-moltenactiniumsuperhydride.register();
-
-var moltenrheniumhassiumthalliumisophtaloylbisdiethylthiourea = VanillaFactory.createFluid("moltenrheniumhassiumthalliumisophtaloylbisdiethylthiourea", Color.fromHex("85428a"));
-moltenrheniumhassiumthalliumisophtaloylbisdiethylthiourea.register();
-
-var moltenchargedcesiumceriumcobaltindium = VanillaFactory.createFluid("moltenchargedcesiumceriumcobaltindium", Color.fromHex("296b0a"));
-moltenchargedcesiumceriumcobaltindium.register();
-
-var moltenborocarbide = VanillaFactory.createFluid("moltenborocarbide", Color.fromHex("679112"));
-moltenborocarbide.register();
-
-var moltenfullerenesuperconductor = VanillaFactory.createFluid("moltenfullerenesuperconductor", Color.fromHex("74eb1a"));
-moltenfullerenesuperconductor.register();
-
-var creatium = VanillaFactory.createFluid("creatium", Color.fromHex("7B1FA2"));
-creatium.register();
 
 var dialuminiumtrioxide = VanillaFactory.createItem("dialuminiumtrioxide");
 dialuminiumtrioxide.register();
@@ -1131,26 +767,8 @@ highqualitytwilightstone.register();
 var perfecttwilightstone = VanillaFactory.createItem("perfecttwilightstone");
 perfecttwilightstone.register();
 
-var manasolution = VanillaFactory.createFluid("manasolution", Color.fromHex("51A3E5"));
-manasolution.register();
-
-var distilledmana = VanillaFactory.createFluid("distilledmana", Color.fromHex("4A90C9"));
-distilledmana.register();
-
-var dissolutedmana = VanillaFactory.createFluid("dissolutedmana", Color.fromHex("76A6CD"));
-dissolutedmana.register();
-
-var highmana = VanillaFactory.createFluid("highmana", Color.fromHex("B1CADD"));
-highmana.register();
-
-var thoriumleach = VanillaFactory.createFluid("thoriumleach", Color.fromHex("B1CADD"));
-thoriumleach.register();
-
 var thoriumleachdust = VanillaFactory.createItem("thoriumleachdust");
 thoriumleachdust.register();
-
-var activatedthoriumsolution = VanillaFactory.createFluid("activatedthoriumsolution", Color.fromHex("004D40"));
-activatedthoriumsolution.register();
 
 var trueneutroniumparticle = VanillaFactory.createItem("trueneutroniumparticle");
 trueneutroniumparticle.register();
@@ -1194,17 +812,11 @@ compressedmetaldust.register();
 var compressedmetalingot = VanillaFactory.createItem("compressedmetalingot");
 compressedmetalingot.register();
 
-var moltenenhancedenderium = VanillaFactory.createFluid("moltenenhancedenderium", Color.fromHex("113817"));
-moltenenhancedenderium.register();
-
 var awakenedcompressedmetalingot = VanillaFactory.createItem("awakenedcompressedmetalingot");
 awakenedcompressedmetalingot.register();
 
 var awakenedcompressedmetalplate = VanillaFactory.createItem("awakenedcompressedmetalplate");
 awakenedcompressedmetalplate.register();
-
-var moltenawakenedcompressedmetal = VanillaFactory.createFluid("moltenawakenedcompressedmetal", Color.fromHex("ab4b1b"));
-moltenawakenedcompressedmetal.register();
 
 var purified4thorium = VanillaFactory.createItem("purified4thorium");
 purified4thorium.register();
@@ -1227,14 +839,8 @@ quantumcontrolcomputermk2.register();
 var quantumcontrolcomputermk3 = VanillaFactory.createItem("quantumcontrolcomputermk3");
 quantumcontrolcomputermk3.register();
 
-var liquidrawneutronium  = VanillaFactory.createFluid("liquidrawneutronium", Color.fromHex("F5F2D6"));
-liquidrawneutronium.register();
-
 var dualitioncore = VanillaFactory.createItem("dualitioncore");
 dualitioncore.register();
-
-var photopolymer  = VanillaFactory.createFluid("photopolymer", Color.fromHex("4CAF50"));
-photopolymer.register();
 
 var enrichedgraphitedust = VanillaFactory.createItem("enrichedgraphitedust");
 enrichedgraphitedust.register();
@@ -1244,21 +850,6 @@ irradiated_borax.register();
 
 var unimpuredwafer = VanillaFactory.createItem("unimpuredwafer");
 unimpuredwafer.register();
-
-var hydrogentetrafluoride  = VanillaFactory.createFluid("hydrogentetrafluoride", Color.fromHex("90CAF9"));
-hydrogentetrafluoride.register();
-
-var hydrogentetrafluoromehtane = VanillaFactory.createFluid("hydrogentetrafluoromehtane", Color.fromHex("8D6E63"));
-hydrogentetrafluoromehtane.register();
-
-var hydrogentetrafluorocarbidedioxide = VanillaFactory.createFluid("hydrogentetrafluorocarbidedioxide", Color.fromHex("F8BBD0"));
-hydrogentetrafluorocarbidedioxide.register();
-
-var fluorohydrideammoniumcarbamat = VanillaFactory.createFluid("fluorohydrideammoniumcarbamat", Color.fromHex("2E7D32"));
-fluorohydrideammoniumcarbamat.register();
-
-var pcbb = VanillaFactory.createFluid("pcbb", Color.fromHex("9C27B0"));
-pcbb.register();
 
 var photopolymerplate = VanillaFactory.createItem("photopolymerplate");
 photopolymerplate.register();
@@ -1284,9 +875,6 @@ rhodium2a.register();
 var lanthanumyttriumdust = VanillaFactory.createItem("lanthanumyttriumdust");
 lanthanumyttriumdust.register();
 
-var lanthanumyttriumsolution = VanillaFactory.createFluid("lanthanumyttriumsolution", Color.fromHex("615263"));
-lanthanumyttriumsolution.register();
-
 var lanthanumyttriumcuprite = VanillaFactory.createItem("lanthanumyttriumcuprite");
 lanthanumyttriumcuprite.register();
 
@@ -1302,11 +890,14 @@ bariumsludgedustresidue.register();
 var yttriumlanthanumceriummixturedust = VanillaFactory.createItem("yttriumlanthanumceriummixturedust");
 yttriumlanthanumceriummixturedust.register();
 
-var lanthanumceriumacidicsolution = VanillaFactory.createFluid("lanthanumceriumacidicsolution", Color.fromHex("A1887F"));
-lanthanumceriumacidicsolution.register();
-
 var ceriumlanthanumcompound = VanillaFactory.createItem("ceriumlanthanumcompound");
 ceriumlanthanumcompound.register();
+
+var ceriumlanthanumingot = VanillaFactory.createItem("ceriumlanthanumingot");
+ceriumlanthanumingot.register();
+
+var ceriumlanthanumdust = VanillaFactory.createItem("ceriumlanthanumdust");
+ceriumlanthanumdust.register();
  
 var ceriumlanthanumsaturatedcompound = VanillaFactory.createItem("ceriumlanthanumsaturatedcompound");
 ceriumlanthanumsaturatedcompound.register();
@@ -1314,56 +905,29 @@ ceriumlanthanumsaturatedcompound.register();
 var ceriumlanthanumsaturatedsamaritecompound = VanillaFactory.createItem("ceriumlanthanumsaturatedsamaritecompound");
 ceriumlanthanumsaturatedsamaritecompound.register();
 
-var ceriumlanthanumsaturatedcompoundsolution = VanillaFactory.createFluid("ceriumlanthanumsaturatedcompoundsolution", Color.fromHex("FFE0B2"));
-ceriumlanthanumsaturatedcompoundsolution.register();
-
 var ceriumlanthanumsaturatedcompoundingot = VanillaFactory.createItem("ceriumlanthanumsaturatedcompoundingot");
 ceriumlanthanumsaturatedcompoundingot.register();
 
 var ceriumlanthanumsaturatedcompounddust = VanillaFactory.createItem("ceriumlanthanumsaturatedcompounddust");
 ceriumlanthanumsaturatedcompounddust.register();
 
-var moltenceriumdopedlanthanum = VanillaFactory.createFluid("moltenceriumdopedlanthanum", Color.fromHex("F3EDBF"));
-moltenceriumdopedlanthanum.register();
-
 var ceriumdopedlanthanumdust = VanillaFactory.createItem("ceriumdopedlanthanumdust");
 ceriumdopedlanthanumdust.register();
-
-var unprocessedcelasolution = VanillaFactory.createFluid("unprocessedcelasolution", Color.fromHex("D9DF95"));
-unprocessedcelasolution.register();
 
 var celananoparticle = VanillaFactory.createItem("celananoparticle");
 celananoparticle.register();
 
-var moltencelananoparticles = VanillaFactory.createFluid("moltencelananoparticles", Color.fromHex("D9DF95"));
-moltencelananoparticles.register();
-
 var lanthanumseedcrystal = VanillaFactory.createItem("lanthanumseedcrystal");
 lanthanumseedcrystal.register();
 
-var moltencelananocarbides = VanillaFactory.createFluid("moltencelananocarbides", Color.fromHex("AB47BC"));
-moltencelananocarbides.register();
-
 var celasiliconboule = VanillaFactory.createItem("celasiliconboule");
 celasiliconboule.register();
-
-var moltenceriumlanthanum = VanillaFactory.createFluid("moltenceriumlanthanum", Color.fromHex("D9DF95"));
-moltenceriumlanthanum.register();
-
-var ceriumlanthanumingot = VanillaFactory.createItem("ceriumlanthanumingot");
-ceriumlanthanumingot.register();
-
-var ceriumlanthanumdust = VanillaFactory.createItem("ceriumlanthanumdust");
-ceriumlanthanumdust.register();
 
 var unprocessedceladust = VanillaFactory.createItem("unprocessedceladust");
 unprocessedceladust.register();
 
 var celananocarbides = VanillaFactory.createItem("celananocarbides");
 celananocarbides.register();
-
-var lanthanumceriumsolution = VanillaFactory.createFluid("lanthanumceriumsolution", Color.fromHex("E2E7B3"));
-lanthanumceriumsolution.register();
 
 var unimprintedntypewafer = VanillaFactory.createItem("unimprintedntypewafer");
 unimprintedntypewafer.register();
@@ -1380,14 +944,8 @@ fcelauwafer.register();
 var photogenallyenhancedwafer = VanillaFactory.createItem("photogenallyenhancedwafer");
 photogenallyenhancedwafer.register();
 
-var usedphotopolymersolution = VanillaFactory.createFluid("usedphotopolymersolution", Color.fromHex("CE93D8"));
-usedphotopolymersolution.register();
-
 var yttriumsludgedustresidue = VanillaFactory.createItem("yttriumsludgedustresidue");
 yttriumsludgedustresidue.register();
-
-var extradistilledwater = VanillaFactory.createFluid("extradistilledwater", Color.fromHex("BBDEFB"));
-extradistilledwater.register();
 
 var rawlapotron = VanillaFactory.createItem("rawlapotron");
 rawlapotron.register();
@@ -1400,9 +958,6 @@ boundleather.register();
 
 var reinforcedstring = VanillaFactory.createItem("reinforcedstring");
 reinforcedstring.register();
-
-var quaternaryammonium = VanillaFactory.createFluid("quaternaryammonium", Color.fromHex("CFD8DC"));
-quaternaryammonium.register();
 
 var wrapofnaquadahfinewire = VanillaFactory.createItem("wrapofnaquadahfinewire");
 wrapofnaquadahfinewire.register();
@@ -1428,12 +983,6 @@ aluminasilicatecatalyst.register();
 var buildingwrench = VanillaFactory.createItem("buildingwrench");
 buildingwrench.register();
 
-var dissolvingfluid = VanillaFactory.createFluid("dissolvingfluid", Color.fromHex("CFD8DC"));
-dissolvingfluid.register();
-
-var aluminosilicatewoolsolution = VanillaFactory.createFluid("aluminosilicatewoolsolution", Color.fromHex("8A8A8A"));
-aluminosilicatewoolsolution.register();
-
 var thorium_crude_metal = VanillaFactory.createItem("thorium_crude_metal");
 thorium_crude_metal.register();
 
@@ -1458,45 +1007,17 @@ thorium_radioactive_dust.register();
 var thorium_233_dust = VanillaFactory.createItem("thorium_233_dust");
 thorium_233_dust.register();
 
-var thorium_emulsion = VanillaFactory.createFluid("thorium_emulsion", Color.fromHex("495B49"));
-thorium_emulsion.register();
-
-var low_thorium_solution = VanillaFactory.createFluid("low_thorium_solution", Color.fromHex("0C220C"));
-low_thorium_solution.register();
-
-var radioactive_sludge = VanillaFactory.createFluid("radioactive_sludge", Color.fromHex("885B49"));
-radioactive_sludge.register();
-
 var radium_metallic_powder = VanillaFactory.createItem("radium_metallic_powder");
 radium_metallic_powder.register();
 
-var radium_emulsion = VanillaFactory.createFluid("radium_emulsion", Color.fromHex("7E7E85"));
-radium_emulsion.register();
-
-var radium_sodium_solution = VanillaFactory.createFluid("radium_sodium_solution", Color.fromHex("7E7E97"));
-radium_sodium_solution.register();
-
 var radium_cake_dust = VanillaFactory.createItem("radium_cake_dust");
 radium_cake_dust.register();
-
-var radium_cake_solution = VanillaFactory.createFluid("radium_cake_solution", Color.fromHex("666B66"));
-radium_cake_solution.register();
 
 var reprep_radium_202 = VanillaFactory.createItem("reprep_radium_202");
 reprep_radium_202.register();
 
 var radium_202_dust = VanillaFactory.createItem("radium_202_dust");
 radium_202_dust.register();
-
-var radium_sodium_emulsion = VanillaFactory.createFluid("radium_sodium_emulsion", Color.fromHex("666B66"));
-radium_sodium_emulsion.register();
-
-var solardistilledwater = VanillaFactory.createFluid("solardistilledwater", Color.fromHex("40b0ed"));
-solardistilledwater.register();
-
-var dirtywater = VanillaFactory.createFluid("dirtywater", Color.fromHex("6e3415"));
-dirtywater.register();
-
 
 var forcefieldgenerator = VanillaFactory.createItem("forcefieldgenerator");
 forcefieldgenerator.register();
@@ -1522,41 +1043,14 @@ carbonmyogel.register();
 var spectreplate = VanillaFactory.createItem("spectreplate");
 spectreplate.register();
 
-var superlubricenttincture = VanillaFactory.createFluid("superlubricenttincture", Color.fromHex("5a5c00"));
-superlubricenttincture.register();
-
-var paraphenylenediaminesolution = VanillaFactory.createFluid("paraphenylenediaminesolution", Color.fromHex("BA68C8"));
-paraphenylenediaminesolution.register();
-
 var terephthaloylchloride = VanillaFactory.createItem("terephthaloylchloride");
 terephthaloylchloride.register();
 
 var paraphenylenediamine = VanillaFactory.createItem("paraphenylenediamine");
 paraphenylenediamine.register();
 
-var nmethyl2pyrrolidone = VanillaFactory.createFluid("nmethyl2pyrrolidone", Color.fromHex("81D4FA"));
-nmethyl2pyrrolidone.register();
-
-var bbutyrolactone = VanillaFactory.createFluid("bbutyrolactone", Color.fromHex("C8E6C9"));
-bbutyrolactone.register();
-
-var twonaphthol = VanillaFactory.createFluid("twonaphthol", Color.fromHex("FFAB91"));
-twonaphthol.register();
-
-var binol = VanillaFactory.createFluid("binol", Color.fromHex("37474F"));
-binol.register();
-
-var diketene = VanillaFactory.createFluid("diketene", Color.fromHex("B0BEC5"));
-diketene.register();
-
-var chlorodiphenylphosphine = VanillaFactory.createFluid("chlorodiphenylphosphine", Color.fromHex("BA68C8"));
-chlorodiphenylphosphine.register();
-
 var binap = VanillaFactory.createItem("binap");
 binap.register();
-
-var unrefinedkevlar = VanillaFactory.createFluid("unrefinedkevlar", Color.fromHex("FFEB3B"));
-unrefinedkevlar.register();
 
 var kevlarmix = VanillaFactory.createItem("kevlarmix");
 kevlarmix.register();
@@ -1564,65 +1058,17 @@ kevlarmix.register();
 var rotarryspinningwhisker = VanillaFactory.createItem("rotarryspinningwhisker");
 rotarryspinningwhisker.register();
 
-var terephtaladehyde = VanillaFactory.createFluid("terephtaladehyde", Color.fromHex("CFD8DC"));
-terephtaladehyde.register();
-
-var carbondisulfide = VanillaFactory.createFluid("carbondisulfide", Color.fromHex("4DB6AC"));
-carbondisulfide.register();
-
-var naphtalene = VanillaFactory.createFluid("naphtalene", Color.fromHex("FF8F00"));
-naphtalene.register();
-
-var butylithium = VanillaFactory.createFluid("butylithium", Color.fromHex("C2185B"));
-butylithium.register();
-
-var liquidbinap = VanillaFactory.createFluid("liquidbinap", Color.fromHex("263238"));
-liquidbinap.register();
-
-var crystalkevlar = VanillaFactory.createFluid("crystalkevlar", Color.fromHex("FFEE58"));
-crystalkevlar.register();
-
-var supraplasma = VanillaFactory.createFluid("supraplasma", Color.fromHex("cba3cc"));
-supraplasma.register();
-
-var metastableenergeticalalloy = VanillaFactory.createFluid("metastableenergeticalalloy", Color.fromHex("db4234"));
-metastableenergeticalalloy.register();
-
 var leadmetallicpowder = VanillaFactory.createItem("leadmetallicpowder");
 leadmetallicpowder.register();
 
 var muddustresidues = VanillaFactory.createItem("muddustresidues");
 muddustresidues.register();
 
-var purifiedthoriumemulsion = VanillaFactory.createFluid("purifiedthoriumemulsion", Color.fromHex("388E3C"));
-purifiedthoriumemulsion.register();
-
-var driedthoriumemulsion = VanillaFactory.createFluid("driedthoriumemulsion", Color.fromHex("305731"));
-driedthoriumemulsion.register();
-
-var sulfuricthoriumsolution = VanillaFactory.createFluid("sulfuricthoriumsolution", Color.fromHex("FF7043"));
-sulfuricthoriumsolution.register();
-
-var hydrocrackedthoriumsolution = VanillaFactory.createFluid("hydrocrackedthoriumsolution", Color.fromHex("A5D6A7"));
-hydrocrackedthoriumsolution.register();
-
-var thoriumsolution = VanillaFactory.createFluid("thoriumsolution", Color.fromHex("2E7D32"));
-thoriumsolution.register();
-
-var heatedthoriumsolution = VanillaFactory.createFluid("heatedthoriumsolution", Color.fromHex("DCE775"));
-heatedthoriumsolution.register();
-
-var supercooledthoriumsolution = VanillaFactory.createFluid("supercooledthoriumsolution", Color.fromHex("B3E5FC"));
-supercooledthoriumsolution.register();
-
 var seperationfilter = VanillaFactory.createItem("seperationfilter");
 seperationfilter.register();
 
 var seperationcatalyst = VanillaFactory.createItem("seperationcatalyst");
 seperationcatalyst.register();
-
-var thoriumleachsolution = VanillaFactory.createFluid("thoriumleachsolution", Color.fromHex("06521c"));
-thoriumleachsolution.register();
 
 var fusioncoil = VanillaFactory.createItem("fusioncoil");
 fusioncoil.register();
@@ -1642,9 +1088,6 @@ quantumglass.setToolLevel(2);
 quantumglass.setBlockSoundType(<soundtype:stone>);
 quantumglass.register();
 
-var tungstalloytwo = VanillaFactory.createFluid("tungstalloytwo", Color.fromHex("06521c"));
-tungstalloytwo.register();
-
 var automationframe = VanillaFactory.createBlock("automationframe", <blockmaterial:glass>);
 automationframe.setBlockHardness(1.5);
 automationframe.setBlockResistance(3.0);
@@ -1656,12 +1099,6 @@ automationframe.setToolClass("pickaxe");
 automationframe.setToolLevel(2);
 automationframe.setBlockSoundType(<soundtype:stone>);
 automationframe.register();
-
-var livingsolder = VanillaFactory.createFluid("livingsolder", Color.fromHex("886C62"));
-livingsolder.register();
-
-var mutatedlivingsolder = VanillaFactory.createFluid("mutatedlivingsolder", Color.fromHex("694653"));
-mutatedlivingsolder.register();
 
 var fuelrod = VanillaFactory.createBlock("fuelrod", <blockmaterial:glass>);
 fuelrod.setBlockHardness(1.5);
@@ -1676,8 +1113,6 @@ fuelrod.setBlockSoundType(<soundtype:stone>);
 fuelrod.register();
 
 
-var explosivehydrazine = VanillaFactory.createFluid("explosivehydrazine", Color.fromHex("827722"));
-explosivehydrazine.register();
 
 var hmx = VanillaFactory.createItem("hmx");
 hmx.register();
@@ -1694,17 +1129,8 @@ spacetimebendingcomputer.register();
 var spacetimebendingassembly = VanillaFactory.createItem("spacetimebendingassembly");
 spacetimebendingassembly.register();
 
-var sulfurousacid = VanillaFactory.createFluid("sulfurousacid", Color.fromHex("827722"));
-sulfurousacid.register();
-
 var purepetridish = VanillaFactory.createItem("purepetridish");
 purepetridish.register();
-
-var hundretmethanol = VanillaFactory.createFluid("hundretmethanol", Color.fromHex("827722"));
-hundretmethanol.register();
-
-var hundretbutanol = VanillaFactory.createFluid("hundretbutanol", Color.fromHex("827722"));
-hundretbutanol.register();
 
 var datadisc = VanillaFactory.createItem("datadisc");
 datadisc.register();
@@ -1718,53 +1144,20 @@ polyurethanecatalystadust.register();
 var polyurethanecatalystbdust = VanillaFactory.createItem("polyurethanecatalystbdust");
 polyurethanecatalystbdust.register();
 
-var propionicacid = VanillaFactory.createFluid("propionicacid", Color.fromHex("E0E0E0"));
-propionicacid.register();
-
-var nickeltetracarbonyl = VanillaFactory.createFluid("nickeltetracarbonyl", Color.fromHex("B7D7F0"));
-nickeltetracarbonyl.register();
-
 var oranorhodiumcatalystdust = VanillaFactory.createItem("oranorhodiumcatalystdust");
 oranorhodiumcatalystdust.register();
-
-var trimethylborate = VanillaFactory.createFluid("trimethylborate", Color.fromHex("D7CCC8"));
-trimethylborate.register();
-
-var hexanol = VanillaFactory.createFluid("hexanol", Color.fromHex("B71C1C"));
-hexanol.register();
 
 var wovenkevlar = VanillaFactory.createItem("wovenkevlar");
 wovenkevlar.register();
 
-var polyurethaneresin = VanillaFactory.createFluid("polyurethaneresin", Color.fromHex("C3B640"));
-polyurethaneresin.register();
-
 var fourdiphenylmethanediiscocyanatedust = VanillaFactory.createItem("fourdiphenylmethanediiscocyanatedust");
 fourdiphenylmethanediiscocyanatedust.register();
-
-var diaminodiphenylmethanemixture = VanillaFactory.createFluid("diaminodiphenylmethanemixture", Color.fromHex("E1BEE7"));
-diaminodiphenylmethanemixture.register();
-
-var diphenylmethanediiscocyanatemixture = VanillaFactory.createFluid("diphenylmethanediiscocyanatemixture", Color.fromHex("DFC9E2"));
-diphenylmethanediiscocyanatemixture.register();
 
 var pentaerythritoldust = VanillaFactory.createItem("pentaerythritoldust");
 pentaerythritoldust.register();
 
-var siliconoil = VanillaFactory.createFluid("siliconoil", Color.fromHex("D4D4D4"));
-siliconoil.register();
-
-var pentanol = VanillaFactory.createFluid("pentanol", Color.fromHex("EF9A9A"));
-pentanol.register();
-
 var reinfrocedkevlarcloth = VanillaFactory.createItem("reinfrocedkevlarcloth");
 reinfrocedkevlarcloth.register();
-
-var pentoldehyde = VanillaFactory.createFluid("pentoldehyde", Color.fromHex("EF9A9A"));
-pentoldehyde.register();
-
-var isopentoldehyde = VanillaFactory.createFluid("isopentoldehyde", Color.fromHex("EF9A9A"));
-isopentoldehyde.register();
 
 var tinyoranorhodiumcatalystdust = VanillaFactory.createItem("tinyoranorhodiumcatalystdust");
 tinyoranorhodiumcatalystdust.register();
@@ -1847,35 +1240,8 @@ seaborgiumdopedwafer.register();
 var biobasedpetridiswithculture = VanillaFactory.createItem("biobasedpetridiswithculture");
 biobasedpetridiswithculture.register();
 
-var sterilebiomedium = VanillaFactory.createFluid("sterilebiomedium", Color.fromHex("1B5E20"));
-sterilebiomedium.register();
-
 var titaniumiodine = VanillaFactory.createItem("titaniumiodine");
 titaniumiodine.register();
-
-var moltenredstonealloy = VanillaFactory.createFluid("moltenredstonealloy", Color.fromHex("822020"));
-moltenredstonealloy.register();
-
-var isohexanoldehyde = VanillaFactory.createFluid("isohexanoldehyde", Color.fromHex("B71C1C"));
-isohexanoldehyde.register();
-
-var hexanoldehyde = VanillaFactory.createFluid("hexanoldehyde", Color.fromHex("B71C1C"));
-hexanoldehyde.register();
-
-var dilutedoil = VanillaFactory.createFluid("dilutedoil", Color.fromHex("141414"));
-dilutedoil.register();
-
-var desaltedoil = VanillaFactory.createFluid("desaltedoil", Color.fromHex("2C2C2C"));
-desaltedoil.register();
-
-var sulfuricoilresidues = VanillaFactory.createFluid("sulfuricoilresidues", Color.fromHex("FFEE58"));
-sulfuricoilresidues.register();
-
-var sulfuricbyproducts = VanillaFactory.createFluid("sulfuricbyproducts", Color.fromHex("2C2C2C"));
-sulfuricbyproducts.register();
-
-var heavyoilresidues = VanillaFactory.createFluid("heavyoilresidues", Color.fromHex("181816"));
-heavyoilresidues.register();
 
 var paraffinwax = VanillaFactory.createItem("paraffinwax");
 paraffinwax.register();
@@ -1886,35 +1252,11 @@ stackwax.register();
 var bitominousresidue = VanillaFactory.createItem("bitominousresidue");
 bitominousresidue.register();
 
-var fractionatedoil = VanillaFactory.createFluid("fractionatedoil", Color.fromHex("181816"));
-fractionatedoil.register();
-
-var tar = VanillaFactory.createFluid("tar", Color.fromHex("222121"));
-tar.register();
-
-var oilgas = VanillaFactory.createFluid("oilgas", Color.fromHex("121010"));
-oilgas.register();
-
-var vacuumflashedtar = VanillaFactory.createFluid("vacuumflashedtar", Color.fromHex("121010"));
-vacuumflashedtar.register();
-
 var petreulumcoke = VanillaFactory.createItem("petreulumcoke");
 petreulumcoke.register();
 
 var asphalt = VanillaFactory.createItem("asphalt");
 asphalt.register();
-
-var richamine = VanillaFactory.createFluid("richamine", Color.fromHex("121010"));
-richamine.register();
-
-var sourgas = VanillaFactory.createFluid("sourgas", Color.fromHex("121010"));
-sourgas.register();
-
-var oilfractions = VanillaFactory.createFluid("oilfractions", Color.fromHex("121010"));
-oilfractions.register();
-
-var treatedsulfuricfractions = VanillaFactory.createFluid("treatedsulfuricfractions", Color.fromHex("121010"));
-treatedsulfuricfractions.register();
 
 var boiledleather = VanillaFactory.createItem("boiledleather");
 boiledleather.register();
@@ -1937,14 +1279,8 @@ crackingcatalyst.register();
 var usedcrackingcatalyst = VanillaFactory.createItem("usedcrackingcatalyst");
 usedcrackingcatalyst.register();
 
-var uncatalyzedsulfuricgas = VanillaFactory.createFluid("uncatalyzedsulfuricgas", Color.fromHex("D4E157"));
-uncatalyzedsulfuricgas.register();
-
 var aluminacatalyst = VanillaFactory.createItem("aluminacatalyst");
 aluminacatalyst.register();
-
-var fluegas = VanillaFactory.createFluid("fluegas", Color.fromHex("B1B1B0"));
-fluegas.register();
 
 var cathode = VanillaFactory.createItem("cathode");
 cathode.register();
@@ -1952,59 +1288,17 @@ cathode.register();
 var anode = VanillaFactory.createItem("anode");
 anode.register();
 
-var wastewater = VanillaFactory.createFluid("wastewater", Color.fromHex("2E4D7F"));
-wastewater.register();
-
 var hydrogeniodide = VanillaFactory.createItem("hydrogeniodide");
 hydrogeniodide.register();
 
 var calcinatedbastnasite = VanillaFactory.createItem("calcinatedbastnasite");
 calcinatedbastnasite.register();
 
-var muddybastnasitesolution = VanillaFactory.createFluid("muddybastnasitesolution", Color.fromHex("842508"));
-muddybastnasitesolution.register();
-
-var conditionedbastnasitemud = VanillaFactory.createFluid("conditionedbastnasitemud", Color.fromHex("544340"));
-conditionedbastnasitemud.register();
-
-var dilutedbastnasitemud = VanillaFactory.createFluid("dilutedbastnasitemud", Color.fromHex("2E4D7F"));
-dilutedbastnasitemud.register();
-
-var filteredbsatnasitemud = VanillaFactory.createFluid("filteredbsatnasitemud", Color.fromHex("2E4D7F"));
-filteredbsatnasitemud.register();
-
-var wetbastnasiterareearthconcentrate = VanillaFactory.createFluid("wetbastnasiterareearthconcentrate", Color.fromHex("2E4D7F"));
-wetbastnasiterareearthconcentrate.register();
-
-var bastnasiteconcentrate = VanillaFactory.createFluid("bastnasiteconcentrate", Color.fromHex("2E4D7F"));
-bastnasiteconcentrate.register();
-
 var roastedbastnasite = VanillaFactory.createItem("roastedbastnasite");
 roastedbastnasite.register();
 
-var roastedbastnasiteconcentrate = VanillaFactory.createFluid("roastedbastnasiteconcentrate", Color.fromHex("2E4D7F"));
-roastedbastnasiteconcentrate.register();
-
-var jetfuel = VanillaFactory.createFluid("jetfuel", Color.fromHex("429D46"));
-jetfuel.register();
-
-var combustionpromoter = VanillaFactory.createFluid("combustionpromoter", Color.fromHex("2E4D7F"));
-combustionpromoter.register();
-
 var ferrocene = VanillaFactory.createItem("ferrocene");
 ferrocene.register();
-
-var ethanolgasoline = VanillaFactory.createFluid("ethanolgasoline", Color.fromHex("2E4D7F"));
-ethanolgasoline.register();
-
-var impureferrocenemixture = VanillaFactory.createFluid("impureferrocenemixture", Color.fromHex("8E24AA"));
-impureferrocenemixture.register();
-
-var ether = VanillaFactory.createFluid("ether", Color.fromHex("E65100"));
-ether.register();
-
-var ferrocenesolution = VanillaFactory.createFluid("ferrocenesolution", Color.fromHex("B0BEC5"));
-ferrocenesolution.register();
 
 var dirtdust = VanillaFactory.createItem("dirtdust");
 dirtdust.register();
@@ -2015,29 +1309,8 @@ datadiskassemblyline.register();
 var datadiskdigester = VanillaFactory.createItem("datadiskdigester");
 datadiskdigester.register();
 
-var acidicbastnasiteconcentrate = VanillaFactory.createFluid("acidicbastnasiteconcentrate", Color.fromHex("BF360C"));
-acidicbastnasiteconcentrate.register();
-
-var ceriumcontainingbastnasiteconcentrate = VanillaFactory.createFluid("ceriumcontainingbastnasiteconcentrate", Color.fromHex("BF5D40"));
-ceriumcontainingbastnasiteconcentrate.register();
-
-var bastnasiterarerearthoxidemixture = VanillaFactory.createFluid("bastnasiterarerearthoxidemixture", Color.fromHex("D28770"));
-bastnasiterarerearthoxidemixture.register();
-
 var bastnasiterarerearthoxidemixturedust = VanillaFactory.createItem("bastnasiterarerearthoxidemixturedust");
 bastnasiterarerearthoxidemixturedust.register();
-
-var bastnasiterarerearthconcentrate = VanillaFactory.createFluid("bastnasiterarerearthconcentrate", Color.fromHex("2E4D7F"));
-bastnasiterarerearthconcentrate.register();
-
-var nitrogenatedbastnasiterarerearthoxides = VanillaFactory.createFluid("nitrogenatedbastnasiterarerearthoxides", Color.fromHex("2E4D7F"));
-nitrogenatedbastnasiterarerearthoxides.register();
-
-var bastnasiterarerearthoxidesemulsion = VanillaFactory.createFluid("bastnasiterarerearthoxidesemulsion", Color.fromHex("2E4D7F"));
-bastnasiterarerearthoxidesemulsion.register();
-
-var bastnasiterarerearthoxidessolution = VanillaFactory.createFluid("bastnasiterarerearthoxidessolution", Color.fromHex("2E4D7F"));
-bastnasiterarerearthoxidessolution.register();
 
 var neodymiumrareearthconcentrate = VanillaFactory.createItem("neodymiumrareearthconcentrate");
 neodymiumrareearthconcentrate.register();
@@ -2060,29 +1333,11 @@ samariumterbiumconcentrate.register();
 var samaricresidues = VanillaFactory.createItem("samaricresidues");
 samaricresidues.register();
 
-var bastnasiteoxidecomposite = VanillaFactory.createItem("bastnasiteoxidecomposite");
-bastnasiteoxidecomposite.register();
-
-var diethylamine = VanillaFactory.createFluid("diethylamine", Color.fromHex("827717"));
-diethylamine.register();
-
-var ferrocenewaste = VanillaFactory.createFluid("ferrocenewaste", Color.fromHex("827717"));
-ferrocenewaste.register();
-
-var bastnasiteoxidecompositeliquid = VanillaFactory.createFluid("bastnasiteoxidecompositeliquid", Color.fromHex("827717"));
-bastnasiteoxidecompositeliquid.register();
-
 var cosmic_circuit_board = VanillaFactory.createItem("cosmic_circuit_board");
 cosmic_circuit_board.register();
 
-var waterplasma = VanillaFactory.createFluid("waterplasma", Color.fromHex("827717"));
-waterplasma.register();
-
-var geneticmutagen = VanillaFactory.createFluid("geneticmutagen", Color.fromHex("448247"));
-geneticmutagen.register();
-
-var xenoxene = VanillaFactory.createFluid("xenoxene", Color.fromHex("4D4C4C"));
-xenoxene.register();
+var bastnasiteoxidecomposite = VanillaFactory.createItem("bastnasiteoxidecomposite");
+bastnasiteoxidecomposite.register();
 
 var spacetimebendingsmdtransistor = VanillaFactory.createItem("spacetimebendingsmdtransistor");
 spacetimebendingsmdtransistor.register();
@@ -2095,24 +1350,6 @@ spacetimebendingsmdresistor.register();
 
 var spacetimebendingsmdcapacitor = VanillaFactory.createItem("spacetimebendingsmdcapacitor");
 spacetimebendingsmdcapacitor.register();
-
-var rawradox = VanillaFactory.createFluid("rawradox", Color.fromHex("8E24AA"));
-rawradox.register();
-
-var lightradox = VanillaFactory.createFluid("lightradox", Color.fromHex("D0AADB"));
-lightradox.register();
-
-var heavyradox = VanillaFactory.createFluid("heavyradox", Color.fromHex("633C7A"));
-heavyradox.register();
-
-var crackedlightradox = VanillaFactory.createFluid("crackedlightradox", Color.fromHex("B9A1C7"));
-crackedlightradox.register();
-
-var purifiedradox = VanillaFactory.createFluid("purifiedradox", Color.fromHex("321245"));
-purifiedradox.register();
-
-var crackedheavyradox = VanillaFactory.createFluid("crackedheavyradox", Color.fromHex("6A1B9A"));
-crackedheavyradox.register();
 
 var startiumdust = VanillaFactory.createItem("startiumdust");
 startiumdust.register();

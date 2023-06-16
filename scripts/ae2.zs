@@ -60,17 +60,6 @@ val engraver = mods.gregtech.recipe.RecipeMap.getByName("laser_engraver");
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 Grinder.removeRecipe(<gregtech:ore_platinum_0>);
 
 recipes.addShaped(<appliedenergistics2:drive>, [	[<gregtech:meta_item_1:32651>, <ore:circuitAdvanced>, <gregtech:meta_item_1:32651>], 	[<ore:plateKanthal>, <ore:ringKanthal>, <ore:plateKanthal>], 	[<gregtech:meta_item_1:32642>, <ironchest:iron_chest:2>, <gregtech:meta_item_1:32642>]]);
@@ -520,7 +509,7 @@ alloy_smelter.recipeBuilder()
     .buildAndRegister();
 
 alloy_smelter.recipeBuilder()
-    .inputs(<appliedenergistics2:quartz_glass>*4,<contenttweaker:vibrantalloyplate>)
+    .inputs(<appliedenergistics2:quartz_glass>*4,<gregtech:meta_item_1:12550>)
     .outputs(<appliedenergistics2:quartz_vibrant_glass>*4)
     .duration(80)
     .EUt(512)
