@@ -1,0 +1,1679 @@
+{
+  "name": "icbfab",
+  "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
+  "fuelTexture": "multiblocked:textures/gui/progress_bar_fuel.png",
+  "recipes": [
+    {
+      "uid": "cbf5",
+      "duration": 1200,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 4,
+              "matches": [
+                "{id:\"gregtech:meta_item_1\",Count:4,Damage:19183s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_item_1\",Count:1,Damage:12470s}"
+              ]
+            }
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 8,
+              "matches": [
+                "{id:\"gregtech:meta_item_2\",Count:8,Damage:32448s}"
+              ]
+            }
+          }
+        ]
+      },
+      "tickInputs": {
+        "gtce_energy": [
+          {
+            "chance": 1.0,
+            "content": 40000
+          }
+        ]
+      }
+    },
+    {
+      "uid": "cbf6",
+      "duration": 900,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 4,
+              "matches": [
+                "{id:\"gregtech:meta_item_2\",Count:4,Damage:32448s}"
+              ]
+            }
+          }
+        ],
+        "fluid": [
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"iron_chloride\",Amount:2000}"
+          },
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"annealed_copper\",Amount:512}"
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 4,
+              "matches": [
+                "{id:\"gtadditions:ga_meta_item\",Count:4,Damage:32031s}"
+              ]
+            }
+          }
+        ]
+      },
+      "tickInputs": {
+        "gtce_energy": [
+          {
+            "chance": 1.0,
+            "content": 32000
+          }
+        ]
+      }
+    },
+    {
+      "uid": "cbf3",
+      "duration": 800,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 4,
+              "matches": [
+                "{id:\"gregtech:meta_item_1\",Count:4,Damage:12196s}"
+              ]
+            }
+          }
+        ],
+        "fluid": [
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"bisphenolb\",Amount:288}"
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 32,
+              "matches": [
+                "{id:\"gregtech:meta_item_2\",Count:32,Damage:32447s}"
+              ]
+            }
+          }
+        ]
+      },
+      "tickInputs": {
+        "gtce_energy": [
+          {
+            "chance": 1.0,
+            "content": 25000
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "type": "block",
+          "condition": {
+            "block": {
+              "id": "contenttweaker:perfectlysealedvacuumcasing",
+              "meta": 0
+            },
+            "count": 144
+          }
+        },
+        {
+          "type": "block",
+          "condition": {
+            "block": {
+              "id": "gregtech:multiblock_casing",
+              "meta": 5
+            },
+            "count": 48
+          }
+        }
+      ]
+    },
+    {
+      "uid": "cbf4",
+      "duration": 800,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_item_2\",Count:1,Damage:32447s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 2,
+              "matches": [
+                "{id:\"gregtech:meta_item_1\",Count:2,Damage:19001s}"
+              ]
+            }
+          }
+        ],
+        "fluid": [
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"iron_chloride\",Amount:250}"
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gtadditions:ga_meta_item\",Count:1,Damage:32030s}"
+              ]
+            }
+          }
+        ]
+      },
+      "tickInputs": {
+        "gtce_energy": [
+          {
+            "chance": 1.0,
+            "content": 25000
+          }
+        ]
+      }
+    },
+    {
+      "uid": "cbf1",
+      "duration": 1200,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_item_2\",Count:1,Damage:16072s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_item_1\",Count:1,Damage:12196s}"
+              ]
+            }
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 128,
+              "matches": [
+                "{id:\"gregtech:meta_item_2\",Count:128,Damage:32443s}"
+              ]
+            }
+          }
+        ]
+      },
+      "tickInputs": {
+        "gtce_energy": [
+          {
+            "chance": 1.0,
+            "content": 25000
+          }
+        ]
+      }
+    },
+    {
+      "uid": "cbft210",
+      "duration": 400,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 2,
+              "matches": [
+                "{id:\"gregtech:meta_item_1\",Count:2,Damage:12580s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 4,
+              "matches": [
+                "{id:\"gregtech:meta_item_1\",Count:4,Damage:19304s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_item_2\",Count:1,Damage:32444s}"
+              ]
+            }
+          }
+        ],
+        "fluid": [
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"sodium_persulfate\",Amount:500}"
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 8,
+              "matches": [
+                "{id:\"gtadditions:ga_meta_item\",Count:8,Damage:32032s}"
+              ]
+            }
+          }
+        ]
+      },
+      "tickInputs": {
+        "gtce_energy": [
+          {
+            "chance": 1.0,
+            "content": 25000
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "type": "block",
+          "condition": {
+            "block": {
+              "id": "contenttweaker:perfectlysealedvacuumcasing",
+              "meta": 0
+            },
+            "count": 144
+          }
+        },
+        {
+          "type": "block",
+          "condition": {
+            "block": {
+              "id": "gregtech:multiblock_casing",
+              "meta": 5
+            },
+            "count": 48
+          }
+        }
+      ]
+    },
+    {
+      "uid": "cbft211",
+      "duration": 400,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 2,
+              "matches": [
+                "{id:\"gregtech:meta_item_1\",Count:2,Damage:12580s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 4,
+              "matches": [
+                "{id:\"gregtech:meta_item_1\",Count:4,Damage:19304s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_item_2\",Count:1,Damage:32444s}"
+              ]
+            }
+          }
+        ],
+        "fluid": [
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"iron_chloride\",Amount:250}"
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 8,
+              "matches": [
+                "{id:\"gtadditions:ga_meta_item\",Count:8,Damage:32032s}"
+              ]
+            }
+          }
+        ]
+      },
+      "tickInputs": {
+        "gtce_energy": [
+          {
+            "chance": 1.0,
+            "content": 25000
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "type": "block",
+          "condition": {
+            "block": {
+              "id": "contenttweaker:perfectlysealedvacuumcasing",
+              "meta": 0
+            },
+            "count": 144
+          }
+        },
+        {
+          "type": "block",
+          "condition": {
+            "block": {
+              "id": "gregtech:multiblock_casing",
+              "meta": 5
+            },
+            "count": 48
+          }
+        }
+      ]
+    },
+    {
+      "uid": "cbf9",
+      "duration": 400,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_item_2\",Count:1,Damage:32443s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:cable\",Count:1,Damage:18s}"
+              ]
+            }
+          }
+        ],
+        "fluid": [
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"iron_chloride\",Amount:250}"
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gtadditions:ga_meta_item\",Count:1,Damage:32029s}"
+              ]
+            }
+          }
+        ]
+      },
+      "tickInputs": {
+        "gtce_energy": [
+          {
+            "chance": 1.0,
+            "content": 25000
+          }
+        ]
+      }
+    },
+    {
+      "uid": "cbf7",
+      "duration": 900,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 4,
+              "matches": [
+                "{id:\"gregtech:meta_item_2\",Count:4,Damage:32448s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 4,
+              "matches": [
+                "{id:\"gregtech:meta_item_1\",Count:4,Damage:19072s}"
+              ]
+            }
+          }
+        ],
+        "fluid": [
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"sodium_persulfate\",Amount:4000}"
+          },
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"annealed_copper\",Amount:512}"
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 8,
+              "matches": [
+                "{id:\"gtadditions:ga_meta_item\",Count:8,Damage:32031s}"
+              ]
+            }
+          }
+        ]
+      },
+      "tickInputs": {
+        "gtce_energy": [
+          {
+            "chance": 1.0,
+            "content": 32000
+          }
+        ]
+      }
+    },
+    {
+      "uid": "cbf8",
+      "duration": 800,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_item_2\",Count:1,Damage:32447s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 2,
+              "matches": [
+                "{id:\"gregtech:meta_item_1\",Count:2,Damage:19001s}"
+              ]
+            }
+          }
+        ],
+        "fluid": [
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"iron_chloride\",Amount:250}"
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gtadditions:ga_meta_item\",Count:1,Damage:32030s}"
+              ]
+            }
+          }
+        ]
+      },
+      "tickInputs": {
+        "gtce_energy": [
+          {
+            "chance": 1.0,
+            "content": 25000
+          }
+        ]
+      }
+    },
+    {
+      "uid": "cbf11",
+      "duration": 800,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_item_2\",Count:1,Damage:32447s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 2,
+              "matches": [
+                "{id:\"gregtech:meta_item_1\",Count:2,Damage:19001s}"
+              ]
+            }
+          }
+        ],
+        "fluid": [
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"sodium_persulfate\",Amount:500}"
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gtadditions:ga_meta_item\",Count:1,Damage:32030s}"
+              ]
+            }
+          }
+        ]
+      },
+      "tickInputs": {
+        "gtce_energy": [
+          {
+            "chance": 1.0,
+            "content": 25000
+          }
+        ]
+      }
+    },
+    {
+      "uid": "cbf10",
+      "duration": 400,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_item_2\",Count:1,Damage:32443s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:cable\",Count:1,Damage:18s}"
+              ]
+            }
+          }
+        ],
+        "fluid": [
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"sodium_persulfate\",Amount:500}"
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gtadditions:ga_meta_item\",Count:1,Damage:32029s}"
+              ]
+            }
+          }
+        ]
+      },
+      "tickInputs": {
+        "gtce_energy": [
+          {
+            "chance": 1.0,
+            "content": 25000
+          }
+        ]
+      }
+    },
+    {
+      "uid": "cbft21",
+      "duration": 1200,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_item_1\",Count:1,Damage:12470s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_item_2\",Count:1,Damage:16072s}"
+              ]
+            }
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 256,
+              "matches": [
+                "{id:\"gregtech:meta_item_2\",Count:256,Damage:32443s}"
+              ]
+            }
+          }
+        ]
+      },
+      "tickInputs": {
+        "gtce_energy": [
+          {
+            "chance": 1.0,
+            "content": 25000
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "type": "block",
+          "condition": {
+            "block": {
+              "id": "contenttweaker:perfectlysealedvacuumcasing",
+              "meta": 0
+            },
+            "count": 144
+          }
+        },
+        {
+          "type": "block",
+          "condition": {
+            "block": {
+              "id": "gregtech:multiblock_casing",
+              "meta": 5
+            },
+            "count": 48
+          }
+        }
+      ]
+    },
+    {
+      "uid": "cbf13",
+      "duration": 600,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_item_2\",Count:1,Damage:32444s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 4,
+              "matches": [
+                "{id:\"gregtech:meta_item_1\",Count:4,Damage:19074s}"
+              ]
+            }
+          }
+        ],
+        "fluid": [
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"sodium_persulfate\",Amount:2000}"
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 4,
+              "matches": [
+                "{id:\"gtadditions:ga_meta_item\",Count:4,Damage:32032s}"
+              ]
+            }
+          }
+        ]
+      },
+      "tickInputs": {
+        "gtce_energy": [
+          {
+            "chance": 1.0,
+            "content": 50000
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "type": "block",
+          "condition": {
+            "block": {
+              "id": "gregtech:multiblock_casing",
+              "meta": 5
+            },
+            "count": 48
+          }
+        }
+      ]
+    },
+    {
+      "uid": "cbf12",
+      "duration": 1800,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_item_2\",Count:1,Damage:32445s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_item_1\",Count:1,Damage:19018s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_item_1\",Count:1,Damage:12142s}"
+              ]
+            }
+          }
+        ],
+        "fluid": [
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"silicon_rubber\",Amount:3000}"
+          },
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"sulfuric_acid\",Amount:1500}"
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 4,
+              "matches": [
+                "{id:\"gregtech:meta_item_2\",Count:4,Damage:32444s}"
+              ]
+            }
+          }
+        ]
+      },
+      "tickInputs": {
+        "gtce_energy": [
+          {
+            "chance": 1.0,
+            "content": 45000
+          }
+        ]
+      }
+    },
+    {
+      "uid": "cbft23",
+      "duration": 400,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_item_2\",Count:1,Damage:32447s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 2,
+              "matches": [
+                "{id:\"gregtech:meta_item_1\",Count:2,Damage:19072s}"
+              ]
+            }
+          }
+        ],
+        "fluid": [
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"iron_chloride\",Amount:250}"
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 2,
+              "matches": [
+                "{id:\"gtadditions:ga_meta_item\",Count:2,Damage:32030s}"
+              ]
+            }
+          }
+        ]
+      },
+      "tickInputs": {
+        "gtce_energy": [
+          {
+            "chance": 1.0,
+            "content": 25000
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "type": "block",
+          "condition": {
+            "block": {
+              "id": "contenttweaker:perfectlysealedvacuumcasing",
+              "meta": 0
+            },
+            "count": 144
+          }
+        },
+        {
+          "type": "block",
+          "condition": {
+            "block": {
+              "id": "gregtech:multiblock_casing",
+              "meta": 5
+            },
+            "count": 48
+          }
+        }
+      ]
+    },
+    {
+      "uid": "cbf15",
+      "duration": 400,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 4,
+              "matches": [
+                "{id:\"gregtech:meta_item_1\",Count:4,Damage:12470s}"
+              ]
+            }
+          }
+        ],
+        "fluid": [
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"sulfuric_acid\",Amount:4000}"
+          },
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"hsss\",Amount:1000}"
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 4,
+              "matches": [
+                "{id:\"gtadditions:ga_meta_item\",Count:4,Damage:32033s}"
+              ]
+            }
+          }
+        ]
+      },
+      "tickInputs": {
+        "gtce_energy": [
+          {
+            "chance": 1.0,
+            "content": 100000
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "type": "block",
+          "condition": {
+            "block": {
+              "id": "gregtech:multiblock_casing",
+              "meta": 5
+            },
+            "count": 48
+          }
+        }
+      ]
+    },
+    {
+      "uid": "cbft24",
+      "duration": 500,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 4,
+              "matches": [
+                "{id:\"gregtech:meta_item_1\",Count:4,Damage:19072s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_item_2\",Count:1,Damage:32445s}"
+              ]
+            }
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 32,
+              "matches": [
+                "{id:\"gregtech:meta_item_2\",Count:32,Damage:32448s}"
+              ]
+            }
+          }
+        ]
+      },
+      "tickInputs": {
+        "gtce_energy": [
+          {
+            "chance": 1.0,
+            "content": 25000
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "type": "block",
+          "condition": {
+            "block": {
+              "id": "contenttweaker:perfectlysealedvacuumcasing",
+              "meta": 0
+            },
+            "count": 144
+          }
+        },
+        {
+          "type": "block",
+          "condition": {
+            "block": {
+              "id": "gregtech:multiblock_casing",
+              "meta": 5
+            },
+            "count": 48
+          }
+        }
+      ]
+    },
+    {
+      "uid": "cbf14",
+      "duration": 400,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_item_2\",Count:1,Damage:32444s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 4,
+              "matches": [
+                "{id:\"gregtech:meta_item_1\",Count:4,Damage:19074s}"
+              ]
+            }
+          }
+        ],
+        "fluid": [
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"iron_chloride\",Amount:1000}"
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 4,
+              "matches": [
+                "{id:\"gtadditions:ga_meta_item\",Count:4,Damage:32032s}"
+              ]
+            }
+          }
+        ]
+      },
+      "tickInputs": {
+        "gtce_energy": [
+          {
+            "chance": 1.0,
+            "content": 50000
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "type": "block",
+          "condition": {
+            "block": {
+              "id": "gregtech:multiblock_casing",
+              "meta": 5
+            },
+            "count": 48
+          }
+        }
+      ]
+    },
+    {
+      "uid": "cbf17",
+      "duration": 400,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"contenttweaker:biocircuitboard\",Count:1,Damage:0s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 32,
+              "matches": [
+                "{id:\"gregtech:meta_item_1\",Count:32,Damage:19993s}"
+              ]
+            }
+          }
+        ],
+        "fluid": [
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"iron_chloride\",Amount:7000}"
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"contenttweaker:ultrabiomutatedcircuitboard\",Count:1,Damage:0s}"
+              ]
+            }
+          }
+        ]
+      },
+      "tickInputs": {
+        "gtce_energy": [
+          {
+            "chance": 1.0,
+            "content": 100000
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "type": "block",
+          "condition": {
+            "block": {
+              "id": "gregtech:multiblock_casing",
+              "meta": 5
+            },
+            "count": 48
+          }
+        }
+      ]
+    },
+    {
+      "uid": "cbf16",
+      "duration": 400,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"contenttweaker:biocircuitboard\",Count:1,Damage:0s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 32,
+              "matches": [
+                "{id:\"gregtech:meta_item_1\",Count:32,Damage:19993s}"
+              ]
+            }
+          }
+        ],
+        "fluid": [
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"sodium_persulfate\",Amount:14000}"
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"contenttweaker:ultrabiomutatedcircuitboard\",Count:1,Damage:0s}"
+              ]
+            }
+          }
+        ]
+      },
+      "tickInputs": {
+        "gtce_energy": [
+          {
+            "chance": 1.0,
+            "content": 100000
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "type": "block",
+          "condition": {
+            "block": {
+              "id": "gregtech:multiblock_casing",
+              "meta": 5
+            },
+            "count": 48
+          }
+        }
+      ]
+    },
+    {
+      "uid": "cbft29",
+      "duration": 400,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_item_2\",Count:1,Damage:32447s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 2,
+              "matches": [
+                "{id:\"gregtech:meta_item_1\",Count:2,Damage:19072s}"
+              ]
+            }
+          }
+        ],
+        "fluid": [
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"sodium_persulfate\",Amount:500}"
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 2,
+              "matches": [
+                "{id:\"gtadditions:ga_meta_item\",Count:2,Damage:32030s}"
+              ]
+            }
+          }
+        ]
+      },
+      "tickInputs": {
+        "gtce_energy": [
+          {
+            "chance": 1.0,
+            "content": 25000
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "type": "block",
+          "condition": {
+            "block": {
+              "id": "contenttweaker:perfectlysealedvacuumcasing",
+              "meta": 0
+            },
+            "count": 144
+          }
+        },
+        {
+          "type": "block",
+          "condition": {
+            "block": {
+              "id": "gregtech:multiblock_casing",
+              "meta": 5
+            },
+            "count": 48
+          }
+        }
+      ]
+    },
+    {
+      "uid": "cbft25",
+      "duration": 400,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_item_2\",Count:1,Damage:32447s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 2,
+              "matches": [
+                "{id:\"gregtech:meta_item_1\",Count:2,Damage:19072s}"
+              ]
+            }
+          }
+        ],
+        "fluid": [
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"iron_chloride\",Amount:250}"
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 2,
+              "matches": [
+                "{id:\"gtadditions:ga_meta_item\",Count:2,Damage:32030s}"
+              ]
+            }
+          }
+        ]
+      },
+      "tickInputs": {
+        "gtce_energy": [
+          {
+            "chance": 1.0,
+            "content": 25000
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "type": "block",
+          "condition": {
+            "block": {
+              "id": "contenttweaker:perfectlysealedvacuumcasing",
+              "meta": 0
+            },
+            "count": 144
+          }
+        },
+        {
+          "type": "block",
+          "condition": {
+            "block": {
+              "id": "gregtech:multiblock_casing",
+              "meta": 5
+            },
+            "count": 48
+          }
+        }
+      ]
+    },
+    {
+      "uid": "cbft26",
+      "duration": 400,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_item_2\",Count:1,Damage:32447s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 2,
+              "matches": [
+                "{id:\"gregtech:meta_item_1\",Count:2,Damage:19072s}"
+              ]
+            }
+          }
+        ],
+        "fluid": [
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"sodium_persulfate\",Amount:500}"
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 2,
+              "matches": [
+                "{id:\"gtadditions:ga_meta_item\",Count:2,Damage:32030s}"
+              ]
+            }
+          }
+        ]
+      },
+      "tickInputs": {
+        "gtce_energy": [
+          {
+            "chance": 1.0,
+            "content": 25000
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "type": "block",
+          "condition": {
+            "block": {
+              "id": "contenttweaker:perfectlysealedvacuumcasing",
+              "meta": 0
+            },
+            "count": 144
+          }
+        },
+        {
+          "type": "block",
+          "condition": {
+            "block": {
+              "id": "gregtech:multiblock_casing",
+              "meta": 5
+            },
+            "count": 48
+          }
+        }
+      ]
+    },
+    {
+      "uid": "cbft27",
+      "duration": 400,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_item_2\",Count:1,Damage:32443s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:cable\",Count:1,Damage:184s}"
+              ]
+            }
+          }
+        ],
+        "fluid": [
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"iron_chloride\",Amount:250}"
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 2,
+              "matches": [
+                "{id:\"gtadditions:ga_meta_item\",Count:2,Damage:32029s}"
+              ]
+            }
+          }
+        ]
+      },
+      "tickInputs": {
+        "gtce_energy": [
+          {
+            "chance": 1.0,
+            "content": 25000
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "type": "block",
+          "condition": {
+            "block": {
+              "id": "contenttweaker:perfectlysealedvacuumcasing",
+              "meta": 0
+            },
+            "count": 144
+          }
+        },
+        {
+          "type": "block",
+          "condition": {
+            "block": {
+              "id": "gregtech:multiblock_casing",
+              "meta": 5
+            },
+            "count": 48
+          }
+        }
+      ]
+    },
+    {
+      "uid": "cbft28",
+      "duration": 400,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_item_2\",Count:1,Damage:32443s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:cable\",Count:1,Damage:184s}"
+              ]
+            }
+          }
+        ],
+        "fluid": [
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"sodium_persulfate\",Amount:500}"
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 2,
+              "matches": [
+                "{id:\"gtadditions:ga_meta_item\",Count:2,Damage:32029s}"
+              ]
+            }
+          }
+        ]
+      },
+      "tickInputs": {
+        "gtce_energy": [
+          {
+            "chance": 1.0,
+            "content": 25000
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "type": "block",
+          "condition": {
+            "block": {
+              "id": "contenttweaker:perfectlysealedvacuumcasing",
+              "meta": 0
+            },
+            "count": 144
+          }
+        },
+        {
+          "type": "block",
+          "condition": {
+            "block": {
+              "id": "gregtech:multiblock_casing",
+              "meta": 5
+            },
+            "count": 48
+          }
+        }
+      ]
+    }
+  ]
+}

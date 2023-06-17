@@ -1,0 +1,91 @@
+{
+  "name": "stirredreactor",
+  "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
+  "fuelTexture": "multiblocked:textures/gui/progress_bar_fuel.png",
+  "recipes": [
+	{
+	  "uid": "cstr1",
+	  "duration": 500,
+	  "inputs": {
+		"fluid": [
+		  { "chance": 1.0, "content": "{FluidName:\"bastnasiteconcentrate\",Amount:1000}" },
+		  { "chance": 1.0, "content": "{FluidName:\"sulfuric_acid\",Amount:250}" }
+		]
+	  },
+	  "outputs": {
+		"fluid": [
+		  { "chance": 1.0, "content": "{FluidName:\"acidicbastnasiteconcentrate\",Amount:1250}" }
+		]
+	  },
+	  "tickInputs": { "gtce_energy": [{ "chance": 1.0, "content": 4500 }] }
+	},
+	{
+	  "uid": "cstr2",
+	  "duration": 500,
+	  "inputs": {
+		"fluid": [
+		  { "chance": 1.0, "content": "{FluidName:\"acidicbastnasiteconcentrate\",Amount:1000}" },
+		  { "chance": 1.0, "content": "{FluidName:\"fluorine\",Amount:1000}" }
+		]
+	  },
+	  "outputs": {
+		"fluid": [
+		  { "chance": 1.0, "content": "{FluidName:\"ceriumcontainingbastnasiteconcentrate\",Amount:1000}" },
+		  { "chance": 1.0, "content": "{FluidName:\"hydrofluoric_acid\",Amount:1000}" }
+		]
+	  },
+	  "tickInputs": { "gtce_energy": [{ "chance": 1.0, "content": 4500 }] }
+	},
+	{
+	  "uid": "cstr3",
+	  "duration": 500,
+	  "inputs": {
+		"fluid": [
+		  { "chance": 1.0, "content": "{FluidName:\"bastnasiterarerearthconcentrate\",Amount:1000}" },
+		  { "chance": 1.0, "content": "{FluidName:\"water\",Amount:4000}" }
+		]
+	  },
+	  "outputs": {
+		"fluid": [
+		  { "chance": 1.0, "content": "{FluidName:\"wetbastnasiterareearthconcentrate\",Amount:5000}" }
+		]
+	  },
+	  "tickInputs": { "gtce_energy": [{ "chance": 1.0, "content": 4500 }] }
+	},
+	{
+	  "uid": "cstr4",
+	  "duration": 500,
+	  "inputs": {
+		"item": [
+		  { "chance": 1.0, "content": { "amount": 1, "matches": ["{id:\"contenttweaker:roastedbastnasite\",Count:1}"] } }
+		],
+		"fluid": [
+		  { "chance": 1.0, "content": "{FluidName:\"nitric_acid\",Amount:750}" }
+		]
+	  },
+	  "outputs": {
+		"fluid": [
+		  { "chance": 1.0, "content": "{FluidName:\"nitrogenatedbastnasiterarerearthoxides\",Amount:1000}" }
+		]
+	  },
+	  "tickInputs": { "gtce_energy": [{ "chance": 1.0, "content": 4500 }] }
+	},
+	{
+	  "uid": "cstr5",
+	  "duration": 500,
+	  "inputs": {
+		"fluid": [
+		  { "chance": 1.0, "content": "{FluidName:\"nitrogenatedbastnasiterarerearthoxides\",Amount:1000}" },
+		  { "chance": 1.0, "content": "{FluidName:\"hydrochloric_acid\",Amount:500}" },
+		  { "chance": 1.0, "content": "{FluidName:\"acetic_acid\",Amount:500}" }
+		]
+	  },
+	  "outputs": {
+		"fluid": [
+		  { "chance": 1.0, "content": "{FluidName:\"bastnasiterarerearthoxidesemulsion\",Amount:2000}" }
+		]
+	  },
+	  "tickInputs": { "gtce_energy": [{ "chance": 1.0, "content": 4500 }] }
+	}
+  ]
+}

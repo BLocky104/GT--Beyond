@@ -1,31 +1,7 @@
 {
   "version": 2,
-  "location": "mbd:continuousstirringreactor",
-  "traits": {
-    "gtce_energy": {
-      "cIO": 2,
-      "gIO": 2,
-      "x": 5,
-      "y": 5,
-      "width": 60,
-      "height": 18,
-      "texture": "multiblocked:textures/gui/energy_bar.png",
-      "fillDirection": 0,
-      "capacity": 10000
-    },
-    "item": [],
-    "recipe_progress": {
-      "cIO": 2,
-      "gIO": 2,
-      "x": 5,
-      "y": 5,
-      "width": 60,
-      "height": 18,
-      "texture": "multiblocked:textures/gui/energy_bar.png",
-      "fillDirection": 0
-    },
-    "fluid": []
-  },
+  "location": "gtb:continuousstirringreactor",
+  "traits": {},
   "properties": {
     "rotationState": "ALL",
     "showInJei": true,
@@ -40,7 +16,7 @@
   "status": {
     "unformed": {
       "renderer": {
-        "baseTexture": "multiblocked:blocks/casing/machine_casing_clean_stainless_steel",
+        "baseTexture": "gregtech:blocks/casings/solid/machine_casing_clean_stainless_steel",
         "frontTexture": "multiblocked:blocks/gregtech_front",
         "type": "gregtech"
       }
@@ -50,7 +26,7 @@
     },
     "working": {
       "renderer": {
-        "baseTexture": "multiblocked:blocks/casing/machine_casing_clean_stainless_steel",
+        "baseTexture": "gregtech:blocks/casings/solid/machine_casing_clean_stainless_steel",
         "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
         "type": "gregtech"
       },
@@ -60,7 +36,7 @@
       "parent": "working"
     }
   },
-  "recipeMap": "empty",
+  "recipeMap": "stirredreactor",
   "basePattern": {
     "structureDir": [
       "LEFT",
@@ -132,31 +108,6 @@
       ]
     ],
     "predicates": {
-      "A": {
-        "states": [
-          {
-            "id": "multiblocked:energy_input",
-            "meta": 0
-          },
-          {
-            "id": "multiblocked:item_input",
-            "meta": 0
-          },
-          {
-            "id": "multiblocked:fluid_input",
-            "meta": 0
-          },
-          {
-            "id": "multiblocked:item_output",
-            "meta": 0
-          },
-          {
-            "id": "multiblocked:fluid_output",
-            "meta": 0
-          }
-        ],
-        "type": "states"
-      },
       "controller": {
         "location": "mod_id:component_id",
         "type": "component"
@@ -190,6 +141,30 @@
       },
       "any": {
         "type": "any"
+      },
+      "item_in": {
+        "location": "multiblocked:item_input",
+        "type": "component",
+        "io": "IN"
+      },
+      "item_out": {
+        "location": "multiblocked:item_output",
+        "type": "component",
+        "io": "OUT"
+      },
+      "energy_in": {
+        "capability": "gtce_energy",
+        "type": "capability",
+        "io": "IN"
+      },
+      "fluid_in": {
+        "location": "multiblocked:fluid_input",
+        "type": "component",
+        "io": "IN"
+      },
+      "fluid_out": {
+        "location": "multiblocked:fluid_output",
+        "type": "component"
       }
     },
     "symbolMap": {
@@ -200,7 +175,12 @@
         "any"
       ],
       "A": [
-        "A"
+        "C",
+        "energy_in",
+        "item_in",
+        "item_out",
+        "fluid_in",
+        "fluid_out"
       ],
       "B": [
         "B"

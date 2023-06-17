@@ -36,7 +36,7 @@
       "parent": "working"
     }
   },
-  "recipeMap": "empty",
+  "recipeMap": "stirredreactor",
   "basePattern": {
     "structureDir": [
       "FRONT",

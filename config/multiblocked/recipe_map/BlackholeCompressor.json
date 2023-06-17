@@ -1,79 +1,51 @@
-{
-  "name": "BlackholeCompressor",
-  "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
-  "fuelTexture": "multiblocked:textures/gui/progress_bar_fuel.png",
-  "recipes": [
-    {
-      "uid": "37f019d1-936b-4a48-adba-31b89b7db106",
-      "duration": 12000,
-      "inputs": {
-        "item": [
-          {
-            "chance": 1.0,
-            "content": {
-              "amount": 576,
-              "matches": [
-                "{id:\"minecraft:lapis_block\",Count:576,Damage:0s}"
-              ]
-            }
-          }
-        ],
-        "gtce_energy": [
-          {
-            "chance": 1.0,
-            "content": 20000000
-          }
-        ]
-      },
-      "outputs": {
-        "item": [
-          {
-            "chance": 1.0,
-            "content": {
-              "amount": 1,
-              "matches": [
-                "{id:\"extendedcrafting:singularity\",Count:1,Damage:2s}"
-              ]
-            }
-          }
-        ]
-      }
-    },
-    {
-      "uid": "40c2244d-d23e-4c56-b922-1c67026014a8",
-      "duration": 12000,
-      "inputs": {
-        "item": [
-          {
-            "chance": 1.0,
-            "content": {
-              "amount": 576,
-              "matches": [
-                "{id:\"minecraft:iron_block\",Count:576,Damage:0s}"
-              ]
-            }
-          }
-        ],
-        "gtce_energy": [
-          {
-            "chance": 1.0,
-            "content": 20000000
-          }
-        ]
-      },
-      "outputs": {
-        "item": [
-          {
-            "chance": 1.0,
-            "content": {
-              "amount": 1,
-              "matches": [
-                "{id:\"extendedcrafting:singularity\",Count:1,Damage:1s}"
-              ]
-            }
-          }
-        ]
-      }
-    }
-  ]
-}
+{"name":"blackholecompressor","progressTexture":"multiblocked:textures/gui/progress_bar_arrow.png","fuelTexture":"multiblocked:textures/gui/progress_bar_fuel.png",
+	"recipes":[
+		{"uid":"singularity-coal","duration":12000,"inputs":{
+			"item":[{"chance":1.0,"content":{"amount":576,"matches":["{id:\"minecraft:coal_block\",Count:576,Damage:0s}"]}}],
+			"gtce_energy":[{"chance":1.0,"content":20000000}]},
+			"outputs":{"item":[{"chance":1.0,"content":{"amount":1,"matches":["{id:\"extendedcrafting:singularity\",Count:1,Damage:0s}"]}}]}},
+		{"uid":"singularity-iron","duration":12000,"inputs":{
+			"item":[{"chance":1.0,"content":{"amount":576,"matches":["{id:\"minecraft:iron_block\",Count:576,Damage:0s}"]}}],
+			"gtce_energy":[{"chance":1.0,"content":20000000}]},
+			"outputs":{"item":[{"chance":1.0,"content":{"amount":1,"matches":["{id:\"extendedcrafting:singularity\",Count:1,Damage:1s}"]}}]}},
+		{"uid":"singularity-lapis","duration":12000,"inputs":{
+			"item":[{"chance":1.0,"content":{"amount":576,"matches":["{id:\"minecraft:lapis_block\",Count:576,Damage:0s}"]}}],
+			"gtce_energy":[{"chance":1.0,"content":20000000}]},
+			"outputs":{"item":[{"chance":1.0,"content":{"amount":1,"matches":["{id:\"extendedcrafting:singularity\",Count:1,Damage:2s}"]}}]}},
+		{"uid":"singularity-redstone","duration":12000,"inputs":{
+			"item":[{"chance":1.0,"content":{"amount":576,"matches":["{id:\"minecraft:redstone_block\",Count:576,Damage:0s}"]}}],
+			"gtce_energy":[{"chance":1.0,"content":20000000}]},
+			"outputs":{"item":[{"chance":1.0,"content":{"amount":1,"matches":["{id:\"extendedcrafting:singularity\",Count:1,Damage:3s}"]}}]}},
+		{"uid":"singularity-glowstone","duration":12000,"inputs":{
+			"item":[{"chance":1.0,"content":{"amount":576,"matches":["{id:\"minecraft:glowstone\",Count:576,Damage:0s}"]}}],
+			"gtce_energy":[{"chance":1.0,"content":20000000}]},
+			"outputs":{"item":[{"chance":1.0,"content":{"amount":1,"matches":["{id:\"extendedcrafting:singularity\",Count:1,Damage:4s}"]}}]}},
+		{"uid":"singularity-gold","duration":12000,"inputs":{
+			"item":[{"chance":1.0,"content":{"amount":576,"matches":["{id:\"minecraft:gold_block\",Count:576,Damage:0s}"]}}],
+			"gtce_energy":[{"chance":1.0,"content":20000000}]},
+			"outputs":{"item":[{"chance":1.0,"content":{"amount":1,"matches":["{id:\"extendedcrafting:singularity\",Count:1,Damage:5s}"]}}]}},
+		{"uid":"singularity-diamond","duration":12000,"inputs":{
+			"item":[{"chance":1.0,"content":{"amount":576,"matches":["{id:\"minecraft:diamond_block\",Count:576,Damage:0s}"]}}],
+			"gtce_energy":[{"chance":1.0,"content":20000000}]},
+			"outputs":{"item":[{"chance":1.0,"content":{"amount":1,"matches":["{id:\"extendedcrafting:singularity\",Count:1,Damage:6s}"]}}]}},
+		{"uid":"singularity-emerald","duration":12000,"inputs":{
+			"item":[{"chance":1.0,"content":{"amount":576,"matches":["{id:\"minecraft:emerald_block\",Count:576,Damage:0s}"]}}],
+			"gtce_energy":[{"chance":1.0,"content":20000000}]},
+			"outputs":{"item":[{"chance":1.0,"content":{"amount":1,"matches":["{id:\"extendedcrafting:singularity\",Count:1,Damage:7s}"]}}]}},
+		{"uid":"singularity-aluminum","duration":12000,"inputs":{
+			"item":[{"chance":1.0,"content":{"amount":576,"matches":["{id:\"gregtech:meta_block_compressed_0\",Count:576,Damage:1s}"]}}],
+			"gtce_energy":[{"chance":1.0,"content":20000000}]},
+			"outputs":{"item":[{"chance":1.0,"content":{"amount":1,"matches":["{id:\"extendedcrafting:singularity\",Count:1,Damage:16s}"]}}]}},
+		{"uid":"singularity-copper","duration":12000,"inputs":{
+			"item":[{"chance":1.0,"content":{"amount":576,"matches":["{id:\"gregtech:meta_block_compressed_1\",Count:576,Damage:2s}"]}}],
+			"gtce_energy":[{"chance":1.0,"content":20000000}]},
+			"outputs":{"item":[{"chance":1.0,"content":{"amount":1,"matches":["{id:\"extendedcrafting:singularity\",Count:1,Damage:17s}"]}}]}},
+		{"uid":"singularity-tin","duration":12000,"inputs":{
+			"item":[{"chance":1.0,"content":{"amount":576,"matches":["{id:\"gregtech:meta_block_compressed_4\",Count:576,Damage:7}"]}}],
+			"gtce_energy":[{"chance":1.0,"content":20000000}]},
+			"outputs":{"item":[{"chance":1.0,"content":{"amount":1,"matches":["{id:\"extendedcrafting:singularity\",Count:1,Damage:18s}"]}}]}},
+		{"uid":"singularity-bronze","duration":12000,"inputs":{
+			"item":[{"chance":1.0,"content":{"amount":576,"matches":["{id:\"gregtech:meta_block_compressed_5\",Count:576,Damage:15s}"]}}],
+			"gtce_energy":[{"chance":1.0,"content":20000000}]},
+			"outputs":{"item":[{"chance":1.0,"content":{"amount":1,"matches":["{id:\"extendedcrafting:singularity\",Count:1,Damage:19s}"]}}]}}
+]}

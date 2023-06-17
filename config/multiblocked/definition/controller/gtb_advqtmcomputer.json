@@ -1,41 +1,7 @@
 {
   "version": 2,
-  "location": "mbd:advqtmcompcont",
-  "traits": {
-    "gtce_energy": {
-      "cIO": 0,
-      "gIO": 2,
-      "x": 29,
-      "y": 49,
-      "width": 10,
-      "height": 100,
-      "texture": "multiblocked:textures/gui/energy_bar.png",
-      "fillDirection": 3,
-      "capacity": 10000
-    },
-    "recipe_progress": {
-      "cIO": 2,
-      "gIO": 2,
-      "x": 11,
-      "y": 49,
-      "width": 10,
-      "height": 100,
-      "texture": "multiblocked:textures/gui/energy_bar.png",
-      "fillDirection": 3
-    },
-    "item": [
-      {
-        "cIO": 1,
-        "gIO": 1,
-        "mIO": 1,
-        "slotName": "Out1",
-        "x": 79,
-        "y": 71,
-        "autoIO": false
-      }
-    ],
-    "background": "multiblocked:textures/gui/fluid_hatch_gui.png"
-  },
+  "location": "gtb:advqtmcomputer",
+  "traits": {},
   "properties": {
     "rotationState": "ALL",
     "showInJei": true,
@@ -50,8 +16,8 @@
   "status": {
     "unformed": {
       "renderer": {
-        "baseTexture": "multiblocked:blocks/casing/highpowercasing",
-        "frontTexture": "multiblocked:blocks/gregtech_front",
+        "baseTexture": "contenttweaker:blocks/highpowercasing",
+        "frontTexture": "multiblocked:blocks/overlay/overlay_front",
         "type": "gregtech"
       }
     },
@@ -60,7 +26,7 @@
     },
     "working": {
       "renderer": {
-        "baseTexture": "multiblocked:blocks/casing/highpowercasing",
+        "baseTexture": "contenttweaker:blocks/highpowercasing",
         "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
         "type": "gregtech"
       },
@@ -162,34 +128,13 @@
         "type": "states"
       },
       "controller": {
-        "location": "mbd:advqtmcompcont",
+        "location": "gtb:advqtmcomputer",
         "type": "component"
       },
       "B": {
         "states": [
           {
             "id": "contenttweaker:highpowercasing",
-            "meta": 0
-          }
-        ],
-        "type": "states"
-      },
-      "C": {
-        "states": [
-          {
-            "id": "multiblocked:item_input",
-            "meta": 0
-          },
-          {
-            "id": "contenttweaker:highpowercasing",
-            "meta": 0
-          },
-          {
-            "id": "multiblocked:item_output",
-            "meta": 0
-          },
-          {
-            "id": "multiblocked:energy_input",
             "meta": 0
           }
         ],
@@ -224,6 +169,30 @@
       },
       "any": {
         "type": "any"
+      },
+      "item_in": {
+        "location": "multiblocked:item_input",
+        "type": "component",
+        "io": "IN"
+      },
+      "item_out": {
+        "location": "multiblocked:item_output",
+        "type": "component",
+        "io": "OUT"
+      },
+      "energy_in": {
+        "capability": "gtce_energy",
+        "type": "capability",
+        "io": "IN"
+      },
+      "fluid_in": {
+        "location": "multiblocked:fluid_input",
+        "type": "component",
+        "io": "IN"
+      },
+      "fluid_out": {
+        "location": "multiblocked:fluid_output",
+        "type": "component"
       }
     },
     "symbolMap": {
@@ -240,7 +209,12 @@
         "B"
       ],
       "C": [
-        "C"
+        "B",
+        "item_in",
+        "item_out",
+        "fluid_in",
+        "fluid_out",
+        "energy_in"
       ],
       "D": [
         "D"

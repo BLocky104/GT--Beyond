@@ -1,0 +1,157 @@
+{
+  "name": "combustion",
+  "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
+  "fuelTexture": "multiblocked:textures/gui/progress_bar_fuel.png",
+  "recipes": [
+	{
+	  "uid": "combustion1",
+	  "duration": 10,
+	  "inputs": {
+		"fluid": [
+		  { "chance": 1.0, "content": "{FluidName:\"high_octane\",Amount:1000}" }
+		]
+	  },
+	  "tickOutputs": { "gtce_energy": [{ "chance": 1.0, "content": 1000000 }] }
+	},
+	{
+	  "uid": "combustion2",
+	  "duration": 10,
+	  "inputs": {
+		"fluid": [
+		  { "chance": 1.0, "content": "{FluidName:\"gasoline\",Amount:1000}" }
+		]
+	  },
+	  "tickOutputs": { "gtce_energy": [{ "chance": 1.0, "content": 270000 }] }
+	},
+	{
+	  "uid": "combustion3",
+	  "duration": 10,
+	  "inputs": {
+		"fluid": [
+		  { "chance": 1.0, "content": "{FluidName:\"butanol\",Amount:1000}" }
+		]
+	  },
+	  "tickOutputs": { "gtce_energy": [{ "chance": 1.0, "content": 80000 }] }
+	},
+	{
+	  "uid": "combustion4",
+	  "duration": 10,
+	  "inputs": {
+		"fluid": [
+		  { "chance": 1.0, "content": "{FluidName:\"bio_diesel\",Amount:1000}" }
+		]
+	  },
+	  "tickOutputs": { "gtce_energy": [{ "chance": 1.0, "content": 64000 }] }
+	},
+	{
+	  "uid": "combustion5",
+	  "duration": 10,
+	  "inputs": {
+		"fluid": [
+		  { "chance": 1.0, "content": "{FluidName:\"light_fuel\",Amount:1000}" }
+		]
+	  },
+	  "tickOutputs": { "gtce_energy": [{ "chance": 1.0, "content": 61000 }] }
+	},
+	{
+	  "uid": "combustion6",
+	  "duration": 10,
+	  "inputs": {
+		"fluid": [
+		  { "chance": 1.0, "content": "{FluidName:\"ethanol\",Amount:1000}" }
+		]
+	  },
+	  "tickOutputs": { "gtce_energy": [{ "chance": 1.0, "content": 59000 }] }
+	},
+	{
+	  "uid": "combustion7",
+	  "duration": 10,
+	  "inputs": {
+		"fluid": [
+		  { "chance": 1.0, "content": "{FluidName:\"methanol\",Amount:1000}" }
+		]
+	  },
+	  "tickOutputs": { "gtce_energy": [{ "chance": 1.0, "content": 20000 }] }
+	},
+	{
+	  "uid": "combustion8",
+	  "duration": 10,
+	  "inputs": {
+		"fluid": [
+		  { "chance": 1.0, "content": "{FluidName:\"octane\",Amount:1000}" }
+		]
+	  },
+	  "tickOutputs": { "gtce_energy": [{ "chance": 1.0, "content": 16000 }] }
+	},
+	{
+	  "uid": "combustion9",
+	  "duration": 10,
+	  "inputs": {
+		"fluid": [
+		  { "chance": 1.0, "content": "{FluidName:\"sulfuric_light_fuel\",Amount:1000}" }
+		]
+	  },
+	  "tickOutputs": { "gtce_energy": [{ "chance": 1.0, "content": 8000 }] }
+	},
+	{
+	  "uid": "combustion10",
+	  "duration": 10,
+	  "inputs": {
+		"fluid": [
+		  { "chance": 1.0, "content": "{FluidName:\"oil\",Amount:1000}" }
+		]
+	  },
+	  "tickOutputs": { "gtce_energy": [{ "chance": 1.0, "content": 4000 }] }
+	},
+	{
+	  "uid": "combustion11",
+	  "duration": 10,
+	  "inputs": {
+		"fluid": [
+		  { "chance": 1.0, "content": "{FluidName:\"biomass\",Amount:1000}" }
+		]
+	  },
+	  "tickOutputs": { "gtce_energy": [{ "chance": 1.0, "content": 1600 }] }
+	},
+	{
+	  "uid": "combustion12",
+	  "duration": 10,
+	  "inputs": {
+		"fluid": [
+		  { "chance": 1.0, "content": "{FluidName:\"creosote\",Amount:1000}" }
+		]
+	  },
+	  "tickOutputs": { "gtce_energy": [{ "chance": 1.0, "content": 1600 }] }
+	},
+	{
+	  "uid": "combustion13",
+	  "duration": 10,
+	  "inputs": {
+		"fluid": [
+		  { "chance": 1.0, "content": "{FluidName:\"fish_oil\",Amount:1000}" }
+		]
+	  },
+	  "tickOutputs": { "gtce_energy": [{ "chance": 1.0, "content": 400 }] }
+	},
+	{
+	  "uid": "combustion14",
+	  "duration": 10,
+	  "inputs": {
+		"fluid": [
+		  { "chance": 1.0, "content": "{FluidName:\"jetfuel\",Amount:1000}" }
+		]
+	  },
+	  "tickOutputs": { "gtce_energy": [{ "chance": 1.0, "content": 900000 }] }
+	},
+	{
+	  "uid": "combustion15",
+	  "duration": 10,
+	  "inputs": {
+		"fluid": [
+		  { "chance": 1.0, "content": "{FluidName:\"ethanolgasoline\",Amount:1000}" }
+		]
+	  },
+	  "tickOutputs": { "gtce_energy": [{ "chance": 1.0, "content": 400000 }] }
+	}
+  ]
+}

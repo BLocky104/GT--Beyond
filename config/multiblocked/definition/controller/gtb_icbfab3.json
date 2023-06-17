@@ -1,20 +1,7 @@
 {
   "version": 2,
-  "location": "mbd:icbfab3",
-  "traits": {
-    "item": [],
-    "gtce_energy": {
-      "cIO": 2,
-      "gIO": 2,
-      "x": 5,
-      "y": 5,
-      "width": 60,
-      "height": 18,
-      "texture": "multiblocked:textures/gui/energy_bar.png",
-      "fillDirection": 0,
-      "capacity": 10000
-    }
-  },
+  "location": "gtb:icbfab3",
+  "traits": {},
   "properties": {
     "rotationState": "ALL",
     "showInJei": true,
@@ -29,8 +16,8 @@
   "status": {
     "unformed": {
       "renderer": {
-        "baseTexture": "multiblocked:blocks/casing/optimizedrestrictedpcbcasing",
-        "frontTexture": "multiblocked:blocks/gregtech_front",
+        "baseTexture": "contenttweaker:blocks/optimizedrestrictedpcbcasing",
+        "frontTexture": "multiblocked:blocks/overlay/overlay_front",
         "type": "gregtech"
       }
     },
@@ -39,7 +26,7 @@
     },
     "working": {
       "renderer": {
-        "baseTexture": "multiblocked:blocks/casing/optimizedrestrictedpcbcasing",
+        "baseTexture": "contenttweaker:blocks/optimizedrestrictedpcbcasing",
         "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
         "type": "gregtech"
       },
@@ -49,7 +36,7 @@
       "parent": "working"
     }
   },
-  "recipeMap": "empty",
+  "recipeMap": "icbfab",
   "basePattern": {
     "structureDir": [
       "BACK",
@@ -439,38 +426,13 @@
         "type": "states"
       },
       "controller": {
-        "location": "mbd:icbfab3",
+        "location": "gtb:icbfab3",
         "type": "component"
       },
       "B": {
         "states": [
           {
             "id": "contenttweaker:optimizedrestrictedpcbcasing",
-            "meta": 0
-          }
-        ],
-        "type": "states"
-      },
-      "C": {
-        "states": [
-          {
-            "id": "multiblocked:energy_input",
-            "meta": 0
-          },
-		  {
-            "id": "multiblocked:item_input",
-            "meta": 0
-          },
-          {
-            "id": "multiblocked:fluid_input",
-            "meta": 0
-          },
-          {
-            "id": "multiblocked:item_output",
-            "meta": 0
-          },
-          {
-            "id": "multiblocked:fluid_output",
             "meta": 0
           }
         ],
@@ -568,6 +530,30 @@
           }
         ],
         "type": "states"
+      },
+      "item_in": {
+        "location": "multiblocked:item_input",
+        "type": "component",
+        "io": "IN"
+      },
+      "item_out": {
+        "location": "multiblocked:item_output",
+        "type": "component",
+        "io": "OUT"
+      },
+      "energy_in": {
+        "capability": "gtce_energy",
+        "type": "capability",
+        "io": "IN"
+      },
+      "fluid_in": {
+        "location": "multiblocked:fluid_input",
+        "type": "component",
+        "io": "IN"
+      },
+      "fluid_out": {
+        "location": "multiblocked:fluid_output",
+        "type": "component"
       }
     },
     "symbolMap": {
@@ -584,7 +570,12 @@
         "B"
       ],
       "C": [
-        "C"
+        "B",
+        "energy_in",
+        "item_in",
+        "item_out",
+        "fluid_in",
+        "fluid_out"
       ],
       "D": [
         "D"

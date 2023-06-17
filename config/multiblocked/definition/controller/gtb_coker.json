@@ -1,0 +1,396 @@
+{
+  "version": 2,
+  "location": "gtb:coker",
+  "traits": {},
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 10.0,
+    "harvestLevel": 1,
+    "stackSize": 64,
+    "tabGroup": "multiblocked"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "baseTexture": "gregtech:blocks/casings/solid/machine_casing_solid_steel",
+        "frontTexture": "multiblocked:blocks/gregtech_front",
+        "type": "gregtech"
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+      "renderer": {
+        "baseTexture": "gregtech:blocks/casings/solid/machine_casing_solid_steel",
+        "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
+        "type": "gregtech"
+      },
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "coker",
+  "basePattern": {
+    "structureDir": [
+      "LEFT",
+      "BACK",
+      "UP"
+    ],
+    "pattern": [
+      [
+        " A@BA",
+        "DCCCC",
+        "DCCCC",
+        " ACCA",
+        " CCCC",
+        "DCCCC",
+        "  CC ",
+        "  CC ",
+        "DCCCC",
+        "DCCCC",
+        " ACCA",
+        " CCCC",
+        "DCCCC",
+        " ABBA"
+      ],
+      [
+        " ACCA",
+        " C  C",
+        "DC  C",
+        "DACCA",
+        "DC  C",
+        "DC  C",
+        "  CC ",
+        "  CC ",
+        " C  C",
+        "DC  C",
+        "DACCA",
+        "DC  C",
+        "DC  C",
+        " ACCA"
+      ],
+      [
+        " ACCA",
+        " C  C",
+        "DC  C",
+        " ACCA",
+        " C  C",
+        "DC  C",
+        "  CC ",
+        "  CC ",
+        " C  C",
+        "DC  C",
+        " ACCA",
+        " C  C",
+        "DC  C",
+        " ACCA"
+      ],
+      [
+        " ACCA",
+        " C  C",
+        "DC  C",
+        "DACCA",
+        "DC  C",
+        "DC  C",
+        "  CC ",
+        "  CC ",
+        " C  C",
+        "DC  C",
+        "DACCA",
+        "DC  C",
+        "DC  C",
+        " ACCA"
+      ],
+      [
+        " ACCA",
+        " C  C",
+        "DC  C",
+        " ACCA",
+        " C  C",
+        "DC  C",
+        "  CC ",
+        "  CC ",
+        " C  C",
+        "DC  C",
+        " ACCA",
+        " C  C",
+        "DC  C",
+        " ACCA"
+      ],
+      [
+        " ACCA",
+        " C  C",
+        " C  C",
+        " ACCA",
+        " C  C",
+        "DC  C",
+        "  CC ",
+        "  CC ",
+        " C  C",
+        " C  C",
+        " ACCA",
+        " C  C",
+        "DC  C",
+        " ACCA"
+      ],
+      [
+        " AAAA",
+        " AAAA",
+        " AAAA",
+        " AAAA",
+        " AAAA",
+        "DAAAA",
+        " AAAA",
+        " AAAA",
+        " AAAA",
+        " AAAA",
+        " AAAA",
+        " AAAA",
+        "DAAAA",
+        " AAAA"
+      ],
+      [
+        "     ",
+        "     ",
+        "     ",
+        "  AA ",
+        "  AA ",
+        "D    ",
+        "     ",
+        "     ",
+        "     ",
+        "     ",
+        "  AA ",
+        "  AA ",
+        "D    ",
+        "     "
+      ],
+      [
+        "     ",
+        "     ",
+        "     ",
+        "  AA ",
+        "  AA ",
+        "D AA ",
+        "  AA ",
+        "  AA ",
+        "  AA ",
+        "  AA ",
+        "  AA ",
+        "  AA ",
+        "D    ",
+        "     "
+      ],
+      [
+        "     ",
+        "     ",
+        "     ",
+        "  AA ",
+        "  AA ",
+        "D    ",
+        "     ",
+        "     ",
+        "     ",
+        "     ",
+        "  AA ",
+        "  AA ",
+        "D    ",
+        "     "
+      ],
+      [
+        "     ",
+        "     ",
+        "     ",
+        "  AA ",
+        "  AA ",
+        "     ",
+        "     ",
+        "     ",
+        "     ",
+        "     ",
+        "  AA ",
+        "  AA ",
+        "     ",
+        "     "
+      ],
+      [
+        "     ",
+        "     ",
+        "     ",
+        "  AA ",
+        "  AA ",
+        "  AA ",
+        "  AA ",
+        "  AA ",
+        "  AA ",
+        "  AA ",
+        "  AA ",
+        "  AA ",
+        "     ",
+        "     "
+      ],
+      [
+        "     ",
+        "     ",
+        "     ",
+        "  AA ",
+        "  AA ",
+        "     ",
+        "     ",
+        "     ",
+        "     ",
+        "     ",
+        "  AA ",
+        "  AA ",
+        "     ",
+        "     "
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        6,
+        6
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "states": [
+          {
+            "id": "gregtech:frame_steel",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "controller": {
+        "location": "gtb:coker",
+        "type": "component"
+      },
+      "C": {
+        "states": [
+          {
+            "id": "gregtech:metal_casing",
+            "meta": 4
+          }
+        ],
+        "type": "states"
+      },
+      "item_in": {
+        "location": "multiblocked:item_input",
+        "type": "component",
+        "io": "IN"
+      },
+      "D": {
+        "states": [
+          {
+            "id": "gregtech:boiler_casing",
+            "meta": 1
+          }
+        ],
+        "type": "states"
+      },
+      "item_out": {
+        "location": "multiblocked:item_output",
+        "type": "component",
+        "io": "OUT"
+      },
+      "fluid_in": {
+        "location": "multiblocked:fluid_input",
+        "type": "component",
+        "io": "IN"
+      },
+      "any": {
+        "type": "any"
+      },
+      "energy_in": {
+        "capability": "gtce_energy",
+        "type": "capability",
+        "io": "IN"
+      },
+      "fluid_out": {
+        "location": "multiblocked:fluid_output",
+        "type": "component"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "C",
+        "item_in",
+        "item_out",
+        "fluid_in",
+        "energy_in",
+        "fluid_out"
+      ],
+      "C": [
+        "C"
+      ],
+      "D": [
+        "D"
+      ]
+    }
+  }
+}

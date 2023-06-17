@@ -1,112 +1,7 @@
 {
   "version": 2,
-  "location": "mbd:blackholecompressor",
-  "traits": {
-    "gtce_energy": {
-      "cIO": 2,
-      "gIO": 2,
-      "x": 28,
-      "y": 93,
-      "width": 54,
-      "height": 18,
-      "texture": "multiblocked:textures/gui/energy_bar.png",
-      "fillDirection": 0,
-      "capacity": 10000
-    },
-    "item": [
-      {
-        "cIO": 0,
-        "gIO": 2,
-        "mIO": 0,
-        "x": 28,
-        "y": 35,
-        "autoIO": false
-      },
-      {
-        "cIO": 0,
-        "gIO": 2,
-        "mIO": 0,
-        "x": 46,
-        "y": 35,
-        "autoIO": false
-      },
-      {
-        "cIO": 0,
-        "gIO": 2,
-        "mIO": 0,
-        "x": 64,
-        "y": 35,
-        "autoIO": false
-      },
-      {
-        "cIO": 1,
-        "gIO": 1,
-        "mIO": 1,
-        "x": 125,
-        "y": 53,
-        "autoIO": false
-      },
-      {
-        "cIO": 0,
-        "gIO": 2,
-        "mIO": 0,
-        "x": 28,
-        "y": 53,
-        "autoIO": false
-      },
-      {
-        "cIO": 0,
-        "gIO": 2,
-        "mIO": 0,
-        "x": 46,
-        "y": 53,
-        "autoIO": false
-      },
-      {
-        "cIO": 0,
-        "gIO": 2,
-        "mIO": 0,
-        "x": 64,
-        "y": 53,
-        "autoIO": false
-      },
-      {
-        "cIO": 0,
-        "gIO": 2,
-        "mIO": 0,
-        "x": 28,
-        "y": 71,
-        "autoIO": false
-      },
-      {
-        "cIO": 0,
-        "gIO": 2,
-        "mIO": 0,
-        "x": 46,
-        "y": 71,
-        "autoIO": false
-      },
-      {
-        "cIO": 0,
-        "gIO": 2,
-        "mIO": 0,
-        "x": 64,
-        "y": 71,
-        "autoIO": false
-      }
-    ],
-    "recipe_progress": {
-      "cIO": 2,
-      "gIO": 2,
-      "x": 86,
-      "y": 53,
-      "width": 35,
-      "height": 18,
-      "texture": "multiblocked:textures/gui/energy_bar.png",
-      "fillDirection": 0
-    },
-    "background": "multiblocked:textures/gui/9 to 1.png"
-  },
+  "location": "gtb:blackholecompressor",
+  "traits": {},
   "properties": {
     "rotationState": "ALL",
     "showInJei": true,
@@ -121,8 +16,8 @@
   "status": {
     "unformed": {
       "renderer": {
-        "baseTexture": "multiblocked:blocks/casing/dimensionalcasing",
-        "frontTexture": "multiblocked:blocks/gregtech_front",
+        "baseTexture": "contenttweaker:blocks/dimensionalcasing",
+        "frontTexture": "multiblocked:blocks/overlay/overlay_front",
         "type": "gregtech"
       }
     },
@@ -131,7 +26,7 @@
     },
     "working": {
       "renderer": {
-        "baseTexture": "multiblocked:blocks/casing/dimensionalcasing",
+        "baseTexture": "contenttweaker:blocks/dimensionalcasing",
         "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
         "type": "gregtech"
       },
@@ -150,35 +45,35 @@
     ],
     "pattern": [
       [
-        " ABA ",
+        " EBE ",
         " CCC ",
         " CCC ",
         " CCC ",
         " ABA "
       ],
       [
-        "ADDDA",
+        "EDDDE",
         "C   C",
         "C   C",
         "C   C",
         "ADDDA"
       ],
       [
-        "BDED@",
+        "BDDD@",
         "C F C",
+        "C G C",
         "C F C",
-        "C F C",
-        "BDEDB"
+        "BDDDB"
       ],
       [
-        "ADDDA",
+        "EDDDE",
         "C   C",
         "C   C",
         "C   C",
         "ADDDA"
       ],
       [
-        " ABA ",
+        " EBE ",
         " CCC ",
         " CCC ",
         " CCC ",
@@ -218,7 +113,7 @@
         "type": "states"
       },
       "controller": {
-        "location": "mbd:blackholecompressor",
+        "location": "gtb:blackholecompressor",
         "type": "component"
       },
       "B": {
@@ -229,10 +124,6 @@
           }
         ],
         "type": "states"
-      },
-      "IEnergy": {
-        "capability": "gtce_energy",
-        "type": "capability"
       },
       "C": {
         "states": [
@@ -252,23 +143,34 @@
         ],
         "type": "states"
       },
-      "E": {
-        "states": [
-          {
-            "id": "modularmachinery:blockenergyinputhatch",
-            "meta": 1
-          }
-        ],
-        "type": "states"
+      "item_in": {
+        "location": "multiblocked:item_input",
+        "type": "component",
+        "io": "IN"
+      },
+      "item_out": {
+        "location": "multiblocked:item_output",
+        "type": "component",
+        "io": "OUT"
+      },
+      "energy_in": {
+        "capability": "gtce_energy",
+        "type": "capability",
+        "io": "IN"
+      },
+      "fluid_in": {
+        "location": "multiblocked:fluid_input",
+        "type": "component",
+        "io": "IN"
+      },
+      "fluid_out": {
+        "location": "multiblocked:fluid_output",
+        "type": "component"
       },
       "F": {
         "states": [
           {
             "id": "contenttweaker:coil",
-            "meta": 0
-          },
-          {
-            "id": "mbd:blackholecoil",
             "meta": 0
           }
         ],
@@ -276,6 +178,10 @@
       },
       "any": {
         "type": "any"
+      },      
+	  "G": {
+        "location": "gtb:blackholecoil",
+        "type": "component"
       }
     },
     "symbolMap": {
@@ -298,11 +204,18 @@
         "D"
       ],
       "E": [
-        "IEnergy",
-        "E"
+        "energy_in",
+        "item_in",
+        "item_out",
+        "fluid_in",
+        "fluid_out",
+		"A"
       ],
       "F": [
         "F"
+      ],
+      "G": [
+        "G"
       ]
     }
   }
